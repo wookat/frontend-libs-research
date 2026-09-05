@@ -1,5 +1,11 @@
 import json, urllib.request, urllib.parse, time
-d=json.load(open("/home/ubuntu/fe-research/data.json"))
+import sys
+
+if len(sys.argv) != 2:
+    raise SystemExit("usage: python3 scripts/downloads.py <data.json>")
+
+path=sys.argv[1]
+d=json.load(open(path))
 pkgs=sorted({r["pkg"] for r in d if r["pkg"]})
 unscoped=[p for p in pkgs if not p.startswith("@")]
 scoped=[p for p in pkgs if p.startswith("@")]
@@ -28,5 +34,5 @@ for p in scoped:
 for r in d:
     if r["pkg"] and r["npm"] is not None:
         r["npm"]["weekly"]=res.get(r["pkg"]); r["npm"].pop("weekly_error",None)
-json.dump(d,open("/home/ubuntu/fe-research/data.json","w"),ensure_ascii=False,indent=1)
+json.dump(d,open(path,"w"),ensure_ascii=False,indent=1)
 print("missing:",[p for p in pkgs if res.get(p) is None])

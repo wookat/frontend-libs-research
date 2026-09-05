@@ -1,289 +1,84 @@
-import json, subprocess, sys, urllib.request, concurrent.futures as cf, time
+import concurrent.futures as cf
+import importlib.util
+import json
+import os
+import subprocess
+import sys
+import urllib.parse
+import urllib.request
 
-# (category, name, github owner/repo or None, npm package or None)
-ITEMS = [
- # 1 component libs
- ("1","shadcn/ui","shadcn-ui/ui","shadcn"),
- ("1","Radix UI Primitives","radix-ui/primitives","radix-ui"),
- ("1","Base UI (MUI)","mui/base-ui","@base-ui-components/react"),
- ("1","React Aria Components","adobe/react-spectrum","react-aria-components"),
- ("1","Headless UI","tailwindlabs/headlessui","@headlessui/react"),
- ("1","Ark UI","chakra-ui/ark","@ark-ui/react"),
- ("1","Mantine","mantinedev/mantine","@mantine/core"),
- ("1","Chakra UI","chakra-ui/chakra-ui","@chakra-ui/react"),
- ("1","HeroUI (NextUI)","heroui-inc/heroui","@heroui/react"),
- ("1","daisyUI","saadeghi/daisyui","daisyui"),
- ("1","Ant Design","ant-design/ant-design","antd"),
- ("1","Arco Design","arco-design/arco-design","@arco-design/web-react"),
- ("1","TDesign React","Tencent/tdesign-react","tdesign-react"),
- ("1","Semi Design","DouyinFE/semi-design","@douyinfe/semi-ui"),
- ("1","MUI Material","mui/material-ui","@mui/material"),
- ("1","Park UI","cschroeter/park-ui","@park-ui/panda-preset"),
- # 2 shadcn ecosystem
- ("2","Magic UI","magicuidesign/magicui","magicui"),
- ("2","Kibo UI","haydenbleasel/kibo","kibo-ui"),
- ("2","Motion Primitives","ibelick/motion-primitives","motion-primitives"),
- ("2","Untitled UI React","untitleduico/react","untitledui"),
- ("2","coss ui (ex Origin UI)","coss-ui/coss-ui","coss-ui"),
- ("2","Origin UI (legacy)","origin-space/originui",None),
- ("2","Aceternity UI","manuarora700/aceternity-ui","aceternity-ui"),
- ("2","cult-ui","nolly-studio/cult-ui",None),
- ("2","Shadcn Blocks/registry (awesome-shadcn-ui)","birobirobiro/awesome-shadcn-ui",None),
- ("2","tweakcn","jnsahaj/tweakcn",None),
- ("2","shadcn-svelte(参考)","huntabyte/shadcn-svelte",None),
- ("2","Tremor Raw / Tremor blocks","tremorlabs/tremor","@tremor/react"),
- # 3 icons
- ("3","lucide","lucide-icons/lucide","lucide-react"),
- ("3","Phosphor","phosphor-icons/react","@phosphor-icons/react"),
- ("3","Tabler Icons","tabler/tabler-icons","@tabler/icons-react"),
- ("3","Heroicons","tailwindlabs/heroicons","@heroicons/react"),
- ("3","Radix Icons","radix-ui/icons","@radix-ui/react-icons"),
- ("3","Iconify","iconify/iconify","@iconify/react"),
- ("3","Remix Icon","Remix-Design/RemixIcon","@remixicon/react"),
- ("3","IconPark (ByteDance)","bytedance/IconPark","@icon-park/react"),
- ("3","Hugeicons","hugeicons/hugeicons-react","@hugeicons/react"),
- ("3","react-icons","react-icons/react-icons","react-icons"),
- # 4 motion
- ("4","Motion (framer-motion)","motiondivision/motion","motion"),
- ("4","framer-motion (npm alias)",None,"framer-motion"),
- ("4","react-spring","pmndrs/react-spring","@react-spring/web"),
- ("4","AutoAnimate","formkit/auto-animate","@formkit/auto-animate"),
- ("4","GSAP","greensock/GSAP","gsap"),
- ("4","Lottie (lottie-web)","airbnb/lottie-web","lottie-web"),
- ("4","lottie-react","Gamote/lottie-react","lottie-react"),
- ("4","@lottiefiles/dotlottie-react","LottieFiles/dotlottie-web","@lottiefiles/dotlottie-react"),
- ("4","react-transition-group","reactjs/react-transition-group","react-transition-group"),
- ("4","tw-animate-css","Wombosvideo/tw-animate-css","tw-animate-css"),
- # 5 charts
- ("5","Recharts","recharts/recharts","recharts"),
- ("5","Nivo","plouc/nivo","@nivo/core"),
- ("5","visx","airbnb/visx","@visx/visx"),
- ("5","Tremor","tremorlabs/tremor","@tremor/react"),
- ("5","ECharts","apache/echarts","echarts"),
- ("5","echarts-for-react","hustcc/echarts-for-react","echarts-for-react"),
- ("5","Chart.js","chartjs/Chart.js","chart.js"),
- ("5","react-chartjs-2","reactchartjs/react-chartjs-2","react-chartjs-2"),
- ("5","D3","d3/d3","d3"),
- ("5","Victory","FormidableLabs/victory","victory"),
- ("5","Observable Plot","observablehq/plot","@observablehq/plot"),
- ("5","AntV G2","antvis/G2","@antv/g2"),
- # 6 forms
- ("6","react-hook-form","react-hook-form/react-hook-form","react-hook-form"),
- ("6","TanStack Form","TanStack/form","@tanstack/react-form"),
- ("6","zod","colinhacks/zod","zod"),
- ("6","valibot","fabian-hiller/valibot","valibot"),
- ("6","arktype","arktypeio/arktype","arktype"),
- ("6","@hookform/resolvers","react-hook-form/resolvers","@hookform/resolvers"),
- ("6","Formik","jaredpalmer/formik","formik"),
- ("6","yup","jquense/yup","yup"),
- ("6","Standard Schema","standard-schema/standard-schema","@standard-schema/spec"),
- # 7 tables
- ("7","TanStack Table","TanStack/table","@tanstack/react-table"),
- ("7","TanStack Virtual","TanStack/virtual","@tanstack/react-virtual"),
- ("7","AG Grid Community","ag-grid/ag-grid","ag-grid-react"),
- ("7","react-window","bvaughn/react-window","react-window"),
- ("7","react-virtuoso","petyosi/react-virtuoso","react-virtuoso"),
- ("7","Glide Data Grid","glideapps/glide-data-grid","@glideapps/glide-data-grid"),
- ("7","react-data-grid","adazzle/react-data-grid","react-data-grid"),
- ("7","MUI X DataGrid","mui/mui-x","@mui/x-data-grid"),
- # 8 editors
- ("8","Tiptap","ueberdosis/tiptap","@tiptap/react"),
- ("8","Lexical","facebook/lexical","lexical"),
- ("8","Milkdown","Milkdown/milkdown","@milkdown/kit"),
- ("8","CodeMirror 6","codemirror/dev","@codemirror/view"),
- ("8","@uiw/react-codemirror","uiwjs/react-codemirror","@uiw/react-codemirror"),
- ("8","Monaco Editor","microsoft/monaco-editor","monaco-editor"),
- ("8","@monaco-editor/react","suren-atoyan/monaco-react","@monaco-editor/react"),
- ("8","shiki","shikijs/shiki","shiki"),
- ("8","react-markdown","remarkjs/react-markdown","react-markdown"),
- ("8","remark-gfm","remarkjs/remark-gfm","remark-gfm"),
- ("8","MDX","mdx-js/mdx","@mdx-js/react"),
- ("8","BlockNote","TypeCellOS/BlockNote","@blocknote/react"),
- ("8","Plate","udecode/plate","platejs"),
- ("8","Streamdown (Vercel)","vercel/streamdown","streamdown"),
- ("8","MDEditor (@uiw/react-md-editor)","uiwjs/react-md-editor","@uiw/react-md-editor"),
- ("8","Vditor","Vanessa219/vditor","vditor"),
- # 9 dates
- ("9","date-fns","date-fns/date-fns","date-fns"),
- ("9","dayjs","iamkun/dayjs","dayjs"),
- ("9","Temporal polyfill","fullcalendar/temporal-polyfill","temporal-polyfill"),
- ("9","@js-temporal/polyfill","js-temporal/temporal-polyfill","@js-temporal/polyfill"),
- ("9","react-day-picker","gpbl/react-day-picker","react-day-picker"),
- ("9","Luxon","moment/luxon","luxon"),
- ("9","moment (对照)","moment/moment","moment"),
- ("9","@internationalized/date","adobe/react-spectrum","@internationalized/date"),
- # 10 upload/dnd/pdf
- ("10","react-dropzone","react-dropzone/react-dropzone","react-dropzone"),
- ("10","dnd-kit","clauderic/dnd-kit","@dnd-kit/core"),
- ("10","pragmatic-drag-and-drop (Atlassian)","atlassian/pragmatic-drag-and-drop","@atlaskit/pragmatic-drag-and-drop"),
- ("10","pdf.js","mozilla/pdf.js","pdfjs-dist"),
- ("10","react-pdf","wojtekmaj/react-pdf","react-pdf"),
- ("10","@embedpdf/core (EmbedPDF)","embedpdf/embed-pdf-viewer","@embedpdf/core"),
- ("10","docx-preview","VolodymyrBaydalka/docxjs","docx-preview"),
- ("10","mammoth.js","mwilliamson/mammoth.js","mammoth"),
- ("10","docx (生成)","dolanmiu/docx","docx"),
- ("10","Uppy","transloadit/uppy","@uppy/core"),
- ("10","FilePond","pqina/filepond","react-filepond"),
- ("10","jszip","Stuk/jszip","jszip"),
- ("10","file-saver","eligrey/FileSaver.js","file-saver"),
- # 11 state
- ("11","TanStack Query","TanStack/query","@tanstack/react-query"),
- ("11","Zustand","pmndrs/zustand","zustand"),
- ("11","Jotai","pmndrs/jotai","jotai"),
- ("11","Redux Toolkit","reduxjs/redux-toolkit","@reduxjs/toolkit"),
- ("11","SWR","vercel/swr","swr"),
- ("11","Valtio","pmndrs/valtio","valtio"),
- ("11","XState","statelyai/xstate","xstate"),
- ("11","nuqs (URL state)","47ng/nuqs","nuqs"),
- ("11","openapi-fetch","openapi-ts/openapi-typescript","openapi-fetch"),
- ("11","openapi-typescript",None,"openapi-typescript"),
- ("11","orval","orval-labs/orval","orval"),
- # 12 routing
- ("12","React Router","remix-run/react-router","react-router"),
- ("12","react-router-dom",None,"react-router-dom"),
- ("12","TanStack Router","TanStack/router","@tanstack/react-router"),
- ("12","Next.js","vercel/next.js","next"),
- ("12","Remix","remix-run/remix","@remix-run/react"),
- ("12","TanStack Start",None,"@tanstack/react-start"),
- ("12","Vike","vikejs/vike","vike"),
- ("12","Astro","withastro/astro","astro"),
- ("12","vite-react-ssg","Daydreamer-riri/vite-react-ssg","vite-react-ssg"),
- # 13 i18n/a11y/seo
- ("13","i18next","i18next/i18next","i18next"),
- ("13","react-i18next","i18next/react-i18next","react-i18next"),
- ("13","Lingui","lingui/js-lingui","@lingui/react"),
- ("13","react-intl (FormatJS)","formatjs/formatjs","react-intl"),
- ("13","Paraglide (inlang)","opral/inlang-paraglide-js","@inlang/paraglide-js"),
- ("13","react-aria","adobe/react-spectrum","react-aria"),
- ("13","axe-core","dequelabs/axe-core","axe-core"),
- ("13","@axe-core/playwright",None,"@axe-core/playwright"),
- ("13","jsx-a11y eslint plugin","jsx-eslint/eslint-plugin-jsx-a11y","eslint-plugin-jsx-a11y"),
- ("13","react-helmet-async","staylor/react-helmet-async","react-helmet-async"),
- ("13","react-helmet (原版)","nfl/react-helmet","react-helmet"),
- ("13","@unhead/react","unjs/unhead","@unhead/react"),
- ("13","pa11y","pa11y/pa11y","pa11y"),
- # 14 tooling
- ("14","Vite","vitejs/vite","vite"),
- ("14","Vitest","vitest-dev/vitest","vitest"),
- ("14","Playwright","microsoft/playwright","@playwright/test"),
- ("14","Storybook","storybookjs/storybook","storybook"),
- ("14","Biome","biomejs/biome","@biomejs/biome"),
- ("14","oxlint","oxc-project/oxc","oxlint"),
- ("14","ESLint","eslint/eslint","eslint"),
- ("14","typescript-eslint","typescript-eslint/typescript-eslint","typescript-eslint"),
- ("14","Prettier","prettier/prettier","prettier"),
- ("14","Knip","webpro-nl/knip","knip"),
- ("14","size-limit","ai/size-limit","size-limit"),
- ("14","Testing Library React","testing-library/react-testing-library","@testing-library/react"),
- ("14","MSW","mswjs/msw","msw"),
- ("14","Rolldown","rolldown/rolldown","rolldown"),
- ("14","Oxfmt",None,"oxfmt"),
- ("14","Lighthouse CI","GoogleChrome/lighthouse-ci","@lhci/cli"),
- ("14","vite-plugin-pwa","vite-pwa/vite-plugin-pwa","vite-plugin-pwa"),
- ("14","Ladle","tajo/ladle","@ladle/react"),
- ("14","rollup-plugin-visualizer","btd/rollup-plugin-visualizer","rollup-plugin-visualizer"),
- ("14","Husky","typicode/husky","husky"),
- ("14","lint-staged","lint-staged/lint-staged","lint-staged"),
- # 15 design resources / fonts
- ("15","Geist font","vercel/geist-font","geist"),
- ("15","Inter","rsms/inter","@fontsource/inter"),
- ("15","Source Han Sans 思源黑体","adobe-fonts/source-han-sans",None),
- ("15","Source Han Serif 思源宋体","adobe-fonts/source-han-serif",None),
- ("15","LXGW WenKai 霞鹜文楷","lxgw/LxgwWenKai","lxgw-wenkai-webfont"),
- ("15","LXGW WenKai Screen",None,"lxgw-wenkai-screen-webfont"),
- ("15","MiSans (小米)",None,None),
- ("15","HarmonyOS Sans (华为)",None,None),
- ("15","Alibaba PuHuiTi 阿里巴巴普惠体",None,None),
- ("15","Noto Sans CJK","notofonts/noto-cjk",None),
- ("15","cn-font-split (中文字体分包)","KonghaYao/cn-font-split","cn-font-split"),
- ("15","Fontsource","fontsource/fontsource","@fontsource/geist"),
- ("15","Untitled UI Figma",None,None),
- ("15","shadcn Figma kit (community)",None,None),
- ("15","Radix Colors","radix-ui/colors","@radix-ui/colors"),
- ("15","Tailwind CSS","tailwindlabs/tailwindcss","tailwindcss"),
- ("15","JetBrains Mono","JetBrains/JetBrainsMono","@fontsource/jetbrains-mono"),
- ("15","Maple Mono","subframe7536/maple-font",None),
- ("15","Roboto Mono",None,"@fontsource-variable/roboto-mono"),
- # baseline / extras
- ("0","React","facebook/react","react"),
- ("0","TypeScript","microsoft/TypeScript","typescript"),
- ("0","sonner","emilkowalski/sonner","sonner"),
- ("0","class-variance-authority","joe-bell/cva","class-variance-authority"),
- ("0","tailwind-merge","dcastil/tailwind-merge","tailwind-merge"),
- ("0","clsx","lukeed/clsx","clsx"),
- ("0","vaul (drawer)","emilkowalski/vaul","vaul"),
- ("0","cmdk","pacocoursey/cmdk","cmdk"),
- ("0","react-resizable-panels","bvaughn/react-resizable-panels","react-resizable-panels"),
- ("0","embla-carousel","davidjerleke/embla-carousel","embla-carousel-react"),
- ("0","input-otp","guilhermerodz/input-otp","input-otp"),
- ("0","react-hot-toast","timolins/react-hot-toast","react-hot-toast"),
- ("0","next-themes","pacocoursey/next-themes","next-themes"),
- ("0","@tailwindcss/vite",None,"@tailwindcss/vite"),
- ("0","@vitejs/plugin-react","vitejs/vite-plugin-react","@vitejs/plugin-react"),
- ("0","@testing-library/user-event","testing-library/user-event","@testing-library/user-event"),
- ("0","jsdom","jsdom/jsdom","jsdom"),
- ("0","happy-dom","capricorn86/happy-dom","happy-dom"),
- ("0","@tanstack/react-table (repo TanStack/table dup)",None,None),
- ("0","@react-pdf/renderer","diegomura/react-pdf","@react-pdf/renderer"),
- ("0","pdf-lib","Hopding/pdf-lib","pdf-lib"),
- ("0","html2canvas","niklasvh/html2canvas","html2canvas"),
- ("0","qrcode.react","zpao/qrcode.react","qrcode.react"),
- ("0","mermaid","mermaid-js/mermaid","mermaid"),
- ("0","@number-flow/react","barvian/number-flow","@number-flow/react"),
- ("0","react-use","streamich/react-use","react-use"),
- ("0","usehooks-ts","juliencrn/usehooks-ts","usehooks-ts"),
- ("0","@uidotdev/usehooks","uidotdev/usehooks","@uidotdev/usehooks"),
- ("0","ky","sindresorhus/ky","ky"),
- ("0","axios","axios/axios","axios"),
- ("0","react-error-boundary","bvaughn/react-error-boundary","react-error-boundary"),
- ("0","@base-ui-components/utils",None,None),
-]
+
+def load_items(path):
+    spec = importlib.util.spec_from_file_location("items_module", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"cannot load items module: {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.ITEMS
+
+
+if len(sys.argv) != 3:
+    raise SystemExit("usage: python3 scripts/collect.py <items_module> <out.json>")
+
+ITEMS = load_items(sys.argv[1])
+OUT = sys.argv[2]
+
 
 def gh(repo):
-    if not repo: return None
+    if not repo:
+        return None
     try:
-        out = subprocess.run(["gh","api",f"repos/{repo}","--jq",
+        out = subprocess.run(["gh", "api", f"repos/{repo}", "--jq",
             '{stars:.stargazers_count,license:(.license.spdx_id // "NONE"),pushed:.pushed_at,archived:.archived,desc:.description,created:.created_at,forks:.forks_count,issues:.open_issues_count,default_branch:.default_branch}'],
-            capture_output=True,text=True,timeout=40)
-        if out.returncode!=0: return {"error":out.stderr.strip()[:200]}
+            capture_output=True, text=True, timeout=40)
+        if out.returncode != 0:
+            return {"error": out.stderr.strip()[:200]}
         return json.loads(out.stdout)
-    except Exception as e: return {"error":str(e)}
+    except Exception as e:
+        return {"error": str(e)}
+
 
 def npm(pkg):
-    if not pkg: return None
-    r={}
+    if not pkg:
+        return None
+    r = {}
     try:
-        with urllib.request.urlopen(f"https://registry.npmjs.org/{urllib.parse.quote(pkg,safe='@')}",timeout=30) as f:
-            d=json.load(f)
-        latest=d["dist-tags"].get("latest")
-        r["version"]=latest
-        r["tags"]={k:v for k,v in d["dist-tags"].items() if k in("latest","next","beta","canary","alpha","rc")}
-        r["modified"]=d.get("time",{}).get("modified")
-        r["latest_time"]=d.get("time",{}).get(latest)
-        v=d["versions"].get(latest,{})
-        r["license"]=v.get("license") if isinstance(v.get("license"),str) else (v.get("license",{}) or {}).get("type")
-        pd=v.get("peerDependencies",{}) or {}
-        r["peer_react"]=pd.get("react")
-        r["peer_tailwind"]=pd.get("tailwindcss")
-        r["unpacked"]=(v.get("dist",{}) or {}).get("unpackedSize")
-        r["deps_count"]=len(v.get("dependencies",{}) or {})
-        r["types"]=bool(v.get("types") or v.get("typings"))
-        r["deprecated"]=v.get("deprecated")
+        with urllib.request.urlopen(f"https://registry.npmjs.org/{urllib.parse.quote(pkg, safe='@')}", timeout=30) as f:
+            d = json.load(f)
+        latest = d["dist-tags"].get("latest")
+        r["version"] = latest
+        r["tags"] = {k: v for k, v in d["dist-tags"].items() if k in ("latest", "next", "beta", "canary", "alpha", "rc")}
+        r["modified"] = d.get("time", {}).get("modified")
+        r["latest_time"] = d.get("time", {}).get(latest)
+        r["created"] = d.get("time", {}).get("created")
+        v = d["versions"].get(latest, {})
+        repository = v.get("repository")
+        r["repository"] = repository.get("url") if isinstance(repository, dict) else repository
+        r["license"] = v.get("license") if isinstance(v.get("license"), str) else (v.get("license", {}) or {}).get("type")
+        pd = v.get("peerDependencies", {}) or {}
+        r["peer_react"] = pd.get("react")
+        r["peer_tailwind"] = pd.get("tailwindcss")
+        r["unpacked"] = (v.get("dist", {}) or {}).get("unpackedSize")
+        r["deps_count"] = len(v.get("dependencies", {}) or {})
+        r["types"] = bool(v.get("types") or v.get("typings"))
+        r["deprecated"] = v.get("deprecated")
     except Exception as e:
-        r["error"]=str(e)[:200]
+        r["error"] = str(e)[:200]
     try:
-        with urllib.request.urlopen(f"https://api.npmjs.org/downloads/point/last-week/{urllib.parse.quote(pkg,safe='@')}",timeout=30) as f:
-            r["weekly"]=json.load(f).get("downloads")
+        with urllib.request.urlopen(f"https://api.npmjs.org/downloads/point/last-week/{urllib.parse.quote(pkg, safe='@')}", timeout=30) as f:
+            r["weekly"] = json.load(f).get("downloads")
     except Exception as e:
-        r["weekly_error"]=str(e)[:100]
+        r["weekly_error"] = str(e)[:100]
     return r
 
-import urllib.parse
+
 def work(item):
-    cat,name,repo,pkg=item
-    return {"cat":cat,"name":name,"repo":repo,"pkg":pkg,"gh":gh(repo),"npm":npm(pkg)}
+    cat, name, repo, pkg = item
+    return {"cat": cat, "name": name, "repo": repo, "pkg": pkg, "gh": gh(repo), "npm": npm(pkg)}
+
 
 with cf.ThreadPoolExecutor(8) as ex:
-    res=list(ex.map(work,ITEMS))
-json.dump(res,open("/home/ubuntu/fe-research/data.json","w"),ensure_ascii=False,indent=1)
-print(len(res),"done; errors:",sum(1 for r in res if (r["gh"] and "error" in r["gh"]) or (r["npm"] and "error" in r["npm"])))
+    res = list(ex.map(work, ITEMS))
+os.makedirs(os.path.dirname(os.path.abspath(OUT)), exist_ok=True)
+json.dump(res, open(OUT, "w"), ensure_ascii=False, indent=1)
+print(len(res), "done; errors:", sum(1 for r in res if (r["gh"] and "error" in r["gh"]) or (r["npm"] and "error" in r["npm"])))

@@ -1,0 +1,4397 @@
+[
+ {
+  "cat": "16",
+  "name": "Panda CSS",
+  "repo": "chakra-ui/panda",
+  "pkg": "@pandacss/dev",
+  "gh": {
+   "archived": false,
+   "created": "2022-07-27T06:49:27Z",
+   "default_branch": "main",
+   "desc": "🐼 Universal, Type-Safe, CSS-in-JS Framework for Design Systems ⚡️",
+   "forks": 314,
+   "issues": 6,
+   "license": "MIT",
+   "pushed": "2026-09-05T10:51:56Z",
+   "stars": 6182
+  },
+  "npm": {
+   "version": "1.12.1",
+   "tags": {
+    "latest": "1.12.1",
+    "beta": "2.0.0-beta.15"
+   },
+   "modified": "2026-09-04T07:15:51.059Z",
+   "latest_time": "2026-09-04T07:15:50.642Z",
+   "created": "2023-02-13T06:42:10.971Z",
+   "repository": "git+https://github.com/chakra-ui/panda.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 855581,
+   "deps_count": 11,
+   "types": true,
+   "deprecated": null,
+   "weekly": 427911
+  }
+ },
+ {
+  "cat": "16",
+  "name": "vanilla-extract",
+  "repo": "vanilla-extract-css/vanilla-extract",
+  "pkg": "@vanilla-extract/css",
+  "gh": {
+   "archived": false,
+   "created": "2021-03-26T05:10:54Z",
+   "default_branch": "master",
+   "desc": "Zero-runtime Stylesheets-in-TypeScript",
+   "forks": 357,
+   "issues": 74,
+   "license": "MIT",
+   "pushed": "2026-08-27T02:56:47Z",
+   "stars": 10419
+  },
+  "npm": {
+   "version": "1.21.2",
+   "tags": {
+    "latest": "1.21.2"
+   },
+   "modified": "2026-07-27T02:16:16.612Z",
+   "latest_time": "2026-07-27T02:16:16.186Z",
+   "created": "2021-03-26T05:16:18.494Z",
+   "repository": "https://github.com/vanilla-extract-css/vanilla-extract.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 388845,
+   "deps_count": 11,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3046741
+  }
+ },
+ {
+  "cat": "16",
+  "name": "StyleX (Meta)",
+  "repo": "facebook/stylex",
+  "pkg": "@stylexjs/stylex",
+  "gh": {
+   "archived": false,
+   "created": "2022-12-08T06:38:09Z",
+   "default_branch": "main",
+   "desc": "StyleX is the styling system for ambitious user interfaces.",
+   "forks": 472,
+   "issues": 227,
+   "license": "MIT",
+   "pushed": "2026-09-05T00:07:28Z",
+   "stars": 10157
+  },
+  "npm": {
+   "version": "0.19.0",
+   "tags": {
+    "alpha": "0.5.0-alpha.4",
+    "beta": "0.10.0-beta.2",
+    "latest": "0.19.0"
+   },
+   "modified": "2026-06-16T02:23:05.185Z",
+   "latest_time": "2026-06-16T02:23:04.945Z",
+   "created": "2022-11-01T21:03:31.138Z",
+   "repository": "git+https://github.com/facebook/stylex.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 333670,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1916156
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Pigment CSS (MUI)",
+  "repo": "mui/pigment-css",
+  "pkg": "@pigment-css/react",
+  "gh": {
+   "archived": false,
+   "created": "2023-11-07T23:12:26Z",
+   "default_branch": "master",
+   "desc": "⚠️ 𝐀𝐥𝐩𝐡𝐚 𝐩𝐡𝐚𝐬𝐞, currently, on hold. Pigment CSS is a zero-runtime CSS-in-JS library that extracts the colocated styles to their own CSS files at build time.",
+   "forks": 55,
+   "issues": 148,
+   "license": "MIT",
+   "pushed": "2026-06-06T14:39:23Z",
+   "stars": 1119
+  },
+  "npm": {
+   "version": "0.0.31",
+   "tags": {
+    "latest": "0.0.31"
+   },
+   "modified": "2026-05-22T06:15:38.408Z",
+   "latest_time": "2026-05-22T06:15:38.167Z",
+   "created": "2024-03-08T04:13:00.021Z",
+   "repository": "git+https://github.com/mui/pigment-css.git",
+   "license": "MIT",
+   "peer_react": "^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc",
+   "peer_tailwind": null,
+   "unpacked": 861984,
+   "deps_count": 22,
+   "types": true,
+   "deprecated": null,
+   "weekly": 32043
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Linaria",
+  "repo": "callstack/linaria",
+  "pkg": "@linaria/core",
+  "gh": {
+   "archived": false,
+   "created": "2017-05-23T00:52:34Z",
+   "default_branch": "master",
+   "desc": "Zero-runtime CSS in JS library",
+   "forks": 413,
+   "issues": 72,
+   "license": "MIT",
+   "pushed": "2026-08-10T18:34:26Z",
+   "stars": 12348
+  },
+  "npm": {
+   "version": "8.2.0",
+   "tags": {
+    "latest": "8.2.0"
+   },
+   "modified": "2026-08-10T18:33:02.111Z",
+   "latest_time": "2026-08-10T18:33:01.811Z",
+   "created": "2020-11-07T19:29:11.878Z",
+   "repository": "git+ssh://git@github.com/callstack/linaria.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 24699,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 593805
+  }
+ },
+ {
+  "cat": "16",
+  "name": "wyw-in-js",
+  "repo": "Anber/wyw-in-js",
+  "pkg": "@wyw-in-js/transform",
+  "gh": {
+   "archived": false,
+   "created": "2023-10-01T08:35:15Z",
+   "default_branch": "main",
+   "desc": null,
+   "forks": 29,
+   "issues": 6,
+   "license": "MIT",
+   "pushed": "2026-09-05T08:15:10Z",
+   "stars": 323
+  },
+  "npm": {
+   "version": "2.5.1",
+   "tags": {
+    "alpha": "2.0.0-alpha.1",
+    "latest": "2.5.1"
+   },
+   "modified": "2026-09-03T21:20:45.531Z",
+   "latest_time": "2026-09-03T21:20:10.406Z",
+   "created": "2023-10-03T16:58:21.059Z",
+   "repository": "git+https://github.com/wyw-in-js/wyw-in-js.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 5540867,
+   "deps_count": 13,
+   "types": true,
+   "deprecated": null,
+   "weekly": 167909
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Emotion",
+  "repo": "emotion-js/emotion",
+  "pkg": "@emotion/react",
+  "gh": {
+   "archived": false,
+   "created": "2017-05-27T04:23:45Z",
+   "default_branch": "main",
+   "desc": "👩‍🎤 CSS-in-JS library designed for high performance style composition",
+   "forks": 1141,
+   "issues": 393,
+   "license": "MIT",
+   "pushed": "2026-08-28T09:30:54Z",
+   "stars": 18021
+  },
+  "npm": {
+   "version": "11.14.0",
+   "tags": {
+    "next": "11.0.0-next.10",
+    "rc": "11.0.0-rc.0",
+    "latest": "11.14.0"
+   },
+   "modified": "2026-05-12T10:19:29.667Z",
+   "latest_time": "2024-12-09T08:43:27.996Z",
+   "created": "2020-01-05T19:22:12.649Z",
+   "repository": "git+https://github.com/emotion-js/emotion.git#main",
+   "license": "MIT",
+   "peer_react": ">=16.8.0",
+   "peer_tailwind": null,
+   "unpacked": 816759,
+   "deps_count": 8,
+   "types": true,
+   "deprecated": null,
+   "weekly": 21180037
+  }
+ },
+ {
+  "cat": "16",
+  "name": "styled-components",
+  "repo": "styled-components/styled-components",
+  "pkg": "styled-components",
+  "gh": {
+   "archived": false,
+   "created": "2016-08-16T06:41:32Z",
+   "default_branch": "main",
+   "desc": "Fast, expressive styling for React. Server components, client components, streaming SSR, React Native—one API.",
+   "forks": 2687,
+   "issues": 26,
+   "license": "MIT",
+   "pushed": "2026-09-05T06:13:28Z",
+   "stars": 41123
+  },
+  "npm": {
+   "version": "6.5.3",
+   "tags": {
+    "latest": "6.5.3"
+   },
+   "modified": "2026-09-05T05:14:05.251Z",
+   "latest_time": "2026-08-15T15:10:49.914Z",
+   "created": "2016-08-16T08:11:00.856Z",
+   "repository": "git+https://github.com/styled-components/styled-components.git",
+   "license": "MIT",
+   "peer_react": ">= 16.8.0",
+   "peer_tailwind": null,
+   "unpacked": 2083192,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 11459678
+  }
+ },
+ {
+  "cat": "16",
+  "name": "UnoCSS",
+  "repo": "unocss/unocss",
+  "pkg": "unocss",
+  "gh": {
+   "archived": false,
+   "created": "2021-09-30T17:06:46Z",
+   "default_branch": "main",
+   "desc": "The instant on-demand atomic CSS engine.",
+   "forks": 987,
+   "issues": 132,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T05:57:50Z",
+   "stars": 18946
+  },
+  "npm": {
+   "version": "66.10.0",
+   "tags": {
+    "latest": "66.10.0"
+   },
+   "modified": "2026-09-04T08:03:35.405Z",
+   "latest_time": "2026-09-04T08:03:35.056Z",
+   "created": "2021-10-04T11:54:29.433Z",
+   "repository": "git+https://github.com/unocss/unocss.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 18129,
+   "deps_count": 18,
+   "types": true,
+   "deprecated": null,
+   "weekly": 477773
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Tailwind Variants",
+  "repo": "heroui-inc/tailwind-variants",
+  "pkg": "tailwind-variants",
+  "gh": {
+   "archived": false,
+   "created": "2023-01-12T21:42:24Z",
+   "default_branch": "main",
+   "desc": "🦄 Tailwindcss first-class variant API",
+   "forks": 88,
+   "issues": 8,
+   "license": "MIT",
+   "pushed": "2026-08-18T08:31:58Z",
+   "stars": 3293
+  },
+  "npm": {
+   "version": "3.3.1",
+   "tags": {
+    "latest": "3.3.1"
+   },
+   "modified": "2026-08-03T14:07:10.255Z",
+   "latest_time": "2026-08-03T14:07:09.933Z",
+   "created": "2023-01-12T14:59:04.373Z",
+   "repository": "git+https://github.com/heroui-inc/tailwind-variants.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": "*",
+   "unpacked": 331595,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3783844
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Lightning CSS",
+  "repo": "parcel-bundler/lightningcss",
+  "pkg": "lightningcss",
+  "gh": {
+   "archived": false,
+   "created": "2021-10-09T19:54:41Z",
+   "default_branch": "master",
+   "desc": "An extremely fast CSS parser, transformer, bundler, and minifier written in Rust.",
+   "forks": 297,
+   "issues": 412,
+   "license": "MPL-2.0",
+   "pushed": "2026-09-05T17:13:18Z",
+   "stars": 7671
+  },
+  "npm": {
+   "version": "1.33.0",
+   "tags": {
+    "latest": "1.33.0"
+   },
+   "modified": "2026-07-20T05:11:09.658Z",
+   "latest_time": "2026-07-20T05:11:09.509Z",
+   "created": "2022-08-22T23:33:46.478Z",
+   "repository": "git+https://github.com/parcel-bundler/lightningcss.git",
+   "license": "MPL-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 513814,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 142441326
+  }
+ },
+ {
+  "cat": "16",
+  "name": "PostCSS",
+  "repo": "postcss/postcss",
+  "pkg": "postcss",
+  "gh": {
+   "archived": false,
+   "created": "2013-09-24T23:06:48Z",
+   "default_branch": "main",
+   "desc": "Transforming styles with JS plugins",
+   "forks": 1641,
+   "issues": 24,
+   "license": "MIT",
+   "pushed": "2026-09-03T15:04:51Z",
+   "stars": 28978
+  },
+  "npm": {
+   "version": "8.5.28",
+   "tags": {
+    "latest": "8.5.28"
+   },
+   "modified": "2026-09-03T15:14:00.105Z",
+   "latest_time": "2026-09-03T15:13:59.819Z",
+   "created": "2013-11-04T19:57:14.218Z",
+   "repository": "git+https://github.com/postcss/postcss.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 218290,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 280142947
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Open Props",
+  "repo": "argyleink/open-props",
+  "pkg": "open-props",
+  "gh": {
+   "archived": false,
+   "created": "2021-09-03T04:15:41Z",
+   "default_branch": "main",
+   "desc": "CSS custom properties to help accelerate adaptive and consistent design.",
+   "forks": 217,
+   "issues": 76,
+   "license": "MIT",
+   "pushed": "2026-08-11T00:41:43Z",
+   "stars": 5509
+  },
+  "npm": {
+   "version": "1.7.23",
+   "tags": {
+    "beta": "2.0.0-beta.4",
+    "latest": "1.7.23"
+   },
+   "modified": "2026-01-31T17:12:16.075Z",
+   "latest_time": "2026-01-31T17:12:15.958Z",
+   "created": "2021-10-13T04:37:47.800Z",
+   "repository": "git+https://github.com/argyleink/open-props.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1287011,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 27312
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Tokenami",
+  "repo": "tokenami/tokenami",
+  "pkg": "@tokenami/dev",
+  "gh": {
+   "archived": false,
+   "created": "2023-06-19T12:03:37Z",
+   "default_branch": "main",
+   "desc": "The utility-first CSS lib for type-safe design systems. No runtime injection, no class soup, no specificity wars—just predictable styling with atomic CSS variables.",
+   "forks": 10,
+   "issues": 17,
+   "license": "MIT",
+   "pushed": "2026-09-04T19:03:50Z",
+   "stars": 1016
+  },
+  "npm": {
+   "version": "0.0.76",
+   "tags": {
+    "latest": "0.0.76"
+   },
+   "modified": "2025-02-10T00:35:49.587Z",
+   "latest_time": "2025-02-07T16:26:56.208Z",
+   "created": "2024-01-01T13:31:59.208Z",
+   "repository": "git+https://github.com/tokenami/tokenami.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 266347,
+   "deps_count": 16,
+   "types": true,
+   "deprecated": "Package has been renamed. Please use 'tokenami' instead.",
+   "weekly": 75
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Stitches (对照)",
+  "repo": "stitchesjs/stitches",
+  "pkg": "@stitches/react",
+  "gh": {
+   "archived": true,
+   "created": "2020-04-14T07:07:35Z",
+   "default_branch": "canary",
+   "desc": "[Not Actively Maintained] CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class developer experience.",
+   "forks": 256,
+   "issues": 120,
+   "license": "MIT",
+   "pushed": "2025-02-10T18:37:23Z",
+   "stars": 7777
+  },
+  "npm": {
+   "version": "1.2.8",
+   "tags": {
+    "latest": "1.2.8",
+    "canary": "1.3.1-1"
+   },
+   "modified": "2023-05-21T02:33:23.361Z",
+   "latest_time": "2022-04-25T03:44:24.908Z",
+   "created": "2020-09-01T11:46:07.809Z",
+   "repository": "git+https://github.com/modulz/stitches.git",
+   "license": "MIT",
+   "peer_react": ">= 16.3.0",
+   "peer_tailwind": null,
+   "unpacked": 520806,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1375799
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Sass (dart-sass)",
+  "repo": "sass/dart-sass",
+  "pkg": "sass",
+  "gh": {
+   "archived": false,
+   "created": "2016-10-31T20:15:56Z",
+   "default_branch": "main",
+   "desc": "The reference implementation of Sass, written in Dart.",
+   "forks": 381,
+   "issues": 72,
+   "license": "MIT",
+   "pushed": "2026-09-04T06:19:45Z",
+   "stars": 4218
+  },
+  "npm": {
+   "version": "1.104.0",
+   "tags": {
+    "rc": "1.45.0-rc.2",
+    "latest": "1.104.0"
+   },
+   "modified": "2026-09-03T23:17:10.616Z",
+   "latest_time": "2026-09-03T23:17:10.278Z",
+   "created": "2017-06-06T20:36:44.615Z",
+   "repository": "git+https://github.com/sass/dart-sass.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 5949181,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 32361372
+  }
+ },
+ {
+  "cat": "16",
+  "name": "Restyle (styled-components 零运行时)",
+  "repo": "souporserious/restyle",
+  "pkg": "restyle",
+  "gh": {
+   "archived": false,
+   "created": "2024-05-20T08:25:16Z",
+   "default_branch": "main",
+   "desc": "The simplest way to add CSS styles to your React components.",
+   "forks": 11,
+   "issues": 10,
+   "license": "MIT",
+   "pushed": "2026-05-19T17:12:56Z",
+   "stars": 450
+  },
+  "npm": {
+   "version": "3.4.3",
+   "tags": {
+    "latest": "3.4.3"
+   },
+   "modified": "2026-05-19T17:14:28.623Z",
+   "latest_time": "2026-05-19T17:14:28.497Z",
+   "created": "2014-02-05T01:06:56.787Z",
+   "repository": "git+https://github.com/souporserious/restyle.git",
+   "license": "MIT",
+   "peer_react": ">=19.2.6",
+   "peer_tailwind": null,
+   "unpacked": 304873,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 956
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Rspack",
+  "repo": "web-infra-dev/rspack",
+  "pkg": "@rspack/core",
+  "gh": {
+   "archived": false,
+   "created": "2022-04-01T08:45:30Z",
+   "default_branch": "main",
+   "desc": "Fast Rust-based bundler for the web with a modernized webpack API 🦀",
+   "forks": 845,
+   "issues": 228,
+   "license": "MIT",
+   "pushed": "2026-09-05T13:53:45Z",
+   "stars": 12888
+  },
+  "npm": {
+   "version": "2.2.2",
+   "tags": {
+    "alpha": "2.0.0-alpha.1",
+    "beta": "2.1.0-beta.0",
+    "canary": "2.2.0-beta.1",
+    "rc": "2.2.0-rc.0",
+    "latest": "2.2.2"
+   },
+   "modified": "2026-09-01T11:44:09.032Z",
+   "latest_time": "2026-09-01T11:44:08.568Z",
+   "created": "2022-04-06T10:51:38.139Z",
+   "repository": "https://github.com/web-infra-dev/rspack",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1736822,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 8960056
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Rsbuild",
+  "repo": "web-infra-dev/rsbuild",
+  "pkg": "@rsbuild/core",
+  "gh": {
+   "archived": false,
+   "created": "2023-10-07T12:59:03Z",
+   "default_branch": "main",
+   "desc": "Fast, extensible build tool for modern web development",
+   "forks": 279,
+   "issues": 22,
+   "license": "MIT",
+   "pushed": "2026-09-05T11:27:36Z",
+   "stars": 3375
+  },
+  "npm": {
+   "version": "2.2.3",
+   "tags": {
+    "alpha": "2.0.0-alpha.4",
+    "canary": "2.0.0-canary-20260309140114",
+    "beta": "2.2.0-beta.2",
+    "rc": "2.2.0-rc.0",
+    "latest": "2.2.3"
+   },
+   "modified": "2026-09-03T09:19:52.907Z",
+   "latest_time": "2026-09-03T09:19:52.601Z",
+   "created": "2023-10-17T02:48:13.871Z",
+   "repository": "https://github.com/web-infra-dev/rsbuild",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 4785961,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1680611
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Rslib",
+  "repo": "web-infra-dev/rslib",
+  "pkg": "@rslib/core",
+  "gh": {
+   "archived": false,
+   "created": "2024-03-04T08:18:53Z",
+   "default_branch": "main",
+   "desc": "Create JavaScript libraries in a simple and intuitive way.",
+   "forks": 67,
+   "issues": 30,
+   "license": "MIT",
+   "pushed": "2026-09-04T07:48:20Z",
+   "stars": 1011
+  },
+  "npm": {
+   "version": "1.0.0",
+   "tags": {
+    "next": "0.0.0-next-20241204092353",
+    "alpha": "0.5.0-alpha.0",
+    "canary": "0.20.0-canary-202603101",
+    "latest": "1.0.0",
+    "beta": "1.0.0-beta.3",
+    "rc": "1.0.0-rc.2"
+   },
+   "modified": "2026-09-03T07:20:29.393Z",
+   "latest_time": "2026-09-03T07:20:29.112Z",
+   "created": "2024-08-15T08:58:02.748Z",
+   "repository": "git+https://github.com/web-infra-dev/rslib.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 408480,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 311836
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Turbopack (in next.js repo)",
+  "repo": "vercel/next.js",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2016-10-05T23:32:51Z",
+   "default_branch": "canary",
+   "desc": "The React Framework",
+   "forks": 31870,
+   "issues": 3277,
+   "license": "MIT",
+   "pushed": "2026-09-05T16:16:02Z",
+   "stars": 142109
+  },
+  "npm": null
+ },
+ {
+  "cat": "17",
+  "name": "Farm",
+  "repo": "farm-fe/farm",
+  "pkg": "@farmfe/core",
+  "gh": {
+   "archived": false,
+   "created": "2022-06-26T10:24:02Z",
+   "default_branch": "main",
+   "desc": "Extremely fast Vite-compatible web build tool written in Rust",
+   "forks": 192,
+   "issues": 211,
+   "license": "MIT",
+   "pushed": "2026-06-14T13:57:04Z",
+   "stars": 5590
+  },
+  "npm": {
+   "version": "1.7.11",
+   "tags": {
+    "latest": "1.7.11",
+    "beta": "2.0.0-beta.11"
+   },
+   "modified": "2026-05-28T08:41:15.433Z",
+   "latest_time": "2025-08-04T01:56:06.901Z",
+   "created": "2023-02-20T15:57:01.997Z",
+   "repository": "git+https://github.com/farm-fe/farm.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2640861,
+   "deps_count": 27,
+   "types": true,
+   "deprecated": null,
+   "weekly": 6240
+  }
+ },
+ {
+  "cat": "17",
+  "name": "esbuild",
+  "repo": "evanw/esbuild",
+  "pkg": "esbuild",
+  "gh": {
+   "archived": false,
+   "created": "2016-06-14T16:08:50Z",
+   "default_branch": "main",
+   "desc": "An extremely fast bundler for the web",
+   "forks": 1342,
+   "issues": 619,
+   "license": "MIT",
+   "pushed": "2026-08-09T17:20:12Z",
+   "stars": 40036
+  },
+  "npm": {
+   "version": "0.28.2",
+   "tags": {
+    "latest": "0.28.2"
+   },
+   "modified": "2026-08-08T20:00:55.803Z",
+   "latest_time": "2026-08-08T20:00:55.454Z",
+   "created": "2017-11-26T05:52:58.272Z",
+   "repository": "git+https://github.com/evanw/esbuild.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 147361,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 275165454
+  }
+ },
+ {
+  "cat": "17",
+  "name": "webpack",
+  "repo": "webpack/webpack",
+  "pkg": "webpack",
+  "gh": {
+   "archived": false,
+   "created": "2012-03-10T10:08:14Z",
+   "default_branch": "main",
+   "desc": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through \"loaders\", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.",
+   "forks": 9548,
+   "issues": 131,
+   "license": "MIT",
+   "pushed": "2026-09-05T17:40:52Z",
+   "stars": 65962
+  },
+  "npm": {
+   "version": "5.110.3",
+   "tags": {
+    "next": "5.0.0-rc.6",
+    "latest": "5.110.3"
+   },
+   "modified": "2026-09-01T20:02:14.336Z",
+   "latest_time": "2026-09-01T20:02:13.900Z",
+   "created": "2012-03-11T20:59:59.339Z",
+   "repository": "git+https://github.com/webpack/webpack.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 9820697,
+   "deps_count": 19,
+   "types": true,
+   "deprecated": null,
+   "weekly": 56430458
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Parcel",
+  "repo": "parcel-bundler/parcel",
+  "pkg": "parcel",
+  "gh": {
+   "archived": false,
+   "created": "2017-08-07T16:36:47Z",
+   "default_branch": "v2",
+   "desc": "The zero configuration build tool for the web. 📦🚀",
+   "forks": 2287,
+   "issues": 608,
+   "license": "MIT",
+   "pushed": "2026-09-05T03:44:27Z",
+   "stars": 44025
+  },
+  "npm": {
+   "version": "2.16.4",
+   "tags": {
+    "beta": "1.10.0-beta.1",
+    "next": "2.0.0-rc.0",
+    "latest": "2.16.4",
+    "canary": "2.0.0-canary.1873"
+   },
+   "modified": "2026-02-03T00:58:08.680Z",
+   "latest_time": "2026-02-02T03:53:26.053Z",
+   "created": "2013-05-02T18:03:30.433Z",
+   "repository": "git+https://github.com/parcel-bundler/parcel.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 44032,
+   "deps_count": 15,
+   "types": false,
+   "deprecated": null,
+   "weekly": 353927
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Rollup",
+  "repo": "rollup/rollup",
+  "pkg": "rollup",
+  "gh": {
+   "archived": false,
+   "created": "2015-05-14T22:26:28Z",
+   "default_branch": "master",
+   "desc": "Next-generation ES module bundler",
+   "forks": 1771,
+   "issues": 608,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-04T12:53:01Z",
+   "stars": 26308
+  },
+  "npm": {
+   "version": "4.63.1",
+   "tags": {
+    "beta": "4.55.1-0",
+    "latest": "4.63.1"
+   },
+   "modified": "2026-08-28T06:02:29.752Z",
+   "latest_time": "2026-08-28T06:02:29.329Z",
+   "created": "2015-05-14T22:30:38.015Z",
+   "repository": "git+https://github.com/rollup/rollup.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2858394,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 124564577
+  }
+ },
+ {
+  "cat": "17",
+  "name": "tsdown",
+  "repo": "rolldown/tsdown",
+  "pkg": "tsdown",
+  "gh": {
+   "archived": false,
+   "created": "2024-03-08T14:25:35Z",
+   "default_branch": "main",
+   "desc": "The elegant bundler for libraries powered by Rolldown",
+   "forks": 185,
+   "issues": 37,
+   "license": "MIT",
+   "pushed": "2026-09-03T19:17:03Z",
+   "stars": 4251
+  },
+  "npm": {
+   "version": "0.23.0",
+   "tags": {
+    "latest": "0.23.0",
+    "beta": "0.23.0-beta.3",
+    "rc": "0.23.0-rc.1"
+   },
+   "modified": "2026-09-03T17:46:20.440Z",
+   "latest_time": "2026-09-03T17:46:20.147Z",
+   "created": "2023-10-29T17:08:33.115Z",
+   "repository": "git+https://github.com/rolldown/tsdown.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 181713,
+   "deps_count": 14,
+   "types": false,
+   "deprecated": null,
+   "weekly": 5654810
+  }
+ },
+ {
+  "cat": "17",
+  "name": "tsup",
+  "repo": "egoist/tsup",
+  "pkg": "tsup",
+  "gh": {
+   "archived": false,
+   "created": "2020-03-19T16:23:41Z",
+   "default_branch": "main",
+   "desc": "The simplest and fastest way to bundle your TypeScript libraries.",
+   "forks": 273,
+   "issues": 410,
+   "license": "MIT",
+   "pushed": "2026-07-20T03:11:55Z",
+   "stars": 11292
+  },
+  "npm": {
+   "version": "8.5.1",
+   "tags": {
+    "latest": "8.5.1"
+   },
+   "modified": "2025-11-12T21:21:43.186Z",
+   "latest_time": "2025-11-12T21:21:42.746Z",
+   "created": "2020-05-10T06:06:24.304Z",
+   "repository": "git+https://github.com/egoist/tsup.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 389734,
+   "deps_count": 17,
+   "types": true,
+   "deprecated": null,
+   "weekly": 8489374
+  }
+ },
+ {
+  "cat": "17",
+  "name": "SWC",
+  "repo": "swc-project/swc",
+  "pkg": "@swc/core",
+  "gh": {
+   "archived": false,
+   "created": "2017-12-22T11:40:14Z",
+   "default_branch": "main",
+   "desc": "Rust-based platform for the Web",
+   "forks": 1553,
+   "issues": 473,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T17:50:12Z",
+   "stars": 34196
+  },
+  "npm": {
+   "version": "1.16.2",
+   "tags": {
+    "latest": "1.16.2"
+   },
+   "modified": "2026-09-04T19:37:56.582Z",
+   "latest_time": "2026-09-04T19:37:56.220Z",
+   "created": "2019-02-15T00:55:04.943Z",
+   "repository": "git+https://github.com/swc-project/swc.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 133980,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 42968526
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Babel",
+  "repo": "babel/babel",
+  "pkg": "@babel/core",
+  "gh": {
+   "archived": false,
+   "created": "2014-09-28T13:38:23Z",
+   "default_branch": "main",
+   "desc": "🐠 Babel is a compiler for writing next generation JavaScript.",
+   "forks": 6003,
+   "issues": 780,
+   "license": "MIT",
+   "pushed": "2026-09-04T00:12:15Z",
+   "stars": 43991
+  },
+  "npm": {
+   "version": "8.0.1",
+   "tags": {
+    "next": "8.0.0-rc.6",
+    "latest": "8.0.1"
+   },
+   "modified": "2026-07-22T21:40:02.832Z",
+   "latest_time": "2026-06-17T09:44:07.576Z",
+   "created": "2017-10-30T18:36:15.121Z",
+   "repository": "https://github.com/babel/babel.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 544874,
+   "deps_count": 16,
+   "types": false,
+   "deprecated": null,
+   "weekly": 181283982
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Mako (蚂蚁)",
+  "repo": "umijs/mako",
+  "pkg": "@umijs/mako",
+  "gh": {
+   "archived": false,
+   "created": "2023-04-06T04:43:29Z",
+   "default_branch": "next",
+   "desc": "A unified toolchain for web development",
+   "forks": 128,
+   "issues": 96,
+   "license": "MIT",
+   "pushed": "2026-09-04T07:21:52Z",
+   "stars": 2543
+  },
+  "npm": {
+   "version": "0.11.15",
+   "tags": {
+    "next": "0.8.8-rc.1",
+    "canary": "0.9.10-canary.20241218.2",
+    "latest": "0.11.15"
+   },
+   "modified": "2025-11-06T06:12:45.511Z",
+   "latest_time": "2025-11-06T06:12:45.235Z",
+   "created": "2024-05-06T08:07:18.484Z",
+   "repository": "git+ssh://git@github.com/umijs/mako.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 102851,
+   "deps_count": 19,
+   "types": true,
+   "deprecated": null,
+   "weekly": 78505
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Bun (bundler/runtime)",
+  "repo": "oven-sh/bun",
+  "pkg": "bun",
+  "gh": {
+   "archived": false,
+   "created": "2021-04-14T00:48:17Z",
+   "default_branch": "main",
+   "desc": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+   "forks": 5035,
+   "issues": 8713,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T17:55:50Z",
+   "stars": 95889
+  },
+  "npm": {
+   "version": "1.4.2",
+   "tags": {
+    "canary": "1.4.2-canary.20260905.1",
+    "latest": "1.4.2"
+   },
+   "modified": "2026-09-05T14:15:07.710Z",
+   "latest_time": "2026-09-05T06:01:35.854Z",
+   "created": "2013-03-13T21:04:46.269Z",
+   "repository": "git+https://github.com/oven-sh/bun.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 20196,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 3489917
+  }
+ },
+ {
+  "cat": "17",
+  "name": "Vite Plus",
+  "repo": "voidzero-dev/vite-plus",
+  "pkg": "vite-plus",
+  "gh": {
+   "archived": false,
+   "created": "2025-03-06T13:04:32Z",
+   "default_branch": "main",
+   "desc": "Vite+ is the unified toolchain and entry point for web development. It manages your runtime, package manager, and frontend toolchain in one place.",
+   "forks": 256,
+   "issues": 161,
+   "license": "MIT",
+   "pushed": "2026-09-05T17:30:36Z",
+   "stars": 5735
+  },
+  "npm": {
+   "version": "0.3.0",
+   "tags": {
+    "alpha": "0.1.21-alpha.7",
+    "latest": "0.3.0"
+   },
+   "modified": "2026-08-24T04:01:38.670Z",
+   "latest_time": "2026-08-24T04:01:38.288Z",
+   "created": "2022-01-30T04:28:13.847Z",
+   "repository": "git+https://github.com/voidzero-dev/vite-plus.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2118748,
+   "deps_count": 16,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1116874
+  }
+ },
+ {
+  "cat": "17",
+  "name": "unplugin",
+  "repo": "unjs/unplugin",
+  "pkg": "unplugin",
+  "gh": {
+   "archived": false,
+   "created": "2021-07-12T13:41:21Z",
+   "default_branch": "main",
+   "desc": "Unified plugin system for Vite, Rollup, Webpack, esbuild, Rolldown, and more",
+   "forks": 155,
+   "issues": 43,
+   "license": "MIT",
+   "pushed": "2026-07-31T15:12:22Z",
+   "stars": 3606
+  },
+  "npm": {
+   "version": "3.3.0",
+   "tags": {
+    "beta": "3.0.0-beta.3",
+    "latest": "3.3.0"
+   },
+   "modified": "2026-06-29T05:20:57.388Z",
+   "latest_time": "2026-06-29T05:20:57.069Z",
+   "created": "2021-07-13T16:14:46.104Z",
+   "repository": "git+https://github.com/unjs/unplugin.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 79903,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 60724081
+  }
+ },
+ {
+  "cat": "18",
+  "name": "pnpm",
+  "repo": "pnpm/pnpm",
+  "pkg": "pnpm",
+  "gh": {
+   "archived": false,
+   "created": "2016-01-28T07:40:43Z",
+   "default_branch": "main",
+   "desc": "Fast, disk space efficient package manager",
+   "forks": 1693,
+   "issues": 2549,
+   "license": "MIT",
+   "pushed": "2026-09-05T17:23:53Z",
+   "stars": 36423
+  },
+  "npm": {
+   "version": "12.3.4",
+   "tags": {
+    "latest": "12.3.4"
+   },
+   "modified": "2026-09-05T17:25:23.441Z",
+   "latest_time": "2026-09-04T14:20:10.390Z",
+   "created": "2013-03-08T23:25:56.611Z",
+   "repository": "https://github.com/pnpm/pnpm",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3910961,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 177649226
+  }
+ },
+ {
+  "cat": "18",
+  "name": "npm CLI",
+  "repo": "npm/cli",
+  "pkg": "npm",
+  "gh": {
+   "archived": false,
+   "created": "2018-07-05T23:26:52Z",
+   "default_branch": "latest",
+   "desc": "the package manager for JavaScript",
+   "forks": 4691,
+   "issues": 733,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-03T22:32:30Z",
+   "stars": 10094
+  },
+  "npm": {
+   "version": "12.0.2",
+   "tags": {
+    "latest": "12.0.2"
+   },
+   "modified": "2026-09-04T07:46:26.149Z",
+   "latest_time": "2026-07-29T21:06:31.421Z",
+   "created": "2013-07-12T18:32:48.902Z",
+   "repository": "git+https://github.com/npm/cli.git",
+   "license": "Artistic-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 12362712,
+   "deps_count": 68,
+   "types": false,
+   "deprecated": null,
+   "weekly": 15603849
+  }
+ },
+ {
+  "cat": "18",
+  "name": "Yarn Berry",
+  "repo": "yarnpkg/berry",
+  "pkg": "@yarnpkg/cli",
+  "gh": {
+   "archived": false,
+   "created": "2018-09-10T22:49:22Z",
+   "default_branch": "master",
+   "desc": "📦🐈 Active development trunk for Yarn ⚒",
+   "forks": 1321,
+   "issues": 976,
+   "license": "BSD-2-Clause",
+   "pushed": "2026-08-04T14:08:22Z",
+   "stars": 8103
+  },
+  "npm": {
+   "version": "4.18.0",
+   "tags": {
+    "latest": "4.18.0"
+   },
+   "modified": "2026-07-29T09:30:13.789Z",
+   "latest_time": "2026-07-29T09:30:13.182Z",
+   "created": "2019-09-05T15:50:21.279Z",
+   "repository": "git+https://github.com/yarnpkg/berry.git",
+   "license": "BSD-2-Clause",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 20597,
+   "deps_count": 35,
+   "types": false,
+   "deprecated": null,
+   "weekly": 75321
+  }
+ },
+ {
+  "cat": "18",
+  "name": "Turborepo",
+  "repo": "vercel/turborepo",
+  "pkg": "turbo",
+  "gh": {
+   "archived": false,
+   "created": "2021-10-05T17:37:11Z",
+   "default_branch": "main",
+   "desc": "Build system optimized for JavaScript and TypeScript, written in Rust",
+   "forks": 2436,
+   "issues": 17,
+   "license": "MIT",
+   "pushed": "2026-09-05T03:49:40Z",
+   "stars": 31061
+  },
+  "npm": {
+   "version": "2.10.12",
+   "tags": {
+    "next": "0.9.0-next.22",
+    "canary": "2.10.13-canary.1",
+    "latest": "2.10.12"
+   },
+   "modified": "2026-08-26T22:40:11.343Z",
+   "latest_time": "2026-08-25T18:38:19.112Z",
+   "created": "2013-05-06T20:41:30.178Z",
+   "repository": "git+https://github.com/vercel/turborepo.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 57866,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 23499416
+  }
+ },
+ {
+  "cat": "18",
+  "name": "Nx",
+  "repo": "nrwl/nx",
+  "pkg": "nx",
+  "gh": {
+   "archived": false,
+   "created": "2017-08-11T18:50:23Z",
+   "default_branch": "master",
+   "desc": "The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your builds, scales your CI, and fixes failed PRs automatically. Ship in half the time.",
+   "forks": 3009,
+   "issues": 439,
+   "license": "MIT",
+   "pushed": "2026-09-05T05:49:40Z",
+   "stars": 29309
+  },
+  "npm": {
+   "version": "23.2.0",
+   "tags": {
+    "canary": "23.2.0-canary.20260902-6e38e5e",
+    "next": "23.2.0-rc.2",
+    "latest": "23.2.0"
+   },
+   "modified": "2026-09-02T20:28:27.671Z",
+   "latest_time": "2026-09-02T15:40:28.587Z",
+   "created": "2011-08-08T05:06:23.816Z",
+   "repository": "https://github.com/nrwl/nx.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 18282574,
+   "deps_count": 124,
+   "types": false,
+   "deprecated": null,
+   "weekly": 10629857
+  }
+ },
+ {
+  "cat": "18",
+  "name": "Lerna",
+  "repo": "lerna/lerna",
+  "pkg": "lerna",
+  "gh": {
+   "archived": false,
+   "created": "2015-12-04T09:36:55Z",
+   "default_branch": "main",
+   "desc": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
+   "forks": 2264,
+   "issues": 293,
+   "license": "MIT",
+   "pushed": "2026-09-03T00:14:12Z",
+   "stars": 36055
+  },
+  "npm": {
+   "version": "10.0.1",
+   "tags": {
+    "latest": "10.0.1",
+    "next": "10.0.1"
+   },
+   "modified": "2026-08-19T13:42:12.902Z",
+   "latest_time": "2026-08-19T13:39:34.974Z",
+   "created": "2015-12-04T12:25:28.376Z",
+   "repository": "git+https://github.com/lerna/lerna.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 608483,
+   "deps_count": 49,
+   "types": false,
+   "deprecated": null,
+   "weekly": 1932634
+  }
+ },
+ {
+  "cat": "18",
+  "name": "moon",
+  "repo": "moonrepo/moon",
+  "pkg": "@moonrepo/cli",
+  "gh": {
+   "archived": false,
+   "created": "2021-10-23T18:18:15Z",
+   "default_branch": "master",
+   "desc": "A build system and monorepo management tool for the web ecosystem, written in Rust.",
+   "forks": 247,
+   "issues": 97,
+   "license": "MIT",
+   "pushed": "2026-09-04T21:09:24Z",
+   "stars": 4089
+  },
+  "npm": {
+   "version": "2.5.4",
+   "tags": {
+    "canary": "2.0.0-canary.202512052107",
+    "next": "2.0.0-rc.5",
+    "latest": "2.5.4"
+   },
+   "modified": "2026-09-03T19:28:40.362Z",
+   "latest_time": "2026-09-03T19:28:39.993Z",
+   "created": "2022-04-14T06:14:11.051Z",
+   "repository": "git+https://github.com/moonrepo/moon.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 8381,
+   "deps_count": 1,
+   "types": false,
+   "deprecated": null,
+   "weekly": 265598
+  }
+ },
+ {
+  "cat": "18",
+  "name": "Changesets",
+  "repo": "changesets/changesets",
+  "pkg": "@changesets/cli",
+  "gh": {
+   "archived": false,
+   "created": "2019-03-21T22:33:37Z",
+   "default_branch": "main",
+   "desc": "🦋 A tool to manage versioning and changelogs with a focus on monorepos",
+   "forks": 824,
+   "issues": 256,
+   "license": "MIT",
+   "pushed": "2026-09-04T07:46:25Z",
+   "stars": 12367
+  },
+  "npm": {
+   "version": "3.0.2",
+   "tags": {
+    "next": "3.0.0-next.12",
+    "latest": "3.0.2"
+   },
+   "modified": "2026-09-04T07:47:32.985Z",
+   "latest_time": "2026-09-04T07:47:32.603Z",
+   "created": "2019-05-06T04:06:11.978Z",
+   "repository": "git+https://github.com/changesets/changesets.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 87871,
+   "deps_count": 21,
+   "types": false,
+   "deprecated": null,
+   "weekly": 4679322
+  }
+ },
+ {
+  "cat": "18",
+  "name": "syncpack",
+  "repo": "JamieMason/syncpack",
+  "pkg": "syncpack",
+  "gh": {
+   "archived": false,
+   "created": "2017-08-17T16:58:10Z",
+   "default_branch": "main",
+   "desc": "Consistent dependency versions in large JavaScript Monorepos.",
+   "forks": 73,
+   "issues": 19,
+   "license": "MIT",
+   "pushed": "2026-08-09T11:17:09Z",
+   "stars": 2092
+  },
+  "npm": {
+   "version": "15.3.3",
+   "tags": {
+    "canary": "14.0.0-canary.1",
+    "alpha": "14.0.0-alpha.41",
+    "latest": "15.3.3"
+   },
+   "modified": "2026-08-09T11:31:55.903Z",
+   "latest_time": "2026-08-09T11:31:55.421Z",
+   "created": "2014-09-20T14:55:12.431Z",
+   "repository": "git+https://github.com/JamieMason/syncpack.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 68563,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2482051
+  }
+ },
+ {
+  "cat": "18",
+  "name": "Verdaccio",
+  "repo": "verdaccio/verdaccio",
+  "pkg": "verdaccio",
+  "gh": {
+   "archived": false,
+   "created": "2016-04-15T16:21:12Z",
+   "default_branch": "master",
+   "desc": "A lightweight Node.js private proxy registry",
+   "forks": 1474,
+   "issues": 39,
+   "license": "MIT",
+   "pushed": "2026-09-05T08:20:32Z",
+   "stars": 17863
+  },
+  "npm": {
+   "version": "6.10.2",
+   "tags": {
+    "latest": "6.10.2"
+   },
+   "modified": "2026-09-04T21:03:47.329Z",
+   "latest_time": "2026-09-02T20:52:15.026Z",
+   "created": "2016-07-28T12:48:43.536Z",
+   "repository": "git://github.com/verdaccio/verdaccio.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1050294,
+   "deps_count": 30,
+   "types": true,
+   "deprecated": null,
+   "weekly": 668366
+  }
+ },
+ {
+  "cat": "18",
+  "name": "Deno",
+  "repo": "denoland/deno",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2018-05-15T01:34:26Z",
+   "default_branch": "main",
+   "desc": "A modern runtime for JavaScript and TypeScript.",
+   "forks": 6372,
+   "issues": 1545,
+   "license": "MIT",
+   "pushed": "2026-09-04T18:13:25Z",
+   "stars": 108381
+  },
+  "npm": null
+ },
+ {
+  "cat": "18",
+  "name": "Volta",
+  "repo": "volta-cli/volta",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2017-09-25T20:06:43Z",
+   "default_branch": "main",
+   "desc": "Volta: JS Toolchains as Code. ⚡",
+   "forks": 335,
+   "issues": 341,
+   "license": "NOASSERTION",
+   "pushed": "2025-11-15T16:00:15Z",
+   "stars": 13056
+  },
+  "npm": null
+ },
+ {
+  "cat": "18",
+  "name": "fnm",
+  "repo": "Schniz/fnm",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2019-01-16T13:32:14Z",
+   "default_branch": "master",
+   "desc": "🚀 Fast and simple Node.js version manager, built in Rust",
+   "forks": 640,
+   "issues": 242,
+   "license": "GPL-3.0",
+   "pushed": "2026-07-24T14:28:38Z",
+   "stars": 26789
+  },
+  "npm": null
+ },
+ {
+  "cat": "18",
+  "name": "corepack",
+  "repo": "nodejs/corepack",
+  "pkg": "corepack",
+  "gh": {
+   "archived": false,
+   "created": "2020-03-12T15:14:09Z",
+   "default_branch": "main",
+   "desc": "Package manager version manager for Node.js projects",
+   "forks": 277,
+   "issues": 141,
+   "license": "MIT",
+   "pushed": "2026-09-04T00:51:57Z",
+   "stars": 3799
+  },
+  "npm": {
+   "version": "0.36.0",
+   "tags": {
+    "latest": "0.36.0"
+   },
+   "modified": "2026-08-28T13:57:04.032Z",
+   "latest_time": "2026-08-28T13:57:03.715Z",
+   "created": "2020-09-26T12:03:40.553Z",
+   "repository": "https://github.com/nodejs/corepack.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 607299,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 5188564
+  }
+ },
+ {
+  "cat": "18",
+  "name": "publint",
+  "repo": "publint/publint",
+  "pkg": "publint",
+  "gh": {
+   "archived": false,
+   "created": "2022-02-21T06:20:06Z",
+   "default_branch": "master",
+   "desc": "Lint packaging errors",
+   "forks": 39,
+   "issues": 21,
+   "license": "MIT",
+   "pushed": "2026-09-02T03:47:24Z",
+   "stars": 1297
+  },
+  "npm": {
+   "version": "0.3.24",
+   "tags": {
+    "latest": "0.3.24"
+   },
+   "modified": "2026-08-19T06:40:11.785Z",
+   "latest_time": "2026-08-19T06:40:11.452Z",
+   "created": "2022-05-01T13:06:08.498Z",
+   "repository": "git+https://github.com/publint/publint.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 117261,
+   "deps_count": 4,
+   "types": false,
+   "deprecated": null,
+   "weekly": 1258992
+  }
+ },
+ {
+  "cat": "18",
+  "name": "are-the-types-wrong",
+  "repo": "arethetypeswrong/arethetypeswrong.github.io",
+  "pkg": "@arethetypeswrong/cli",
+  "gh": {
+   "archived": false,
+   "created": "2023-01-27T01:41:58Z",
+   "default_branch": "main",
+   "desc": "Tool for analyzing TypeScript types of npm packages",
+   "forks": 65,
+   "issues": 34,
+   "license": "MIT",
+   "pushed": "2026-07-09T22:22:35Z",
+   "stars": 1600
+  },
+  "npm": {
+   "version": "0.18.5",
+   "tags": {
+    "latest": "0.18.5"
+   },
+   "modified": "2026-07-09T22:24:30.519Z",
+   "latest_time": "2026-07-09T22:24:30.256Z",
+   "created": "2023-06-04T19:52:18.211Z",
+   "repository": "https://github.com/arethetypeswrong/arethetypeswrong.github.io.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 59387,
+   "deps_count": 7,
+   "types": false,
+   "deprecated": null,
+   "weekly": 629771
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Lit",
+  "repo": "lit/lit",
+  "pkg": "lit",
+  "gh": {
+   "archived": false,
+   "created": "2017-06-29T16:27:16Z",
+   "default_branch": "main",
+   "desc": "Lit is a simple library for building fast, lightweight web components.",
+   "forks": 1095,
+   "issues": 719,
+   "license": "BSD-3-Clause",
+   "pushed": "2026-09-03T18:29:00Z",
+   "stars": 21806
+  },
+  "npm": {
+   "version": "3.3.3",
+   "tags": {
+    "next": "2.3.0-next.1",
+    "latest": "3.3.3"
+   },
+   "modified": "2026-05-14T03:55:58.367Z",
+   "latest_time": "2026-05-14T03:55:58.007Z",
+   "created": "2012-07-04T20:56:00.044Z",
+   "repository": "git+https://github.com/lit/lit.git",
+   "license": "BSD-3-Clause",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 106390,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 7389236
+  }
+ },
+ {
+  "cat": "19",
+  "name": "@lit/react",
+  "repo": null,
+  "pkg": "@lit/react",
+  "gh": null,
+  "npm": {
+   "version": "1.0.8",
+   "tags": {
+    "latest": "1.0.8"
+   },
+   "modified": "2025-07-11T03:36:50.514Z",
+   "latest_time": "2025-07-11T03:36:49.981Z",
+   "created": "2023-09-29T00:05:14.053Z",
+   "repository": "git+https://github.com/lit/lit.git",
+   "license": "BSD-3-Clause",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 149010,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3670312
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Stencil",
+  "repo": "stenciljs/core",
+  "pkg": "@stencil/core",
+  "gh": {
+   "archived": false,
+   "created": "2017-02-15T18:57:07Z",
+   "default_branch": "main",
+   "desc": "A toolchain for building scalable, enterprise-ready component systems on top of TypeScript and Web Component standards. Stencil components can be distributed natively to React, Angular, Vue, (+ more) and traditional web applications from a single, framework-agnostic codebase.",
+   "forks": 853,
+   "issues": 178,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T08:15:25Z",
+   "stars": 13128
+  },
+  "npm": {
+   "version": "4.44.2",
+   "tags": {
+    "next": "2.19.2-0",
+    "alpha": "5.0.0-alpha.35",
+    "latest": "4.44.2",
+    "beta": "5.0.0-beta.3"
+   },
+   "modified": "2026-09-05T08:18:02.436Z",
+   "latest_time": "2026-08-26T16:40:47.695Z",
+   "created": "2017-07-06T20:23:20.664Z",
+   "repository": "git+https://github.com/stenciljs/core.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 23083929,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1364690
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Web Awesome / Shoelace",
+  "repo": "shoelace-style/webawesome",
+  "pkg": "@awesome.me/webawesome",
+  "gh": {
+   "archived": false,
+   "created": "2023-08-30T15:16:40Z",
+   "default_branch": "next",
+   "desc": "Build better with Web Awesome, the open source library of web components from Font Awesome. Upgrade to Pro and ship websites faster!",
+   "forks": 189,
+   "issues": 48,
+   "license": "MIT",
+   "pushed": "2026-09-03T17:09:47Z",
+   "stars": 1305
+  },
+  "npm": {
+   "version": "3.12.0",
+   "tags": {
+    "latest": "3.12.0"
+   },
+   "modified": "2026-08-21T17:10:15.275Z",
+   "latest_time": "2026-08-21T17:10:15.087Z",
+   "created": "2025-06-30T19:34:05.106Z",
+   "repository": "git+https://github.com/shoelace-style/webawesome.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 16303496,
+   "deps_count": 13,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2314281
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Shoelace (legacy pkg)",
+  "repo": "shoelace-style/shoelace",
+  "pkg": "@shoelace-style/shoelace",
+  "gh": {
+   "archived": true,
+   "created": "2017-07-25T18:49:44Z",
+   "default_branch": "next",
+   "desc": "Shoelace is now Web Awesome. Come see what’s new!",
+   "forks": 915,
+   "issues": 105,
+   "license": "MIT",
+   "pushed": "2026-05-14T13:39:51Z",
+   "stars": 13844
+  },
+  "npm": {
+   "version": "2.20.1",
+   "tags": {
+    "latest": "2.20.1"
+   },
+   "modified": "2025-03-11T18:38:36.958Z",
+   "latest_time": "2025-03-11T18:38:36.759Z",
+   "created": "2020-07-15T13:19:27.175Z",
+   "repository": "git+https://github.com/shoelace-style/shoelace.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 8350254,
+   "deps_count": 8,
+   "types": true,
+   "deprecated": null,
+   "weekly": 144353
+  }
+ },
+ {
+  "cat": "19",
+  "name": "FAST (Microsoft)",
+  "repo": "microsoft/fast",
+  "pkg": "@microsoft/fast-element",
+  "gh": {
+   "archived": false,
+   "created": "2018-03-02T20:10:30Z",
+   "default_branch": "main",
+   "desc": "The adaptive interface system for modern web experiences.",
+   "forks": 635,
+   "issues": 82,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-03T22:05:16Z",
+   "stars": 9670
+  },
+  "npm": {
+   "version": "3.0.2",
+   "tags": {
+    "beta": "2.0.0-beta.26",
+    "rc": "3.0.0-rc.3",
+    "latest": "3.0.2"
+   },
+   "modified": "2026-07-29T21:28:41.359Z",
+   "latest_time": "2026-07-29T21:28:41.172Z",
+   "created": "2020-04-17T05:18:33.486Z",
+   "repository": "git+https://github.com/Microsoft/fast.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3309788,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 260616
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Preact",
+  "repo": "preactjs/preact",
+  "pkg": "preact",
+  "gh": {
+   "archived": false,
+   "created": "2015-09-11T02:40:18Z",
+   "default_branch": "main",
+   "desc": "⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM.",
+   "forks": 2052,
+   "issues": 42,
+   "license": "MIT",
+   "pushed": "2026-09-05T11:42:43Z",
+   "stars": 38851
+  },
+  "npm": {
+   "version": "10.29.8",
+   "tags": {
+    "beta": "11.0.0-beta.2",
+    "latest": "10.29.8",
+    "rc": "11.0.0-rc.1"
+   },
+   "modified": "2026-08-26T07:55:56.519Z",
+   "latest_time": "2026-08-01T09:59:54.572Z",
+   "created": "2015-09-11T02:41:33.521Z",
+   "repository": "git+https://github.com/preactjs/preact.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1561257,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 31757316
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Solid",
+  "repo": "solidjs/solid",
+  "pkg": "solid-js",
+  "gh": {
+   "archived": false,
+   "created": "2018-04-24T16:36:27Z",
+   "default_branch": "main",
+   "desc": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+   "forks": 1104,
+   "issues": 31,
+   "license": "MIT",
+   "pushed": "2026-09-05T09:31:01Z",
+   "stars": 35961
+  },
+  "npm": {
+   "version": "1.9.15",
+   "tags": {
+    "beta": "1.10.0-beta.0",
+    "latest": "1.9.15",
+    "next": "2.0.0-rc.6"
+   },
+   "modified": "2026-09-02T19:57:57.729Z",
+   "latest_time": "2026-08-17T21:00:47.070Z",
+   "created": "2018-04-25T04:09:31.206Z",
+   "repository": "git+https://github.com/solidjs/solid.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1073001,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 4001440
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Svelte",
+  "repo": "sveltejs/svelte",
+  "pkg": "svelte",
+  "gh": {
+   "archived": false,
+   "created": "2016-11-20T18:13:05Z",
+   "default_branch": "main",
+   "desc": "web development for the rest of us",
+   "forks": 5236,
+   "issues": 1053,
+   "license": "MIT",
+   "pushed": "2026-09-05T14:58:49Z",
+   "stars": 88040
+  },
+  "npm": {
+   "version": "5.57.0",
+   "tags": {
+    "next": "5.0.0-next.272",
+    "latest": "5.57.0"
+   },
+   "modified": "2026-08-28T23:33:45.348Z",
+   "latest_time": "2026-08-28T23:33:45.038Z",
+   "created": "2016-11-17T22:58:41.644Z",
+   "repository": "git+https://github.com/sveltejs/svelte.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2917706,
+   "deps_count": 15,
+   "types": true,
+   "deprecated": null,
+   "weekly": 5841239
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Vue",
+  "repo": "vuejs/core",
+  "pkg": "vue",
+  "gh": {
+   "archived": false,
+   "created": "2018-06-12T13:49:36Z",
+   "default_branch": "main",
+   "desc": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+   "forks": 9188,
+   "issues": 906,
+   "license": "MIT",
+   "pushed": "2026-09-05T15:00:11Z",
+   "stars": 54302
+  },
+  "npm": {
+   "version": "3.5.42",
+   "tags": {
+    "alpha": "3.6.0-alpha.7",
+    "beta": "3.6.0-beta.17",
+    "latest": "3.5.42",
+    "rc": "3.6.0-rc.7"
+   },
+   "modified": "2026-09-04T07:45:21.864Z",
+   "latest_time": "2026-08-27T05:52:49.138Z",
+   "created": "2013-12-07T06:09:46.299Z",
+   "repository": "git+https://github.com/vuejs/core.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2542330,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 15608415
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Qwik",
+  "repo": "QwikDev/qwik",
+  "pkg": "@builder.io/qwik",
+  "gh": {
+   "archived": false,
+   "created": "2021-05-19T15:33:32Z",
+   "default_branch": "main",
+   "desc": "Instant-loading web apps, without effort",
+   "forks": 1401,
+   "issues": 124,
+   "license": "MIT",
+   "pushed": "2026-09-04T21:02:36Z",
+   "stars": 22056
+  },
+  "npm": {
+   "version": "1.20.0",
+   "tags": {
+    "next": "0.9.0",
+    "latest": "1.20.0"
+   },
+   "modified": "2026-06-11T14:12:18.854Z",
+   "latest_time": "2026-05-22T08:21:52.179Z",
+   "created": "2021-06-01T16:09:32.545Z",
+   "repository": "git+https://github.com/QwikDev/qwik.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 20517535,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 47667
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Angular",
+  "repo": "angular/angular",
+  "pkg": "@angular/core",
+  "gh": {
+   "archived": false,
+   "created": "2014-09-18T16:12:01Z",
+   "default_branch": "main",
+   "desc": "Deliver web apps with confidence 🚀",
+   "forks": 27443,
+   "issues": 1145,
+   "license": "MIT",
+   "pushed": "2026-09-04T16:02:07Z",
+   "stars": 101009
+  },
+  "npm": {
+   "version": "22.1.5",
+   "tags": {
+    "next": "22.2.0-next.5",
+    "latest": "22.1.5"
+   },
+   "modified": "2026-09-03T02:43:34.023Z",
+   "latest_time": "2026-09-03T02:38:10.833Z",
+   "created": "2016-04-28T04:23:30.108Z",
+   "repository": "git+https://github.com/angular/angular.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 6958592,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 6047933
+  }
+ },
+ {
+  "cat": "19",
+  "name": "HTMX",
+  "repo": "bigskysoftware/htmx",
+  "pkg": "htmx.org",
+  "gh": {
+   "archived": false,
+   "created": "2020-04-13T16:17:51Z",
+   "default_branch": "master",
+   "desc": "</> htmx - high power tools for HTML",
+   "forks": 1653,
+   "issues": 705,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-04T04:06:21Z",
+   "stars": 49351
+  },
+  "npm": {
+   "version": "2.0.10",
+   "tags": {
+    "latest": "2.0.10",
+    "next": "4.0.0"
+   },
+   "modified": "2026-08-28T12:56:49.329Z",
+   "latest_time": "2026-04-21T16:29:49.584Z",
+   "created": "2020-05-02T19:46:02.897Z",
+   "repository": "git+https://github.com/bigskysoftware/htmx.git",
+   "license": "0BSD",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 883941,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 252453
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Alpine.js",
+  "repo": "alpinejs/alpine",
+  "pkg": "alpinejs",
+  "gh": {
+   "archived": false,
+   "created": "2019-11-28T13:51:55Z",
+   "default_branch": "main",
+   "desc": "A rugged, minimal framework for composing JavaScript behavior in your markup. ",
+   "forks": 1387,
+   "issues": 4,
+   "license": "MIT",
+   "pushed": "2026-09-04T20:53:09Z",
+   "stars": 31905
+  },
+  "npm": {
+   "version": "3.17.1",
+   "tags": {
+    "latest": "3.17.1"
+   },
+   "modified": "2026-08-31T12:39:08.104Z",
+   "latest_time": "2026-08-31T12:39:07.716Z",
+   "created": "2019-12-18T20:28:47.804Z",
+   "repository": "git+https://github.com/alpinejs/alpine.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 688665,
+   "deps_count": 1,
+   "types": false,
+   "deprecated": null,
+   "weekly": 737316
+  }
+ },
+ {
+  "cat": "19",
+  "name": "Astro (对照, 已在 §12)",
+  "repo": "withastro/astro",
+  "pkg": "astro",
+  "gh": {
+   "archived": false,
+   "created": "2021-03-15T17:19:47Z",
+   "default_branch": "main",
+   "desc": "The web framework for content-driven websites. ⭐️ Star to support our work!",
+   "forks": 3773,
+   "issues": 98,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T16:53:22Z",
+   "stars": 62322
+  },
+  "npm": {
+   "version": "7.3.1",
+   "tags": {
+    "rc": "3.0.0-rc.11",
+    "alpha": "7.0.0-alpha.2",
+    "beta": "7.0.0-beta.6",
+    "latest": "7.3.1"
+   },
+   "modified": "2026-09-03T13:29:46.380Z",
+   "latest_time": "2026-09-03T13:29:45.970Z",
+   "created": "2021-03-13T14:19:42.582Z",
+   "repository": "git+https://github.com/withastro/astro.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3027238,
+   "deps_count": 53,
+   "types": false,
+   "deprecated": null,
+   "weekly": 5097604
+  }
+ },
+ {
+  "cat": "20",
+  "name": "three.js",
+  "repo": "mrdoob/three.js",
+  "pkg": "three",
+  "gh": {
+   "archived": false,
+   "created": "2010-03-23T18:58:01Z",
+   "default_branch": "dev",
+   "desc": "JavaScript 3D Library.",
+   "forks": 36528,
+   "issues": 380,
+   "license": "MIT",
+   "pushed": "2026-09-05T13:51:12Z",
+   "stars": 115151
+  },
+  "npm": {
+   "version": "0.185.1",
+   "tags": {
+    "latest": "0.185.1"
+   },
+   "modified": "2026-07-01T14:04:30.525Z",
+   "latest_time": "2026-07-01T14:04:30.373Z",
+   "created": "2012-12-07T19:51:25.349Z",
+   "repository": "git+https://github.com/mrdoob/three.js.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 23172772,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 15193062
+  }
+ },
+ {
+  "cat": "20",
+  "name": "React Three Fiber",
+  "repo": "pmndrs/react-three-fiber",
+  "pkg": "@react-three/fiber",
+  "gh": {
+   "archived": false,
+   "created": "2019-02-25T14:31:51Z",
+   "default_branch": "master",
+   "desc": "🇨🇭 A React renderer for Three.js",
+   "forks": 1955,
+   "issues": 69,
+   "license": "MIT",
+   "pushed": "2026-09-04T17:11:56Z",
+   "stars": 32112
+  },
+  "npm": {
+   "version": "9.7.0",
+   "tags": {
+    "beta": "9.0.0-beta.1",
+    "rc": "9.0.0-rc.10",
+    "latest": "9.7.0",
+    "alpha": "10.0.0-alpha.4",
+    "canary": "10.0.0-canary.c385e9f"
+   },
+   "modified": "2026-09-04T17:14:58.441Z",
+   "latest_time": "2026-07-31T16:20:20.712Z",
+   "created": "2021-01-23T12:41:54.611Z",
+   "repository": "git+https://github.com/pmndrs/react-three-fiber.git",
+   "license": "MIT",
+   "peer_react": ">=19 <19.3",
+   "peer_tailwind": null,
+   "unpacked": 2188429,
+   "deps_count": 10,
+   "types": true,
+   "deprecated": null,
+   "weekly": 5129998
+  }
+ },
+ {
+  "cat": "20",
+  "name": "drei",
+  "repo": "pmndrs/drei",
+  "pkg": "@react-three/drei",
+  "gh": {
+   "archived": false,
+   "created": "2020-04-26T19:38:41Z",
+   "default_branch": "master",
+   "desc": "🥉 useful helpers for react-three-fiber",
+   "forks": 836,
+   "issues": 139,
+   "license": "MIT",
+   "pushed": "2026-09-05T13:19:39Z",
+   "stars": 9843
+  },
+  "npm": {
+   "version": "10.7.8",
+   "tags": {
+    "beta": "9.0.0-beta.6",
+    "canary": "9.121.2-canary-test01.1",
+    "rc": "10.0.0-rc.3",
+    "latest": "10.7.8",
+    "alpha": "11.0.0-alpha.7"
+   },
+   "modified": "2026-09-05T13:21:21.130Z",
+   "latest_time": "2026-08-05T14:57:28.145Z",
+   "created": "2020-09-26T13:44:36.002Z",
+   "repository": "git+https://github.com/pmndrs/drei.git",
+   "license": "MIT",
+   "peer_react": "^19",
+   "peer_tailwind": null,
+   "unpacked": 1750973,
+   "deps_count": 21,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3902005
+  }
+ },
+ {
+  "cat": "20",
+  "name": "Babylon.js",
+  "repo": "BabylonJS/Babylon.js",
+  "pkg": "@babylonjs/core",
+  "gh": {
+   "archived": false,
+   "created": "2013-06-27T20:40:42Z",
+   "default_branch": "master",
+   "desc": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.",
+   "forks": 3683,
+   "issues": 20,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-04T19:36:50Z",
+   "stars": 26025
+  },
+  "npm": {
+   "version": "9.25.0",
+   "tags": {
+    "alpha": "6.34.0-alpha.0",
+    "latest": "9.25.0"
+   },
+   "modified": "2026-09-03T19:32:56.165Z",
+   "latest_time": "2026-09-03T16:44:03.079Z",
+   "created": "2019-01-11T00:24:13.041Z",
+   "repository": "git+https://github.com/BabylonJS/Babylon.js.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 70231489,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 339283
+  }
+ },
+ {
+  "cat": "20",
+  "name": "PixiJS",
+  "repo": "pixijs/pixijs",
+  "pkg": "pixi.js",
+  "gh": {
+   "archived": false,
+   "created": "2013-01-21T22:40:50Z",
+   "default_branch": "dev",
+   "desc": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
+   "forks": 5066,
+   "issues": 353,
+   "license": "MIT",
+   "pushed": "2026-09-04T08:40:15Z",
+   "stars": 48120
+  },
+  "npm": {
+   "version": "8.20.1",
+   "tags": {
+    "latest": "8.20.1"
+   },
+   "modified": "2026-09-03T18:19:33.352Z",
+   "latest_time": "2026-08-26T15:11:35.469Z",
+   "created": "2014-01-05T17:39:21.005Z",
+   "repository": "git+https://github.com/pixijs/pixijs.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 74268374,
+   "deps_count": 10,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1057119
+  }
+ },
+ {
+  "cat": "20",
+  "name": "@pixi/react",
+  "repo": "pixijs/pixi-react",
+  "pkg": "@pixi/react",
+  "gh": {
+   "archived": false,
+   "created": "2018-03-17T14:29:23Z",
+   "default_branch": "main",
+   "desc": "Write PIXI apps using React declarative style",
+   "forks": 206,
+   "issues": 44,
+   "license": "MIT",
+   "pushed": "2026-01-16T14:13:41Z",
+   "stars": 2882
+  },
+  "npm": {
+   "version": "8.0.5",
+   "tags": {
+    "beta": "8.0.0-beta.25",
+    "alpha": "8.1.0-alpha.1",
+    "latest": "8.0.5"
+   },
+   "modified": "2025-12-01T17:58:55.447Z",
+   "latest_time": "2025-12-01T17:58:55.156Z",
+   "created": "2023-01-24T17:35:33.272Z",
+   "repository": "git+https://github.com/pixijs/pixi-react.git",
+   "license": "MIT",
+   "peer_react": ">=19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 10519510,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 86954
+  }
+ },
+ {
+  "cat": "20",
+  "name": "Konva",
+  "repo": "konvajs/konva",
+  "pkg": "konva",
+  "gh": {
+   "archived": false,
+   "created": "2015-01-09T10:14:35Z",
+   "default_branch": "master",
+   "desc": "Konva.js is an HTML5 Canvas JavaScript framework for interactive graphics, design editors, whiteboards, and diagrams. Scene graph with events, drag and drop, transforms, animations, and export.",
+   "forks": 1065,
+   "issues": 0,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-04T16:58:23Z",
+   "stars": 14757
+  },
+  "npm": {
+   "version": "10.3.3",
+   "tags": {
+    "next": "10.0.0-1",
+    "latest": "10.3.3"
+   },
+   "modified": "2026-09-04T17:06:37.976Z",
+   "latest_time": "2026-09-04T17:06:37.815Z",
+   "created": "2015-01-27T08:47:44.192Z",
+   "repository": "git://github.com/konvajs/konva.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1515394,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2835653
+  }
+ },
+ {
+  "cat": "20",
+  "name": "react-konva",
+  "repo": "konvajs/react-konva",
+  "pkg": "react-konva",
+  "gh": {
+   "archived": false,
+   "created": "2016-01-03T08:14:17Z",
+   "default_branch": "master",
+   "desc": "React components for the Konva 2d canvas library. Build interactive graphics, design editors, and whiteboards with JSX.",
+   "forks": 293,
+   "issues": 0,
+   "license": "MIT",
+   "pushed": "2026-09-04T17:11:07Z",
+   "stars": 6408
+  },
+  "npm": {
+   "version": "19.2.6",
+   "tags": {
+    "beta": "19.0.0-1",
+    "next": "19.2.0-3",
+    "latest": "19.2.6"
+   },
+   "modified": "2026-09-04T17:11:58.375Z",
+   "latest_time": "2026-09-04T17:11:58.230Z",
+   "created": "2015-04-22T07:16:37.132Z",
+   "repository": "git+ssh://git@github.com/konvajs/react-konva.git",
+   "license": "MIT",
+   "peer_react": "^19.2.0",
+   "peer_tailwind": null,
+   "unpacked": 76820,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2235562
+  }
+ },
+ {
+  "cat": "20",
+  "name": "Fabric.js",
+  "repo": "fabricjs/fabric.js",
+  "pkg": "fabric",
+  "gh": {
+   "archived": false,
+   "created": "2010-06-09T22:24:38Z",
+   "default_branch": "master",
+   "desc": "Javascript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser",
+   "forks": 3625,
+   "issues": 469,
+   "license": "MIT",
+   "pushed": "2026-08-18T17:25:50Z",
+   "stars": 31420
+  },
+  "npm": {
+   "version": "7.4.0",
+   "tags": {
+    "beta": "7.0.0-rc1",
+    "latest": "7.4.0"
+   },
+   "modified": "2026-05-18T18:36:25.647Z",
+   "latest_time": "2026-05-18T18:36:25.365Z",
+   "created": "2011-08-16T20:17:15.294Z",
+   "repository": "git+https://github.com/fabricjs/fabric.js.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 22222881,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 959499
+  }
+ },
+ {
+  "cat": "20",
+  "name": "Phaser",
+  "repo": "phaserjs/phaser",
+  "pkg": "phaser",
+  "gh": {
+   "archived": false,
+   "created": "2013-04-12T12:27:51Z",
+   "default_branch": "master",
+   "desc": "Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering.",
+   "forks": 7156,
+   "issues": 137,
+   "license": "MIT",
+   "pushed": "2026-08-21T06:56:13Z",
+   "stars": 40260
+  },
+  "npm": {
+   "version": "4.2.1",
+   "tags": {
+    "alpha": "4.0.0-alpha.4",
+    "beta": "4.0.0-rc.7",
+    "latest": "4.2.1"
+   },
+   "modified": "2026-07-09T14:35:35.195Z",
+   "latest_time": "2026-07-09T14:35:35.104Z",
+   "created": "2014-02-17T00:23:31.066Z",
+   "repository": "git+https://phaserjs@github.com/phaserjs/phaser.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 112530289,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 346041
+  }
+ },
+ {
+  "cat": "20",
+  "name": "p5.js",
+  "repo": "processing/p5.js",
+  "pkg": "p5",
+  "gh": {
+   "archived": false,
+   "created": "2013-02-26T03:14:47Z",
+   "default_branch": "main",
+   "desc": "p5.js is a client-side JS platform that empowers artists, designers, students, and anyone to learn to code and express themselves creatively on the web. It is based on the core principles of Processing. Looking for p5.js 2.0? http://beta.p5js.org",
+   "forks": 3822,
+   "issues": 522,
+   "license": "LGPL-2.1",
+   "pushed": "2026-09-03T00:11:40Z",
+   "stars": 23949
+  },
+  "npm": {
+   "version": "2.3.2",
+   "tags": {
+    "beta": "2.3.1-rc.2",
+    "latest": "2.3.2"
+   },
+   "modified": "2026-07-30T19:22:44.300Z",
+   "latest_time": "2026-07-30T19:22:44.070Z",
+   "created": "2014-03-26T19:07:37.788Z",
+   "repository": "git+https://github.com/processing/p5.js.git",
+   "license": "LGPL-2.1",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 17417109,
+   "deps_count": 13,
+   "types": true,
+   "deprecated": null,
+   "weekly": 220276
+  }
+ },
+ {
+  "cat": "20",
+  "name": "Theatre.js",
+  "repo": "theatre-js/theatre",
+  "pkg": "@theatre/core",
+  "gh": {
+   "archived": false,
+   "created": "2013-12-23T11:02:52Z",
+   "default_branch": "main",
+   "desc": "Motion design editor for the web",
+   "forks": 474,
+   "issues": 141,
+   "license": "Apache-2.0",
+   "pushed": "2024-08-14T13:20:18Z",
+   "stars": 12652
+  },
+  "npm": {
+   "version": "0.7.2",
+   "tags": {
+    "latest": "0.7.2",
+    "rc": "0.6.0-rc.4"
+   },
+   "modified": "2024-05-19T14:29:57.804Z",
+   "latest_time": "2024-05-19T14:29:57.640Z",
+   "created": "2021-06-25T12:40:34.557Z",
+   "repository": "https://github.com/AriaMinaei/theatre",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 903189,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 17347
+  }
+ },
+ {
+  "cat": "20",
+  "name": "OGL",
+  "repo": "oframe/ogl",
+  "pkg": "ogl",
+  "gh": {
+   "archived": false,
+   "created": "2018-05-25T16:21:37Z",
+   "default_branch": "master",
+   "desc": "Minimal WebGL Library",
+   "forks": 236,
+   "issues": 25,
+   "license": "NONE",
+   "pushed": "2025-04-13T07:51:49Z",
+   "stars": 4643
+  },
+  "npm": {
+   "version": "1.0.11",
+   "tags": {
+    "latest": "1.0.11"
+   },
+   "modified": "2025-01-27T09:59:29.836Z",
+   "latest_time": "2025-01-27T09:59:29.634Z",
+   "created": "2018-06-03T20:59:51.922Z",
+   "repository": "git+https://gordonnl@github.com/oframe/ogl.git",
+   "license": "Unlicense",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 423239,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 617834
+  }
+ },
+ {
+  "cat": "20",
+  "name": "Rough.js",
+  "repo": "rough-stuff/rough",
+  "pkg": "roughjs",
+  "gh": {
+   "archived": false,
+   "created": "2016-12-13T09:12:55Z",
+   "default_branch": "master",
+   "desc": "Create graphics with a hand-drawn, sketchy, appearance",
+   "forks": 664,
+   "issues": 42,
+   "license": "MIT",
+   "pushed": "2024-07-28T21:12:58Z",
+   "stars": 21152
+  },
+  "npm": {
+   "version": "4.6.6",
+   "tags": {
+    "latest": "4.6.6"
+   },
+   "modified": "2023-11-20T04:31:26.237Z",
+   "latest_time": "2023-11-20T04:31:26.059Z",
+   "created": "2018-03-02T06:47:48.281Z",
+   "repository": "git+https://github.com/pshihn/rough.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 169684,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 14143597
+  }
+ },
+ {
+  "cat": "20",
+  "name": "tsParticles",
+  "repo": "tsparticles/tsparticles",
+  "pkg": "@tsparticles/react",
+  "gh": {
+   "archived": false,
+   "created": "2020-02-05T18:00:01Z",
+   "default_branch": "main",
+   "desc": "tsParticles - Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.",
+   "forks": 943,
+   "issues": 21,
+   "license": "MIT",
+   "pushed": "2026-09-02T20:46:35Z",
+   "stars": 8977
+  },
+  "npm": {
+   "version": "4.4.0",
+   "tags": {
+    "beta": "4.0.0-beta.17",
+    "latest": "4.4.0"
+   },
+   "modified": "2026-08-31T00:29:46.101Z",
+   "latest_time": "2026-08-31T00:29:45.757Z",
+   "created": "2023-12-07T15:42:34.990Z",
+   "repository": "git+https://github.com/tsparticles/tsparticles.git",
+   "license": "MIT",
+   "peer_react": ">=16.8.0",
+   "peer_tailwind": null,
+   "unpacked": 3964,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 237300
+  }
+ },
+ {
+  "cat": "20",
+  "name": "Spline (react)",
+  "repo": "splinetool/react-spline",
+  "pkg": "@splinetool/react-spline",
+  "gh": {
+   "archived": false,
+   "created": "2021-11-19T08:58:16Z",
+   "default_branch": "main",
+   "desc": "React component for Spline scenes.",
+   "forks": 81,
+   "issues": 44,
+   "license": "MIT",
+   "pushed": "2026-03-13T17:45:00Z",
+   "stars": 1421
+  },
+  "npm": {
+   "version": "4.1.0",
+   "tags": {
+    "latest": "4.1.0"
+   },
+   "modified": "2025-07-15T10:13:36.304Z",
+   "latest_time": "2025-07-15T10:13:36.083Z",
+   "created": "2021-11-29T18:11:33.776Z",
+   "repository": null,
+   "license": null,
+   "peer_react": "*",
+   "peer_tailwind": null,
+   "unpacked": 26806,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 164228
+  }
+ },
+ {
+  "cat": "20",
+  "name": "Excalidraw",
+  "repo": "excalidraw/excalidraw",
+  "pkg": "@excalidraw/excalidraw",
+  "gh": {
+   "archived": false,
+   "created": "2020-01-02T01:04:43Z",
+   "default_branch": "master",
+   "desc": "Virtual whiteboard for sketching hand-drawn like diagrams",
+   "forks": 15155,
+   "issues": 3442,
+   "license": "MIT",
+   "pushed": "2026-09-04T15:09:28Z",
+   "stars": 131197
+  },
+  "npm": {
+   "version": "0.18.1",
+   "tags": {
+    "rc": "0.18.0-rc.7",
+    "latest": "0.18.1",
+    "next": "0.18.0-214cd6e"
+   },
+   "modified": "2026-09-03T15:27:23.589Z",
+   "latest_time": "2026-04-20T20:24:36.743Z",
+   "created": "2020-12-06T12:15:15.160Z",
+   "repository": "git+https://github.com/excalidraw/excalidraw.git",
+   "license": "MIT",
+   "peer_react": "^17.0.2 || ^18.2.0 || ^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 46802783,
+   "deps_count": 31,
+   "types": true,
+   "deprecated": null,
+   "weekly": 507881
+  }
+ },
+ {
+  "cat": "20",
+  "name": "tldraw",
+  "repo": "tldraw/tldraw",
+  "pkg": "tldraw",
+  "gh": {
+   "archived": false,
+   "created": "2021-05-09T11:48:37Z",
+   "default_branch": "main",
+   "desc": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.",
+   "forks": 3499,
+   "issues": 710,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-04T17:15:31Z",
+   "stars": 50149
+  },
+  "npm": {
+   "version": "5.4.0",
+   "tags": {
+    "beta": "2.0.0-canary.3b92faa5cf0a",
+    "latest": "5.4.0",
+    "next": "5.5.0-next.39dacfbc1ff1",
+    "canary": "5.5.0-canary.e8f61acedcbf"
+   },
+   "modified": "2026-09-04T16:41:47.712Z",
+   "latest_time": "2026-09-02T11:09:04.645Z",
+   "created": "2024-01-24T17:15:57.457Z",
+   "repository": "https://github.com/tldraw/tldraw",
+   "license": "SEE LICENSE IN LICENSE.md",
+   "peer_react": "^18.2.0 || ^19.2.1",
+   "peer_tailwind": null,
+   "unpacked": 14891847,
+   "deps_count": 16,
+   "types": false,
+   "deprecated": null,
+   "weekly": 368615
+  }
+ },
+ {
+  "cat": "21",
+  "name": "MapLibre GL JS",
+  "repo": "maplibre/maplibre-gl-js",
+  "pkg": "maplibre-gl",
+  "gh": {
+   "archived": false,
+   "created": "2020-12-08T22:42:56Z",
+   "default_branch": "main",
+   "desc": "MapLibre GL JS - Interactive vector tile maps in the browser",
+   "forks": 1206,
+   "issues": 313,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T17:51:16Z",
+   "stars": 11542
+  },
+  "npm": {
+   "version": "6.7.0",
+   "tags": {
+    "next": "6.0.0-22",
+    "latest": "6.7.0"
+   },
+   "modified": "2026-09-02T14:27:35.584Z",
+   "latest_time": "2026-09-02T14:27:35.199Z",
+   "created": "2020-12-09T18:26:00.732Z",
+   "repository": "git+https://github.com/maplibre/maplibre-gl-js.git",
+   "license": "BSD-3-Clause",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 19848054,
+   "deps_count": 17,
+   "types": true,
+   "deprecated": null,
+   "weekly": 4494860
+  }
+ },
+ {
+  "cat": "21",
+  "name": "react-map-gl",
+  "repo": "visgl/react-map-gl",
+  "pkg": "react-map-gl",
+  "gh": {
+   "archived": false,
+   "created": "2015-10-08T16:56:26Z",
+   "default_branch": "master",
+   "desc": "React friendly API wrapper around MapboxGL JS",
+   "forks": 1348,
+   "issues": 95,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-03T03:30:14Z",
+   "stars": 8496
+  },
+  "npm": {
+   "version": "8.1.3",
+   "tags": {
+    "beta": "8.1.0-alpha.2",
+    "latest": "8.1.3"
+   },
+   "modified": "2026-09-02T21:41:05.587Z",
+   "latest_time": "2026-09-02T21:41:05.196Z",
+   "created": "2015-10-08T18:42:19.477Z",
+   "repository": "git+https://github.com/visgl/react-map-gl.git",
+   "license": "MIT",
+   "peer_react": ">=16.3.0",
+   "peer_tailwind": null,
+   "unpacked": 480451,
+   "deps_count": 2,
+   "types": false,
+   "deprecated": null,
+   "weekly": 2109406
+  }
+ },
+ {
+  "cat": "21",
+  "name": "Mapbox GL JS (对照)",
+  "repo": "mapbox/mapbox-gl-js",
+  "pkg": "mapbox-gl",
+  "gh": {
+   "archived": false,
+   "created": "2013-03-07T14:45:24Z",
+   "default_branch": "main",
+   "desc": "Interactive, thoroughly customizable maps in the browser, powered by vector tiles and WebGL",
+   "forks": 2371,
+   "issues": 1458,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-04T14:34:25Z",
+   "stars": 12397
+  },
+  "npm": {
+   "version": "3.30.0",
+   "tags": {
+    "latest": "3.30.0",
+    "next": "3.30.0-rc.1"
+   },
+   "modified": "2026-09-03T14:42:32.401Z",
+   "latest_time": "2026-09-03T14:42:32.207Z",
+   "created": "2014-10-06T23:59:51.775Z",
+   "repository": "git://github.com/mapbox/mapbox-gl-js.git",
+   "license": "SEE LICENSE IN LICENSE.txt",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 65395045,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 4083480
+  }
+ },
+ {
+  "cat": "21",
+  "name": "Leaflet",
+  "repo": "Leaflet/Leaflet",
+  "pkg": "leaflet",
+  "gh": {
+   "archived": false,
+   "created": "2010-09-22T16:57:44Z",
+   "default_branch": "main",
+   "desc": "🍃 JavaScript library for mobile-friendly interactive maps 🇺🇦",
+   "forks": 6162,
+   "issues": 565,
+   "license": "BSD-2-Clause",
+   "pushed": "2026-09-05T09:57:59Z",
+   "stars": 45570
+  },
+  "npm": {
+   "version": "1.9.4",
+   "tags": {
+    "beta": "1.8.0-beta.3",
+    "latest": "1.9.4",
+    "alpha": "2.0.0-alpha.1"
+   },
+   "modified": "2025-08-16T10:01:13.289Z",
+   "latest_time": "2023-05-18T11:04:11.088Z",
+   "created": "2013-02-26T16:42:56.985Z",
+   "repository": "git://github.com/Leaflet/Leaflet.git",
+   "license": "BSD-2-Clause",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3739487,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 6949150
+  }
+ },
+ {
+  "cat": "21",
+  "name": "react-leaflet",
+  "repo": "PaulLeCam/react-leaflet",
+  "pkg": "react-leaflet",
+  "gh": {
+   "archived": false,
+   "created": "2014-08-03T09:16:09Z",
+   "default_branch": "master",
+   "desc": "React components for Leaflet maps",
+   "forks": 901,
+   "issues": 48,
+   "license": "NOASSERTION",
+   "pushed": "2025-12-31T13:03:00Z",
+   "stars": 5599
+  },
+  "npm": {
+   "version": "5.0.0",
+   "tags": {
+    "latest": "5.0.0",
+    "next": "5.0.0-rc.2"
+   },
+   "modified": "2024-12-14T08:44:03.644Z",
+   "latest_time": "2024-12-14T08:44:03.462Z",
+   "created": "2014-10-18T09:36:59.076Z",
+   "repository": "git+https://github.com/PaulLeCam/react-leaflet.git",
+   "license": "Hippocratic-2.1",
+   "peer_react": "^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 48855,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3580304
+  }
+ },
+ {
+  "cat": "21",
+  "name": "OpenLayers",
+  "repo": "openlayers/openlayers",
+  "pkg": "ol",
+  "gh": {
+   "archived": false,
+   "created": "2012-06-20T06:53:59Z",
+   "default_branch": "main",
+   "desc": "OpenLayers",
+   "forks": 3178,
+   "issues": 855,
+   "license": "BSD-2-Clause",
+   "pushed": "2026-09-05T10:33:44Z",
+   "stars": 12566
+  },
+  "npm": {
+   "version": "10.10.0",
+   "tags": {
+    "beta": "6.0.0-beta.15",
+    "latest": "10.10.0"
+   },
+   "modified": "2026-09-05T09:24:40.609Z",
+   "latest_time": "2026-07-27T22:22:53.425Z",
+   "created": "2014-10-01T04:57:41.727Z",
+   "repository": "git://github.com/openlayers/openlayers.git",
+   "license": "BSD-2-Clause",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 12327755,
+   "deps_count": 6,
+   "types": true,
+   "deprecated": null,
+   "weekly": 785991
+  }
+ },
+ {
+  "cat": "21",
+  "name": "deck.gl",
+  "repo": "visgl/deck.gl",
+  "pkg": "deck.gl",
+  "gh": {
+   "archived": false,
+   "created": "2015-12-15T08:38:29Z",
+   "default_branch": "master",
+   "desc": "WebGL2 powered visualization framework",
+   "forks": 2262,
+   "issues": 486,
+   "license": "MIT",
+   "pushed": "2026-09-05T01:41:40Z",
+   "stars": 14558
+  },
+  "npm": {
+   "version": "9.3.11",
+   "tags": {
+    "rc": "4.0.0-rc.4",
+    "latest": "9.3.11",
+    "beta": "9.4.0-beta.4"
+   },
+   "modified": "2026-09-03T19:35:50.540Z",
+   "latest_time": "2026-08-28T21:51:39.870Z",
+   "created": "2015-12-23T18:18:42.390Z",
+   "repository": "https://github.com/visgl/deck.gl.git",
+   "license": "MIT",
+   "peer_react": ">=16.3.0",
+   "peer_tailwind": null,
+   "unpacked": 5225984,
+   "deps_count": 16,
+   "types": true,
+   "deprecated": null,
+   "weekly": 274495
+  }
+ },
+ {
+  "cat": "21",
+  "name": "CesiumJS",
+  "repo": "CesiumGS/cesium",
+  "pkg": "cesium",
+  "gh": {
+   "archived": false,
+   "created": "2012-03-02T22:27:14Z",
+   "default_branch": "main",
+   "desc": "An open-source JavaScript library for world-class 3D globes and maps :earth_americas:",
+   "forks": 3862,
+   "issues": 1661,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-04T21:52:44Z",
+   "stars": 15666
+  },
+  "npm": {
+   "version": "1.145.0",
+   "tags": {
+    "latest": "1.145.0"
+   },
+   "modified": "2026-09-01T19:56:49.668Z",
+   "latest_time": "2026-09-01T19:56:49.495Z",
+   "created": "2014-11-08T03:58:12.280Z",
+   "repository": "git+https://github.com/CesiumGS/cesium.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 79386396,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 298240
+  }
+ },
+ {
+  "cat": "21",
+  "name": "Turf.js",
+  "repo": "Turfjs/turf",
+  "pkg": "@turf/turf",
+  "gh": {
+   "archived": false,
+   "created": "2013-10-03T14:50:25Z",
+   "default_branch": "master",
+   "desc": "A modular geospatial engine written in JavaScript and TypeScript",
+   "forks": 1016,
+   "issues": 285,
+   "license": "MIT",
+   "pushed": "2026-08-31T19:10:41Z",
+   "stars": 10469
+  },
+  "npm": {
+   "version": "7.4.0",
+   "tags": {
+    "canary": "3.5.2-alpha.d2c36ee7",
+    "latest": "7.4.0"
+   },
+   "modified": "2026-08-03T15:36:59.423Z",
+   "latest_time": "2026-08-03T15:36:58.910Z",
+   "created": "2016-07-06T15:57:56.072Z",
+   "repository": "git://github.com/Turfjs/turf.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 603964,
+   "deps_count": 117,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1429539
+  }
+ },
+ {
+  "cat": "21",
+  "name": "Protomaps PMTiles",
+  "repo": "protomaps/PMTiles",
+  "pkg": "pmtiles",
+  "gh": {
+   "archived": false,
+   "created": "2021-02-16T08:30:22Z",
+   "default_branch": "main",
+   "desc": "Pyramids of map tiles in a single file on static storage",
+   "forks": 196,
+   "issues": 9,
+   "license": "NOASSERTION",
+   "pushed": "2026-08-19T17:09:15Z",
+   "stars": 3028
+  },
+  "npm": {
+   "version": "4.5.0",
+   "tags": {
+    "beta": "3.0.0-alpha.2",
+    "latest": "4.5.0"
+   },
+   "modified": "2026-08-10T20:12:24.634Z",
+   "latest_time": "2026-08-10T20:12:24.430Z",
+   "created": "2021-02-17T07:07:10.160Z",
+   "repository": null,
+   "license": "BSD-3-Clause",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 380312,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 807683
+  }
+ },
+ {
+  "cat": "21",
+  "name": "AntV L7",
+  "repo": "antvis/L7",
+  "pkg": "@antv/l7",
+  "gh": {
+   "archived": false,
+   "created": "2018-11-21T16:19:07Z",
+   "default_branch": "master",
+   "desc": "🌎 Large-scale WebGL-powered Geospatial Data Visualization analysis engine.",
+   "forks": 656,
+   "issues": 215,
+   "license": "MIT",
+   "pushed": "2026-07-30T10:03:41Z",
+   "stars": 4060
+  },
+  "npm": {
+   "version": "2.29.1",
+   "tags": {
+    "alpha": "2.0.28-alpha.2",
+    "latest": "2.29.1",
+    "beta": "2.30.0-beta.1"
+   },
+   "modified": "2026-07-30T10:03:32.866Z",
+   "latest_time": "2026-07-13T07:26:21.227Z",
+   "created": "2018-11-20T12:28:07.641Z",
+   "repository": "git@github.com:antvis/L7.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1481921,
+   "deps_count": 8,
+   "types": true,
+   "deprecated": null,
+   "weekly": 36041
+  }
+ },
+ {
+  "cat": "21",
+  "name": "echarts (地图, 已在 §5)",
+  "repo": null,
+  "pkg": null,
+  "gh": null,
+  "npm": null
+ },
+ {
+  "cat": "22",
+  "name": "Yjs",
+  "repo": "yjs/yjs",
+  "pkg": "yjs",
+  "gh": {
+   "archived": false,
+   "created": "2014-07-29T19:29:45Z",
+   "default_branch": "main",
+   "desc": "Shared data types for building collaborative software",
+   "forks": 801,
+   "issues": 138,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T08:59:36Z",
+   "stars": 22753
+  },
+  "npm": {
+   "version": "13.6.32",
+   "tags": {
+    "next": "14.0.0-8",
+    "beta": "14.0.0-16",
+    "latest": "13.6.32"
+   },
+   "modified": "2026-08-04T08:18:16.235Z",
+   "latest_time": "2026-08-04T08:18:16.013Z",
+   "created": "2015-01-26T23:28:29.121Z",
+   "repository": "git+https://github.com/yjs/yjs.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2307010,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 8551617
+  }
+ },
+ {
+  "cat": "22",
+  "name": "y-websocket",
+  "repo": "yjs/y-websocket",
+  "pkg": "y-websocket",
+  "gh": {
+   "archived": false,
+   "created": "2019-02-05T12:26:24Z",
+   "default_branch": "master",
+   "desc": "Websocket Connector for Yjs",
+   "forks": 311,
+   "issues": 38,
+   "license": "MIT",
+   "pushed": "2026-08-06T16:32:28Z",
+   "stars": 710
+  },
+  "npm": {
+   "version": "3.1.0",
+   "tags": {
+    "next": "2.0.5-0",
+    "latest": "3.1.0"
+   },
+   "modified": "2026-08-06T16:32:28.345Z",
+   "latest_time": "2026-08-06T16:32:28.169Z",
+   "created": "2019-04-26T18:06:20.277Z",
+   "repository": "git+https://github.com/yjs/y-websocket.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 94104,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 731000
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Hocuspocus",
+  "repo": "ueberdosis/hocuspocus",
+  "pkg": "@hocuspocus/server",
+  "gh": {
+   "archived": false,
+   "created": "2020-11-13T14:50:08Z",
+   "default_branch": "main",
+   "desc": "The Yjs CRDT WebSocket backend for conflict-free real-time collaboration in your app.",
+   "forks": 209,
+   "issues": 21,
+   "license": "MIT",
+   "pushed": "2026-09-02T23:11:40Z",
+   "stars": 2573
+  },
+  "npm": {
+   "version": "4.6.0",
+   "tags": {
+    "next": "4.0.0-rc.7",
+    "latest": "4.6.0"
+   },
+   "modified": "2026-08-10T08:48:39.969Z",
+   "latest_time": "2026-08-10T08:48:39.508Z",
+   "created": "2021-04-20T09:29:10.064Z",
+   "repository": "git+https://github.com/ueberdosis/hocuspocus.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 906174,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 710632
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Automerge",
+  "repo": "automerge/automerge",
+  "pkg": "@automerge/automerge",
+  "gh": {
+   "archived": false,
+   "created": "2019-12-26T11:15:38Z",
+   "default_branch": "main",
+   "desc": "A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically. ",
+   "forks": 266,
+   "issues": 96,
+   "license": "MIT",
+   "pushed": "2026-09-04T16:39:41Z",
+   "stars": 6566
+  },
+  "npm": {
+   "version": "3.4.1",
+   "tags": {
+    "alpha": "3.0.0-alpha.4",
+    "next": "3.4.0-rev-frag-hex.3",
+    "latest": "3.4.1"
+   },
+   "modified": "2026-08-12T08:28:28.886Z",
+   "latest_time": "2026-08-12T08:28:28.692Z",
+   "created": "2022-10-04T20:58:13.236Z",
+   "repository": "git+https://github.com/automerge/automerge.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 46545434,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 47711
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Loro",
+  "repo": "loro-dev/loro",
+  "pkg": "loro-crdt",
+  "gh": {
+   "archived": false,
+   "created": "2022-07-12T16:48:23Z",
+   "default_branch": "main",
+   "desc": "Make your JSON data collaborative and version-controlled with CRDTs",
+   "forks": 169,
+   "issues": 55,
+   "license": "MIT",
+   "pushed": "2026-09-05T17:07:36Z",
+   "stars": 6118
+  },
+  "npm": {
+   "version": "1.15.1",
+   "tags": {
+    "latest": "1.15.1"
+   },
+   "modified": "2026-08-29T09:52:09.405Z",
+   "latest_time": "2026-08-29T09:52:09.072Z",
+   "created": "2023-04-07T06:20:12.774Z",
+   "repository": "git+https://github.com/loro-dev/loro.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 19367323,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 157407
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Liveblocks",
+  "repo": "liveblocks/liveblocks",
+  "pkg": "@liveblocks/client",
+  "gh": {
+   "archived": false,
+   "created": "2021-05-25T15:25:51Z",
+   "default_branch": "main",
+   "desc": "Realtime infrastructure for multiplayer apps and agents",
+   "forks": 439,
+   "issues": 76,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-04T16:44:07Z",
+   "stars": 4714
+  },
+  "npm": {
+   "version": "3.24.1",
+   "tags": {
+    "rc": "3.22.0-rc1",
+    "latest": "3.24.1"
+   },
+   "modified": "2026-08-19T17:48:11.491Z",
+   "latest_time": "2026-08-19T17:47:02.198Z",
+   "created": "2021-03-15T15:21:10.486Z",
+   "repository": "git+https://github.com/liveblocks/liveblocks.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 15165,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 408352
+  }
+ },
+ {
+  "cat": "22",
+  "name": "PartyKit / PartyServer",
+  "repo": "cloudflare/partykit",
+  "pkg": "partyserver",
+  "gh": {
+   "archived": false,
+   "created": "2024-05-27T21:40:55Z",
+   "default_branch": "main",
+   "desc": "PartyKit, for Workers",
+   "forks": 79,
+   "issues": 41,
+   "license": "ISC",
+   "pushed": "2026-08-03T15:14:06Z",
+   "stars": 1261
+  },
+  "npm": {
+   "version": "0.5.10",
+   "tags": {
+    "beta": "0.0.0-10e36c2",
+    "latest": "0.5.10"
+   },
+   "modified": "2026-08-03T15:17:49.231Z",
+   "latest_time": "2026-08-03T15:17:48.927Z",
+   "created": "2024-06-09T17:23:14.690Z",
+   "repository": "git://github.com/cloudflare/partykit.git",
+   "license": "ISC",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 143046,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1672967
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Socket.IO",
+  "repo": "socketio/socket.io",
+  "pkg": "socket.io-client",
+  "gh": {
+   "archived": false,
+   "created": "2010-03-11T18:24:48Z",
+   "default_branch": "main",
+   "desc": "Bidirectional and low-latency communication for every platform",
+   "forks": 10307,
+   "issues": 200,
+   "license": "MIT",
+   "pushed": "2026-09-04T10:15:16Z",
+   "stars": 63211
+  },
+  "npm": {
+   "version": "4.8.3",
+   "tags": {
+    "beta": "3.0.0-rc4",
+    "alpha": "4.6.0-alpha2",
+    "latest": "4.8.3"
+   },
+   "modified": "2025-12-23T16:39:16.787Z",
+   "latest_time": "2025-12-23T16:39:16.428Z",
+   "created": "2011-06-21T12:39:55.813Z",
+   "repository": "git+https://github.com/socketio/socket.io.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1417815,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 14514884
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Zero (Rocicorp)",
+  "repo": "rocicorp/mono",
+  "pkg": "@rocicorp/zero",
+  "gh": {
+   "archived": false,
+   "created": "2023-02-09T04:42:21Z",
+   "default_branch": "main",
+   "desc": "99% of Queries in Zero Milliseconds",
+   "forks": 163,
+   "issues": 230,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T01:33:05Z",
+   "stars": 3377
+  },
+  "npm": {
+   "version": "1.9.0",
+   "tags": {
+    "latest": "1.9.0",
+    "canary": "1.11.0-canary.5"
+   },
+   "modified": "2026-09-04T23:09:35.758Z",
+   "latest_time": "2026-08-14T22:14:25.905Z",
+   "created": "2024-10-03T19:28:19.406Z",
+   "repository": "git+https://github.com/rocicorp/mono.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 8588971,
+   "deps_count": 49,
+   "types": true,
+   "deprecated": null,
+   "weekly": 121602
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Electric SQL",
+  "repo": "electric-sql/electric",
+  "pkg": "@electric-sql/client",
+  "gh": {
+   "archived": false,
+   "created": "2022-06-01T14:18:11Z",
+   "default_branch": "main",
+   "desc": "The agent platform built on sync.",
+   "forks": 372,
+   "issues": 252,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-02T19:29:06Z",
+   "stars": 10353
+  },
+  "npm": {
+   "version": "1.5.27",
+   "tags": {
+    "beta": "1.0.0-beta.5",
+    "latest": "1.5.27"
+   },
+   "modified": "2026-09-01T10:03:25.406Z",
+   "latest_time": "2026-09-01T10:03:25.018Z",
+   "created": "2024-08-07T21:39:04.112Z",
+   "repository": "git+https://github.com/electric-sql/electric.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2383397,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1270383
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Convex (client)",
+  "repo": "get-convex/convex-js",
+  "pkg": "convex",
+  "gh": {
+   "archived": false,
+   "created": "2023-04-27T23:14:20Z",
+   "default_branch": "main",
+   "desc": "TypeScript/JavaScript client library for Convex",
+   "forks": 108,
+   "issues": 93,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T16:55:20Z",
+   "stars": 365
+  },
+  "npm": {
+   "version": "1.45.0",
+   "tags": {
+    "latest": "1.45.0",
+    "alpha": "1.45.0-alpha.0"
+   },
+   "modified": "2026-08-21T21:10:16.902Z",
+   "latest_time": "2026-08-21T21:10:16.696Z",
+   "created": "2014-08-05T20:28:40.406Z",
+   "repository": "git+https://github.com/get-convex/convex-backend.git",
+   "license": "Apache-2.0",
+   "peer_react": "^18.0.0 || ^19.0.0-0 || ^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 31444847,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1326709
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Supabase Realtime (js)",
+  "repo": "supabase/supabase-js",
+  "pkg": "@supabase/supabase-js",
+  "gh": {
+   "archived": false,
+   "created": "2020-05-15T12:52:16Z",
+   "default_branch": "master",
+   "desc": "An isomorphic Javascript client for Supabase. Query your Supabase database, subscribe to realtime events, upload and download files, browse typescript examples, invoke postgres functions via rpc, invoke supabase edge functions, query pgvector.",
+   "forks": 733,
+   "issues": 75,
+   "license": "MIT",
+   "pushed": "2026-09-04T13:22:36Z",
+   "stars": 4554
+  },
+  "npm": {
+   "version": "2.115.0",
+   "tags": {
+    "rc": "2.100.0-rc.0",
+    "next": "3.0.0-next.29",
+    "beta": "2.112.0-beta.0",
+    "latest": "2.115.0",
+    "canary": "2.116.0-canary.1"
+   },
+   "modified": "2026-09-04T12:43:12.921Z",
+   "latest_time": "2026-09-03T16:21:48.106Z",
+   "created": "2020-01-17T04:37:38.575Z",
+   "repository": "https://github.com/supabase/supabase-js.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 637568,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 25001859
+  }
+ },
+ {
+  "cat": "22",
+  "name": "Jazz",
+  "repo": "garden-co/jazz",
+  "pkg": "jazz-tools",
+  "gh": {
+   "archived": false,
+   "created": "2026-01-04T04:42:49Z",
+   "default_branch": "main",
+   "desc": "A local-first relational database for the browser, React Native and your backend.",
+   "forks": 17,
+   "issues": 225,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T17:36:00Z",
+   "stars": 184
+  },
+  "npm": {
+   "version": "0.20.19",
+   "tags": {
+    "alpha": "2.0.0-alpha.53",
+    "latest": "0.20.19"
+   },
+   "modified": "2026-07-10T10:34:04.074Z",
+   "latest_time": "2026-07-03T17:48:03.843Z",
+   "created": "2024-04-05T14:39:17.504Z",
+   "repository": null,
+   "license": "MIT",
+   "peer_react": "*",
+   "peer_tailwind": null,
+   "unpacked": 12800998,
+   "deps_count": 18,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3820
+  }
+ },
+ {
+  "cat": "23",
+  "name": "TinyBase",
+  "repo": "tinyplex/tinybase",
+  "pkg": "tinybase",
+  "gh": {
+   "archived": false,
+   "created": "2021-12-31T01:06:00Z",
+   "default_branch": "main",
+   "desc": "A reactive data store & sync engine.",
+   "forks": 134,
+   "issues": 14,
+   "license": "MIT",
+   "pushed": "2026-09-03T04:58:22Z",
+   "stars": 5166
+  },
+  "npm": {
+   "version": "9.7.0",
+   "tags": {
+    "beta": "10.0.0-beta.0",
+    "latest": "9.7.0"
+   },
+   "modified": "2026-09-03T04:46:19.070Z",
+   "latest_time": "2026-09-02T23:14:16.819Z",
+   "created": "2021-12-31T02:18:51.541Z",
+   "repository": "git+https://github.com/tinyplex/tinybase.git",
+   "license": "MIT",
+   "peer_react": "^19.2.8",
+   "peer_tailwind": null,
+   "unpacked": 16021498,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 13649
+  }
+ },
+ {
+  "cat": "23",
+  "name": "Dexie.js",
+  "repo": "dexie/Dexie.js",
+  "pkg": "dexie",
+  "gh": {
+   "archived": false,
+   "created": "2014-02-26T08:16:16Z",
+   "default_branch": "master",
+   "desc": "A Minimalistic Wrapper for IndexedDB",
+   "forks": 712,
+   "issues": 595,
+   "license": "Apache-2.0",
+   "pushed": "2026-08-28T20:11:36Z",
+   "stars": 14553
+  },
+  "npm": {
+   "version": "4.4.5",
+   "tags": {
+    "latest": "4.4.5"
+   },
+   "modified": "2026-08-14T20:06:34.467Z",
+   "latest_time": "2026-08-14T19:53:41.987Z",
+   "created": "2014-08-21T12:33:53.622Z",
+   "repository": "git+https://github.com/dexie/Dexie.js.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3234788,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2327892
+  }
+ },
+ {
+  "cat": "23",
+  "name": "dexie-react-hooks",
+  "repo": null,
+  "pkg": "dexie-react-hooks",
+  "gh": null,
+  "npm": {
+   "version": "4.4.0",
+   "tags": {
+    "latest": "4.4.0",
+    "canary": "4.4.0"
+   },
+   "modified": "2026-03-26T19:40:27.897Z",
+   "latest_time": "2026-03-18T09:23:18.426Z",
+   "created": "2020-11-19T16:51:23.155Z",
+   "repository": "git+https://github.com/dexie/Dexie.js.git",
+   "license": "Apache-2.0",
+   "peer_react": ">=16",
+   "peer_tailwind": null,
+   "unpacked": 153602,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 487821
+  }
+ },
+ {
+  "cat": "23",
+  "name": "PGlite",
+  "repo": "electric-sql/pglite",
+  "pkg": "@electric-sql/pglite",
+  "gh": {
+   "archived": false,
+   "created": "2024-02-19T14:37:38Z",
+   "default_branch": "main",
+   "desc": "Embeddable Postgres with real-time, reactive bindings.",
+   "forks": 438,
+   "issues": 159,
+   "license": "Apache-2.0",
+   "pushed": "2026-08-26T18:35:11Z",
+   "stars": 15989
+  },
+  "npm": {
+   "version": "0.5.8",
+   "tags": {
+    "next": "0.3.0-next.1",
+    "latest": "0.5.8"
+   },
+   "modified": "2026-08-26T18:40:09.299Z",
+   "latest_time": "2026-08-26T18:40:08.921Z",
+   "created": "2024-02-22T14:29:37.245Z",
+   "repository": "git+https://github.com/electric-sql/pglite.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 25437263,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 15274273
+  }
+ },
+ {
+  "cat": "23",
+  "name": "RxDB",
+  "repo": "pubkey/rxdb",
+  "pkg": "rxdb",
+  "gh": {
+   "archived": false,
+   "created": "2016-12-02T19:34:42Z",
+   "default_branch": "master",
+   "desc": "The local-first database that runs on every JS runtime and replicates with your existing backend - no vendor, no lock-in - https://rxdb.info/",
+   "forks": 1174,
+   "issues": 20,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-04T14:30:12Z",
+   "stars": 23372
+  },
+  "npm": {
+   "version": "17.5.0",
+   "tags": {
+    "next": "17.0.0-beta.25",
+    "latest": "17.5.0"
+   },
+   "modified": "2026-08-20T12:56:25.373Z",
+   "latest_time": "2026-08-20T12:56:24.916Z",
+   "created": "2016-11-16T07:58:15.731Z",
+   "repository": "git+https://github.com/pubkey/rxdb.git",
+   "license": "Apache-2.0",
+   "peer_react": "*",
+   "peer_tailwind": null,
+   "unpacked": 11450860,
+   "deps_count": 23,
+   "types": true,
+   "deprecated": null,
+   "weekly": 73006
+  }
+ },
+ {
+  "cat": "23",
+  "name": "idb",
+  "repo": "jakearchibald/idb",
+  "pkg": "idb",
+  "gh": {
+   "archived": false,
+   "created": "2015-08-06T15:02:03Z",
+   "default_branch": "main",
+   "desc": "IndexedDB, but with promises",
+   "forks": 383,
+   "issues": 57,
+   "license": "ISC",
+   "pushed": "2025-05-07T08:11:05Z",
+   "stars": 7403
+  },
+  "npm": {
+   "version": "8.0.3",
+   "tags": {
+    "beta": "7.0.0-beta",
+    "latest": "8.0.3"
+   },
+   "modified": "2025-05-07T08:12:54.691Z",
+   "latest_time": "2025-05-07T08:12:54.533Z",
+   "created": "2015-04-02T13:28:22.227Z",
+   "repository": "git://github.com/jakearchibald/idb.git",
+   "license": "ISC",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 82779,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 24667746
+  }
+ },
+ {
+  "cat": "23",
+  "name": "idb-keyval",
+  "repo": "jakearchibald/idb-keyval",
+  "pkg": "idb-keyval",
+  "gh": {
+   "archived": false,
+   "created": "2016-08-11T13:53:46Z",
+   "default_branch": "main",
+   "desc": "A super-simple-small promise-based keyval store implemented with IndexedDB",
+   "forks": 150,
+   "issues": 24,
+   "license": "NOASSERTION",
+   "pushed": "2026-07-08T10:34:33Z",
+   "stars": 3234
+  },
+  "npm": {
+   "version": "6.3.0",
+   "tags": {
+    "next": "6.0.0",
+    "latest": "6.3.0"
+   },
+   "modified": "2026-07-08T10:36:25.102Z",
+   "latest_time": "2026-07-08T10:36:24.985Z",
+   "created": "2016-08-11T14:29:09.961Z",
+   "repository": "git+https://github.com/jakearchibald/idb-keyval.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 55849,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 8678448
+  }
+ },
+ {
+  "cat": "23",
+  "name": "localForage",
+  "repo": "localForage/localForage",
+  "pkg": "localforage",
+  "gh": {
+   "archived": false,
+   "created": "2013-10-31T00:10:06Z",
+   "default_branch": "master",
+   "desc": "💾 Offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.",
+   "forks": 1288,
+   "issues": 250,
+   "license": "Apache-2.0",
+   "pushed": "2024-07-30T20:27:14Z",
+   "stars": 25809
+  },
+  "npm": {
+   "version": "1.10.0",
+   "tags": {
+    "latest": "1.10.0"
+   },
+   "modified": "2022-06-19T13:20:55.257Z",
+   "latest_time": "2021-08-18T21:22:08.980Z",
+   "created": "2014-02-13T15:17:05.348Z",
+   "repository": "git://github.com/localForage/localForage.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 467670,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 8759813
+  }
+ },
+ {
+  "cat": "23",
+  "name": "sql.js",
+  "repo": "sql-js/sql.js",
+  "pkg": "sql.js",
+  "gh": {
+   "archived": false,
+   "created": "2012-02-27T03:05:49Z",
+   "default_branch": "master",
+   "desc": "A javascript library to run SQLite on the web.  ",
+   "forks": 1111,
+   "issues": 142,
+   "license": "NOASSERTION",
+   "pushed": "2026-08-14T18:15:39Z",
+   "stars": 13660
+  },
+  "npm": {
+   "version": "1.14.2",
+   "tags": {
+    "latest": "1.14.2"
+   },
+   "modified": "2026-08-14T18:12:13.019Z",
+   "latest_time": "2026-08-14T18:12:12.496Z",
+   "created": "2014-05-24T15:13:04.190Z",
+   "repository": "git+ssh://git@github.com/sql-js/sql.js.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 24151707,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 2464270
+  }
+ },
+ {
+  "cat": "23",
+  "name": "wa-sqlite",
+  "repo": "rhashimoto/wa-sqlite",
+  "pkg": "wa-sqlite",
+  "gh": {
+   "archived": false,
+   "created": "2021-04-20T22:49:37Z",
+   "default_branch": "master",
+   "desc": "WebAssembly SQLite with support for browser storage extensions",
+   "forks": 108,
+   "issues": 11,
+   "license": "MIT",
+   "pushed": "2026-08-28T14:50:14Z",
+   "stars": 1411
+  },
+  "npm": {
+   "version": "1.0.0",
+   "tags": {
+    "latest": "1.0.0"
+   },
+   "modified": "2024-01-05T04:52:30.025Z",
+   "latest_time": "2024-01-05T04:52:29.763Z",
+   "created": "2024-01-05T04:52:29.545Z",
+   "repository": null,
+   "license": null,
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2175986,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 11807
+  }
+ },
+ {
+  "cat": "23",
+  "name": "PowerSync (web)",
+  "repo": "powersync-ja/powersync-js",
+  "pkg": "@powersync/web",
+  "gh": {
+   "archived": false,
+   "created": "2023-10-03T15:17:51Z",
+   "default_branch": "main",
+   "desc": "SDK that enables local-first and real-time reactive apps with embedded SQLite for JavaScript clients, including React Native and Web",
+   "forks": 91,
+   "issues": 46,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-04T09:00:32Z",
+   "stars": 720
+  },
+  "npm": {
+   "version": "2.3.0",
+   "tags": {
+    "latest": "2.3.0"
+   },
+   "modified": "2026-09-02T13:43:12.997Z",
+   "latest_time": "2026-09-02T13:43:12.687Z",
+   "created": "2024-04-24T08:51:25.706Z",
+   "repository": "https://github.com/powersync-ja/powersync-js",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 10328477,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 85314
+  }
+ },
+ {
+  "cat": "23",
+  "name": "InstantDB",
+  "repo": "instantdb/instant",
+  "pkg": "@instantdb/react",
+  "gh": {
+   "archived": false,
+   "created": "2024-08-19T21:53:42Z",
+   "default_branch": "main",
+   "desc": "Instant is the best backend for AI-coded apps.  You get auth, permissions, storage, presence, and streams — everything you need to ship apps your users will love.",
+   "forks": 399,
+   "issues": 18,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T17:54:45Z",
+   "stars": 10508
+  },
+  "npm": {
+   "version": "1.0.67",
+   "tags": {
+    "latest": "1.0.67"
+   },
+   "modified": "2026-08-31T13:57:29.802Z",
+   "latest_time": "2026-08-31T13:57:29.403Z",
+   "created": "2023-09-19T19:54:12.907Z",
+   "repository": "git+https://github.com/instantdb/instant.git",
+   "license": "Apache-2.0",
+   "peer_react": ">=16",
+   "peer_tailwind": null,
+   "unpacked": 727783,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 172580
+  }
+ },
+ {
+  "cat": "23",
+  "name": "Triplit",
+  "repo": "aspen-cloud/triplit",
+  "pkg": "@triplit/client",
+  "gh": {
+   "archived": false,
+   "created": "2023-07-20T21:34:02Z",
+   "default_branch": "main",
+   "desc": "A full-stack, syncing database that runs on both server and client. Pluggable storage (indexeddb, sqlite, durable objects), syncs over websockets, and works with your favorite framework (React, Solid, Vue, Svelte).",
+   "forks": 103,
+   "issues": 40,
+   "license": "AGPL-3.0",
+   "pushed": "2026-01-19T12:33:40Z",
+   "stars": 3112
+  },
+  "npm": {
+   "version": "1.0.50",
+   "tags": {
+    "canary": "0.7.0-canary-20250310223455",
+    "latest": "1.0.50"
+   },
+   "modified": "2025-07-31T02:11:59.709Z",
+   "latest_time": "2025-07-31T02:11:59.466Z",
+   "created": "2023-05-12T19:43:36.423Z",
+   "repository": "github:aspen-cloud/triplit",
+   "license": "AGPL-3.0-only",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 811094,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 145491
+  }
+ },
+ {
+  "cat": "23",
+  "name": "Evolu",
+  "repo": "evoluhq/evolu",
+  "pkg": "@evolu/react",
+  "gh": {
+   "archived": false,
+   "created": "2022-09-25T10:35:42Z",
+   "default_branch": "main",
+   "desc": "TypeScript library and local-first platform",
+   "forks": 72,
+   "issues": 21,
+   "license": "MIT",
+   "pushed": "2026-09-03T20:04:47Z",
+   "stars": 1887
+  },
+  "npm": {
+   "version": "11.0.2",
+   "tags": {
+    "next": "11.0.0-next.0",
+    "latest": "11.0.2"
+   },
+   "modified": "2026-09-01T13:13:03.189Z",
+   "latest_time": "2026-09-01T13:13:02.814Z",
+   "created": "2023-09-26T14:14:57.264Z",
+   "repository": "git+https://github.com/evoluhq/evolu.git",
+   "license": "MIT",
+   "peer_react": ">=19",
+   "peer_tailwind": null,
+   "unpacked": 25294,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 279
+  }
+ },
+ {
+  "cat": "23",
+  "name": "SQLite Wasm (official)",
+  "repo": "sqlite/sqlite-wasm",
+  "pkg": "@sqlite.org/sqlite-wasm",
+  "gh": {
+   "archived": false,
+   "created": "2023-04-13T07:24:18Z",
+   "default_branch": "main",
+   "desc": "SQLite Wasm conveniently wrapped as an ES Module.",
+   "forks": 92,
+   "issues": 2,
+   "license": "NONE",
+   "pushed": "2026-07-13T14:38:21Z",
+   "stars": 1050
+  },
+  "npm": {
+   "version": "3.53.0-build1",
+   "tags": {
+    "latest": "3.53.0-build1"
+   },
+   "modified": "2026-04-21T20:34:42.764Z",
+   "latest_time": "2026-04-21T20:34:42.631Z",
+   "created": "2023-04-17T10:05:04.251Z",
+   "repository": "git+https://github.com/sqlite/sqlite-wasm.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2829040,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 795930
+  }
+ },
+ {
+  "cat": "23",
+  "name": "unstorage",
+  "repo": "unjs/unstorage",
+  "pkg": "unstorage",
+  "gh": {
+   "archived": false,
+   "created": "2021-03-07T23:19:13Z",
+   "default_branch": "main",
+   "desc": " 💾 Unstorage provides an async Key-Value storage API with conventional features like multi driver mounting, watching and working with metadata, dozens of built-in drivers and a tiny core.",
+   "forks": 194,
+   "issues": 118,
+   "license": "MIT",
+   "pushed": "2026-09-05T11:12:09Z",
+   "stars": 2639
+  },
+  "npm": {
+   "version": "1.17.5",
+   "tags": {
+    "latest": "1.17.5",
+    "alpha": "2.0.0-alpha.10"
+   },
+   "modified": "2026-09-03T22:25:46.826Z",
+   "latest_time": "2026-03-26T19:31:48.210Z",
+   "created": "2021-03-07T23:18:44.344Z",
+   "repository": "git+https://github.com/unjs/unstorage.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 353612,
+   "deps_count": 8,
+   "types": true,
+   "deprecated": null,
+   "weekly": 24844268
+  }
+ },
+ {
+  "cat": "23",
+  "name": "Legend-State",
+  "repo": "LegendApp/legend-state",
+  "pkg": "@legendapp/state",
+  "gh": {
+   "archived": false,
+   "created": "2022-07-21T07:06:08Z",
+   "default_branch": "main",
+   "desc": "Legend-State is a super fast and powerful state library that enables fine-grained reactivity and easy automatic persistence",
+   "forks": 145,
+   "issues": 216,
+   "license": "MIT",
+   "pushed": "2026-08-11T01:53:15Z",
+   "stars": 4193
+  },
+  "npm": {
+   "version": "2.1.15",
+   "tags": {
+    "rc": "1.0.0-rc.34",
+    "next": "2.2.0-next.97",
+    "latest": "2.1.15",
+    "alpha": "3.0.0-alpha.42",
+    "beta": "3.0.0-beta.48"
+   },
+   "modified": "2026-07-12T14:47:42.355Z",
+   "latest_time": "2024-08-30T18:05:31.880Z",
+   "created": "2022-07-21T06:44:24.211Z",
+   "repository": "git+https://github.com/LegendApp/legend-state.git",
+   "license": "MIT",
+   "peer_react": ">=16.8.0",
+   "peer_tailwind": null,
+   "unpacked": 992478,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 96577
+  }
+ }
+]

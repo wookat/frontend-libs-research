@@ -1,9 +1,9 @@
-# 前端生态选型研究 2026（码印 / CodeStamp 前端）
+# 前端生态选型研究 2026
 
-- 实查日期：**2026-09-05（UTC）**
+- 实查日期：**2026-09-05（UTC）**（第一批 §1–§15 与第二批 §16–§23 同日实查）
 - 角色：前端生态研究员（Company OS 职能员工）
-- 对象仓库：wookat/SoftCopyrightAgent `frontend/`
-- 方法：全部数字为一手实查——GitHub 元数据用 `gh api repos/<owner>/<repo>`（stars / SPDX / pushed_at / archived），npm 用 registry（`https://registry.npmjs.org/<pkg>`：latest 版本、license、peerDependencies、unpackedSize）与下载 API（`https://api.npmjs.org/downloads/point/last-week/<pkg>`，统计窗口 2026-08-23 ~ 08-29）；React 19 / Tailwind v4 支持以官方文档 / changelog / peerDependencies 为据。采集脚本共 219 个候选，逐条记录。
+- 范围：通用前端开源生态，不绑定具体产品。第一批 §1–§15 的「关系」列与「对码印的建议」段落是以一个参考项目（码印 / SoftCopyrightAgent frontend）为样本写成的历史结论，保留供对照；第二批 §16–§23 起为产品无关的通用推荐。
+- 方法：全部数字为一手实查——GitHub 元数据用 `gh api repos/<owner>/<repo>`（stars / SPDX / pushed_at / archived），npm 用 registry（`https://registry.npmjs.org/<pkg>`：latest 版本、license、peerDependencies、unpackedSize）与下载 API（`https://api.npmjs.org/downloads/point/last-week/<pkg>`，统计窗口 2026-08-23 ~ 08-29）；React 19 / Tailwind v4 支持以官方文档 / changelog / peerDependencies 为据。采集脚本第一批 219 个候选、第二批 125 条（121 个新增 + 4 个对照/交叉引用），逐条记录。
 - 标注约定：**[已验证]** = 本轮直接查到 API/页面/命令输出；**[推测]** = 由证据推断，未独立核实。表格中 `—` = 无对应 npm 包或未查到。
 - 字段说明：
   - 「GitHub」= stars / GitHub SPDX（`NOASSERTION` 表示 GitHub 无法识别许可证文件，需看 npm license 或仓库 LICENSE） / 最近 push / archived。
@@ -371,6 +371,236 @@
 
 ---
 
+## 第二批（§16–§23）说明
+
+- 实查日期：**2026-09-05（UTC）**，采集脚本 `scripts/items_round2.py`，原始数据 `data/candidates-round2-2026-09-05.json`（125 条，其中 4 条为对照/交叉引用，不重复计数：Stitches、Shoelace legacy、Astro、ECharts）。周下载窗口为采集时 API 返回的 last-week。
+- 本批**不绑定任何具体产品**，「推荐」列以通用场景为准，不再使用第一批的「关系」列。
+- 「GitHub」列格式：stars / GitHub SPDX / 最近 push / archived。「npm」列格式：latest / 周下载 / npm license / **unpacked**（安装体积，≠ bundle 体积；bundle 体积见「体积」列 bundlephobia / pkg-size 链接，按需实时计算，本轮未逐个抓值）。
+- 「R19」= React peerDependencies 声明（`—` 表示无 react peer，通常是框架无关库）；`✅` 另附官方文档证据。
+
+---
+
+## 16. CSS-in-JS / 零运行时 CSS / CSS 工具链
+
+| 候选 | GitHub | npm | R19 | 体积 | 风险 / 备注 |
+|---|---|---|---|---|---|
+| [Panda CSS](https://github.com/chakra-ui/panda) | 6.2k / MIT / 2026-09-05 / no | `@pandacss/dev` 1.12.1 / 428k / MIT / 856k | — | [bp](https://bundlephobia.com/package/@pandacss/dev@1.12.1) | 零运行时，构建期生成原子 CSS；Chakra 团队维护 [已验证] |
+| [vanilla-extract](https://github.com/vanilla-extract-css/vanilla-extract) | 10.4k / MIT / 2026-08-27 / no | `@vanilla-extract/css` 1.21.2 / 3.0M / MIT / 389k | — | [bp](https://bundlephobia.com/package/@vanilla-extract/css@1.21.2) | 零运行时、类型安全；需 bundler 插件 [已验证] |
+| [StyleX](https://github.com/facebook/stylex) | 10.2k / MIT / 2026-09-05 / no | `@stylexjs/stylex` 0.19.0 / 1.9M / MIT / 334k | — | [bp](https://bundlephobia.com/package/@stylexjs/stylex@0.19.0) | Meta 出品，**仍 0.x**（最近发版 2026-06-16）；API 未承诺稳定 [已验证] |
+| [Pigment CSS](https://github.com/mui/pigment-css) | 1.1k / MIT / 2026-06-06 / no | `@pigment-css/react` 0.0.31 / 32k / MIT / 862k | peer ^17‖^18‖^19 | [bp](https://bundlephobia.com/package/@pigment-css/react@0.0.31) | MUI 团队零运行时方案，**0.0.x**，近 3 个月无 push [已验证] |
+| [Linaria](https://github.com/callstack/linaria) | 12.3k / MIT / 2026-08-10 / no | `@linaria/core` 8.2.0 / 594k / MIT / 25k | — | [bp](https://bundlephobia.com/package/@linaria/core@8.2.0) | 零运行时 CSS-in-JS 老牌；底层已抽为 wyw-in-js [已验证] |
+| [wyw-in-js](https://github.com/Anber/wyw-in-js) | 323 / MIT / 2026-09-05 / no | `@wyw-in-js/transform` 2.5.1 / 168k / MIT / 5.5M | — | [pkg](https://pkg-size.dev/@wyw-in-js/transform) | Linaria/Pigment 共用编译核心；主要单人维护 [已验证] |
+| [Emotion](https://github.com/emotion-js/emotion) | 18.0k / MIT / 2026-08-28 / no | `@emotion/react` 11.14.0 / 21.2M / MIT / 817k | peer >=16.8 | [bp](https://bundlephobia.com/package/@emotion/react@11.14.0) | 运行时方案；latest 发布于 2024-12-09，近 21 个月无新版（仓库仍有 push）[已验证] |
+| [styled-components](https://github.com/styled-components/styled-components) | 41.1k / MIT / 2026-09-05 / no | 6.5.3 / 11.5M / MIT / 2.1M | peer >=16.8 | [bp](https://bundlephobia.com/package/styled-components@6.5.3) | 运行时方案；RSC 不友好（官方 [FAQ](https://styled-components.com/docs/faqs)）[已验证 npm/GitHub；RSC 说明为官方文档] |
+| [Restyle](https://github.com/souporserious/restyle) | 450 / MIT / 2026-05-19 / no | `restyle` 3.4.3 / 956 / MIT / 305k | peer >=19.2.6 | [bp](https://bundlephobia.com/package/restyle@3.4.3) | RSC 友好零配置方案，社区小 [已验证] |
+| [UnoCSS](https://github.com/unocss/unocss) | 18.9k / **NOASSERTION** / 2026-09-05 / no | `unocss` 66.10.0 / 478k / MIT / 18k | — | [bp](https://bundlephobia.com/package/unocss@66.10.0) | 原子 CSS 引擎，Tailwind 替代；GitHub 未识别许可证，npm 为 MIT [已验证] |
+| [Tailwind Variants](https://github.com/heroui-inc/tailwind-variants) | 3.3k / MIT / 2026-08-18 / no | 3.3.1 / 3.8M / MIT / 332k | tw peer `*` | [bp](https://bundlephobia.com/package/tailwind-variants@3.3.1) | 变体组合工具，声明 tailwindcss peer `*`（TWv4 兼容由 peer 推断）[已验证] |
+| [Lightning CSS](https://github.com/parcel-bundler/lightningcss) | 7.7k / **MPL-2.0** / 2026-09-05 / no | 1.33.0 / 142.4M / MPL-2.0 / 514k | — | n/a（构建工具） | Rust CSS 转换/压缩器，Tailwind v4 底层依赖之一；MPL-2.0 为文件级 copyleft，作为构建工具使用无传染 [已验证] |
+| [PostCSS](https://github.com/postcss/postcss) | 29.0k / MIT / 2026-09-03 / no | 8.5.28 / 280.1M / MIT / 218k | — | n/a | 事实标准 CSS 处理管线 [已验证] |
+| [Sass (dart-sass)](https://github.com/sass/dart-sass) | 4.2k / MIT / 2026-09-04 / no | `sass` 1.104.0 / 32.4M / MIT / 5.9M | — | n/a | 预处理器；仍活跃 [已验证] |
+| [Open Props](https://github.com/argyleink/open-props) | 5.5k / MIT / 2026-08-11 / no | 1.7.23 / 27k / MIT / 1.3M | — | [bp](https://bundlephobia.com/package/open-props@1.7.23) | CSS 变量设计令牌集；npm 最近发版 2026-01-31 [已验证] |
+| [Tokenami](https://github.com/tokenami/tokenami) | 1.0k / MIT / 2026-09-04 / no | `@tokenami/dev` 0.0.76 / 75 / MIT / 266k | — | — | **npm latest 标记 deprecated**，周下载 75 → 不建议 [已验证] |
+| Stitches（对照） | 7.8k / MIT / 2025-02-10 / **archived** | `@stitches/react` 1.2.8 / 1.4M / MIT / 521k | peer >=16.3 | — | 仓库已归档，仅作对照，禁止新项目引入 [已验证] |
+
+**一句话推荐**：新项目要零运行时且类型安全，选 **vanilla-extract**（稳定 1.x、3.0M 周下载）或 **Panda CSS**（原子化 + 主题令牌）；StyleX / Pigment 仍是 0.x，观察不采用；运行时 Emotion / styled-components 只在维护旧项目时保留；原子 CSS 若不想绑 Tailwind，UnoCSS 是唯一量级相当的替代。
+
+---
+
+## 17. 构建工具 / 打包器 / 编译器
+
+| 候选 | GitHub | npm | 体积 | 风险 / 备注 |
+|---|---|---|---|---|
+| [Rspack](https://github.com/web-infra-dev/rspack) | 12.9k / MIT / 2026-09-05 / no | `@rspack/core` 2.2.2 / 9.0M / MIT / 1.7M | n/a | Rust 版 webpack 兼容打包器，2.x 已 GA；字节维护 [已验证] |
+| [Rsbuild](https://github.com/web-infra-dev/rsbuild) | 3.4k / MIT / 2026-09-05 / no | `@rsbuild/core` 2.2.3 / 1.7M / MIT / 4.8M | n/a | Rspack 之上的开箱即用应用构建器（对标 Vite 应用层）[已验证] |
+| [Rslib](https://github.com/web-infra-dev/rslib) | 1.0k / MIT / 2026-09-04 / no | `@rslib/core` 1.0.0 / 312k / MIT / 409k | n/a | 库打包器，**1.0.0 刚发布**（2026-09-03）[已验证] |
+| [Turbopack](https://github.com/vercel/next.js/tree/canary/turbopack) | (next.js 仓) 142.1k / MIT / 2026-09-05 / no | 无独立 npm 包 | n/a | 源码在 `vercel/next.js/turbopack` 目录，只随 Next.js 分发，**不能独立使用** [已验证：目录存在；独立使用状态为推断] |
+| [Farm](https://github.com/farm-fe/farm) | 5.6k / MIT / 2026-06-14 / no | `@farmfe/core` 1.7.11 / 6.2k / MIT / 2.6M | n/a | Rust 构建器；npm latest 2025-08-04，仓库近 3 个月无 push，**有停滞迹象**（2.0.0-beta 在 beta tag）[已验证] |
+| [esbuild](https://github.com/evanw/esbuild) | 40.0k / MIT / 2026-08-09 / no | 0.28.2 / 275.2M / MIT / 147k | n/a | Go 打包/转译器；长期 0.x 但极稳定 [已验证] |
+| [webpack](https://github.com/webpack/webpack) | 66.0k / MIT / 2026-09-05 / no | 5.110.3 / 56.4M / MIT / 9.8M | n/a | 仍活跃发版 [已验证] |
+| [Parcel](https://github.com/parcel-bundler/parcel) | 44.0k / MIT / 2026-09-05 / no | 2.16.4 / 354k / MIT / 44k | n/a | 零配置；npm latest 2026-02-02，发版频率放缓 [已验证] |
+| [Rollup](https://github.com/rollup/rollup) | 26.3k / **NOASSERTION** / 2026-09-04 / no | 4.63.1 / 124.6M / MIT / 2.9M | n/a | GitHub 未识别许可证，npm MIT；Vite 生产构建底层 [已验证] |
+| [tsdown](https://github.com/rolldown/tsdown) | 4.3k / MIT / 2026-09-03 / no | 0.23.0 / 5.7M / MIT / 182k | n/a | 基于 Rolldown 的库打包器，VoidZero 系；0.x [已验证] |
+| [tsup](https://github.com/egoist/tsup) | 11.3k / MIT / 2026-07-20 / no | 8.5.1 / 8.5M / MIT / 390k | n/a | npm latest 2025-11-12；官方 README 已推荐迁到 tsdown（[README](https://github.com/egoist/tsup)）[已验证 npm/GitHub；README 建议为页面证据] |
+| [SWC](https://github.com/swc-project/swc) | 34.2k / Apache-2.0 / 2026-09-05 / no | `@swc/core` 1.16.2 / 43.0M / Apache-2.0 / 134k | n/a | Rust 转译器，Next.js 默认 [已验证] |
+| [Babel](https://github.com/babel/babel) | 44.0k / MIT / 2026-09-04 / no | `@babel/core` 8.0.1 / 181.3M / MIT / 545k | n/a | **8.0 已发布**（latest 8.0.1，2026-06-17）[已验证] |
+| [Mako](https://github.com/umijs/mako) | 2.5k / MIT / 2026-09-04 / no | `@umijs/mako` 0.11.15 / 79k / MIT / 103k | n/a | 蚂蚁 Rust 打包器，npm latest 2025-11-06 [已验证] |
+| [Bun](https://github.com/oven-sh/bun) | 95.9k / **NOASSERTION** / 2026-09-05 / no | `bun` 1.4.2 / 3.5M / MIT / 20k | n/a | 运行时+打包器；[LICENSE.md](https://github.com/oven-sh/bun/blob/main/LICENSE.md) 声明 Bun 本身 MIT、静态链接 JavaScriptCore 为 LGPL-2 [已验证] |
+| [Vite Plus](https://github.com/voidzero-dev/vite-plus) | 5.7k / MIT / 2026-09-05 / no | `vite-plus` 0.3.0 / 1.1M / MIT / 2.1M | n/a | VoidZero 统一工具链（Vite/Vitest/Oxlint/tsdown 入口），**0.x** [已验证] |
+| [unplugin](https://github.com/unjs/unplugin) | 3.6k / MIT / 2026-07-31 / no | 3.3.0 / 60.7M / MIT / 80k | n/a | 跨 bundler 插件抽象层 [已验证] |
+
+（Vite / Vitest / Oxlint 已在 §14，不重复。）
+
+**一句话推荐**：应用构建默认 **Vite**（§14）；需 webpack 生态兼容或超大仓，选 **Rspack/Rsbuild**（2.x GA、MIT）；库打包 **tsdown**（tsup 官方指向的后继）或刚 1.0 的 **Rslib**；Farm 与 Mako 停滞/小众不选；Turbopack 只能随 Next.js 使用。
+
+---
+
+## 18. 包管理 / monorepo / 发布与运行时管理
+
+| 候选 | GitHub | npm | 风险 / 备注 |
+|---|---|---|---|
+| [pnpm](https://github.com/pnpm/pnpm) | 36.4k / MIT / 2026-09-05 / no | 12.3.4 / 177.6M / MIT / 3.9M | 12.x；默认 workspace 支持 [已验证] |
+| [npm CLI](https://github.com/npm/cli) | 10.1k / **NOASSERTION** / 2026-09-03 / no | `npm` 12.0.2 / 15.6M / **Artistic-2.0** / 12.4M | Artistic-2.0（OSI 认可），仅工具使用无影响 [已验证] |
+| [Yarn Berry](https://github.com/yarnpkg/berry) | 8.1k / BSD-2-Clause / 2026-08-04 / no | `@yarnpkg/cli` 4.18.0 / 75k / BSD-2-Clause / 21k | npm 下载低因多经 corepack 分发 [已验证；分发路径为推断] |
+| [Turborepo](https://github.com/vercel/turborepo) | 31.1k / MIT / 2026-09-05 / no | `turbo` 2.10.12 / 23.5M / MIT / 58k | 任务编排 + 远程缓存（远程缓存可自托管）[已验证] |
+| [Nx](https://github.com/nrwl/nx) | 29.3k / MIT / 2026-09-05 / no | `nx` 23.2.0 / 10.6M / MIT / 18.3M | 核心 MIT；Nx Cloud 为商业服务（[定价](https://nx.dev/pricing)）[已验证；商业边界为官网页面] |
+| [Lerna](https://github.com/lerna/lerna) | 36.1k / MIT / 2026-09-03 / no | 10.0.1 / 1.9M / MIT / 609k | 已由 Nx 团队维护，10.x [已验证] |
+| [moon](https://github.com/moonrepo/moon) | 4.1k / MIT / 2026-09-04 / no | `@moonrepo/cli` 2.5.4 / 266k / MIT / 8k | Rust 任务系统，多语言 [已验证] |
+| [Changesets](https://github.com/changesets/changesets) | 12.4k / MIT / 2026-09-04 / no | `@changesets/cli` 3.0.2 / 4.7M / MIT / 88k | 版本与 changelog 管理事实标准；3.x [已验证] |
+| [syncpack](https://github.com/JamieMason/syncpack) | 2.1k / MIT / 2026-08-09 / no | 15.3.3 / 2.5M / MIT / 69k | monorepo 依赖版本对齐 [已验证] |
+| [Verdaccio](https://github.com/verdaccio/verdaccio) | 17.9k / MIT / 2026-09-05 / no | 6.10.2 / 668k / MIT / 1.1M | 私有 npm registry [已验证] |
+| [corepack](https://github.com/nodejs/corepack) | 3.8k / MIT / 2026-09-04 / no | 0.36.0 / 5.2M / MIT / 607k | Node 官方包管理器版本钉定 [已验证] |
+| [publint](https://github.com/publint/publint) | 1.3k / MIT / 2026-09-02 / no | 0.3.24 / 1.3M / MIT / 117k | 发包前 package.json/exports 校验 [已验证] |
+| [are-the-types-wrong](https://github.com/arethetypeswrong/arethetypeswrong.github.io) | 1.6k / MIT / 2026-07-09 / no | `@arethetypeswrong/cli` 0.18.5 / 630k / MIT / 59k | 类型导出校验 [已验证] |
+| [Deno](https://github.com/denoland/deno) | 108.4k / MIT / 2026-09-04 / no | — | 运行时；npm 无主包 [已验证] |
+| [Volta](https://github.com/volta-cli/volta) | 13.1k / **NOASSERTION** / **2025-11-15** / no | — | 近 10 个月无 push，**停滞** [已验证] |
+| [fnm](https://github.com/Schniz/fnm) | 26.8k / **GPL-3.0** / 2026-07-24 / no | — | Node 版本管理器，GPL-3.0 仅影响修改分发工具本身 [已验证] |
+
+**一句话推荐**：**pnpm + Turborepo + Changesets** 是当前最低摩擦的 monorepo 组合（全 MIT、下载量领先）；需要代码生成/插件体系再上 Nx（核心 MIT，Cloud 收费）；发库前加 **publint + are-the-types-wrong**；Node 版本管理用 fnm 或 corepack，Volta 已停滞。
+
+---
+
+## 19. Web Components 与框架对照
+
+| 候选 | GitHub | npm | R19 | 风险 / 备注 |
+|---|---|---|---|---|
+| [Lit](https://github.com/lit/lit) | 21.8k / BSD-3-Clause / 2026-09-03 / no | `lit` 3.3.3 / 7.4M / BSD-3-Clause / 106k | — | Google；npm latest 2026-05-14 [已验证] |
+| `@lit/react` | (同 lit 仓) | 1.0.8 / 3.7M / BSD-3-Clause / 149k | — | 将 WC 包装为 React 组件；npm 2025-07-11 [已验证 npm] |
+| [Stencil](https://github.com/stenciljs/core) | 13.1k / **NOASSERTION** / 2026-09-05 / no | `@stencil/core` 4.44.2 / 1.4M / MIT / 23.1M | — | Ionic 团队 WC 编译器；GitHub 未识别许可证 [已验证] |
+| [Web Awesome](https://github.com/shoelace-style/webawesome) | 1.3k / MIT / 2026-09-03 / no | `@awesome.me/webawesome` 3.12.0 / 2.3M / MIT / 16.3M | — | Shoelace 后继；**有 Pro 付费层**（GitHub 描述"Upgrade to Pro"）[已验证] |
+| Shoelace（legacy，对照） | 13.8k / MIT / 2026-05-14 / **archived** | `@shoelace-style/shoelace` 2.20.1 / 144k / MIT / 8.4M | — | 仓库归档，已迁 Web Awesome [已验证] |
+| [FAST](https://github.com/microsoft/fast) | 9.7k / **NOASSERTION** / 2026-09-03 / no | `@microsoft/fast-element` 3.0.2 / 261k / MIT / 3.3M | — | 微软 WC 基础库 [已验证] |
+| [Preact](https://github.com/preactjs/preact) | 38.9k / MIT / 2026-09-05 / no | 10.29.8 / 31.8M / MIT / 1.6M | n/a | 3 kB React 替代 [已验证] |
+| [Solid](https://github.com/solidjs/solid) | 36.0k / MIT / 2026-09-05 / no | `solid-js` 1.9.15 / 4.0M / MIT / 1.1M | n/a | 细粒度响应式 [已验证] |
+| [Svelte](https://github.com/sveltejs/svelte) | 88.0k / MIT / 2026-09-05 / no | 5.57.0 / 5.8M / MIT / 2.9M | n/a | Svelte 5 runes [已验证] |
+| [Vue](https://github.com/vuejs/core) | 54.3k / MIT / 2026-09-05 / no | 3.5.42 / 15.6M / MIT / 2.5M | n/a | [已验证] |
+| [Qwik](https://github.com/QwikDev/qwik) | 22.1k / MIT / 2026-09-04 / no | `@builder.io/qwik` 1.20.0 / 48k / MIT / 20.5M | n/a | 下载量最低的一线框架 [已验证] |
+| [Angular](https://github.com/angular/angular) | 101.0k / MIT / 2026-09-04 / no | `@angular/core` 22.1.5 / 6.0M / MIT / 7.0M | n/a | [已验证] |
+| [HTMX](https://github.com/bigskysoftware/htmx) | 49.4k / **NOASSERTION** / 2026-09-04 / no | `htmx.org` 2.0.10 / 253k / **0BSD** / 884k | n/a | 0BSD 为无条件许可 [已验证] |
+| [Alpine.js](https://github.com/alpinejs/alpine) | 31.9k / MIT / 2026-09-04 / no | 3.17.1 / 737k / MIT / 689k | n/a | [已验证] |
+| Astro（对照，见 §12） | 62.3k / **NOASSERTION** / 2026-09-05 / no | 7.3.1 / 5.1M / MIT / 3.0M | n/a | 仅更新数据：latest 已到 7.3.1 [已验证] |
+
+**一句话推荐**：跨框架共享组件用 **Lit**（BSD-3，配 `@lit/react` 接入 React）；现成 WC 组件库只剩 Web Awesome（注意 Pro 功能墙，Shoelace 已归档）；框架层 React 之外，Svelte 5 / Vue 3.5 / Solid 均健康，Qwik 采用度最低。
+
+---
+
+## 20. 3D / Canvas / 游戏 / 白板
+
+| 候选 | GitHub | npm | R19 | 体积 | 风险 / 备注 |
+|---|---|---|---|---|---|
+| [three.js](https://github.com/mrdoob/three.js) | 115.2k / MIT / 2026-09-05 / no | `three` 0.185.1 / 15.2M / MIT / 23.2M | — | [bp](https://bundlephobia.com/package/three@0.185.1) | 月度发版，永久 0.x [已验证] |
+| [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | 32.1k / MIT / 2026-09-04 / no | `@react-three/fiber` 9.7.0 / 5.1M / MIT / 2.2M | peer `>=19 <19.3` ✅ | [bp](https://bundlephobia.com/package/@react-three/fiber@9.7.0) | v9 仅 React 19（[v9 迁移](https://r3f.docs.pmnd.rs/tutorials/v9-migration-guide)）[已验证] |
+| [drei](https://github.com/pmndrs/drei) | 9.8k / MIT / 2026-09-05 / no | `@react-three/drei` 10.7.8 / 3.9M / MIT / 1.8M | peer ^19 | [bp](https://bundlephobia.com/package/@react-three/drei@10.7.8) | R3F 助手集 [已验证] |
+| [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.0k / Apache-2.0 / 2026-09-04 / no | `@babylonjs/core` 9.25.0 / 339k / Apache-2.0 / 70.2M | — | [pkg](https://pkg-size.dev/@babylonjs/core) | 微软；全功能引擎 [已验证] |
+| [PixiJS](https://github.com/pixijs/pixijs) | 48.1k / MIT / 2026-09-04 / no | `pixi.js` 8.20.1 / 1.1M / MIT / 74.3M | — | [bp](https://bundlephobia.com/package/pixi.js@8.20.1) | 2D WebGL/WebGPU [已验证] |
+| [@pixi/react](https://github.com/pixijs/pixi-react) | 2.9k / MIT / **2026-01-16** / no | 8.0.5 / 87k / MIT / 10.5M | peer >=19 | [bp](https://bundlephobia.com/package/@pixi/react@8.0.5) | 近 8 个月无 push，npm 2025-12-01 [已验证] |
+| [Konva](https://github.com/konvajs/konva) | 14.8k / **NOASSERTION** / 2026-09-04 / no | 10.3.3 / 2.8M / MIT / 1.5M | — | [bp](https://bundlephobia.com/package/konva@10.3.3) | 2D Canvas 场景图 [已验证] |
+| [react-konva](https://github.com/konvajs/react-konva) | 6.4k / MIT / 2026-09-04 / no | 19.2.6 / 2.2M / MIT / 77k | peer ^19.2 ✅ | [bp](https://bundlephobia.com/package/react-konva@19.2.6) | 版本号跟随 React 主版本 [已验证] |
+| [Fabric.js](https://github.com/fabricjs/fabric.js) | 31.4k / MIT / 2026-08-18 / no | `fabric` 7.4.0 / 960k / MIT / 22.2M | — | [bp](https://bundlephobia.com/package/fabric@7.4.0) | 图形编辑器常用 [已验证] |
+| [Phaser](https://github.com/phaserjs/phaser) | 40.3k / MIT / 2026-08-21 / no | 4.2.1 / 346k / MIT / 112.5M | — | [pkg](https://pkg-size.dev/phaser) | 2D 游戏引擎，v4 [已验证] |
+| [p5.js](https://github.com/processing/p5.js) | 23.9k / **LGPL-2.1** / 2026-09-03 / no | `p5` 2.3.2 / 220k / LGPL-2.1 / 17.4M | — | [pkg](https://pkg-size.dev/p5) | LGPL：打包进产品时需保证可替换/动态链接义务，商用前请法务确认 [已验证] |
+| [Theatre.js](https://github.com/theatre-js/theatre) | 12.7k / Apache-2.0 / **2024-08-14** / no | `@theatre/core` 0.7.2 / 17k / Apache-2.0 / 903k | — | — | **2 年无 push，停滞** [已验证] |
+| [OGL](https://github.com/oframe/ogl) | 4.6k / **NONE** / 2025-04-13 / no | `ogl` 1.0.11 / 618k / Unlicense / 423k | — | [bp](https://bundlephobia.com/package/ogl@1.0.11) | 小型 WebGL 库；GitHub 无许可证识别、npm Unlicense；近 17 个月无 push [已验证] |
+| [Rough.js](https://github.com/rough-stuff/rough) | 21.2k / MIT / **2024-07-28** / no | `roughjs` 4.6.6 / 14.1M / MIT / 170k | — | [bp](https://bundlephobia.com/package/roughjs@4.6.6) | 手绘风；2 年无 push，但被 Excalidraw 依赖故下载高 [已验证；依赖关系为推断] |
+| [tsParticles](https://github.com/tsparticles/tsparticles) | 9.0k / MIT / 2026-09-02 / no | `@tsparticles/react` 4.4.0 / 237k / MIT / 4k | peer >=16.8 | [bp](https://bundlephobia.com/package/@tsparticles/react@4.4.0) | 粒子背景 [已验证] |
+| [Spline react](https://github.com/splinetool/react-spline) | 1.4k / MIT / 2026-03-13 / no | `@splinetool/react-spline` 4.1.0 / 164k / **npm 未声明 license** / 27k | peer `*` | — | 依赖 Spline 商业设计工具导出；npm 包缺 license 字段 [已验证] |
+| [Excalidraw](https://github.com/excalidraw/excalidraw) | 131.2k / MIT / 2026-09-04 / no | `@excalidraw/excalidraw` 0.18.1 / 508k / MIT / 46.8M | peer ^17‖^18‖^19 | [pkg](https://pkg-size.dev/@excalidraw/excalidraw) | 可嵌入白板，MIT [已验证] |
+| [tldraw](https://github.com/tldraw/tldraw) | 50.1k / **NOASSERTION** / 2026-09-04 / no | 5.4.0 / 369k / **SEE LICENSE IN LICENSE.md** / 14.9M | peer ^18.2‖^19.2.1 | — | **非开源许可**：[LICENSE.md](https://github.com/tldraw/tldraw/blob/main/LICENSE.md) 禁止生产环境使用，需 License Key / 商业授权 [已验证] |
+
+**一句话推荐**：3D 走 **three.js + R3F v9（仅 React 19）+ drei**；2D Canvas 交互用 **Konva + react-konva**（react-konva 已随 React 19.2）；白板嵌入选 **Excalidraw（MIT）**，tldraw 是"源码可见但生产需付费"的许可，不能当开源用；p5.js 为 LGPL、Theatre.js/Rough.js/OGL 已停滞，谨慎。
+
+---
+
+## 21. 地图 / GIS
+
+| 候选 | GitHub | npm | R19 | 风险 / 备注 |
+|---|---|---|---|---|
+| [MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js) | 11.5k / **NOASSERTION** / 2026-09-05 / no | `maplibre-gl` 6.7.0 / 4.5M / BSD-3-Clause / 19.8M | — | Mapbox GL v1 的开源分支；[LICENSE.txt](https://github.com/maplibre/maplibre-gl-js/blob/main/LICENSE.txt) 为 BSD-3 [已验证] |
+| [react-map-gl](https://github.com/visgl/react-map-gl) | 8.5k / **NOASSERTION** / 2026-09-03 / no | 8.1.3 / 2.1M / MIT / 481k | peer >=16.3 | vis.gl（OpenJS 基金会）维护，支持 MapLibre/Mapbox 双后端 [已验证] |
+| Mapbox GL JS（对照） | 12.4k / **NOASSERTION** / 2026-09-04 / no | `mapbox-gl` 3.30.0 / 4.1M / **SEE LICENSE IN LICENSE.txt** / 65.4M | — | **非开源**：[LICENSE.txt](https://github.com/mapbox/mapbox-gl-js/blob/main/LICENSE.txt) 仅限配合 Mapbox 付费产品使用 [已验证] |
+| [Leaflet](https://github.com/Leaflet/Leaflet) | 45.6k / BSD-2-Clause / 2026-09-05 / no | `leaflet` 1.9.4 / 6.9M / BSD-2-Clause / 3.7M | — | latest 1.9.4 发布于 **2023-05-18**；2.0.0-alpha.1 在 alpha tag，仓库活跃 [已验证] |
+| [react-leaflet](https://github.com/PaulLeCam/react-leaflet) | 5.6k / **NOASSERTION** / 2025-12-31 / no | 5.0.0 / 3.6M / **Hippocratic-2.1** / 49k | peer ^19 | **Hippocratic 2.1 非 OSI 开源许可**（含伦理使用限制，[LICENSE.md](https://github.com/PaulLeCam/react-leaflet/blob/master/LICENSE.md)）；单人维护，npm 2024-12-14 [已验证] |
+| [OpenLayers](https://github.com/openlayers/openlayers) | 12.6k / BSD-2-Clause / 2026-09-05 / no | `ol` 10.10.0 / 786k / BSD-2-Clause / 12.3M | — | 全功能 GIS 库 [已验证] |
+| [deck.gl](https://github.com/visgl/deck.gl) | 14.6k / MIT / 2026-09-05 / no | 9.3.11 / 275k / MIT / 5.2M | peer >=16.3 | 大数据地理可视化，叠加 MapLibre [已验证] |
+| [CesiumJS](https://github.com/CesiumGS/cesium) | 15.7k / Apache-2.0 / 2026-09-04 / no | `cesium` 1.145.0 / 298k / Apache-2.0 / 79.4M | — | 3D 地球；Cesium ion 为商业服务 [已验证；商业边界为推断] |
+| [Turf.js](https://github.com/Turfjs/turf) | 10.5k / MIT / 2026-08-31 / no | `@turf/turf` 7.4.0 / 1.4M / MIT / 604k | — | 地理空间计算 [已验证] |
+| [PMTiles](https://github.com/protomaps/PMTiles) | 3.0k / **NOASSERTION** / 2026-08-19 / no | `pmtiles` 4.5.0 / 808k / BSD-3-Clause / 380k | — | 单文件瓦片格式，配 MapLibre 自托管底图 [已验证] |
+| [AntV L7](https://github.com/antvis/L7) | 4.1k / MIT / 2026-07-30 / no | `@antv/l7` 2.29.1 / 36k / MIT / 1.5M | — | 蚂蚁地理可视化，中文文档 [已验证] |
+| ECharts 地图（见 §5） | — | — | — | 仅交叉引用 [不重复采集] |
+
+**一句话推荐**：Web 地图默认 **MapLibre GL JS + react-map-gl + PMTiles**（全部宽松许可、可自托管、无 token）；Mapbox GL JS v2+ 不是开源许可；Leaflet 本体健康但 react-leaflet 为 Hippocratic 许可且单人维护，React 项目慎用；大数据叠加用 deck.gl，3D 地球用 CesiumJS。
+
+---
+
+## 22. 实时协作 / CRDT / 实时通信 / 同步引擎
+
+| 候选 | GitHub | npm | R19 | 风险 / 备注 |
+|---|---|---|---|---|
+| [Yjs](https://github.com/yjs/yjs) | 22.8k / **NOASSERTION** / 2026-09-05 / no | 13.6.32 / 8.6M / MIT / 2.3M | — | CRDT 事实标准；Tiptap/BlockNote 协作层 [已验证] |
+| [y-websocket](https://github.com/yjs/y-websocket) | 710 / MIT / 2026-08-06 / no | 3.1.0 / 731k / MIT / 94k | — | 官方最简 provider [已验证] |
+| [Hocuspocus](https://github.com/ueberdosis/hocuspocus) | 2.6k / MIT / 2026-09-02 / no | `@hocuspocus/server` 4.6.0 / 711k / MIT / 906k | — | Tiptap 团队 Yjs 服务端，MIT（Tiptap Cloud 为付费）[已验证] |
+| [Automerge](https://github.com/automerge/automerge) | 6.6k / MIT / 2026-09-04 / no | `@automerge/automerge` 3.4.1 / 48k / MIT / 46.5M | — | Rust+Wasm CRDT，unpacked 46.5M [已验证] |
+| [Loro](https://github.com/loro-dev/loro) | 6.1k / MIT / 2026-09-05 / no | `loro-crdt` 1.15.1 / 157k / MIT / 19.4M | — | 高性能 CRDT，1.x [已验证] |
+| [Liveblocks](https://github.com/liveblocks/liveblocks) | 4.7k / **NOASSERTION** / 2026-09-04 / no | `@liveblocks/client` 3.24.1 / 408k / Apache-2.0 / 15k | — | SDK 开源，**服务端为 SaaS**（[定价](https://liveblocks.io/pricing)：Free / $25 / $500 月）[已验证] |
+| [PartyServer](https://github.com/cloudflare/partykit) | 1.3k / ISC / 2026-08-03 / no | `partyserver` 0.5.10 / 1.7M / ISC / 143k | — | 绑定 Cloudflare Durable Objects [已验证] |
+| [Socket.IO](https://github.com/socketio/socket.io) | 63.2k / MIT / 2026-09-04 / no | `socket.io-client` 4.8.3 / 14.5M / MIT / 1.4M | — | client latest 2025-12-23 [已验证] |
+| [Zero](https://github.com/rocicorp/mono) | 3.4k / Apache-2.0 / 2026-09-05 / no | `@rocicorp/zero` 1.9.0 / 122k / Apache-2.0 / 8.6M | — | Rocicorp 同步引擎，需自托管 zero-cache [已验证] |
+| [Electric SQL](https://github.com/electric-sql/electric) | 10.4k / Apache-2.0 / 2026-09-02 / no | `@electric-sql/client` 1.5.27 / 1.3M / Apache-2.0 / 2.4M | — | Postgres 部分复制同步 [已验证] |
+| [Convex](https://github.com/get-convex/convex-js) | 365 / Apache-2.0 / 2026-09-05 / no | `convex` 1.45.0 / 1.3M / Apache-2.0 / 31.4M | peer ^18‖^19 | 客户端开源，后端为托管服务（有自托管版）[已验证；自托管为官网说明，未实测] |
+| [Supabase JS](https://github.com/supabase/supabase-js) | 4.6k / MIT / 2026-09-04 / no | `@supabase/supabase-js` 2.115.0 / 25.0M / MIT / 638k | — | Realtime 通道随 SDK [已验证] |
+| [Jazz](https://github.com/garden-co/jazz) | 184 / **NOASSERTION** / 2026-09-05 / no | `jazz-tools` 0.20.19 / 3.8k / MIT / 12.8M | peer `*` | 0.x、社区极小 [已验证] |
+
+**一句话推荐**：自控协作基础设施选 **Yjs + Hocuspocus**（全 MIT，与 §8 Tiptap/BlockNote 天然对接）；想省运维选 **Liveblocks**（SDK Apache-2.0 但服务收费）；需要"数据库级"同步而非文档协作，看 Electric SQL / Zero（均 Apache-2.0，需自托管服务端）；Automerge/Loro 适合非文档型 CRDT 场景。
+
+---
+
+## 23. 本地优先 / 浏览器存储 / WASM 数据库
+
+| 候选 | GitHub | npm | R19 | 风险 / 备注 |
+|---|---|---|---|---|
+| [TinyBase](https://github.com/tinyplex/tinybase) | 5.2k / MIT / 2026-09-03 / no | 9.7.0 / 14k / MIT / 16.0M | peer ^19.2.8 ✅ | 响应式本地数据存储，React 19 peer 明确 [已验证] |
+| [Dexie.js](https://github.com/dexie/Dexie.js) | 14.6k / Apache-2.0 / 2026-08-28 / no | `dexie` 4.4.5 / 2.3M / Apache-2.0 / 3.2M | — | IndexedDB 封装事实标准；Dexie Cloud 为付费同步 [已验证] |
+| `dexie-react-hooks` | (同 Dexie 仓) | 4.4.0 / 488k / Apache-2.0 / 154k | peer >=16 | `useLiveQuery` [已验证 npm] |
+| [PGlite](https://github.com/electric-sql/pglite) | 16.0k / Apache-2.0 / 2026-08-26 / no | `@electric-sql/pglite` 0.5.8 / **15.3M** / Apache-2.0 / 25.4M | — | 浏览器 Postgres（Wasm），0.x；周下载 15.3M 为 API 返回值 [已验证] |
+| [RxDB](https://github.com/pubkey/rxdb) | 23.4k / Apache-2.0 / 2026-09-04 / no | 17.5.0 / 73k / Apache-2.0 / 11.5M | peer `*` | 核心 Apache-2.0，**部分插件为付费 Premium**（[官网](https://rxdb.info/premium/)）[已验证；付费边界为官网页面] |
+| [idb](https://github.com/jakearchibald/idb) | 7.4k / ISC / **2025-05-07** / no | 8.0.3 / 24.7M / ISC / 83k | — | IndexedDB Promise 封装；16 个月无更新，但功能完备 [已验证] |
+| [idb-keyval](https://github.com/jakearchibald/idb-keyval) | 3.2k / **NOASSERTION** / 2026-07-08 / no | 6.3.0 / 8.7M / Apache-2.0 / 56k | — | 极简 KV [已验证] |
+| [localForage](https://github.com/localForage/localForage) | 25.8k / Apache-2.0 / **2024-07-30** / no | 1.10.0 / 8.8M / Apache-2.0 / 468k | — | npm latest **2021-08-18**，停滞 [已验证] |
+| [sql.js](https://github.com/sql-js/sql.js) | 13.7k / **NOASSERTION** / 2026-08-14 / no | 1.14.2 / 2.5M / MIT / 24.2M | — | SQLite 编译到 Wasm（内存型）[已验证] |
+| [wa-sqlite](https://github.com/rhashimoto/wa-sqlite) | 1.4k / MIT / 2026-08-28 / no | 1.0.0 / 12k / **npm 未声明 license** / 2.2M | — | npm latest 2024-01-05；GitHub MIT [已验证] |
+| [SQLite Wasm (官方)](https://github.com/sqlite/sqlite-wasm) | 1.1k / **NONE** / 2026-07-13 / no | `@sqlite.org/sqlite-wasm` 3.53.0-build1 / 796k / Apache-2.0 / 2.8M | — | SQLite 官方 OPFS 持久化；GitHub 无许可证识别（SQLite 本体为公有领域）[已验证；公有领域为 SQLite 官网] |
+| [PowerSync](https://github.com/powersync-ja/powersync-js) | 720 / Apache-2.0 / 2026-09-04 / no | `@powersync/web` 2.3.0 / 85k / Apache-2.0 / 10.3M | — | SDK 开源，同步服务有云/自托管 [已验证；服务形态为推断] |
+| [InstantDB](https://github.com/instantdb/instant) | 10.5k / Apache-2.0 / 2026-09-05 / no | `@instantdb/react` 1.0.67 / 173k / Apache-2.0 / 728k | peer >=16 | 客户端 Apache-2.0，后端托管 [已验证] |
+| [Triplit](https://github.com/aspen-cloud/triplit) | 3.1k / **AGPL-3.0** / **2026-01-19** / no | `@triplit/client` 1.0.50 / 146k / AGPL-3.0-only / 811k | — | **AGPL** 且近 8 个月无 push，npm 2025-07-31 [已验证] |
+| [Evolu](https://github.com/evoluhq/evolu) | 1.9k / MIT / 2026-09-03 / no | `@evolu/react` 11.0.2 / 279 / MIT / 25k | peer >=19 | 端到端加密本地优先，采用度极低 [已验证] |
+| [unstorage](https://github.com/unjs/unstorage) | 2.6k / MIT / 2026-09-05 / no | 1.17.5 / 24.8M / MIT / 354k | — | 统一 KV 抽象（浏览器/Node/云）[已验证] |
+| [Legend-State](https://github.com/LegendApp/legend-state) | 4.2k / MIT / 2026-08-11 / no | `@legendapp/state` 2.1.15 / 97k / MIT / 993k | peer >=16.8 | latest 2.x 停在 2024-08-30，3.0 长期 beta [已验证] |
+
+**一句话推荐**：浏览器结构化存储默认 **Dexie 4 + dexie-react-hooks**（Apache-2.0、最成熟）；轻量 KV 用 idb-keyval；需要 SQL 选 **SQLite Wasm 官方（OPFS）** 或 PGlite（Postgres 语法，仍 0.x）；带云同步的方案（RxDB Premium、Dexie Cloud、PowerSync、InstantDB）都存在商业边界，Triplit 为 AGPL 且停滞，不选。
+
+---
+
+## 第二批风险清单（GitHub SPDX ≠ npm license 或非宽松许可）
+
+| 候选 | GitHub SPDX | npm license | 判断 |
+|---|---|---|---|
+| tldraw | NOASSERTION | SEE LICENSE IN LICENSE.md | **非开源**，生产需商业授权 |
+| Mapbox GL JS | NOASSERTION | SEE LICENSE IN LICENSE.txt | **非开源**，绑定 Mapbox 付费产品 |
+| react-leaflet | NOASSERTION | Hippocratic-2.1 | 非 OSI 许可（伦理条款） |
+| Triplit | AGPL-3.0 | AGPL-3.0-only | 网络 copyleft |
+| p5.js | LGPL-2.1 | LGPL-2.1 | 弱 copyleft，嵌入需注意 |
+| Lightning CSS | MPL-2.0 | MPL-2.0 | 文件级 copyleft，构建工具无影响 |
+| fnm | GPL-3.0 | — | 仅 CLI 工具，无影响 |
+| npm CLI | NOASSERTION | Artistic-2.0 | OSI 认可，仅工具 |
+| HTMX | NOASSERTION | 0BSD | 宽松 |
+| OGL | NONE | Unlicense | 公有领域式，但项目停滞 |
+| Spline react / wa-sqlite | MIT | （npm 未声明） | 需以仓库 LICENSE 为准 |
+| UnoCSS / Rollup / Bun / Stencil / FAST / Astro / Konva / MapLibre / react-map-gl / PMTiles / Yjs / Liveblocks / Jazz / idb-keyval / sql.js | NOASSERTION | MIT / BSD-3 / Apache-2.0 | GitHub 未识别许可证文件，npm 为宽松许可，实质无风险 |
+| Volta | NOASSERTION | — | 无 npm 包；仓库停滞 |
+| @lit/react、dexie-react-hooks、SQLite Wasm | （无独立仓 / NONE） | BSD-3 / Apache-2.0 / Apache-2.0 | 按 npm license 采信 |
+
+**archived**：Stitches、Shoelace（legacy）。**npm deprecated**：Tokenami。**停滞（≥8 个月无 push）**：Theatre.js、Rough.js、localForage、OGL、Volta、Triplit、@pixi/react。**商业功能墙**：Web Awesome Pro、Nx Cloud、Liveblocks、RxDB Premium、Dexie Cloud、Convex/InstantDB 托管后端。
+
+
 ## 附录 A. 本轮新增的重大上游变化（老板需知）
 
 1. **React Router v8**（2026-06-17）删除 `react-router-dom` 包，我们 102 处 import 需迁到 `react-router`。证据：[changelog v8.0.0](https://reactrouter.com/changelog)、npm `react-router-dom` dist-tags latest=7.18.3。
@@ -381,16 +611,41 @@
 6. **Origin UI → coss（AGPL-3.0）**：`origin-space/originui` 已重定向到 `cosscom/coss`。证据：[LICENSE](https://github.com/cosscom/coss/blob/main/LICENSE)。
 7. **dnd-kit 新代 `@dnd-kit/react` 0.5.0**（2026-09-05 发布，React 19），旧 `@dnd-kit/core` 自 2024-12 无发布。
 
+第二批（§16–§23）新增：
+
+8. **tsup 官方宣布不再积极维护**，README 指向 tsdown（[README](https://github.com/egoist/tsup)、[迁移指南](https://tsdown.dev/guide/migrate-from-tsup)）；tsdown 0.23.0，Rslib 1.0.0（2026-09-03）。
+9. **Babel 8.0 已发布**（`@babel/core` latest 8.0.1，2026-06-17）。
+10. **tldraw 许可证为非开源自定义许可**，生产环境需 License Key（[LICENSE.md](https://github.com/tldraw/tldraw/blob/main/LICENSE.md)）；白板嵌入选 Excalidraw（MIT）。
+11. **Shoelace 仓库已归档**，后继 Web Awesome 3.x 含 Pro 付费层。
+12. **React Three Fiber v9 仅支持 React 19**（peer `>=19 <19.3`）。
+13. **Leaflet 2.0.0-alpha.1** 已在 npm alpha tag，latest 仍为 2023 年的 1.9.4；react-leaflet 5 采用 Hippocratic-2.1 许可。
+
 ## 附录 B. 数据来源与复现
 
 - GitHub：`gh api repos/<owner>/<repo> --jq '{stars:.stargazers_count,license:.license.spdx_id,pushed:.pushed_at,archived:.archived}'`
 - npm 元数据：`https://registry.npmjs.org/<pkg>`（`dist-tags.latest`、`versions[latest].license/peerDependencies/dist.unpackedSize`、`time`）
 - npm 周下载：`https://api.npmjs.org/downloads/point/last-week/<pkg>`（窗口 2026-08-23 ~ 2026-08-29）
+- 复现：`python3 scripts/collect.py scripts/items_round1.py data/candidates-2026-09-05.json`（第一批）/ `python3 scripts/collect.py scripts/items_round2.py data/candidates-round2-2026-09-05.json`（第二批），然后 `scripts/downloads.py <json>` 补周下载、`scripts/summarize.py <json> <txt>` 出逐行摘要。
 - 未在本文表格中单独列出但已采集的对照项（均 MIT/ISC，供追问）：sonner 2.0.8、cva 0.7.1、tailwind-merge 3.6.0、clsx 2.1.1、vaul 1.1.2、cmdk 1.1.1、react-resizable-panels 4.12.3、embla-carousel-react 8.6.0、input-otp 1.5.0、next-themes 0.4.6、qrcode.react 4.2.0、mermaid 11.17.2、@number-flow/react 0.6.2、react-error-boundary 6.1.5、usehooks-ts 3.1.1、ky 2.1.0、axios 1.20.0、react-use 17.6.1（Unlicense）、pdf-lib 1.17.1（npm 最后发布 2021-11-06）、html2canvas 1.4.1（2022-01-22）。
 
 ## 附录 C. 全部链接索引
 
 ### 官方文档 / 兼容性 / 许可证证据
+- tsup README（停止维护声明）：https://github.com/egoist/tsup
+- tsdown 从 tsup 迁移：https://tsdown.dev/guide/migrate-from-tsup
+- React Three Fiber v9 迁移：https://r3f.docs.pmnd.rs/tutorials/v9-migration-guide
+- styled-components FAQ（RSC）：https://styled-components.com/docs/faqs
+- tldraw LICENSE：https://github.com/tldraw/tldraw/blob/main/LICENSE.md
+- Mapbox GL JS LICENSE：https://github.com/mapbox/mapbox-gl-js/blob/main/LICENSE.txt
+- MapLibre LICENSE（BSD-3）：https://github.com/maplibre/maplibre-gl-js/blob/main/LICENSE.txt
+- react-leaflet LICENSE（Hippocratic-2.1）：https://github.com/PaulLeCam/react-leaflet/blob/master/LICENSE.md
+- Bun LICENSE：https://github.com/oven-sh/bun/blob/main/LICENSE.md
+- Lightning CSS LICENSE（MPL-2.0）：https://github.com/parcel-bundler/lightningcss/blob/master/LICENSE
+- Triplit LICENSE（AGPL-3.0）：https://github.com/aspen-cloud/triplit/blob/main/LICENSE
+- Liveblocks 定价：https://liveblocks.io/pricing
+- Nx 定价（Nx Cloud）：https://nx.dev/pricing
+- RxDB Premium：https://rxdb.info/premium/
+- Turbopack 源码目录：https://github.com/vercel/next.js/tree/canary/turbopack
 - shadcn/ui Vite 安装：https://ui.shadcn.com/docs/installation/vite
 - shadcn/ui Tailwind v4：https://ui.shadcn.com/docs/tailwind-v4
 - shadcn/ui changelog：https://ui.shadcn.com/docs/changelog
