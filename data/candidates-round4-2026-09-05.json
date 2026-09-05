@@ -1,0 +1,4578 @@
+[
+ {
+  "cat": "35",
+  "name": "Element Plus",
+  "repo": "element-plus/element-plus",
+  "pkg": "element-plus",
+  "gh": {
+   "archived": false,
+   "created": "2020-07-21T06:51:19Z",
+   "default_branch": "dev",
+   "desc": "🎉 A Vue.js 3 UI Library made by Element team",
+   "forks": 19837,
+   "issues": 1150,
+   "license": "MIT",
+   "pushed": "2026-09-04T02:52:06Z",
+   "stars": 27730
+  },
+  "npm": {
+   "version": "2.14.5",
+   "tags": {
+    "latest": "2.14.5"
+   },
+   "modified": "2026-08-21T12:27:16.808Z",
+   "latest_time": "2026-08-21T12:27:16.473Z",
+   "created": "2019-06-12T09:50:42.427Z",
+   "repository": "git+https://github.com/element-plus/element-plus.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 43563333,
+   "deps_count": 15,
+   "types": true,
+   "deprecated": null,
+   "weekly": 688796
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Naive UI",
+  "repo": "tusen-ai/naive-ui",
+  "pkg": "naive-ui",
+  "gh": {
+   "archived": false,
+   "created": "2021-06-04T13:47:28Z",
+   "default_branch": "main",
+   "desc": "A Vue 3 Component Library. Fairly Complete. Theme Customizable. Uses TypeScript. Fast.",
+   "forks": 1853,
+   "issues": 700,
+   "license": "MIT",
+   "pushed": "2026-08-27T20:03:57Z",
+   "stars": 18532
+  },
+  "npm": {
+   "version": "2.45.3",
+   "tags": {
+    "beta": "2.32.2-beta.0",
+    "latest": "2.45.3"
+   },
+   "modified": "2026-08-27T20:02:50.531Z",
+   "latest_time": "2026-08-27T20:02:50.366Z",
+   "created": "2020-02-25T15:42:47.260Z",
+   "repository": "https://github.com/tusen-ai/naive-ui",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 51874410,
+   "deps_count": 18,
+   "types": true,
+   "deprecated": null,
+   "weekly": 158165
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Vuetify",
+  "repo": "vuetifyjs/vuetify",
+  "pkg": "vuetify",
+  "gh": {
+   "archived": false,
+   "created": "2016-09-12T00:39:35Z",
+   "default_branch": "master",
+   "desc": "🐉 Vue Component Framework",
+   "forks": 7125,
+   "issues": 394,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T18:57:38Z",
+   "stars": 41038
+  },
+  "npm": {
+   "version": "4.2.0",
+   "tags": {
+    "next": "4.0.1",
+    "latest": "4.2.0"
+   },
+   "modified": "2026-09-02T01:37:28.518Z",
+   "latest_time": "2026-09-02T01:37:28.112Z",
+   "created": "2016-07-17T01:33:06.432Z",
+   "repository": "git+https://github.com/vuetifyjs/vuetify.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 69874540,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1040959
+  }
+ },
+ {
+  "cat": "35",
+  "name": "PrimeVue",
+  "repo": "primefaces/primevue",
+  "pkg": "primevue",
+  "gh": {
+   "archived": false,
+   "created": "2018-12-04T07:04:14Z",
+   "default_branch": "master",
+   "desc": "Next Generation Vue UI Component Library",
+   "forks": 1781,
+   "issues": 852,
+   "license": "MIT",
+   "pushed": "2026-08-27T22:12:25Z",
+   "stars": 14458
+  },
+  "npm": {
+   "version": "5.0.1",
+   "tags": {
+    "latest": "5.0.1"
+   },
+   "modified": "2026-08-13T16:04:52.737Z",
+   "latest_time": "2026-08-13T16:04:52.576Z",
+   "created": "2018-12-04T07:02:10.265Z",
+   "repository": null,
+   "license": "SEE LICENSE IN LICENSE.md",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 9349144,
+   "deps_count": 8,
+   "types": true,
+   "deprecated": null,
+   "weekly": 812258
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Quasar",
+  "repo": "quasarframework/quasar",
+  "pkg": "quasar",
+  "gh": {
+   "archived": false,
+   "created": "2015-10-05T15:45:36Z",
+   "default_branch": "dev",
+   "desc": "Quasar Framework - Build high-performance VueJS user interfaces in record time",
+   "forks": 3681,
+   "issues": 145,
+   "license": "MIT",
+   "pushed": "2026-09-04T17:19:20Z",
+   "stars": 27206
+  },
+  "npm": {
+   "version": "2.30.0",
+   "tags": {
+    "latest": "2.30.0"
+   },
+   "modified": "2026-09-04T17:19:05.272Z",
+   "latest_time": "2026-09-04T17:19:05.104Z",
+   "created": "2013-06-19T10:55:21.372Z",
+   "repository": "git+https://github.com/quasarframework/quasar.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 10809402,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 368445
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Nuxt UI",
+  "repo": "nuxt/ui",
+  "pkg": "@nuxt/ui",
+  "gh": {
+   "archived": false,
+   "created": "2021-11-15T15:59:30Z",
+   "default_branch": "v4",
+   "desc": "The Intuitive Vue UI Library powered by Reka UI & Tailwind CSS.",
+   "forks": 1115,
+   "issues": 263,
+   "license": "MIT",
+   "pushed": "2026-09-05T12:27:34Z",
+   "stars": 6880
+  },
+  "npm": {
+   "version": "4.11.0",
+   "tags": {
+    "alpha": "4.0.0-alpha.2",
+    "beta": "4.0.0-beta.0",
+    "latest": "4.11.0"
+   },
+   "modified": "2026-08-21T15:18:20.334Z",
+   "latest_time": "2026-08-21T15:18:20.160Z",
+   "created": "2021-12-09T14:17:18.669Z",
+   "repository": "git+https://github.com/nuxt/ui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": "^4.0.0",
+   "unpacked": 2675418,
+   "deps_count": 65,
+   "types": false,
+   "deprecated": null,
+   "weekly": 551957
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Ant Design Vue",
+  "repo": "vueComponent/ant-design-vue",
+  "pkg": "ant-design-vue",
+  "gh": {
+   "archived": false,
+   "created": "2017-09-20T06:04:01Z",
+   "default_branch": "main",
+   "desc": "🌈  An enterprise-class UI components based on Ant Design and Vue. 🐜",
+   "forks": 3895,
+   "issues": 127,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-04T05:41:31Z",
+   "stars": 21640
+  },
+  "npm": {
+   "version": "4.2.6",
+   "tags": {
+    "beta": "3.1.0-rc.6",
+    "alpha": "4.0.0-alpha.6",
+    "next": "4.0.0-rc.6",
+    "latest": "4.2.6"
+   },
+   "modified": "2024-11-11T09:00:47.060Z",
+   "latest_time": "2024-11-11T09:00:46.901Z",
+   "created": "2018-08-04T11:02:34.816Z",
+   "repository": "git+https://github.com/vueComponent/ant-design-vue.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 77953156,
+   "deps_count": 22,
+   "types": true,
+   "deprecated": null,
+   "weekly": 199332
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Reka UI (ex Radix Vue)",
+  "repo": "unovue/reka-ui",
+  "pkg": "reka-ui",
+  "gh": {
+   "archived": false,
+   "created": "2023-06-22T11:08:02Z",
+   "default_branch": "v2",
+   "desc": "An open-source UI component library for building high-quality, accessible design systems and web apps for Vue. Previously Radix Vue",
+   "forks": 550,
+   "issues": 311,
+   "license": "MIT",
+   "pushed": "2026-09-05T17:30:18Z",
+   "stars": 6768
+  },
+  "npm": {
+   "version": "2.10.4",
+   "tags": {
+    "latest": "2.10.4"
+   },
+   "modified": "2026-08-25T05:17:15.143Z",
+   "latest_time": "2026-08-25T05:17:14.807Z",
+   "created": "2024-07-25T15:14:35.720Z",
+   "repository": "git+https://github.com/unovue/reka-ui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 8445098,
+   "deps_count": 10,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1819411
+  }
+ },
+ {
+  "cat": "35",
+  "name": "shadcn-vue",
+  "repo": "unovue/shadcn-vue",
+  "pkg": "shadcn-vue",
+  "gh": {
+   "archived": false,
+   "created": "2023-06-26T13:53:23Z",
+   "default_branch": "dev",
+   "desc": "Vue port of shadcn-ui",
+   "forks": 678,
+   "issues": 140,
+   "license": "MIT",
+   "pushed": "2026-09-02T03:18:17Z",
+   "stars": 10556
+  },
+  "npm": {
+   "version": "2.8.2",
+   "tags": {
+    "latest": "2.8.2"
+   },
+   "modified": "2026-08-08T02:55:44.305Z",
+   "latest_time": "2026-08-08T02:55:44.025Z",
+   "created": "2023-09-06T02:17:05.525Z",
+   "repository": "git+https://github.com/unovue/shadcn-vue.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1345373,
+   "deps_count": 35,
+   "types": false,
+   "deprecated": null,
+   "weekly": 112152
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Vant",
+  "repo": "youzan/vant",
+  "pkg": "vant",
+  "gh": {
+   "archived": false,
+   "created": "2017-04-19T07:55:31Z",
+   "default_branch": "main",
+   "desc": "A lightweight, customizable Vue UI library for mobile web apps.",
+   "forks": 9384,
+   "issues": 214,
+   "license": "MIT",
+   "pushed": "2026-09-03T13:34:53Z",
+   "stars": 24382
+  },
+  "npm": {
+   "version": "4.10.2",
+   "tags": {
+    "next": "3.4.3",
+    "alpha": "4.0.0-alpha.4",
+    "rc": "4.0.0-rc.9",
+    "beta": "4.6.4-beta.2",
+    "latest": "4.10.2"
+   },
+   "modified": "2026-08-31T04:50:24.024Z",
+   "latest_time": "2026-08-31T04:50:23.777Z",
+   "created": "2017-04-19T07:53:37.187Z",
+   "repository": "git+https://github.com/vant-ui/vant.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 6036187,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 89733
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Arco Design Vue",
+  "repo": "arco-design/arco-design-vue",
+  "pkg": "@arco-design/web-vue",
+  "gh": {
+   "archived": false,
+   "created": "2021-10-24T14:00:50Z",
+   "default_branch": "main",
+   "desc": "A Vue.js 3 UI Library based on Arco Design",
+   "forks": 607,
+   "issues": 923,
+   "license": "MIT",
+   "pushed": "2026-06-24T03:21:22Z",
+   "stars": 3106
+  },
+  "npm": {
+   "version": "2.58.0",
+   "tags": {
+    "latest": "2.58.0",
+    "beta": "2.58.0-beta.1"
+   },
+   "modified": "2026-04-16T12:41:22.873Z",
+   "latest_time": "2026-04-16T12:41:22.608Z",
+   "created": "2021-10-25T06:23:32.042Z",
+   "repository": "git+https://github.com/arco-design/arco-design-vue.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 30263505,
+   "deps_count": 9,
+   "types": true,
+   "deprecated": null,
+   "weekly": 23201
+  }
+ },
+ {
+  "cat": "35",
+  "name": "TDesign Vue Next",
+  "repo": "Tencent/tdesign-vue-next",
+  "pkg": "tdesign-vue-next",
+  "gh": {
+   "archived": false,
+   "created": "2021-12-16T06:42:10Z",
+   "default_branch": "develop",
+   "desc": "A Vue3.x UI components lib for TDesign.",
+   "forks": 635,
+   "issues": 670,
+   "license": "MIT",
+   "pushed": "2026-09-04T11:14:51Z",
+   "stars": 2177
+  },
+  "npm": {
+   "version": "1.20.7",
+   "tags": {
+    "beta": "1.11.0-beta.1",
+    "alpha": "1.18.0-alpha.2",
+    "latest": "1.20.7"
+   },
+   "modified": "2026-08-27T14:18:38.931Z",
+   "latest_time": "2026-08-27T14:18:38.520Z",
+   "created": "2021-10-26T08:41:47.073Z",
+   "repository": "git+https://github.com/Tencent/tdesign-vue-next.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 67277472,
+   "deps_count": 13,
+   "types": true,
+   "deprecated": null,
+   "weekly": 31833
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Varlet",
+  "repo": "varletjs/varlet",
+  "pkg": "@varlet/ui",
+  "gh": {
+   "archived": false,
+   "created": "2020-10-30T13:32:43Z",
+   "default_branch": "dev",
+   "desc": "A Vue3 component library based on Material Design 2 and 3, supporting mobile and desktop.",
+   "forks": 621,
+   "issues": 17,
+   "license": "MIT",
+   "pushed": "2026-08-19T17:06:33Z",
+   "stars": 5334
+  },
+  "npm": {
+   "version": "3.20.6",
+   "tags": {
+    "canary": "1.23.12-alpha.31",
+    "alpha": "3.18.0-alpha.1781276267923",
+    "latest": "3.20.6"
+   },
+   "modified": "2026-08-19T17:01:12.810Z",
+   "latest_time": "2026-08-19T17:01:12.628Z",
+   "created": "2020-11-03T15:38:12.995Z",
+   "repository": "git+https://github.com/varletjs/varlet.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 6178461,
+   "deps_count": 6,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3200
+  }
+ },
+ {
+  "cat": "35",
+  "name": "NutUI",
+  "repo": "jdf2e/nutui",
+  "pkg": "@nutui/nutui",
+  "gh": {
+   "archived": false,
+   "created": "2018-01-22T01:50:28Z",
+   "default_branch": "v4",
+   "desc": "京东风格的移动端 Vue 组件库，支持多端小程序(A Vue.js UI Toolkit for Mobile Web)",
+   "forks": 833,
+   "issues": 190,
+   "license": "MIT",
+   "pushed": "2026-04-02T05:55:12Z",
+   "stars": 6510
+  },
+  "npm": {
+   "version": "4.3.15-beta.1",
+   "tags": {
+    "next": "3.1.16",
+    "latest": "4.3.15-beta.1",
+    "beta": "4.3.15-beta.3"
+   },
+   "modified": "2026-04-02T03:43:06.054Z",
+   "latest_time": "2026-03-31T03:05:29.015Z",
+   "created": "2018-03-30T06:57:32.422Z",
+   "repository": "git+https://github.com/jd-opensource/nutui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 4206600,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1427
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Vuestic UI",
+  "repo": "epicmaxco/vuestic-ui",
+  "pkg": "vuestic-ui",
+  "gh": {
+   "archived": false,
+   "created": "2019-08-03T11:58:26Z",
+   "default_branch": "develop",
+   "desc": "Vuestic UI is an open-source Vue 3 component library designed for rapid development, easy maintenance, and high accessibility. Maintained by Epicmax (@epicmaxco).",
+   "forks": 349,
+   "issues": 530,
+   "license": "MIT",
+   "pushed": "2026-05-09T13:59:58Z",
+   "stars": 3748
+  },
+  "npm": {
+   "version": "1.10.3",
+   "tags": {
+    "latest": "1.10.3",
+    "next": "1.10.4-next-d2d3ed3f9-20250825"
+   },
+   "modified": "2025-08-25T11:57:14.310Z",
+   "latest_time": "2024-10-17T15:10:38.571Z",
+   "created": "2019-03-17T02:52:56.892Z",
+   "repository": "git+https://github.com/epicmaxco/vuestic-ui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 16211793,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 5482
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Headless UI Vue",
+  "repo": "tailwindlabs/headlessui",
+  "pkg": "@headlessui/vue",
+  "gh": {
+   "archived": false,
+   "created": "2020-09-16T09:53:09Z",
+   "default_branch": "main",
+   "desc": "Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.",
+   "forks": 1204,
+   "issues": 110,
+   "license": "MIT",
+   "pushed": "2026-04-13T16:12:31Z",
+   "stars": 28734
+  },
+  "npm": {
+   "version": "1.7.23",
+   "tags": {
+    "latest": "1.7.23"
+   },
+   "modified": "2026-04-13T16:13:50.792Z",
+   "latest_time": "2024-09-09T09:08:24.832Z",
+   "created": "2020-09-18T12:09:48.900Z",
+   "repository": "git+https://github.com/tailwindlabs/headlessui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 601931,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1617853
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Inkline",
+  "repo": "inkline/inkline",
+  "pkg": "@inkline/inkline",
+  "gh": {
+   "archived": false,
+   "created": "2018-02-07T14:25:20Z",
+   "default_branch": "main",
+   "desc": "Inkline is the intuitive UI Components library that gives you a developer-friendly foundation for building high-quality, accessible, and customizable Vue.js 3 Design Systems.",
+   "forks": 76,
+   "issues": 43,
+   "license": "NONE",
+   "pushed": "2026-09-04T06:47:18Z",
+   "stars": 1462
+  },
+  "npm": {
+   "version": "4.7.2",
+   "tags": {
+    "next": "4.1.0-0",
+    "latest": "4.7.2"
+   },
+   "modified": "2024-11-18T06:40:29.131Z",
+   "latest_time": "2024-11-18T06:40:28.936Z",
+   "created": "2019-01-27T16:35:34.158Z",
+   "repository": "git+https://github.com/inkline/inkline.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 10771151,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 5280
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Oruga",
+  "repo": "oruga-ui/oruga",
+  "pkg": "@oruga-ui/oruga-next",
+  "gh": {
+   "archived": false,
+   "created": "2020-06-02T07:52:58Z",
+   "default_branch": "develop",
+   "desc": "🐛 Oruga is a lightweight Vue.js UI component library without any CSS dependency",
+   "forks": 167,
+   "issues": 18,
+   "license": "MIT",
+   "pushed": "2026-09-03T07:16:31Z",
+   "stars": 1161
+  },
+  "npm": {
+   "version": "0.14.3",
+   "tags": {
+    "latest": "0.14.3"
+   },
+   "modified": "2026-09-03T07:16:23.133Z",
+   "latest_time": "2026-09-03T07:16:22.664Z",
+   "created": "2020-10-08T20:25:09.881Z",
+   "repository": "git+https://github.com/oruga-ui/oruga.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 5027536,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 7032
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Anu",
+  "repo": "jd-solanki/anu",
+  "pkg": "anu-vue",
+  "gh": {
+   "archived": false,
+   "created": "2022-06-04T07:18:12Z",
+   "default_branch": "main",
+   "desc": "Anu - DX focused utility based vue component library built on top of UnoCSS & VueUse ⚡️🔥",
+   "forks": 53,
+   "issues": 36,
+   "license": "MIT",
+   "pushed": "2026-01-26T12:14:20Z",
+   "stars": 1038
+  },
+  "npm": {
+   "version": "0.15.2",
+   "tags": {
+    "latest": "0.15.2"
+   },
+   "modified": "2023-06-16T11:44:16.669Z",
+   "latest_time": "2023-06-16T11:44:16.558Z",
+   "created": "2022-07-17T14:47:00.662Z",
+   "repository": "git+https://github.com/jd-solanki/anu.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 640359,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 33
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Ionic Vue",
+  "repo": "ionic-team/ionic-framework",
+  "pkg": "@ionic/vue",
+  "gh": {
+   "archived": false,
+   "created": "2013-08-20T23:06:02Z",
+   "default_branch": "main",
+   "desc": "A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript.",
+   "forks": 13312,
+   "issues": 590,
+   "license": "MIT",
+   "pushed": "2026-09-04T21:00:14Z",
+   "stars": 52644
+  },
+  "npm": {
+   "version": "9.0.2",
+   "tags": {
+    "beta": "0.5.2",
+    "next": "8.0.0-rc.2",
+    "latest": "9.0.2"
+   },
+   "modified": "2026-09-04T06:58:36.708Z",
+   "latest_time": "2026-09-02T19:22:24.336Z",
+   "created": "2018-11-16T17:05:29.601Z",
+   "repository": "git+https://github.com/ionic-team/ionic-framework.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1362622,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 60689
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Semi Design Vue (kousum)",
+  "repo": "DouyinFE/semi-design",
+  "pkg": "@kousum/semi-ui-vue",
+  "gh": {
+   "archived": false,
+   "created": "2021-10-25T11:47:38Z",
+   "default_branch": "main",
+   "desc": "🚀A modern, comprehensive, flexible design system and React UI library, AI-friendly built-in.🎨Provide 3000+ Design Tokens, easy to build your design system. Make Semi Design to Any Design.🧑🏻‍💻 Design to Code in one click",
+   "forks": 848,
+   "issues": 37,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-01T08:46:32Z",
+   "stars": 10346
+  },
+  "npm": {
+   "version": "2.78.4",
+   "tags": {
+    "alpha": "2.77.0-alpha.0",
+    "latest": "2.78.4"
+   },
+   "modified": "2025-04-14T07:43:31.637Z",
+   "latest_time": "2025-04-14T07:43:31.471Z",
+   "created": "2022-01-11T02:12:50.286Z",
+   "repository": "git+https://github.com/rashagu/semi-design-vue.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 7721749,
+   "deps_count": 29,
+   "types": true,
+   "deprecated": null,
+   "weekly": 158
+  }
+ },
+ {
+  "cat": "35",
+  "name": "Wowerlay / Vue Final Modal (对照)",
+  "repo": null,
+  "pkg": null,
+  "gh": null,
+  "npm": null
+ },
+ {
+  "cat": "36",
+  "name": "shadcn-svelte",
+  "repo": "huntabyte/shadcn-svelte",
+  "pkg": "shadcn-svelte",
+  "gh": {
+   "archived": false,
+   "created": "2023-05-16T03:26:53Z",
+   "default_branch": "main",
+   "desc": "shadcn/ui, but for Svelte. ✨",
+   "forks": 568,
+   "issues": 128,
+   "license": "MIT",
+   "pushed": "2026-09-04T19:57:45Z",
+   "stars": 9093
+  },
+  "npm": {
+   "version": "1.6.1",
+   "tags": {
+    "next": "1.0.0-next.19",
+    "latest": "1.6.1"
+   },
+   "modified": "2026-09-04T19:07:04.879Z",
+   "latest_time": "2026-09-04T19:07:04.543Z",
+   "created": "2023-05-26T01:29:41.088Z",
+   "repository": "git+https://github.com/huntabyte/shadcn-svelte.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 938873,
+   "deps_count": 4,
+   "types": false,
+   "deprecated": null,
+   "weekly": 107247
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Bits UI",
+  "repo": "huntabyte/bits-ui",
+  "pkg": "bits-ui",
+  "gh": {
+   "archived": false,
+   "created": "2023-08-06T20:55:28Z",
+   "default_branch": "main",
+   "desc": "The headless components for Svelte.",
+   "forks": 225,
+   "issues": 91,
+   "license": "MIT",
+   "pushed": "2026-08-20T02:03:20Z",
+   "stars": 3530
+  },
+  "npm": {
+   "version": "2.19.0",
+   "tags": {
+    "next": "1.0.0-next.98",
+    "latest": "2.19.0"
+   },
+   "modified": "2026-08-20T02:03:18.561Z",
+   "latest_time": "2026-08-20T02:03:18.262Z",
+   "created": "2023-08-17T00:43:22.570Z",
+   "repository": "git+https://github.com/huntabyte/bits-ui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2015744,
+   "deps_count": 6,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1016830
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Melt UI",
+  "repo": "melt-ui/melt-ui",
+  "pkg": "melt",
+  "gh": {
+   "archived": false,
+   "created": "2023-06-08T13:48:42Z",
+   "default_branch": "develop",
+   "desc": "A set of headless, accessible component builders for Svelte.",
+   "forks": 228,
+   "issues": 122,
+   "license": "MIT",
+   "pushed": "2025-09-30T11:08:47Z",
+   "stars": 4185
+  },
+  "npm": {
+   "version": "0.44.0",
+   "tags": {
+    "latest": "0.44.0"
+   },
+   "modified": "2026-01-04T00:59:53.481Z",
+   "latest_time": "2026-01-04T00:59:53.299Z",
+   "created": "2013-01-31T22:14:40.404Z",
+   "repository": "git+https://github.com/melt-ui/next-gen.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 387419,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 8331
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Skeleton",
+  "repo": "skeletonlabs/skeleton",
+  "pkg": "@skeletonlabs/skeleton",
+  "gh": {
+   "archived": false,
+   "created": "2022-02-23T16:04:46Z",
+   "default_branch": "main",
+   "desc": "Skeleton is an adaptive design system powered by Tailwind CSS.",
+   "forks": 392,
+   "issues": 36,
+   "license": "MIT",
+   "pushed": "2026-09-04T16:24:41Z",
+   "stars": 6054
+  },
+  "npm": {
+   "version": "5.0.1",
+   "tags": {
+    "rc": "2.0.0-rc.3",
+    "next": "5.0.0-next.12",
+    "latest": "5.0.1"
+   },
+   "modified": "2026-08-19T13:17:03.783Z",
+   "latest_time": "2026-08-19T13:17:03.111Z",
+   "created": "2022-11-25T21:48:26.200Z",
+   "repository": "git+https://github.com/skeletonlabs/skeleton.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": "^4.0.0",
+   "unpacked": 439763,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 57502
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Flowbite Svelte",
+  "repo": "themesberg/flowbite-svelte",
+  "pkg": "flowbite-svelte",
+  "gh": {
+   "archived": false,
+   "created": "2022-02-25T03:17:14Z",
+   "default_branch": "main",
+   "desc": "Official Svelte components built for Flowbite and Tailwind CSS",
+   "forks": 329,
+   "issues": 45,
+   "license": "MIT",
+   "pushed": "2026-06-27T09:07:45Z",
+   "stars": 2782
+  },
+  "npm": {
+   "version": "1.33.1",
+   "tags": {
+    "latest": "1.33.1",
+    "next": "2.0.0-next.14"
+   },
+   "modified": "2026-04-07T19:58:00.723Z",
+   "latest_time": "2026-04-07T19:58:00.606Z",
+   "created": "2022-02-25T03:50:54.832Z",
+   "repository": "git+https://github.com/themesberg/flowbite-svelte.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": "^4.1.4",
+   "unpacked": 1349225,
+   "deps_count": 9,
+   "types": true,
+   "deprecated": null,
+   "weekly": 93602
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Svelte Material UI",
+  "repo": "hperrin/svelte-material-ui",
+  "pkg": "svelte-material-ui",
+  "gh": {
+   "archived": false,
+   "created": "2019-07-17T00:36:53Z",
+   "default_branch": "master",
+   "desc": "Svelte Material UI Components",
+   "forks": 280,
+   "issues": 72,
+   "license": "Apache-2.0",
+   "pushed": "2026-08-31T01:03:06Z",
+   "stars": 3443
+  },
+  "npm": {
+   "version": "9.0.4",
+   "tags": {
+    "alpha": "8.0.0-alpha.0",
+    "beta": "9.0.0-beta.14",
+    "latest": "9.0.4"
+   },
+   "modified": "2026-08-31T00:49:54.701Z",
+   "latest_time": "2026-08-31T00:49:54.525Z",
+   "created": "2019-07-17T00:45:56.955Z",
+   "repository": "git+https://github.com/hperrin/svelte-material-ui.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 9706159,
+   "deps_count": 44,
+   "types": false,
+   "deprecated": null,
+   "weekly": 4628
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Carbon Components Svelte",
+  "repo": "carbon-design-system/carbon-components-svelte",
+  "pkg": "carbon-components-svelte",
+  "gh": {
+   "archived": false,
+   "created": "2019-12-15T18:16:39Z",
+   "default_branch": "master",
+   "desc": "Svelte implementation of the Carbon Design System",
+   "forks": 266,
+   "issues": 76,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T14:51:33Z",
+   "stars": 2906
+  },
+  "npm": {
+   "version": "0.111.1",
+   "tags": {
+    "next": "1.0.0-next.1",
+    "latest": "0.111.1"
+   },
+   "modified": "2026-08-24T00:38:38.111Z",
+   "latest_time": "2026-08-24T00:38:37.794Z",
+   "created": "2019-12-15T19:20:21.529Z",
+   "repository": "git+https://github.com/carbon-design-system/carbon-components-svelte.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 7944201,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 27236
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Attractions",
+  "repo": "illright/attractions",
+  "pkg": "attractions",
+  "gh": {
+   "archived": true,
+   "created": "2020-04-17T20:48:30Z",
+   "default_branch": "main",
+   "desc": "[DEPRECATED, see readme] A pretty cool UI kit for Svelte",
+   "forks": 36,
+   "issues": 0,
+   "license": "MIT",
+   "pushed": "2024-11-22T13:45:09Z",
+   "stars": 1020
+  },
+  "npm": {
+   "version": "3.7.2",
+   "tags": {
+    "latest": "3.7.2"
+   },
+   "modified": "2025-02-25T15:14:43.205Z",
+   "latest_time": "2024-03-01T18:56:48.834Z",
+   "created": "2020-05-28T20:55:39.726Z",
+   "repository": "git+https://github.com/illright/attractions.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1048664,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+   "weekly": 94
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Kobalte (Solid)",
+  "repo": "kobaltedev/kobalte",
+  "pkg": "@kobalte/core",
+  "gh": {
+   "archived": false,
+   "created": "2022-10-28T07:51:33Z",
+   "default_branch": "main",
+   "desc": "A UI toolkit for building accessible web apps and design systems with SolidJS.",
+   "forks": 118,
+   "issues": 130,
+   "license": "MIT",
+   "pushed": "2026-09-05T14:42:38Z",
+   "stars": 1849
+  },
+  "npm": {
+   "version": "0.13.13",
+   "tags": {
+    "latest": "0.13.13",
+    "alpha": "2.0.0-alpha.1"
+   },
+   "modified": "2026-09-01T22:42:13.713Z",
+   "latest_time": "2026-08-10T01:26:50.047Z",
+   "created": "2023-01-04T20:42:38.052Z",
+   "repository": "git+https://github.com/kobaltedev/kobalte.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3673064,
+   "deps_count": 7,
+   "types": true,
+   "deprecated": null,
+   "weekly": 452669
+  }
+ },
+ {
+  "cat": "36",
+  "name": "solid-ui (Solid shadcn)",
+  "repo": "stefan-karger/solid-ui",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2023-05-15T09:00:43Z",
+   "default_branch": "main",
+   "desc": "Beautifully designed components. Built with Kobalte & corvu. Styled with Tailwind CSS.",
+   "forks": 64,
+   "issues": 33,
+   "license": "MIT",
+   "pushed": "2026-02-23T20:59:00Z",
+   "stars": 1538
+  },
+  "npm": null
+ },
+ {
+  "cat": "36",
+  "name": "SUID (Solid MUI)",
+  "repo": "swordev/suid",
+  "pkg": "@suid/material",
+  "gh": {
+   "archived": false,
+   "created": "2022-03-20T19:04:38Z",
+   "default_branch": "main",
+   "desc": "A port of Material-UI (MUI) built with SolidJS.",
+   "forks": 61,
+   "issues": 50,
+   "license": "MIT",
+   "pushed": "2025-07-05T09:52:12Z",
+   "stars": 749
+  },
+  "npm": {
+   "version": "0.19.0",
+   "tags": {
+    "latest": "0.19.0"
+   },
+   "modified": "2025-06-14T17:07:18.962Z",
+   "latest_time": "2025-06-14T17:07:18.788Z",
+   "created": "2022-03-20T20:13:16.172Z",
+   "repository": "git+https://github.com/swordev/suid.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1040714,
+   "deps_count": 6,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2222
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Hope UI (Solid)",
+  "repo": "hope-ui/hope-ui",
+  "pkg": "@hope-ui/solid",
+  "gh": {
+   "archived": false,
+   "created": "2026-07-11T09:07:10Z",
+   "default_branch": "main",
+   "desc": "Elegant, themeable, accessible components for SolidJS.",
+   "forks": 0,
+   "issues": 0,
+   "license": "MIT",
+   "pushed": "2026-08-09T13:31:39Z",
+   "stars": 12
+  },
+  "npm": {
+   "version": "0.6.7",
+   "tags": {
+    "next": "0.6.6-next.1",
+    "latest": "0.6.7"
+   },
+   "modified": "2026-07-11T18:11:08.022Z",
+   "latest_time": "2022-08-02T07:40:17.426Z",
+   "created": "2022-02-12T17:34:38.611Z",
+   "repository": "git+https://github.com/fabien-ml/hope-ui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 8449283,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": "Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.",
+   "weekly": 2515
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Ark UI Solid",
+  "repo": "chakra-ui/ark",
+  "pkg": "@ark-ui/solid",
+  "gh": {
+   "archived": false,
+   "created": "2022-10-26T08:49:36Z",
+   "default_branch": "main",
+   "desc": "Unstyled, accessible UI components for your design System. Works in React, Vue, Solid, and Svelte.",
+   "forks": 213,
+   "issues": 11,
+   "license": "MIT",
+   "pushed": "2026-09-05T18:40:18Z",
+   "stars": 5373
+  },
+  "npm": {
+   "version": "5.39.1",
+   "tags": {
+    "beta": "1.0.0-beta.3",
+    "rc": "3.0.0-7",
+    "latest": "5.39.1"
+   },
+   "modified": "2026-08-28T10:19:12.103Z",
+   "latest_time": "2026-08-28T10:19:11.744Z",
+   "created": "2022-11-06T09:42:18.650Z",
+   "repository": "git+https://github.com/chakra-ui/ark.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1585140,
+   "deps_count": 69,
+   "types": false,
+   "deprecated": null,
+   "weekly": 41509
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Qwik UI",
+  "repo": "qwikifiers/qwik-ui",
+  "pkg": "@qwik-ui/headless",
+  "gh": {
+   "archived": false,
+   "created": "2022-10-03T22:17:10Z",
+   "default_branch": "main",
+   "desc": "Qwik's Headless and styled component library",
+   "forks": 142,
+   "issues": 78,
+   "license": "MIT",
+   "pushed": "2026-08-07T04:13:49Z",
+   "stars": 695
+  },
+  "npm": {
+   "version": "0.7.7",
+   "tags": {
+    "latest": "0.7.7"
+   },
+   "modified": "2026-06-14T20:10:26.278Z",
+   "latest_time": "2026-06-14T20:10:26.142Z",
+   "created": "2023-01-24T01:57:09.493Z",
+   "repository": "git+https://github.com/qwikifiers/qwik-ui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 629578,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 11027
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Angular Material",
+  "repo": "angular/components",
+  "pkg": "@angular/material",
+  "gh": {
+   "archived": false,
+   "created": "2016-01-04T18:50:02Z",
+   "default_branch": "main",
+   "desc": "Component infrastructure and Material Design components for Angular",
+   "forks": 6841,
+   "issues": 1370,
+   "license": "MIT",
+   "pushed": "2026-09-05T07:01:35Z",
+   "stars": 25045
+  },
+  "npm": {
+   "version": "22.1.5",
+   "tags": {
+    "next": "22.2.0-next.4",
+    "latest": "22.1.5"
+   },
+   "modified": "2026-09-02T10:33:18.676Z",
+   "latest_time": "2026-09-02T10:28:18.472Z",
+   "created": "2016-09-22T21:52:24.306Z",
+   "repository": "git+https://github.com/angular/components.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 7681780,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2538281
+  }
+ },
+ {
+  "cat": "36",
+  "name": "PrimeNG",
+  "repo": "primefaces/primeng",
+  "pkg": "primeng",
+  "gh": {
+   "archived": false,
+   "created": "2016-01-16T09:23:28Z",
+   "default_branch": "master",
+   "desc": "The Most Complete Angular UI Component Library",
+   "forks": 5078,
+   "issues": 1271,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-01T11:04:26Z",
+   "stars": 12493
+  },
+  "npm": {
+   "version": "22.1.0",
+   "tags": {
+    "latest": "22.1.0",
+    "rc": "22.1.0-rc.2"
+   },
+   "modified": "2026-08-18T15:15:10.672Z",
+   "latest_time": "2026-08-18T15:15:10.518Z",
+   "created": "2016-01-31T23:20:57.451Z",
+   "repository": null,
+   "license": "SEE LICENSE IN LICENSE.md",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 14081795,
+   "deps_count": 7,
+   "types": true,
+   "deprecated": null,
+   "weekly": 788522
+  }
+ },
+ {
+  "cat": "36",
+  "name": "NG-ZORRO",
+  "repo": "NG-ZORRO/ng-zorro-antd",
+  "pkg": "ng-zorro-antd",
+  "gh": {
+   "archived": false,
+   "created": "2017-08-08T14:59:33Z",
+   "default_branch": "master",
+   "desc": "Angular UI Component Library based on Ant Design",
+   "forks": 4045,
+   "issues": 785,
+   "license": "MIT",
+   "pushed": "2026-09-02T23:12:20Z",
+   "stars": 9169
+  },
+  "npm": {
+   "version": "22.0.1",
+   "tags": {
+    "next": "21.0.0-next.2",
+    "alpha": "22.0.0-alpha.1",
+    "beta": "22.0.0-beta.0",
+    "latest": "22.0.1"
+   },
+   "modified": "2026-08-07T03:28:59.069Z",
+   "latest_time": "2026-08-07T03:28:58.944Z",
+   "created": "2017-08-15T14:11:22.755Z",
+   "repository": "git+https://github.com/NG-ZORRO/ng-zorro-antd.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 27533520,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 224653
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Angular CDK",
+  "repo": "angular/components",
+  "pkg": "@angular/cdk",
+  "gh": {
+   "archived": false,
+   "created": "2016-01-04T18:50:02Z",
+   "default_branch": "main",
+   "desc": "Component infrastructure and Material Design components for Angular",
+   "forks": 6841,
+   "issues": 1370,
+   "license": "MIT",
+   "pushed": "2026-09-05T07:01:35Z",
+   "stars": 25045
+  },
+  "npm": {
+   "version": "22.1.5",
+   "tags": {
+    "next": "22.2.0-next.4",
+    "latest": "22.1.5"
+   },
+   "modified": "2026-09-02T10:32:03.740Z",
+   "latest_time": "2026-09-02T10:27:13.379Z",
+   "created": "2017-07-06T17:08:26.763Z",
+   "repository": "git+https://github.com/angular/components.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3571890,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 4146234
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Spartan (Angular shadcn)",
+  "repo": "goetzrobin/spartan",
+  "pkg": "@spartan-ng/brain",
+  "gh": {
+   "archived": false,
+   "created": "2023-04-06T13:04:03Z",
+   "default_branch": "main",
+   "desc": "Cutting-edge tools powering Angular full-stack development.",
+   "forks": 308,
+   "issues": 76,
+   "license": "MIT",
+   "pushed": "2026-09-03T12:36:46Z",
+   "stars": 2882
+  },
+  "npm": {
+   "version": "1.4.1",
+   "tags": {
+    "alpha": "1.1.0-alpha.1",
+    "beta": "1.4.0-beta.5",
+    "latest": "1.4.1"
+   },
+   "modified": "2026-09-03T12:36:03.240Z",
+   "latest_time": "2026-09-03T12:36:02.688Z",
+   "created": "2024-12-09T15:41:04.893Z",
+   "repository": "git+https://github.com/spartan-ng/spartan.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": ">=4.0.0",
+   "unpacked": 2863811,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 58535
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Taiga UI",
+  "repo": "taiga-family/taiga-ui",
+  "pkg": "@taiga-ui/core",
+  "gh": {
+   "archived": false,
+   "created": "2020-09-25T16:09:18Z",
+   "default_branch": "main",
+   "desc": "Angular components library for awesome people",
+   "forks": 568,
+   "issues": 140,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T18:45:41Z",
+   "stars": 4049
+  },
+  "npm": {
+   "version": "5.22.0",
+   "tags": {
+    "latest": "5.22.0",
+    "canary": "5.22.0-canary.7969d1e"
+   },
+   "modified": "2026-09-04T22:06:12.125Z",
+   "latest_time": "2026-08-31T16:01:56.572Z",
+   "created": "2020-12-02T17:32:11.955Z",
+   "repository": "git+https://github.com/taiga-family/taiga-ui.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1425665,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 28157
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Nebular",
+  "repo": "akveo/nebular",
+  "pkg": "@nebular/theme",
+  "gh": {
+   "archived": false,
+   "created": "2017-09-20T08:33:06Z",
+   "default_branch": "master",
+   "desc": ":boom: Customizable Angular UI Library based on Eva Design System :new_moon_with_face::sparkles:Dark Mode",
+   "forks": 1499,
+   "issues": 930,
+   "license": "MIT",
+   "pushed": "2026-01-15T08:32:21Z",
+   "stars": 8122
+  },
+  "npm": {
+   "version": "17.0.0",
+   "tags": {
+    "next": "9.1.0-rc.8",
+    "latest": "17.0.0"
+   },
+   "modified": "2026-01-15T09:09:31.870Z",
+   "latest_time": "2026-01-15T09:09:31.752Z",
+   "created": "2017-08-01T17:20:20.460Z",
+   "repository": "git+https://github.com/akveo/nebular.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 6633396,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 22784
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Clarity Angular",
+  "repo": "vmware-clarity/ng-clarity",
+  "pkg": "@clr/angular",
+  "gh": {
+   "archived": false,
+   "created": "2022-03-16T16:02:16Z",
+   "default_branch": "main",
+   "desc": "Clarity Angular is a scalable, accessible, customizable, open-source design system built for Angular.",
+   "forks": 105,
+   "issues": 104,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-04T23:09:30Z",
+   "stars": 429
+  },
+  "npm": {
+   "version": "18.3.0",
+   "tags": {
+    "rc": "15.0.0-rc.2",
+    "next": "17.0.0-next.2",
+    "beta": "18.0.0-beta.12",
+    "latest": "18.3.0"
+   },
+   "modified": "2026-08-28T07:50:17.785Z",
+   "latest_time": "2026-08-28T07:50:17.595Z",
+   "created": "2017-12-15T01:35:58.132Z",
+   "repository": "git+https://github.com/vmware-clarity/ng-clarity.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 7047250,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 50401
+  }
+ },
+ {
+  "cat": "36",
+  "name": "Ionic Angular",
+  "repo": "ionic-team/ionic-framework",
+  "pkg": "@ionic/angular",
+  "gh": {
+   "archived": false,
+   "created": "2013-08-20T23:06:02Z",
+   "default_branch": "main",
+   "desc": "A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript.",
+   "forks": 13312,
+   "issues": 590,
+   "license": "MIT",
+   "pushed": "2026-09-04T21:00:14Z",
+   "stars": 52644
+  },
+  "npm": {
+   "version": "9.0.2",
+   "tags": {
+    "next": "8.0.0-rc.2",
+    "latest": "9.0.2"
+   },
+   "modified": "2026-09-04T06:54:22.185Z",
+   "latest_time": "2026-09-02T19:22:19.194Z",
+   "created": "2017-11-21T20:27:58.157Z",
+   "repository": "git+https://github.com/ionic-team/ionic-framework.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2207761,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 211665
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Shoelace / Web Awesome (见 §19)",
+  "repo": "shoelace-style/webawesome",
+  "pkg": "@awesome.me/webawesome",
+  "gh": {
+   "archived": false,
+   "created": "2023-08-30T15:16:40Z",
+   "default_branch": "next",
+   "desc": "Build better with Web Awesome, the open source library of web components from Font Awesome. Upgrade to Pro and ship websites faster!",
+   "forks": 189,
+   "issues": 48,
+   "license": "MIT",
+   "pushed": "2026-09-03T17:09:47Z",
+   "stars": 1305
+  },
+  "npm": {
+   "version": "3.12.0",
+   "tags": {
+    "latest": "3.12.0"
+   },
+   "modified": "2026-08-21T17:10:15.275Z",
+   "latest_time": "2026-08-21T17:10:15.087Z",
+   "created": "2025-06-30T19:34:05.106Z",
+   "repository": "git+https://github.com/shoelace-style/webawesome.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 16303496,
+   "deps_count": 13,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2314281
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Ionic Core",
+  "repo": "ionic-team/ionic-framework",
+  "pkg": "@ionic/core",
+  "gh": {
+   "archived": false,
+   "created": "2013-08-20T23:06:02Z",
+   "default_branch": "main",
+   "desc": "A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript.",
+   "forks": 13312,
+   "issues": 590,
+   "license": "MIT",
+   "pushed": "2026-09-04T21:00:14Z",
+   "stars": 52644
+  },
+  "npm": {
+   "version": "9.0.2",
+   "tags": {
+    "beta": "0.5.2",
+    "next": "8.0.0-rc.2",
+    "latest": "9.0.2"
+   },
+   "modified": "2026-09-04T06:42:51.033Z",
+   "latest_time": "2026-09-02T19:20:59.520Z",
+   "created": "2017-07-26T18:45:19.501Z",
+   "repository": "git+https://github.com/ionic-team/ionic-framework.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 20650345,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 399876
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Material Web (MWC)",
+  "repo": "material-components/material-web",
+  "pkg": "@material/web",
+  "gh": {
+   "archived": false,
+   "created": "2018-03-27T21:46:51Z",
+   "default_branch": "main",
+   "desc": "Material Design Web Components",
+   "forks": 1139,
+   "issues": 184,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-03T18:19:30Z",
+   "stars": 11230
+  },
+  "npm": {
+   "version": "2.5.0",
+   "tags": {
+    "latest": "2.5.0"
+   },
+   "modified": "2026-08-29T03:30:35.180Z",
+   "latest_time": "2026-07-15T14:39:18.532Z",
+   "created": "2022-08-26T22:52:51.485Z",
+   "repository": "git+https://github.com/material-components/material-web.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 7913481,
+   "deps_count": 3,
+   "types": false,
+   "deprecated": null,
+   "weekly": 125067
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Vaadin Web Components",
+  "repo": "vaadin/web-components",
+  "pkg": "@vaadin/button",
+  "gh": {
+   "archived": false,
+   "created": "2020-12-26T16:28:50Z",
+   "default_branch": "main",
+   "desc": "A set of high-quality standards based web components for enterprise web applications. Part of Vaadin 20+",
+   "forks": 102,
+   "issues": 939,
+   "license": "NONE",
+   "pushed": "2026-09-05T16:52:50Z",
+   "stars": 581
+  },
+  "npm": {
+   "version": "25.2.10",
+   "tags": {
+    "canary": "24.4.0-dev.4b20a0c55.3",
+    "next": "25.3.0-beta1",
+    "latest": "25.2.10"
+   },
+   "modified": "2026-09-03T08:15:41.694Z",
+   "latest_time": "2026-09-03T08:15:41.549Z",
+   "created": "2021-08-24T08:21:28.635Z",
+   "repository": "git+https://github.com/vaadin/web-components.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 43158,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 89742
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Carbon Web Components",
+  "repo": "carbon-design-system/carbon",
+  "pkg": "@carbon/web-components",
+  "gh": {
+   "archived": false,
+   "created": "2017-03-13T14:23:59Z",
+   "default_branch": "main",
+   "desc": "A design system built by IBM",
+   "forks": 2272,
+   "issues": 1025,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T14:16:34Z",
+   "stars": 9428
+  },
+  "npm": {
+   "version": "2.62.0",
+   "tags": {
+    "alpha": "1.33.0-alpha.9164240542.0",
+    "canary": "2.10.0-canary.9663990473.0",
+    "latest": "2.62.0",
+    "next": "2.62.0"
+   },
+   "modified": "2026-08-27T14:10:25.080Z",
+   "latest_time": "2026-08-27T13:29:03.810Z",
+   "created": "2022-12-06T16:17:57.867Z",
+   "repository": "git+https://github.com/carbon-design-system/carbon.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 23369454,
+   "deps_count": 11,
+   "types": true,
+   "deprecated": null,
+   "weekly": 21992
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Spectrum Web Components",
+  "repo": "adobe/spectrum-web-components",
+  "pkg": "@spectrum-web-components/button",
+  "gh": {
+   "archived": false,
+   "created": "2018-11-19T22:15:50Z",
+   "default_branch": "main",
+   "desc": "Spectrum Web Components",
+   "forks": 261,
+   "issues": 234,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-04T22:09:16Z",
+   "stars": 1536
+  },
+  "npm": {
+   "version": "1.12.2",
+   "tags": {
+    "rc": "1.0.0-rc.10",
+    "beta": "1.6.1-beta.0",
+    "latest": "1.12.2",
+    "next": "1.12.3-next.20260903033550"
+   },
+   "modified": "2026-09-03T03:38:26.062Z",
+   "latest_time": "2026-07-06T15:02:48.221Z",
+   "created": "2019-09-17T20:36:02.297Z",
+   "repository": "git+https://github.com/adobe/spectrum-web-components.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 525975,
+   "deps_count": 8,
+   "types": true,
+   "deprecated": null,
+   "weekly": 56602
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Fluent UI Web Components",
+  "repo": "microsoft/fluentui",
+  "pkg": "@fluentui/web-components",
+  "gh": {
+   "archived": false,
+   "created": "2016-06-06T15:03:44Z",
+   "default_branch": "master",
+   "desc": "Fluent UI web represents a collection of utilities, React components, and web components for building web applications.",
+   "forks": 2925,
+   "issues": 790,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T12:33:48Z",
+   "stars": 20250
+  },
+  "npm": {
+   "version": "3.1.3",
+   "tags": {
+    "alpha": "3.0.0-alpha.31",
+    "beta": "3.0.0-beta.133",
+    "rc": "3.0.0-rc.31",
+    "latest": "3.1.3"
+   },
+   "modified": "2026-08-25T04:08:24.951Z",
+   "latest_time": "2026-08-25T04:08:24.757Z",
+   "created": "2020-08-06T00:28:10.113Z",
+   "repository": "git+https://github.com/microsoft/fluentui.git#master",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 5249121,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 62347
+  }
+ },
+ {
+  "cat": "37",
+  "name": "SAP UI5 Web Components",
+  "repo": "SAP/ui5-webcomponents",
+  "pkg": "@ui5/webcomponents",
+  "gh": {
+   "archived": false,
+   "created": "2019-01-24T17:09:23Z",
+   "default_branch": "main",
+   "desc": "UI5 Web Components - the enterprise-flavored sugar on top of native APIs! Build SAP Fiori user interfaces with the technology of your choice.",
+   "forks": 285,
+   "issues": 219,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T08:16:18Z",
+   "stars": 1773
+  },
+  "npm": {
+   "version": "2.26.0",
+   "tags": {
+    "latest": "2.26.0",
+    "next": "2.27.0-rc.1"
+   },
+   "modified": "2026-09-03T13:12:27.722Z",
+   "latest_time": "2026-08-26T11:08:18.825Z",
+   "created": "2019-02-11T15:08:46.431Z",
+   "repository": "git+https://github.com/UI5/webcomponents.git",
+   "license": "Apache-2.0",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 22685440,
+   "deps_count": 6,
+   "types": false,
+   "deprecated": null,
+   "weekly": 87204
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Nord Design System（仓库不存在）",
+  "repo": null,
+  "pkg": "@nordhealth/components",
+  "gh": null,
+  "npm": {
+   "version": "5.3.0",
+   "tags": {
+    "next": "5.0.0-alpha.0",
+    "latest": "5.3.0"
+   },
+   "modified": "2026-08-13T11:28:58.874Z",
+   "latest_time": "2026-08-13T11:28:58.699Z",
+   "created": "2021-02-08T07:46:58.405Z",
+   "repository": null,
+   "license": "SEE LICENSE IN LICENSE.md",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 8628496,
+   "deps_count": 8,
+   "types": true,
+   "deprecated": null,
+   "weekly": 5304
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Wired Elements",
+  "repo": "rough-stuff/wired-elements",
+  "pkg": "wired-elements",
+  "gh": {
+   "archived": false,
+   "created": "2017-08-28T06:12:03Z",
+   "default_branch": "master",
+   "desc": "Collection of custom elements that appear hand drawn. Great for wireframes or a fun look.",
+   "forks": 340,
+   "issues": 36,
+   "license": "MIT",
+   "pushed": "2023-10-07T20:59:18Z",
+   "stars": 10823
+  },
+  "npm": {
+   "version": "3.0.0-rc.6",
+   "tags": {
+    "latest": "3.0.0-rc.6"
+   },
+   "modified": "2022-05-24T13:32:16.439Z",
+   "latest_time": "2021-04-24T21:20:11.955Z",
+   "created": "2018-05-22T16:06:39.714Z",
+   "repository": "git+https://github.com/wiredjs/wired-elements.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 558071,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1231
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Lion (ING)",
+  "repo": "ing-bank/lion",
+  "pkg": "@lion/ui",
+  "gh": {
+   "archived": false,
+   "created": "2019-04-11T18:19:58Z",
+   "default_branch": "master",
+   "desc": "Fundamental white label web component features for your design system.",
+   "forks": 348,
+   "issues": 186,
+   "license": "MIT",
+   "pushed": "2026-09-04T18:38:20Z",
+   "stars": 1962
+  },
+  "npm": {
+   "version": "0.21.1",
+   "tags": {
+    "alpha": "0.6.0-alpha.0",
+    "latest": "0.21.1"
+   },
+   "modified": "2026-09-04T14:13:01.336Z",
+   "latest_time": "2026-09-04T14:13:01.124Z",
+   "created": "2022-11-07T11:31:09.937Z",
+   "repository": "git+https://github.com/ing-bank/lion.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 14992715,
+   "deps_count": 9,
+   "types": false,
+   "deprecated": null,
+   "weekly": 17097
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Calcite Components (Esri)",
+  "repo": "Esri/calcite-design-system",
+  "pkg": "@esri/calcite-components",
+  "gh": {
+   "archived": false,
+   "created": "2019-05-09T02:11:17Z",
+   "default_branch": "dev",
+   "desc": "A monorepo containing the packages for Esri's Calcite Design System",
+   "forks": 92,
+   "issues": 985,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T07:47:15Z",
+   "stars": 373
+  },
+  "npm": {
+   "version": "5.1.2",
+   "tags": {
+    "rc": "2.0.0-rc.2",
+    "latest": "5.1.2",
+    "next": "5.2.0-next.70"
+   },
+   "modified": "2026-09-03T18:33:32.856Z",
+   "latest_time": "2026-07-03T00:23:11.561Z",
+   "created": "2019-08-03T00:46:55.091Z",
+   "repository": "git+https://github.com/Esri/calcite-design-system.git",
+   "license": "SEE LICENSE.md",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 11422581,
+   "deps_count": 15,
+   "types": true,
+   "deprecated": null,
+   "weekly": 242282
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Clarity Core",
+  "repo": "vmware-clarity/core",
+  "pkg": "@cds/core",
+  "gh": {
+   "archived": true,
+   "created": "2022-03-16T16:01:17Z",
+   "default_branch": "main",
+   "desc": "Clarity is a scalable, accessible, customizable, open-source design system built with web components. Works with any JavaScript framework, created for enterprises, and designed to be inclusive.",
+   "forks": 47,
+   "issues": 54,
+   "license": "MIT",
+   "pushed": "2026-02-02T11:56:52Z",
+   "stars": 184
+  },
+  "npm": {
+   "version": "6.17.0",
+   "tags": {
+    "rc": "5.0.0-rc.1",
+    "next": "6.0.0-next.6",
+    "beta": "6.0.0-beta.4",
+    "latest": "6.17.0"
+   },
+   "modified": "2026-02-18T12:40:08.610Z",
+   "latest_time": "2026-02-02T11:56:59.549Z",
+   "created": "2020-12-02T17:38:15.578Z",
+   "repository": "git+https://github.com/vmware-clarity/core.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 7147882,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 34926
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Kor UI",
+  "repo": "kor-ui/kor",
+  "pkg": "@kor-ui/kor",
+  "gh": {
+   "archived": false,
+   "created": "2019-11-25T16:27:39Z",
+   "default_branch": "develop",
+   "desc": "User Interface Component Library based on LitElement / lit-html",
+   "forks": 21,
+   "issues": 19,
+   "license": "MIT",
+   "pushed": "2026-02-06T08:00:49Z",
+   "stars": 290
+  },
+  "npm": {
+   "version": "1.11.3",
+   "tags": {
+    "latest": "1.11.3"
+   },
+   "modified": "2022-05-01T14:54:54.880Z",
+   "latest_time": "2022-05-01T14:54:54.783Z",
+   "created": "2020-04-10T13:21:54.291Z",
+   "repository": "git+https://github.com/kor-ui/kor.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1892649,
+   "deps_count": 1,
+   "types": false,
+   "deprecated": null,
+   "weekly": 40
+  }
+ },
+ {
+  "cat": "37",
+  "name": "Cardinal / Oat (对照)",
+  "repo": null,
+  "pkg": null,
+  "gh": null,
+  "npm": null
+ },
+ {
+  "cat": "38",
+  "name": "Bootstrap",
+  "repo": "twbs/bootstrap",
+  "pkg": "bootstrap",
+  "gh": {
+   "archived": false,
+   "created": "2011-07-29T21:19:00Z",
+   "default_branch": "main",
+   "desc": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+   "forks": 78611,
+   "issues": 231,
+   "license": "MIT",
+   "pushed": "2026-09-01T19:23:24Z",
+   "stars": 174721
+  },
+  "npm": {
+   "version": "5.3.8",
+   "tags": {
+    "latest": "5.3.8"
+   },
+   "modified": "2026-06-05T18:02:14.207Z",
+   "latest_time": "2025-08-26T14:39:00.539Z",
+   "created": "2011-08-28T02:47:43.832Z",
+   "repository": "git+https://github.com/twbs/bootstrap.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 9633659,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 6431012
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Bulma",
+  "repo": "jgthms/bulma",
+  "pkg": "bulma",
+  "gh": {
+   "archived": false,
+   "created": "2016-01-23T23:48:34Z",
+   "default_branch": "main",
+   "desc": "Modern CSS framework based on Flexbox",
+   "forks": 3882,
+   "issues": 528,
+   "license": "MIT",
+   "pushed": "2026-03-01T20:13:02Z",
+   "stars": 50058
+  },
+  "npm": {
+   "version": "1.0.4",
+   "tags": {
+    "latest": "1.0.4"
+   },
+   "modified": "2025-04-19T14:01:05.707Z",
+   "latest_time": "2025-04-19T14:01:05.512Z",
+   "created": "2016-01-27T22:11:15.722Z",
+   "repository": "git+https://github.com/jgthms/bulma.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 6967616,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 362448
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Pico CSS",
+  "repo": "picocss/pico",
+  "pkg": "@picocss/pico",
+  "gh": {
+   "archived": false,
+   "created": "2019-11-15T09:42:54Z",
+   "default_branch": "main",
+   "desc": "Minimal CSS Framework for semantic HTML",
+   "forks": 507,
+   "issues": 126,
+   "license": "MIT",
+   "pushed": "2026-05-09T18:16:06Z",
+   "stars": 16840
+  },
+  "npm": {
+   "version": "2.1.1",
+   "tags": {
+    "latest": "2.1.1",
+    "next": "2.1.1"
+   },
+   "modified": "2025-03-15T06:47:19.156Z",
+   "latest_time": "2025-03-15T06:45:14.349Z",
+   "created": "2019-12-11T06:49:38.655Z",
+   "repository": "git+https://github.com/picocss/pico.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 19558862,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 65667
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Foundation",
+  "repo": "foundation/foundation-sites",
+  "pkg": "foundation-sites",
+  "gh": {
+   "archived": false,
+   "created": "2011-10-13T23:05:42Z",
+   "default_branch": "develop",
+   "desc": "The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.",
+   "forks": 5392,
+   "issues": 80,
+   "license": "MIT",
+   "pushed": "2025-01-21T22:11:53Z",
+   "stars": 29783
+  },
+  "npm": {
+   "version": "6.9.0",
+   "tags": {
+    "beta": "6.4.2-rc2",
+    "latest": "6.9.0"
+   },
+   "modified": "2024-09-27T20:02:35.921Z",
+   "latest_time": "2024-09-27T20:02:35.745Z",
+   "created": "2015-04-30T17:40:17.819Z",
+   "repository": "git+https://github.com/foundation/foundation-sites.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 24738588,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 112589
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Tachyons",
+  "repo": "tachyons-css/tachyons",
+  "pkg": "tachyons",
+  "gh": {
+   "archived": false,
+   "created": "2013-11-04T10:41:59Z",
+   "default_branch": "main",
+   "desc": "Functional css for humans",
+   "forks": 667,
+   "issues": 90,
+   "license": "MIT",
+   "pushed": "2026-07-20T15:11:15Z",
+   "stars": 11720
+  },
+  "npm": {
+   "version": "4.12.0",
+   "tags": {
+    "latest": "4.12.0",
+    "beta": "5.0.0-0"
+   },
+   "modified": "2023-06-07T02:34:16.309Z",
+   "latest_time": "2020-04-26T13:25:36.750Z",
+   "created": "2015-03-07T06:57:51.783Z",
+   "repository": "git+https://github.com/tachyons-css/tachyons.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 344858,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 103695
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Water.css",
+  "repo": "kognise/water.css",
+  "pkg": "water.css",
+  "gh": {
+   "archived": false,
+   "created": "2019-04-04T20:44:54Z",
+   "default_branch": "master",
+   "desc": "A drop-in collection of CSS styles to make simple websites just a little nicer",
+   "forks": 495,
+   "issues": 89,
+   "license": "MIT",
+   "pushed": "2024-02-11T14:50:20Z",
+   "stars": 8650
+  },
+  "npm": {
+   "version": "2.1.1",
+   "tags": {
+    "latest": "2.1.1"
+   },
+   "modified": "2022-05-24T02:13:50.944Z",
+   "latest_time": "2021-08-11T19:01:24.101Z",
+   "created": "2020-10-01T18:06:34.676Z",
+   "repository": "git+https://github.com/kognise/water.css.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 119457,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 843
+  }
+ },
+ {
+  "cat": "38",
+  "name": "MVP.css",
+  "repo": "andybrewer/mvp",
+  "pkg": "mvp.css",
+  "gh": {
+   "archived": false,
+   "created": "2020-02-26T16:26:31Z",
+   "default_branch": "master",
+   "desc": "MVP.css — Minimalist classless CSS stylesheet for HTML elements",
+   "forks": 181,
+   "issues": 0,
+   "license": "MIT",
+   "pushed": "2026-02-27T18:01:09Z",
+   "stars": 5128
+  },
+  "npm": {
+   "version": "1.17.3",
+   "tags": {
+    "latest": "1.17.3"
+   },
+   "modified": "2026-02-27T18:11:22.773Z",
+   "latest_time": "2026-02-27T18:11:22.672Z",
+   "created": "2020-04-24T02:08:48.771Z",
+   "repository": "git+https://github.com/andybrewer/mvp.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 12215,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 1953
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Simple.css",
+  "repo": "kevquirk/simple.css",
+  "pkg": "simpledotcss",
+  "gh": {
+   "archived": false,
+   "created": "2021-01-03T14:03:23Z",
+   "default_branch": "main",
+   "desc": "Simple.css is a CSS template that allows you to make a good looking website really quickly.",
+   "forks": 248,
+   "issues": 0,
+   "license": "MIT",
+   "pushed": "2026-07-19T12:31:23Z",
+   "stars": 4984
+  },
+  "npm": {
+   "version": "2.3.7",
+   "tags": {
+    "latest": "2.3.7"
+   },
+   "modified": "2025-05-29T12:40:44.766Z",
+   "latest_time": "2025-05-29T12:40:44.555Z",
+   "created": "2021-02-25T00:11:33.842Z",
+   "repository": "git+https://github.com/kevquirk/simple.css.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 41673,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 1292
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Open Props (见 §16)",
+  "repo": "argyleink/open-props",
+  "pkg": "open-props",
+  "gh": {
+   "archived": false,
+   "created": "2021-09-03T04:15:41Z",
+   "default_branch": "main",
+   "desc": "CSS custom properties to help accelerate adaptive and consistent design.",
+   "forks": 217,
+   "issues": 76,
+   "license": "MIT",
+   "pushed": "2026-08-11T00:41:43Z",
+   "stars": 5509
+  },
+  "npm": {
+   "version": "1.7.23",
+   "tags": {
+    "beta": "2.0.0-beta.4",
+    "latest": "1.7.23"
+   },
+   "modified": "2026-01-31T17:12:16.075Z",
+   "latest_time": "2026-01-31T17:12:15.958Z",
+   "created": "2021-10-13T04:37:47.800Z",
+   "repository": "git+https://github.com/argyleink/open-props.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1287011,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 27312
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Flowbite (Tailwind)",
+  "repo": "themesberg/flowbite",
+  "pkg": "flowbite",
+  "gh": {
+   "archived": false,
+   "created": "2021-07-28T15:21:50Z",
+   "default_branch": "main",
+   "desc": "Open-source UI component library and front-end development framework based on Tailwind CSS",
+   "forks": 864,
+   "issues": 257,
+   "license": "MIT",
+   "pushed": "2026-06-27T08:36:12Z",
+   "stars": 9328
+  },
+  "npm": {
+   "version": "4.0.2",
+   "tags": {
+    "next": "3.0.0-beta.1",
+    "latest": "4.0.2"
+   },
+   "modified": "2026-05-13T17:26:07.698Z",
+   "latest_time": "2026-05-13T17:26:07.580Z",
+   "created": "2022-02-02T13:45:07.179Z",
+   "repository": "git+https://github.com/themesberg/flowbite.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 5471623,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 644277
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Preline UI",
+  "repo": "htmlstreamofficial/preline",
+  "pkg": "preline",
+  "gh": {
+   "archived": false,
+   "created": "2022-05-15T15:29:39Z",
+   "default_branch": "main",
+   "desc": "Preline UI is an open-source set of prebuilt UI components based on the utility-first Tailwind CSS framework.",
+   "forks": 414,
+   "issues": 2,
+   "license": "NOASSERTION",
+   "pushed": "2026-08-31T01:53:38Z",
+   "stars": 6408
+  },
+  "npm": {
+   "version": "5.0.0",
+   "tags": {
+    "latest": "5.0.0"
+   },
+   "modified": "2026-08-21T15:41:45.565Z",
+   "latest_time": "2026-08-21T15:41:45.393Z",
+   "created": "2022-05-17T21:58:34.830Z",
+   "repository": "git+https://github.com/htmlstreamofficial/preline.git",
+   "license": "Licensed under MIT and Preline UI Fair Use License",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 6957834,
+   "deps_count": 9,
+   "types": true,
+   "deprecated": null,
+   "weekly": 53122
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Franken UI",
+  "repo": "franken-ui/ui",
+  "pkg": "franken-ui",
+  "gh": {
+   "archived": false,
+   "created": "2024-03-16T00:20:28Z",
+   "default_branch": "master",
+   "desc": "Franken UI is an HTML-first UI component library built on UIkit 3 and extended with LitElement, inspired by shadcn/ui.",
+   "forks": 43,
+   "issues": 6,
+   "license": "MIT",
+   "pushed": "2026-06-14T00:37:11Z",
+   "stars": 2606
+  },
+  "npm": {
+   "version": "2.1.2",
+   "tags": {
+    "latest": "2.1.2",
+    "next": "2.1.2-next.0"
+   },
+   "modified": "2026-01-18T02:17:40.334Z",
+   "latest_time": "2026-01-18T02:17:40.223Z",
+   "created": "2024-03-20T01:26:42.156Z",
+   "repository": "git+https://github.com/franken-ui/ui.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": "^3.4.9 || ^4.0.0",
+   "unpacked": 2765528,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 782
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Basecoat (shadcn HTML)",
+  "repo": "hunvreus/basecoat",
+  "pkg": "basecoat-css",
+  "gh": {
+   "archived": false,
+   "created": "2025-01-16T03:44:02Z",
+   "default_branch": "main",
+   "desc": "A components library built with Tailwind CSS that works with any web stack.",
+   "forks": 138,
+   "issues": 34,
+   "license": "MIT",
+   "pushed": "2026-07-21T16:09:54Z",
+   "stars": 4281
+  },
+  "npm": {
+   "version": "1.0.2",
+   "tags": {
+    "beta": "1.0.0-beta.7",
+    "latest": "1.0.2"
+   },
+   "modified": "2026-07-06T08:39:33.151Z",
+   "latest_time": "2026-07-06T08:39:33.023Z",
+   "created": "2025-05-08T02:02:19.530Z",
+   "repository": "git+https://github.com/hunvreus/basecoat.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 5126395,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 29266
+  }
+ },
+ {
+  "cat": "38",
+  "name": "UIkit",
+  "repo": "uikit/uikit",
+  "pkg": "uikit",
+  "gh": {
+   "archived": false,
+   "created": "2013-07-18T16:00:26Z",
+   "default_branch": "develop",
+   "desc": "A lightweight and modular front-end framework for developing fast and powerful web interfaces",
+   "forks": 2286,
+   "issues": 609,
+   "license": "MIT",
+   "pushed": "2026-09-04T11:03:25Z",
+   "stars": 18535
+  },
+  "npm": {
+   "version": "3.25.21",
+   "tags": {
+    "latest": "3.25.21"
+   },
+   "modified": "2026-09-03T11:54:00.416Z",
+   "latest_time": "2026-08-07T10:14:10.357Z",
+   "created": "2015-03-31T22:34:10.519Z",
+   "repository": "git+https://github.com/uikit/uikit.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 12553926,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 37417
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Semantic UI / Fomantic UI",
+  "repo": "fomantic/Fomantic-UI",
+  "pkg": "fomantic-ui",
+  "gh": {
+   "archived": false,
+   "created": "2018-06-04T07:50:09Z",
+   "default_branch": "develop",
+   "desc": "Fomantic-UI is the official community fork of Semantic-UI",
+   "forks": 341,
+   "issues": 255,
+   "license": "MIT",
+   "pushed": "2026-09-04T06:03:20Z",
+   "stars": 3765
+  },
+  "npm": {
+   "version": "2.9.4",
+   "tags": {
+    "latest": "2.9.4"
+   },
+   "modified": "2026-09-04T00:52:48.294Z",
+   "latest_time": "2025-02-23T21:14:52.798Z",
+   "created": "2018-06-04T18:06:19.032Z",
+   "repository": "https://github.com/fomantic/Fomantic-UI.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 22076869,
+   "deps_count": 41,
+   "types": true,
+   "deprecated": null,
+   "weekly": 13697
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Materialize",
+  "repo": "materializecss/materialize",
+  "pkg": "@materializecss/materialize",
+  "gh": {
+   "archived": false,
+   "created": "2020-05-02T22:06:48Z",
+   "default_branch": "main",
+   "desc": "Materialize, a web framework based on Material Design",
+   "forks": 109,
+   "issues": 51,
+   "license": "MIT",
+   "pushed": "2026-08-17T10:04:59Z",
+   "stars": 990
+  },
+  "npm": {
+   "version": "2.3.3",
+   "tags": {
+    "latest": "2.3.3"
+   },
+   "modified": "2026-07-05T17:10:30.163Z",
+   "latest_time": "2026-04-12T14:45:21.997Z",
+   "created": "2020-08-27T22:51:16.339Z",
+   "repository": "git://github.com/materializecss/materialize.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 2234458,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3913
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Beer CSS",
+  "repo": "beercss/beercss",
+  "pkg": "beercss",
+  "gh": {
+   "archived": false,
+   "created": "2020-12-09T10:32:09Z",
+   "default_branch": "main",
+   "desc": "Build material design interfaces in record time... without stress for devs... 🍺💛",
+   "forks": 99,
+   "issues": 30,
+   "license": "MIT",
+   "pushed": "2026-08-29T13:05:20Z",
+   "stars": 2593
+  },
+  "npm": {
+   "version": "5.0.3",
+   "tags": {
+    "latest": "5.0.3"
+   },
+   "modified": "2026-08-04T19:40:25.074Z",
+   "latest_time": "2026-08-04T19:40:24.783Z",
+   "created": "2020-12-16T19:25:45.687Z",
+   "repository": "git+https://github.com/beercss/beercss.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 4031811,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 15581
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Spectre.css",
+  "repo": "picturepan2/spectre",
+  "pkg": "spectre.css",
+  "gh": {
+   "archived": false,
+   "created": "2016-03-07T11:53:15Z",
+   "default_branch": "master",
+   "desc": "Spectre.css - A Lightweight, Responsive and Modern CSS Framework",
+   "forks": 782,
+   "issues": 193,
+   "license": "MIT",
+   "pushed": "2024-04-11T16:20:19Z",
+   "stars": 11310
+  },
+  "npm": {
+   "version": "0.5.9",
+   "tags": {
+    "latest": "0.5.9"
+   },
+   "modified": "2022-06-26T22:44:23.308Z",
+   "latest_time": "2020-07-02T06:00:02.317Z",
+   "created": "2016-04-08T08:44:04.598Z",
+   "repository": "git+https://github.com/picturepan2/spectre.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3402794,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 5453
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Milligram",
+  "repo": "milligram/milligram",
+  "pkg": "milligram",
+  "gh": {
+   "archived": false,
+   "created": "2015-12-10T17:03:36Z",
+   "default_branch": "main",
+   "desc": "A minimalist CSS framework.",
+   "forks": 727,
+   "issues": 125,
+   "license": "MIT",
+   "pushed": "2026-09-01T21:28:39Z",
+   "stars": 10217
+  },
+  "npm": {
+   "version": "1.4.1",
+   "tags": {
+    "latest": "1.4.1"
+   },
+   "modified": "2022-06-19T19:48:21.149Z",
+   "latest_time": "2020-06-18T18:56:08.245Z",
+   "created": "2015-12-10T22:46:35.874Z",
+   "repository": "git+https://github.com/milligram/milligram.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 77531,
+   "deps_count": 1,
+   "types": false,
+   "deprecated": null,
+   "weekly": 854
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Cirrus",
+  "repo": "Spiderpig86/Cirrus",
+  "pkg": "cirrus-ui",
+  "gh": {
+   "archived": false,
+   "created": "2016-12-22T02:55:45Z",
+   "default_branch": "master",
+   "desc": ":cloud: The SCSS framework for the modern web.",
+   "forks": 76,
+   "issues": 29,
+   "license": "MIT",
+   "pushed": "2026-08-10T04:34:23Z",
+   "stars": 1430
+  },
+  "npm": {
+   "version": "0.8.0",
+   "tags": {
+    "beta": "0.4.5",
+    "latest": "0.8.0"
+   },
+   "modified": "2025-02-05T19:25:23.297Z",
+   "latest_time": "2025-02-05T19:25:23.130Z",
+   "created": "2017-03-28T14:54:31.554Z",
+   "repository": "git+https://github.com/Spiderpig86/Cirrus.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 3440812,
+   "deps_count": 8,
+   "types": false,
+   "deprecated": null,
+   "weekly": 423
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Tailwind Plus / Tailwind UI (商业, 对照)",
+  "repo": null,
+  "pkg": null,
+  "gh": null,
+  "npm": null
+ },
+ {
+  "cat": "38",
+  "name": "Hyper UI",
+  "repo": "markmead/hyperui",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2021-11-12T17:14:11Z",
+   "default_branch": "main",
+   "desc": "Free Tailwind CSS v4 components for your next project, designed to enhance your web development with the latest features and styles 🚀",
+   "forks": 511,
+   "issues": 2,
+   "license": "MIT",
+   "pushed": "2026-09-04T10:52:35Z",
+   "stars": 12224
+  },
+  "npm": null
+ },
+ {
+  "cat": "38",
+  "name": "Meraki UI",
+  "repo": "merakiui/merakiui",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2020-05-01T20:02:07Z",
+   "default_branch": "main",
+   "desc": "Tailwind CSS components that support RTL languages & fully responsive based on Flexbox & CSS Grid with elegant Dark Mode 🚀 ☄️.",
+   "forks": 175,
+   "issues": 3,
+   "license": "MIT",
+   "pushed": "2025-07-11T15:49:34Z",
+   "stars": 2699
+  },
+  "npm": null
+ },
+ {
+  "cat": "38",
+  "name": "Sailboat UI",
+  "repo": "sailboatui/sailboatui",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2022-09-24T02:39:51Z",
+   "default_branch": "main",
+   "desc": "Sailboat UI is a modern UI component library for Tailwind CSS ",
+   "forks": 45,
+   "issues": 4,
+   "license": "MIT",
+   "pushed": "2026-02-24T02:18:32Z",
+   "stars": 1347
+  },
+  "npm": null
+ },
+ {
+  "cat": "38",
+  "name": "NES.css",
+  "repo": "nostalgic-css/NES.css",
+  "pkg": "nes.css",
+  "gh": {
+   "archived": false,
+   "created": "2018-09-24T01:49:11Z",
+   "default_branch": "develop",
+   "desc": "NES-style CSS Framework | ファミコン風CSSフレームワーク",
+   "forks": 1690,
+   "issues": 78,
+   "license": "MIT",
+   "pushed": "2024-01-17T20:53:09Z",
+   "stars": 21823
+  },
+  "npm": {
+   "version": "2.3.0",
+   "tags": {
+    "latest": "2.3.0"
+   },
+   "modified": "2022-05-10T12:25:14.863Z",
+   "latest_time": "2019-12-17T12:07:51.951Z",
+   "created": "2018-11-27T00:42:50.283Z",
+   "repository": "git+https://github.com/nostalgic-css/NES.css.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1177184,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 1444
+  }
+ },
+ {
+  "cat": "38",
+  "name": "98.css",
+  "repo": "jdan/98.css",
+  "pkg": "98.css",
+  "gh": {
+   "archived": false,
+   "created": "2020-04-17T01:39:53Z",
+   "default_branch": "main",
+   "desc": "A design system for building faithful recreations of old UIs",
+   "forks": 379,
+   "issues": 44,
+   "license": "MIT",
+   "pushed": "2025-09-07T13:40:43Z",
+   "stars": 11476
+  },
+  "npm": {
+   "version": "0.1.21",
+   "tags": {
+    "latest": "0.1.21"
+   },
+   "modified": "2025-04-28T21:59:45.228Z",
+   "latest_time": "2025-04-28T21:59:45.058Z",
+   "created": "2020-04-21T16:26:23.567Z",
+   "repository": "git+https://github.com/jdan/98.css.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 405208,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 3275
+  }
+ },
+ {
+  "cat": "38",
+  "name": "7.css",
+  "repo": "khang-nd/7.css",
+  "pkg": "7.css",
+  "gh": {
+   "archived": false,
+   "created": "2020-12-30T03:45:16Z",
+   "default_branch": "main",
+   "desc": "A JS-independent, tree-shakeable CSS framework for building faithful recreations of the Windows 7 UI.",
+   "forks": 122,
+   "issues": 10,
+   "license": "MIT",
+   "pushed": "2026-03-17T15:32:33Z",
+   "stars": 2434
+  },
+  "npm": {
+   "version": "0.21.1",
+   "tags": {
+    "latest": "0.21.1"
+   },
+   "modified": "2025-07-27T06:50:58.771Z",
+   "latest_time": "2025-07-27T06:50:58.574Z",
+   "created": "2020-12-31T15:02:38.163Z",
+   "repository": "git+https://github.com/khang-nd/7.css.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 559439,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 779
+  }
+ },
+ {
+  "cat": "38",
+  "name": "XP.css",
+  "repo": "botoxparty/XP.css",
+  "pkg": "xp.css",
+  "gh": {
+   "archived": false,
+   "created": "2020-05-14T12:41:40Z",
+   "default_branch": "main",
+   "desc": "A CSS framework for building faithful recreations of operating system GUIs.",
+   "forks": 140,
+   "issues": 24,
+   "license": "MIT",
+   "pushed": "2025-03-08T16:02:01Z",
+   "stars": 3077
+  },
+  "npm": {
+   "version": "0.2.6",
+   "tags": {
+    "latest": "0.2.6"
+   },
+   "modified": "2022-10-25T16:05:26.779Z",
+   "latest_time": "2022-10-25T16:05:26.702Z",
+   "created": "2020-05-16T15:56:37.086Z",
+   "repository": "git+https://github.com/botoxparty/XP.css.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 1115632,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 2468
+  }
+ },
+ {
+  "cat": "38",
+  "name": "Terminal CSS",
+  "repo": "Gioni06/terminal.css",
+  "pkg": "terminal.css",
+  "gh": {
+   "archived": false,
+   "created": "2019-01-23T11:23:59Z",
+   "default_branch": "master",
+   "desc": "Modern and minimalistic CSS framework for terminal enthusiasts",
+   "forks": 69,
+   "issues": 11,
+   "license": "MIT",
+   "pushed": "2026-02-12T07:26:09Z",
+   "stars": 1447
+  },
+  "npm": {
+   "version": "0.7.5",
+   "tags": {
+    "latest": "0.7.5"
+   },
+   "modified": "2023-12-08T17:32:15.069Z",
+   "latest_time": "2023-12-08T17:32:14.871Z",
+   "created": "2019-01-25T15:57:03.317Z",
+   "repository": "git+https://github.com/Gioni06/terminal.css.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 37535,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 518
+  }
+ },
+ {
+  "cat": "38",
+  "name": "PaperCSS",
+  "repo": "papercss/papercss",
+  "pkg": "papercss",
+  "gh": {
+   "archived": false,
+   "created": "2017-08-23T20:15:22Z",
+   "default_branch": "master",
+   "desc": "The Less Formal CSS Framework",
+   "forks": 227,
+   "issues": 37,
+   "license": "ISC",
+   "pushed": "2025-07-31T15:54:36Z",
+   "stars": 4191
+  },
+  "npm": {
+   "version": "1.9.2",
+   "tags": {
+    "latest": "1.9.2"
+   },
+   "modified": "2023-05-29T18:49:02.560Z",
+   "latest_time": "2023-05-29T18:49:02.444Z",
+   "created": "2017-11-06T01:45:57.756Z",
+   "repository": "git+https://github.com/papercss/papercss.git",
+   "license": "ISC",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 192090,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 369
+  }
+ },
+ {
+  "cat": "38",
+  "name": "New.css",
+  "repo": "xz/new.css",
+  "pkg": "@exampledev/new.css",
+  "gh": {
+   "archived": false,
+   "created": "2020-05-03T03:18:57Z",
+   "default_branch": "main",
+   "desc": "A classless CSS framework to write modern websites using only HTML.",
+   "forks": 127,
+   "issues": 37,
+   "license": "MIT",
+   "pushed": "2026-09-04T00:56:17Z",
+   "stars": 4044
+  },
+  "npm": {
+   "version": "1.1.3",
+   "tags": {
+    "latest": "1.1.3"
+   },
+   "modified": "2026-09-04T00:41:46.437Z",
+   "latest_time": "2020-05-20T02:22:06.220Z",
+   "created": "2020-05-18T15:25:05.891Z",
+   "repository": "git+https://github.com/xz/new.css.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 36465,
+   "deps_count": 0,
+   "types": false,
+   "deprecated": null,
+   "weekly": 282
+  }
+ },
+ {
+  "cat": "39",
+  "name": "PrimeReact",
+  "repo": "primefaces/primereact",
+  "pkg": "primereact",
+  "gh": {
+   "archived": false,
+   "created": "2016-12-16T15:56:27Z",
+   "default_branch": "master",
+   "desc": "The Most Complete React UI Component Library",
+   "forks": 1238,
+   "issues": 353,
+   "license": "MIT",
+   "pushed": "2026-08-27T22:12:49Z",
+   "stars": 8316
+  },
+  "npm": {
+   "version": "11.1.0",
+   "tags": {
+    "latest": "11.1.0"
+   },
+   "modified": "2026-08-27T15:36:07.309Z",
+   "latest_time": "2026-08-05T13:30:40.257Z",
+   "created": "2017-03-28T11:13:32.783Z",
+   "repository": null,
+   "license": "SEE LICENSE IN LICENSE.md",
+   "peer_react": ">=19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 1360292,
+   "deps_count": 2,
+   "types": true,
+   "deprecated": null,
+   "weekly": 334481
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Fluent UI React v9",
+  "repo": "microsoft/fluentui",
+  "pkg": "@fluentui/react-components",
+  "gh": {
+   "archived": false,
+   "created": "2016-06-06T15:03:44Z",
+   "default_branch": "master",
+   "desc": "Fluent UI web represents a collection of utilities, React components, and web components for building web applications.",
+   "forks": 2925,
+   "issues": 790,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-05T12:33:48Z",
+   "stars": 20250
+  },
+  "npm": {
+   "version": "9.74.7",
+   "tags": {
+    "alpha": "9.0.0-alpha.124",
+    "beta": "9.0.0-beta.5",
+    "rc": "9.0.0-rc.15",
+    "latest": "9.74.7"
+   },
+   "modified": "2026-09-04T04:30:25.420Z",
+   "latest_time": "2026-08-24T08:16:46.441Z",
+   "created": "2021-02-24T00:04:24.107Z",
+   "repository": "git+https://github.com/microsoft/fluentui.git",
+   "license": "MIT",
+   "peer_react": ">=16.14.0 <20.0.0",
+   "peer_tailwind": null,
+   "unpacked": 2218799,
+   "deps_count": 62,
+   "types": true,
+   "deprecated": null,
+   "weekly": 365371
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Carbon React",
+  "repo": "carbon-design-system/carbon",
+  "pkg": "@carbon/react",
+  "gh": {
+   "archived": false,
+   "created": "2017-03-13T14:23:59Z",
+   "default_branch": "main",
+   "desc": "A design system built by IBM",
+   "forks": 2272,
+   "issues": 1025,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T14:16:34Z",
+   "stars": 9428
+  },
+  "npm": {
+   "version": "1.115.0",
+   "tags": {
+    "beta": "0.1.0",
+    "latest": "1.115.0",
+    "next": "1.115.0"
+   },
+   "modified": "2026-08-27T14:10:16.763Z",
+   "latest_time": "2026-08-27T13:39:12.222Z",
+   "created": "2021-07-30T16:37:35.761Z",
+   "repository": "git+https://github.com/carbon-design-system/carbon.git",
+   "license": "Apache-2.0",
+   "peer_react": "^16.8.6 || ^17.0.1 || ^18.2.0 || ^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 5222380,
+   "deps_count": 19,
+   "types": true,
+   "deprecated": null,
+   "weekly": 160100
+  }
+ },
+ {
+  "cat": "39",
+  "name": "React Spectrum",
+  "repo": "adobe/react-spectrum",
+  "pkg": "@adobe/react-spectrum",
+  "gh": {
+   "archived": false,
+   "created": "2019-09-13T23:32:51Z",
+   "default_branch": "main",
+   "desc": "A collection of libraries and tools that help you build adaptive, accessible, and robust user experiences.",
+   "forks": 1566,
+   "issues": 604,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T00:00:42Z",
+   "stars": 15847
+  },
+  "npm": {
+   "version": "3.47.5",
+   "tags": {
+    "latest": "3.47.5"
+   },
+   "modified": "2026-09-04T19:26:48.098Z",
+   "latest_time": "2026-09-04T19:26:47.934Z",
+   "created": "2020-07-07T16:58:33.359Z",
+   "repository": "git+https://github.com/adobe/react-spectrum.git",
+   "license": "Apache-2.0",
+   "peer_react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1",
+   "peer_tailwind": null,
+   "unpacked": 13322698,
+   "deps_count": 12,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1160544
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Atlassian Design System",
+  "repo": null,
+  "pkg": "@atlaskit/button",
+  "gh": null,
+  "npm": {
+   "version": "25.3.2",
+   "tags": {
+    "next": "20.3.2",
+    "latest": "25.3.2"
+   },
+   "modified": "2026-09-02T07:39:53.678Z",
+   "latest_time": "2026-09-02T07:39:53.485Z",
+   "created": "2017-01-29T23:41:10.044Z",
+   "repository": "git+https://bitbucket.org/atlassian/atlassian-frontend-mirror.git",
+   "license": "Apache-2.0",
+   "peer_react": "^18.2.0 || ^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 597774,
+   "deps_count": 17,
+   "types": true,
+   "deprecated": null,
+   "weekly": 189957
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Shopify Polaris",
+  "repo": "Shopify/polaris",
+  "pkg": "@shopify/polaris",
+  "gh": {
+   "archived": true,
+   "created": "2017-04-20T18:26:34Z",
+   "default_branch": "main",
+   "desc": "Shopify's Polaris Design System - React implementation (Deprecated)",
+   "forks": 1255,
+   "issues": 73,
+   "license": "NOASSERTION",
+   "pushed": "2026-08-11T07:11:56Z",
+   "stars": 6170
+  },
+  "npm": {
+   "version": "13.9.5",
+   "tags": {
+    "next": "9.9.0-next.1",
+    "beta": "12.0.0-beta.2",
+    "latest": "13.9.5"
+   },
+   "modified": "2026-08-10T12:55:43.697Z",
+   "latest_time": "2025-03-26T17:16:25.641Z",
+   "created": "2017-04-20T17:58:34.984Z",
+   "repository": "git+https://github.com/Shopify/polaris.git",
+   "license": "SEE LICENSE IN LICENSE.md",
+   "peer_react": "^18.0.0",
+   "peer_tailwind": null,
+   "unpacked": 4880644,
+   "deps_count": 7,
+   "types": true,
+   "deprecated": "Polaris React is deprecated and no longer maintained. For building Shopify admin experiences, use Polaris web components: https://shopify.dev/docs/api/polaris — archived docs for this package: https://shopify.github.io/polaris-react-archive/",
+   "weekly": 269659
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Geist (Vercel)",
+  "repo": "geist-org/geist-ui",
+  "pkg": "@geist-ui/core",
+  "gh": {
+   "archived": true,
+   "created": "2020-03-18T17:14:17Z",
+   "default_branch": "master",
+   "desc": "A design system for building modern websites and applications.",
+   "forks": 335,
+   "issues": 55,
+   "license": "MIT",
+   "pushed": "2026-06-01T16:08:50Z",
+   "stars": 4555
+  },
+  "npm": {
+   "version": "2.3.8",
+   "tags": {
+    "latest": "2.3.8",
+    "canary": "2.3.1"
+   },
+   "modified": "2022-04-05T13:40:52.103Z",
+   "latest_time": "2022-03-22T10:41:26.224Z",
+   "created": "2022-01-18T18:43:20.276Z",
+   "repository": "https://github.com/geist-org/geist-ui",
+   "license": "MIT",
+   "peer_react": ">=16.9.0",
+   "peer_tailwind": null,
+   "unpacked": 3640455,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 27980
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Once UI",
+  "repo": "once-ui-system/core",
+  "pkg": "@once-ui-system/core",
+  "gh": {
+   "archived": false,
+   "created": "2025-06-04T11:30:01Z",
+   "default_branch": "main",
+   "desc": "AI-native design system for Next.js apps and landing pages",
+   "forks": 58,
+   "issues": 4,
+   "license": "MIT",
+   "pushed": "2026-08-31T11:40:36Z",
+   "stars": 253
+  },
+  "npm": {
+   "version": "1.8.4",
+   "tags": {
+    "latest": "1.8.4"
+   },
+   "modified": "2026-08-28T19:56:14.510Z",
+   "latest_time": "2026-08-28T19:56:14.345Z",
+   "created": "2025-06-05T13:08:42.889Z",
+   "repository": "git+https://github.com/once-ui-system/core.git",
+   "license": "MIT",
+   "peer_react": ">=18",
+   "peer_tailwind": null,
+   "unpacked": 3853744,
+   "deps_count": 7,
+   "types": true,
+   "deprecated": null,
+   "weekly": 8309
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Flowbite React",
+  "repo": "themesberg/flowbite-react",
+  "pkg": "flowbite-react",
+  "gh": {
+   "archived": false,
+   "created": "2022-02-28T19:37:38Z",
+   "default_branch": "main",
+   "desc": "Official React components built for Flowbite and Tailwind CSS",
+   "forks": 505,
+   "issues": 192,
+   "license": "MIT",
+   "pushed": "2026-06-27T08:47:00Z",
+   "stars": 2147
+  },
+  "npm": {
+   "version": "0.12.17",
+   "tags": {
+    "beta": "0.7.0-beta.6",
+    "latest": "0.12.17"
+   },
+   "modified": "2026-02-09T10:41:18.651Z",
+   "latest_time": "2026-02-09T10:41:18.545Z",
+   "created": "2022-02-28T19:57:01.660Z",
+   "repository": "git+https://github.com/themesberg/flowbite-react.git",
+   "license": "MIT",
+   "peer_react": "^18 || ^19",
+   "peer_tailwind": "^3 || ^4",
+   "unpacked": 3822806,
+   "deps_count": 13,
+   "types": true,
+   "deprecated": null,
+   "weekly": 161165
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Ant Design Mobile",
+  "repo": "ant-design/ant-design-mobile",
+  "pkg": "antd-mobile",
+  "gh": {
+   "archived": false,
+   "created": "2015-11-30T03:33:06Z",
+   "default_branch": "master",
+   "desc": "Essential UI blocks for building mobile web apps.",
+   "forks": 2484,
+   "issues": 224,
+   "license": "MIT",
+   "pushed": "2026-08-05T03:22:38Z",
+   "stars": 12044
+  },
+  "npm": {
+   "version": "5.42.3",
+   "tags": {
+    "latest": "5.42.3"
+   },
+   "modified": "2026-03-13T03:33:43.133Z",
+   "latest_time": "2026-01-09T03:56:44.323Z",
+   "created": "2016-07-13T08:49:08.763Z",
+   "repository": "git+https://github.com/ant-design/ant-design-mobile.git",
+   "license": "MIT",
+   "peer_react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 15646054,
+   "deps_count": 20,
+   "types": true,
+   "deprecated": null,
+   "weekly": 89265
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Evergreen (Segment)",
+  "repo": "segmentio/evergreen",
+  "pkg": "evergreen-ui",
+  "gh": {
+   "archived": false,
+   "created": "2017-07-30T10:03:14Z",
+   "default_branch": "master",
+   "desc": "🌲 Evergreen React UI Framework by Segment",
+   "forks": 806,
+   "issues": 80,
+   "license": "MIT",
+   "pushed": "2026-06-25T23:25:22Z",
+   "stars": 12422
+  },
+  "npm": {
+   "version": "7.1.9",
+   "tags": {
+    "latest": "7.1.9"
+   },
+   "modified": "2026-06-11T22:37:42.723Z",
+   "latest_time": "2023-06-21T19:57:52.623Z",
+   "created": "2018-02-06T07:14:26.763Z",
+   "repository": "https://github.com/segmentio/evergreen.git",
+   "license": "MIT",
+   "peer_react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+   "peer_tailwind": null,
+   "unpacked": 6745783,
+   "deps_count": 17,
+   "types": true,
+   "deprecated": null,
+   "weekly": 14775
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Grommet",
+  "repo": "grommet/grommet",
+  "pkg": "grommet",
+  "gh": {
+   "archived": false,
+   "created": "2015-03-24T08:54:10Z",
+   "default_branch": "master",
+   "desc": "a react-based framework that provides accessibility, modularity, responsiveness, and theming in a tidy package",
+   "forks": 1038,
+   "issues": 480,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T00:45:52Z",
+   "stars": 8351
+  },
+  "npm": {
+   "version": "2.56.1",
+   "tags": {
+    "next": "2.0.0-rc",
+    "latest": "2.56.1"
+   },
+   "modified": "2026-08-18T19:54:19.541Z",
+   "latest_time": "2026-08-18T19:54:19.385Z",
+   "created": "2015-06-02T05:28:06.983Z",
+   "repository": "git+https://github.com/grommet/grommet.git",
+   "license": "Apache-2.0",
+   "peer_react": "^16.6.1 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 10438165,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 35364
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Blueprint (Palantir)",
+  "repo": "palantir/blueprint",
+  "pkg": "@blueprintjs/core",
+  "gh": {
+   "archived": false,
+   "created": "2016-10-25T21:17:50Z",
+   "default_branch": "develop",
+   "desc": "A React-based UI toolkit for the web",
+   "forks": 2344,
+   "issues": 944,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-05T15:26:42Z",
+   "stars": 22031
+  },
+  "npm": {
+   "version": "6.18.0",
+   "tags": {
+    "next": "6.0.0-alpha.1",
+    "latest": "6.18.0"
+   },
+   "modified": "2026-07-28T18:25:43.306Z",
+   "latest_time": "2026-07-28T18:25:43.155Z",
+   "created": "2016-11-11T01:27:50.412Z",
+   "repository": "git@github.com:palantir/blueprint.git",
+   "license": "Apache-2.0",
+   "peer_react": "18 || 19",
+   "peer_tailwind": null,
+   "unpacked": 9232240,
+   "deps_count": 9,
+   "types": true,
+   "deprecated": null,
+   "weekly": 422969
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Reactstrap",
+  "repo": "reactstrap/reactstrap",
+  "pkg": "reactstrap",
+  "gh": {
+   "archived": false,
+   "created": "2016-02-19T08:01:36Z",
+   "default_branch": "master",
+   "desc": "Simple React Bootstrap 5 components",
+   "forks": 1281,
+   "issues": 325,
+   "license": "MIT",
+   "pushed": "2024-09-26T09:40:49Z",
+   "stars": 10512
+  },
+  "npm": {
+   "version": "9.2.3",
+   "tags": {
+    "beta": "8.10.1-popper2-beta.0",
+    "latest": "9.2.3"
+   },
+   "modified": "2024-09-26T09:40:18.026Z",
+   "latest_time": "2024-09-26T09:40:17.844Z",
+   "created": "2016-02-19T08:01:03.638Z",
+   "repository": "git+ssh://git@github.com/reactstrap/reactstrap.git",
+   "license": "MIT",
+   "peer_react": ">=16.8.0",
+   "peer_tailwind": null,
+   "unpacked": 2220645,
+   "deps_count": 6,
+   "types": true,
+   "deprecated": null,
+   "weekly": 540760
+  }
+ },
+ {
+  "cat": "39",
+  "name": "React Bootstrap",
+  "repo": "react-bootstrap/react-bootstrap",
+  "pkg": "react-bootstrap",
+  "gh": {
+   "archived": false,
+   "created": "2013-12-27T19:06:07Z",
+   "default_branch": "master",
+   "desc": "Bootstrap components built with React",
+   "forks": 3572,
+   "issues": 237,
+   "license": "MIT",
+   "pushed": "2026-09-05T08:35:10Z",
+   "stars": 22603
+  },
+  "npm": {
+   "version": "2.10.10",
+   "tags": {
+    "latest": "2.10.10",
+    "next": "3.0.0-beta.5"
+   },
+   "modified": "2025-09-22T05:34:15.235Z",
+   "latest_time": "2025-05-11T18:26:50.335Z",
+   "created": "2014-01-26T23:48:03.822Z",
+   "repository": "git+https://github.com/react-bootstrap/react-bootstrap.git",
+   "license": "MIT",
+   "peer_react": ">=16.14.0",
+   "peer_tailwind": null,
+   "unpacked": 1478159,
+   "deps_count": 13,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1604551
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Semantic UI React",
+  "repo": "Semantic-Org/Semantic-UI-React",
+  "pkg": "semantic-ui-react",
+  "gh": {
+   "archived": false,
+   "created": "2015-06-19T16:47:19Z",
+   "default_branch": "master",
+   "desc": "The official Semantic-UI-React integration",
+   "forks": 4008,
+   "issues": 244,
+   "license": "MIT",
+   "pushed": "2024-11-22T09:09:59Z",
+   "stars": 13206
+  },
+  "npm": {
+   "version": "2.1.5",
+   "tags": {
+    "latest": "2.1.5",
+    "beta": "3.0.0-beta.2"
+   },
+   "modified": "2023-12-30T15:05:48.408Z",
+   "latest_time": "2023-12-10T12:10:01.311Z",
+   "created": "2015-09-15T23:53:58.744Z",
+   "repository": "git+ssh://git@github.com/Semantic-Org/Semantic-UI-React.git",
+   "license": "MIT",
+   "peer_react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+   "peer_tailwind": null,
+   "unpacked": 2896382,
+   "deps_count": 13,
+   "types": true,
+   "deprecated": null,
+   "weekly": 379770
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Theme UI",
+  "repo": "system-ui/theme-ui",
+  "pkg": "theme-ui",
+  "gh": {
+   "archived": false,
+   "created": "2019-04-03T22:10:49Z",
+   "default_branch": "develop",
+   "desc": "Build consistent, themeable React apps based on constraint-based design principles",
+   "forks": 659,
+   "issues": 62,
+   "license": "MIT",
+   "pushed": "2026-06-14T11:55:43Z",
+   "stars": 5395
+  },
+  "npm": {
+   "version": "0.17.4",
+   "tags": {
+    "alpha": "0.1.3-0.0",
+    "next": "0.6.0-alpha.8",
+    "canary": "0.16.2-scale-tuples.0",
+    "latest": "0.17.4"
+   },
+   "modified": "2026-01-02T20:46:10.320Z",
+   "latest_time": "2026-01-02T20:46:10.108Z",
+   "created": "2019-04-02T19:34:32.197Z",
+   "repository": "git+https://github.com/system-ui/theme-ui.git",
+   "license": "MIT",
+   "peer_react": ">=18",
+   "peer_tailwind": null,
+   "unpacked": 80434,
+   "deps_count": 6,
+   "types": true,
+   "deprecated": null,
+   "weekly": 64337
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Rebass (停滞)",
+  "repo": "rebassjs/rebass",
+  "pkg": "rebass",
+  "gh": {
+   "archived": false,
+   "created": "2015-02-11T14:48:09Z",
+   "default_branch": "master",
+   "desc": ":atom_symbol: React primitive UI components built with styled-system.",
+   "forks": 630,
+   "issues": 95,
+   "license": "MIT",
+   "pushed": "2023-07-27T03:42:53Z",
+   "stars": 7902
+  },
+  "npm": {
+   "version": "4.0.7",
+   "tags": {
+    "latest": "4.0.7",
+    "beta": "2.2.0-0",
+    "next": "3.0.0-12",
+    "alpha": "2.0.0-1"
+   },
+   "modified": "2022-06-26T09:26:47.505Z",
+   "latest_time": "2019-10-28T19:08:45.057Z",
+   "created": "2015-02-22T15:54:21.630Z",
+   "repository": "git+https://github.com/rebassjs/rebass.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": null,
+   "unpacked": 15954,
+   "deps_count": 1,
+   "types": false,
+   "deprecated": null,
+   "weekly": 26145
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Ariakit",
+  "repo": "ariakit/ariakit",
+  "pkg": "@ariakit/react",
+  "gh": {
+   "archived": false,
+   "created": "2017-09-19T22:00:42Z",
+   "default_branch": "main",
+   "desc": "Toolkit with accessible components, styles, and examples for your next web app",
+   "forks": 416,
+   "issues": 46,
+   "license": "NONE",
+   "pushed": "2026-09-05T18:21:28Z",
+   "stars": 8609
+  },
+  "npm": {
+   "version": "0.4.39",
+   "tags": {
+    "latest": "0.4.39"
+   },
+   "modified": "2026-09-02T03:19:57.723Z",
+   "latest_time": "2026-09-02T03:19:57.343Z",
+   "created": "2022-10-08T02:56:13.501Z",
+   "repository": "https://github.com/ariakit/ariakit.git",
+   "license": "MIT",
+   "peer_react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 1047773,
+   "deps_count": 1,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1343845
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Reach UI (停滞)",
+  "repo": "reach/reach-ui",
+  "pkg": "@reach/dialog",
+  "gh": {
+   "archived": false,
+   "created": "2018-07-31T05:41:40Z",
+   "default_branch": "dev",
+   "desc": "The Accessible Foundation for React Apps and Design Systems",
+   "forks": 557,
+   "issues": 99,
+   "license": "MIT",
+   "pushed": "2025-02-10T20:59:23Z",
+   "stars": 5969
+  },
+  "npm": {
+   "version": "0.18.0",
+   "tags": {
+    "next": "0.4.0-beta.0",
+    "latest": "0.18.0"
+   },
+   "modified": "2025-09-09T00:28:58.281Z",
+   "latest_time": "2022-10-13T00:04:34.202Z",
+   "created": "2018-08-28T00:54:35.403Z",
+   "repository": "git+https://github.com/reach/reach-ui.git",
+   "license": "MIT",
+   "peer_react": "^16.8.0 || 17.x",
+   "peer_tailwind": null,
+   "unpacked": 53316,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 228321
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Zag.js (状态机)",
+  "repo": "chakra-ui/zag",
+  "pkg": "@zag-js/react",
+  "gh": {
+   "archived": false,
+   "created": "2021-07-07T11:38:07Z",
+   "default_branch": "main",
+   "desc": "Build your design system in React, Solid, Vue, Svelte or Vanilla. Powered by finite state machines",
+   "forks": 278,
+   "issues": 23,
+   "license": "MIT",
+   "pushed": "2026-09-05T17:21:17Z",
+   "stars": 5202
+  },
+  "npm": {
+   "version": "1.43.3",
+   "tags": {
+    "next": "2.0.0-next.2",
+    "latest": "1.43.3"
+   },
+   "modified": "2026-08-31T19:53:24.067Z",
+   "latest_time": "2026-08-20T20:54:59.459Z",
+   "created": "2022-04-06T14:48:54.904Z",
+   "repository": "https://github.com/chakra-ui/zag/tree/main/packages/frameworks/react",
+   "license": "MIT",
+   "peer_react": ">=18.0.0",
+   "peer_tailwind": null,
+   "unpacked": 43949,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1175109
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Yamada UI",
+  "repo": "yamada-ui/yamada-ui",
+  "pkg": "@yamada-ui/react",
+  "gh": {
+   "archived": false,
+   "created": "2022-10-06T13:31:56Z",
+   "default_branch": "main",
+   "desc": "React UI components of the Yamada, by the Yamada, for the Yamada built with React and Emotion.",
+   "forks": 259,
+   "issues": 173,
+   "license": "MIT",
+   "pushed": "2026-09-01T20:32:59Z",
+   "stars": 1025
+  },
+  "npm": {
+   "version": "2.2.8",
+   "tags": {
+    "next": "2.3.0-next-20260901203118",
+    "latest": "2.2.8"
+   },
+   "modified": "2026-09-01T20:31:49.488Z",
+   "latest_time": "2026-09-01T20:26:30.127Z",
+   "created": "2023-06-03T02:08:52.972Z",
+   "repository": "git+https://github.com/yamada-ui/yamada-ui.git",
+   "license": "MIT",
+   "peer_react": ">=19",
+   "peer_tailwind": null,
+   "unpacked": 20864689,
+   "deps_count": 31,
+   "types": true,
+   "deprecated": null,
+   "weekly": 9418
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Cloudscape (AWS)",
+  "repo": "cloudscape-design/components",
+  "pkg": "@cloudscape-design/components",
+  "gh": {
+   "archived": false,
+   "created": "2022-06-08T11:17:19Z",
+   "default_branch": "main",
+   "desc": "React components for Cloudscape Design System",
+   "forks": 242,
+   "issues": 211,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-04T20:18:53Z",
+   "stars": 2639
+  },
+  "npm": {
+   "version": "3.0.1364",
+   "tags": {
+    "latest": "3.0.1364"
+   },
+   "modified": "2026-09-04T19:52:11.009Z",
+   "latest_time": "2026-09-04T19:52:10.449Z",
+   "created": "2022-07-18T09:54:57.108Z",
+   "repository": "git+https://github.com/cloudscape-design/components.git",
+   "license": "Apache-2.0",
+   "peer_react": ">=16.8.0",
+   "peer_tailwind": null,
+   "unpacked": 20818883,
+   "deps_count": 17,
+   "types": true,
+   "deprecated": null,
+   "weekly": 125291
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Gestalt (Pinterest)",
+  "repo": "pinterest/gestalt",
+  "pkg": "gestalt",
+  "gh": {
+   "archived": false,
+   "created": "2018-02-16T22:17:51Z",
+   "default_branch": "master",
+   "desc": "A set of React UI components that supports Pinterest’s design language",
+   "forks": 385,
+   "issues": 9,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-03T18:34:06Z",
+   "stars": 4371
+  },
+  "npm": {
+   "version": "177.0.12",
+   "tags": {
+    "beta": "0.38.2-beta1",
+    "alpha": "154.6.5-alpha.0",
+    "latest": "177.0.12"
+   },
+   "modified": "2025-12-09T17:07:43.500Z",
+   "latest_time": "2025-12-09T17:07:43.311Z",
+   "created": "2012-05-31T12:33:50.361Z",
+   "repository": "https://github.com/pinterest/gestalt",
+   "license": "Apache-2.0",
+   "peer_react": "^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 11132382,
+   "deps_count": 3,
+   "types": true,
+   "deprecated": null,
+   "weekly": 19895
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Primer React (GitHub)",
+  "repo": "primer/react",
+  "pkg": "@primer/react",
+  "gh": {
+   "archived": false,
+   "created": "2018-02-17T00:09:05Z",
+   "default_branch": "main",
+   "desc": "An implementation of GitHub's Primer Design System using React",
+   "forks": 677,
+   "issues": 62,
+   "license": "MIT",
+   "pushed": "2026-09-04T20:28:12Z",
+   "stars": 3895
+  },
+  "npm": {
+   "version": "38.38.0",
+   "tags": {
+    "canary": "0.0.0-20260831205533",
+    "latest": "38.38.0",
+    "next": "38.39.0-rc.e451fc572"
+   },
+   "modified": "2026-09-04T19:31:07.130Z",
+   "latest_time": "2026-09-03T16:31:47.286Z",
+   "created": "2021-12-08T18:47:23.630Z",
+   "repository": "git+https://github.com/primer/react.git",
+   "license": "MIT",
+   "peer_react": "18.x || 19.x",
+   "peer_tailwind": null,
+   "unpacked": 3923924,
+   "deps_count": 19,
+   "types": true,
+   "deprecated": null,
+   "weekly": 50858
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Radix Themes",
+  "repo": "radix-ui/themes",
+  "pkg": "@radix-ui/themes",
+  "gh": {
+   "archived": false,
+   "created": "2023-06-15T12:21:08Z",
+   "default_branch": "main",
+   "desc": "Radix Themes is an open-source component library optimized for fast development, easy maintenance, and accessibility. Maintained by @workos.",
+   "forks": 334,
+   "issues": 162,
+   "license": "MIT",
+   "pushed": "2026-04-11T18:39:15Z",
+   "stars": 8670
+  },
+  "npm": {
+   "version": "3.3.0",
+   "tags": {
+    "next": "3.2.0-rc.8",
+    "latest": "3.3.0"
+   },
+   "modified": "2026-01-31T01:08:09.627Z",
+   "latest_time": "2026-01-31T01:08:09.331Z",
+   "created": "2023-06-15T12:33:22.683Z",
+   "repository": "git+https://github.com/radix-ui/themes.git",
+   "license": "MIT",
+   "peer_react": "16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
+   "peer_tailwind": null,
+   "unpacked": 4911921,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1013893
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Chakra UI v3 (见 §1)",
+  "repo": "chakra-ui/chakra-ui",
+  "pkg": "@chakra-ui/react",
+  "gh": {
+   "archived": false,
+   "created": "2019-08-17T14:27:54Z",
+   "default_branch": "main",
+   "desc": "Chakra UI is a component system for building SaaS products with speed ⚡️",
+   "forks": 3638,
+   "issues": 12,
+   "license": "MIT",
+   "pushed": "2026-09-05T03:57:35Z",
+   "stars": 40626
+  },
+  "npm": {
+   "version": "3.37.0",
+   "tags": {
+    "canary": "0.0.0-canary-2021118164051",
+    "next": "3.0.0-next.32",
+    "latest": "3.37.0"
+   },
+   "modified": "2026-08-28T10:10:51.877Z",
+   "latest_time": "2026-08-28T10:10:51.656Z",
+   "created": "2020-11-13T10:21:49.471Z",
+   "repository": "https://github.com/chakra-ui/chakra-ui",
+   "license": "MIT",
+   "peer_react": ">=18",
+   "peer_tailwind": null,
+   "unpacked": 2694645,
+   "deps_count": 7,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1802333
+  }
+ },
+ {
+  "cat": "39",
+  "name": "NextUI legacy (见 §1 HeroUI)",
+  "repo": null,
+  "pkg": "@nextui-org/react",
+  "gh": null,
+  "npm": {
+   "version": "2.6.11",
+   "tags": {
+    "beta": "2.5.0-beta.26",
+    "latest": "2.6.11",
+    "canary": "0.0.0-canary-20250115141702"
+   },
+   "modified": "2025-01-18T18:57:59.734Z",
+   "latest_time": "2025-01-05T13:15:38.931Z",
+   "created": "2021-06-19T14:50:18.870Z",
+   "repository": "git+https://github.com/nextui-org/nextui.git",
+   "license": "MIT",
+   "peer_react": ">=18 || >=19.0.0-rc.0",
+   "peer_tailwind": null,
+   "unpacked": 38659,
+   "deps_count": 48,
+   "types": true,
+   "deprecated": "This package has been deprecated. Please use @heroui/react instead.",
+   "weekly": 73914
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Tailwind Variants (见 §16)",
+  "repo": "heroui-inc/tailwind-variants",
+  "pkg": "tailwind-variants",
+  "gh": {
+   "archived": false,
+   "created": "2023-01-12T21:42:24Z",
+   "default_branch": "main",
+   "desc": "🦄 Tailwindcss first-class variant API",
+   "forks": 88,
+   "issues": 8,
+   "license": "MIT",
+   "pushed": "2026-08-18T08:31:58Z",
+   "stars": 3293
+  },
+  "npm": {
+   "version": "3.3.1",
+   "tags": {
+    "latest": "3.3.1"
+   },
+   "modified": "2026-08-03T14:07:10.255Z",
+   "latest_time": "2026-08-03T14:07:09.933Z",
+   "created": "2023-01-12T14:59:04.373Z",
+   "repository": "git+https://github.com/heroui-inc/tailwind-variants.git",
+   "license": "MIT",
+   "peer_react": null,
+   "peer_tailwind": "*",
+   "unpacked": 331595,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 3783844
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Subframe (商业, 对照)",
+  "repo": null,
+  "pkg": null,
+  "gh": null,
+  "npm": null
+ },
+ {
+  "cat": "39",
+  "name": "Saas UI",
+  "repo": "saas-js/saas-ui",
+  "pkg": "@saas-ui/react",
+  "gh": {
+   "archived": false,
+   "created": "2021-10-19T18:28:24Z",
+   "default_branch": "v3",
+   "desc": "The React component library for startups, built with Chakra UI.",
+   "forks": 171,
+   "issues": 24,
+   "license": "MIT",
+   "pushed": "2026-08-22T19:55:09Z",
+   "stars": 1649
+  },
+  "npm": {
+   "version": "2.11.4",
+   "tags": {
+    "latest": "2.11.4",
+    "alpha": "3.0.0-alpha.32",
+    "next": "3.0.0-next.56",
+    "rc": "3.0.0-rc.0"
+   },
+   "modified": "2026-08-14T09:04:56.541Z",
+   "latest_time": "2025-01-13T20:10:24.431Z",
+   "created": "2022-01-19T10:25:25.634Z",
+   "repository": "git+https://github.com/saas-js/saas-ui.git",
+   "license": "MIT",
+   "peer_react": ">=18",
+   "peer_tailwind": null,
+   "unpacked": 105138,
+   "deps_count": 9,
+   "types": true,
+   "deprecated": null,
+   "weekly": 5977
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Tremor (见 §5)",
+  "repo": "tremorlabs/tremor",
+  "pkg": "@tremor/react",
+  "gh": {
+   "archived": false,
+   "created": "2024-03-26T02:38:57Z",
+   "default_branch": "main",
+   "desc": "Copy & Paste React components to build modern web applications. ",
+   "forks": 184,
+   "issues": 26,
+   "license": "Apache-2.0",
+   "pushed": "2025-10-10T13:08:24Z",
+   "stars": 3599
+  },
+  "npm": {
+   "version": "3.18.7",
+   "tags": {
+    "beta": "3.17.0-beta.7",
+    "latest": "3.18.7"
+   },
+   "modified": "2025-01-13T13:06:13.004Z",
+   "latest_time": "2025-01-13T13:06:12.787Z",
+   "created": "2022-04-19T22:05:11.485Z",
+   "repository": "git+https://github.com/tremorlabs/tremor-npm.git",
+   "license": "Apache 2.0",
+   "peer_react": "^18.0.0",
+   "peer_tailwind": null,
+   "unpacked": 494433,
+   "deps_count": 7,
+   "types": true,
+   "deprecated": null,
+   "weekly": 387918
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Douyin Semi (见 §1)",
+  "repo": "DouyinFE/semi-design",
+  "pkg": "@douyinfe/semi-ui",
+  "gh": {
+   "archived": false,
+   "created": "2021-10-25T11:47:38Z",
+   "default_branch": "main",
+   "desc": "🚀A modern, comprehensive, flexible design system and React UI library, AI-friendly built-in.🎨Provide 3000+ Design Tokens, easy to build your design system. Make Semi Design to Any Design.🧑🏻‍💻 Design to Code in one click",
+   "forks": 848,
+   "issues": 37,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-01T08:46:32Z",
+   "stars": 10346
+  },
+  "npm": {
+   "version": "2.103.0",
+   "tags": {
+    "beta": "2.91.0-beta.0",
+    "alpha": "2.93.0-alpha.0",
+    "latest": "2.103.0"
+   },
+   "modified": "2026-09-01T08:54:39.146Z",
+   "latest_time": "2026-09-01T08:54:38.961Z",
+   "created": "2021-10-25T14:53:23.985Z",
+   "repository": "git+https://github.com/DouyinFE/semi-design.git",
+   "license": "MIT",
+   "peer_react": ">=16.0.0",
+   "peer_tailwind": null,
+   "unpacked": 60997482,
+   "deps_count": 36,
+   "types": true,
+   "deprecated": null,
+   "weekly": 26310
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Zhihu Zent (停滞)",
+  "repo": "youzan/zent",
+  "pkg": "zent",
+  "gh": {
+   "archived": false,
+   "created": "2017-02-08T07:17:50Z",
+   "default_branch": "master",
+   "desc": "A collection of essential UI components written with React.",
+   "forks": 377,
+   "issues": 21,
+   "license": "MIT",
+   "pushed": "2025-07-09T03:06:34Z",
+   "stars": 2247
+  },
+  "npm": {
+   "version": "10.0.18",
+   "tags": {
+    "next": "7.0.0-next.39",
+    "beta": "10.0.17-beta.1",
+    "latest": "10.0.18"
+   },
+   "modified": "2025-11-20T09:09:14.250Z",
+   "latest_time": "2025-11-20T09:09:14.059Z",
+   "created": "2017-02-10T09:38:09.213Z",
+   "repository": "git@github.com:youzan/zent.git",
+   "license": "MIT",
+   "peer_react": "^17.0.0",
+   "peer_tailwind": null,
+   "unpacked": 5448916,
+   "deps_count": 14,
+   "types": true,
+   "deprecated": null,
+   "weekly": 17353
+  }
+ },
+ {
+  "cat": "39",
+  "name": "React Suite (rsuite)",
+  "repo": "rsuite/rsuite",
+  "pkg": "rsuite",
+  "gh": {
+   "archived": false,
+   "created": "2016-06-06T02:27:46Z",
+   "default_branch": "main",
+   "desc": "🧱 A suite of React components .  ",
+   "forks": 958,
+   "issues": 318,
+   "license": "MIT",
+   "pushed": "2026-08-21T09:02:41Z",
+   "stars": 8693
+  },
+  "npm": {
+   "version": "6.2.4",
+   "tags": {
+    "latest": "6.2.4"
+   },
+   "modified": "2026-08-21T08:30:17.679Z",
+   "latest_time": "2026-08-21T08:30:17.352Z",
+   "created": "2016-06-30T07:52:47.454Z",
+   "repository": "git+ssh://git@github.com/rsuite/rsuite.git",
+   "license": "MIT",
+   "peer_react": ">=18",
+   "peer_tailwind": null,
+   "unpacked": 17935122,
+   "deps_count": 14,
+   "types": true,
+   "deprecated": null,
+   "weekly": 190577
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Pixel Retro UI",
+  "repo": "Dksie09/RetroUI",
+  "pkg": "pixel-retroui",
+  "gh": {
+   "archived": false,
+   "created": "2024-06-26T19:37:34Z",
+   "default_branch": "main",
+   "desc": "A simple pixelated UI library",
+   "forks": 16,
+   "issues": 3,
+   "license": "BSD-3-Clause",
+   "pushed": "2025-05-11T15:40:15Z",
+   "stars": 470
+  },
+  "npm": {
+   "version": "2.1.0",
+   "tags": {
+    "beta": "2.0.0-beta.4",
+    "latest": "2.1.0"
+   },
+   "modified": "2025-04-07T07:05:18.095Z",
+   "latest_time": "2025-04-07T07:05:17.908Z",
+   "created": "2024-07-03T21:49:02.684Z",
+   "repository": null,
+   "license": "BSD-3-Clause",
+   "peer_react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+   "peer_tailwind": null,
+   "unpacked": 193104,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 271
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Neobrutalism components",
+  "repo": "ekmas/neobrutalism-components",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2023-07-25T17:51:55Z",
+   "default_branch": "main",
+   "desc": "A collection of neobrutalism-styled Tailwind components.",
+   "forks": 185,
+   "issues": 11,
+   "license": "MIT",
+   "pushed": "2026-08-02T23:27:53Z",
+   "stars": 5352
+  },
+  "npm": null
+ },
+ {
+  "cat": "39",
+  "name": "Mantine (见 §1)",
+  "repo": "mantinedev/mantine",
+  "pkg": "@mantine/core",
+  "gh": {
+   "archived": false,
+   "created": "2021-01-07T14:02:19Z",
+   "default_branch": "master",
+   "desc": "A fully featured React components library",
+   "forks": 2366,
+   "issues": 60,
+   "license": "MIT",
+   "pushed": "2026-09-01T12:07:49Z",
+   "stars": 31666
+  },
+  "npm": {
+   "version": "9.6.0",
+   "tags": {
+    "next": "9.5.1-alpha.1",
+    "latest": "9.6.0"
+   },
+   "modified": "2026-08-31T15:33:30.227Z",
+   "latest_time": "2026-08-31T15:33:29.598Z",
+   "created": "2021-01-07T16:45:57.560Z",
+   "repository": "git+https://github.com/mantinedev/mantine.git",
+   "license": "MIT",
+   "peer_react": "^19.2.0",
+   "peer_tailwind": null,
+   "unpacked": 9223261,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 2550863
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Material Tailwind",
+  "repo": "creativetimofficial/material-tailwind",
+  "pkg": "@material-tailwind/react",
+  "gh": {
+   "archived": false,
+   "created": "2021-02-01T13:14:43Z",
+   "default_branch": "main",
+   "desc": "@material-tailwind is an easy-to-use components library for Tailwind CSS and Material Design.",
+   "forks": 356,
+   "issues": 214,
+   "license": "MIT",
+   "pushed": "2026-04-28T10:03:23Z",
+   "stars": 4365
+  },
+  "npm": {
+   "version": "2.1.10",
+   "tags": {
+    "latest": "2.1.10",
+    "beta": "3.0.0-beta.24"
+   },
+   "modified": "2025-07-25T11:51:11.356Z",
+   "latest_time": "2024-09-03T10:19:42.283Z",
+   "created": "2021-03-31T14:04:43.528Z",
+   "repository": "git+https://github.com/creativetimofficial/material-tailwind.git",
+   "license": "MIT",
+   "peer_react": "^16 || ^17 || ^18",
+   "peer_tailwind": null,
+   "unpacked": 1256552,
+   "deps_count": 9,
+   "types": true,
+   "deprecated": null,
+   "weekly": 62904
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Headless UI React (见 §1)",
+  "repo": "tailwindlabs/headlessui",
+  "pkg": "@headlessui/react",
+  "gh": {
+   "archived": false,
+   "created": "2020-09-16T09:53:09Z",
+   "default_branch": "main",
+   "desc": "Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.",
+   "forks": 1204,
+   "issues": 110,
+   "license": "MIT",
+   "pushed": "2026-04-13T16:12:31Z",
+   "stars": 28734
+  },
+  "npm": {
+   "version": "2.2.10",
+   "tags": {
+    "alpha": "2.0.0-alpha.4",
+    "next": "2.0.0-alpha.4",
+    "latest": "2.2.10"
+   },
+   "modified": "2026-04-13T16:13:37.114Z",
+   "latest_time": "2026-04-07T17:12:43.551Z",
+   "created": "2020-09-24T10:57:33.961Z",
+   "repository": "git+https://github.com/tailwindlabs/headlessui.git",
+   "license": "MIT",
+   "peer_react": "^18 || ^19 || ^19.0.0-rc",
+   "peer_tailwind": null,
+   "unpacked": 1017854,
+   "deps_count": 5,
+   "types": true,
+   "deprecated": null,
+   "weekly": 7188353
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Ionic React",
+  "repo": "ionic-team/ionic-framework",
+  "pkg": "@ionic/react",
+  "gh": {
+   "archived": false,
+   "created": "2013-08-20T23:06:02Z",
+   "default_branch": "main",
+   "desc": "A powerful cross-platform UI toolkit for building native-quality iOS, Android, and Progressive Web Apps with HTML, CSS, and JavaScript.",
+   "forks": 13312,
+   "issues": 590,
+   "license": "MIT",
+   "pushed": "2026-09-04T21:00:14Z",
+   "stars": 52644
+  },
+  "npm": {
+   "version": "9.0.2",
+   "tags": {
+    "next": "8.0.0-rc.2",
+    "latest": "9.0.2"
+   },
+   "modified": "2026-09-04T06:58:59.616Z",
+   "latest_time": "2026-09-02T19:22:27.993Z",
+   "created": "2017-12-08T03:38:25.580Z",
+   "repository": "git+https://github.com/ionic-team/ionic-framework.git",
+   "license": "MIT",
+   "peer_react": "^18 || ^19",
+   "peer_tailwind": null,
+   "unpacked": 1140727,
+   "deps_count": 4,
+   "types": true,
+   "deprecated": null,
+   "weekly": 110730
+  }
+ },
+ {
+  "cat": "39",
+  "name": "React95",
+  "repo": "react95/React95",
+  "pkg": "react95",
+  "gh": {
+   "archived": false,
+   "created": "2018-04-07T13:05:34Z",
+   "default_branch": "master",
+   "desc": "A React components library with Win95 UI",
+   "forks": 145,
+   "issues": 3,
+   "license": "NOASSERTION",
+   "pushed": "2026-09-02T20:02:28Z",
+   "stars": 3816
+  },
+  "npm": {
+   "version": "4.0.0",
+   "tags": {
+    "latest": "4.0.0",
+    "beta": "4.0.0-beta.19"
+   },
+   "modified": "2022-11-13T15:38:32.268Z",
+   "latest_time": "2022-11-13T15:38:32.198Z",
+   "created": "2019-02-20T14:35:58.346Z",
+   "repository": "git+ssh://git@github.com/arturbien/React95.git",
+   "license": "MIT",
+   "peer_react": ">= 16.8.0",
+   "peer_tailwind": null,
+   "unpacked": 728436,
+   "deps_count": 0,
+   "types": true,
+   "deprecated": null,
+   "weekly": 1066
+  }
+ },
+ {
+  "cat": "39",
+  "name": "Chakra Park UI (见 §1)",
+  "repo": "chakra-ui/park-ui",
+  "pkg": null,
+  "gh": {
+   "archived": false,
+   "created": "2023-08-02T13:10:00Z",
+   "default_branch": "main",
+   "desc": "Beautifully designed components built with Ark UI and Panda CSS that work with a variety of JS frameworks.",
+   "forks": 109,
+   "issues": 23,
+   "license": "MIT",
+   "pushed": "2026-04-10T23:05:11Z",
+   "stars": 2363
+  },
+  "npm": null
+ }
+]
