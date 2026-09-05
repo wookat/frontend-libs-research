@@ -1,6 +1,6 @@
 # 前端生态选型研究 2026
 
-- 实查日期：**2026-09-05（UTC）**（第一批 §1–§15 与第二批 §16–§23 同日实查）
+- 实查日期：**2026-09-05（UTC）**（第一批 §1–§15、第二批 §16–§23、第三批 §24–§34 同日实查）
 - 角色：前端生态研究员（Company OS 职能员工）
 - 范围：通用前端开源生态，不绑定具体产品。第一批 §1–§15 的「关系」列与「对码印的建议」段落是以一个参考项目（码印 / SoftCopyrightAgent frontend）为样本写成的历史结论，保留供对照；第二批 §16–§23 起为产品无关的通用推荐。
 - 方法：全部数字为一手实查——GitHub 元数据用 `gh api repos/<owner>/<repo>`（stars / SPDX / pushed_at / archived），npm 用 registry（`https://registry.npmjs.org/<pkg>`：latest 版本、license、peerDependencies、unpackedSize）与下载 API（`https://api.npmjs.org/downloads/point/last-week/<pkg>`，统计窗口 2026-08-23 ~ 08-29）；React 19 / Tailwind v4 支持以官方文档 / changelog / peerDependencies 为据。采集脚本第一批 219 个候选、第二批 125 条（121 个新增 + 4 个对照/交叉引用），逐条记录。
@@ -601,6 +601,395 @@
 **archived**：Stitches、Shoelace（legacy）。**npm deprecated**：Tokenami。**停滞（≥8 个月无 push）**：Theatre.js、Rough.js、localForage、OGL、Volta、Triplit、@pixi/react。**商业功能墙**：Web Awesome Pro、Nx Cloud、Liveblocks、RxDB Premium、Dexie Cloud、Convex/InstantDB 托管后端。
 
 
+---
+
+# 第三批（§24–§34）：认证 / 支付 / AI 前端 / 微前端 / 监控 / 可视化搭建 / 服务端渲图 / 工具函数 / 媒体 / 通知 / 命令面板
+
+- 实查日期：**2026-09-05（UTC）**，279 条（含 10 条指向前文章节的交叉引用行，数据文件 `data/candidates-round3-2026-09-05.json`）。
+- 表格列：★ = GitHub stars；GitHub SPDX 为 GitHub API 识别结果（`NOASSERTION`/`NONE` = 未识别，需看 npm license 或仓库 LICENSE）；周下载来自 `api.npmjs.org` last-week；React peer 原文摘自 npm `peerDependencies`；备注中的「最新发布」= npm latest 版本发布日期早于 2024-09-01（≥2 年无发版）。
+- 所有行均为 **[已验证]**（API 返回值）；「一句话推荐」中的取舍判断为研究员结论。
+
+## 24. 认证 UI / 认证 SDK
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| Better Auth | [better-auth/better-auth](https://github.com/better-auth/better-auth) | 29.8k | MIT | 2026-09-05 | [better-auth](https://www.npmjs.com/package/better-auth) | 1.7.2 | 7.5M | MIT | ^18.0.0 \|\| ^19.0.0 |  |
+| Auth.js (NextAuth) | [nextauthjs/next-auth](https://github.com/nextauthjs/next-auth) | 28.4k | ISC | 2026-07-22 | [next-auth](https://www.npmjs.com/package/next-auth) | 4.24.15 | 6.0M | ISC | ^17.0.2 \|\| ^18 \|\| ^19 |  |
+| Clerk React (SDK) | [clerk/javascript](https://github.com/clerk/javascript) | 1.8k | MIT | 2026-09-05 | [@clerk/react](https://www.npmjs.com/package/@clerk/react) | 6.15.1 | 2.1M | MIT | ^18.0.0 \|\| ~19.0.3 \|\| ~19.1.4 \|\| ~19.2.3 \|\| ~19.3.0-0 |  |
+| Supabase Auth UI React | [supabase-community/auth-ui](https://github.com/supabase-community/auth-ui) | 544 | MIT | 2025-10-23 | [@supabase/auth-ui-react](https://www.npmjs.com/package/@supabase/auth-ui-react) | 0.4.7 | 135.0k | - | - | **archived**；最新发布 2024-01-04 |
+| Lucia (guide) | [lucia-auth/lucia](https://github.com/lucia-auth/lucia) | 10.4k | MIT | 2026-08-08 | - | - | - | - | - |  |
+| @oslojs/crypto (oslo 后继) | [oslo-project/crypto](https://github.com/oslo-project/crypto) | 80 | MIT | 2024-10-24 | [@oslojs/crypto](https://www.npmjs.com/package/@oslojs/crypto) | 1.0.1 | 1.5M | MIT | - | **npm deprecated** |
+| Arctic (OAuth 2) | [pilcrowonpaper/arctic](https://github.com/pilcrowonpaper/arctic) | 1.7k | MIT | 2026-08-08 | [arctic](https://www.npmjs.com/package/arctic) | 3.7.0 | 971.1k | MIT | - | **npm deprecated** |
+| jose (JWT) | [panva/jose](https://github.com/panva/jose) | 7.8k | MIT | 2026-09-05 | [jose](https://www.npmjs.com/package/jose) | 6.2.12 | 128.0M | MIT | - |  |
+| oidc-client-ts | [authts/oidc-client-ts](https://github.com/authts/oidc-client-ts) | 1.9k | Apache-2.0 | 2026-09-01 | [oidc-client-ts](https://www.npmjs.com/package/oidc-client-ts) | 3.5.0 | 2.6M | Apache-2.0 | - |  |
+| react-oidc-context | [authts/react-oidc-context](https://github.com/authts/react-oidc-context) | 1.0k | MIT | 2026-06-12 | [react-oidc-context](https://www.npmjs.com/package/react-oidc-context) | 3.3.1 | 791.1k | MIT | >=16.14.0 |  |
+| Keycloak JS | [keycloak/keycloak](https://github.com/keycloak/keycloak) | 36.6k | Apache-2.0 | 2026-09-05 | [keycloak-js](https://www.npmjs.com/package/keycloak-js) | 26.2.4 | 1.1M | Apache-2.0 | - |  |
+| Firebase UI Web | [firebase/firebaseui-web](https://github.com/firebase/firebaseui-web) | 4.9k | Apache-2.0 | 2026-09-03 | [firebaseui](https://www.npmjs.com/package/firebaseui) | 6.1.0 | 55.8k | Apache-2.0 | - | 最新发布 2023-08-02 |
+| Ory Elements | [ory/elements](https://github.com/ory/elements) | 187 | Apache-2.0 | 2026-07-31 | [@ory/elements-react](https://www.npmjs.com/package/@ory/elements-react) | 1.2.1 | 15.9k | Apache License 2.0 | ^18.0.0 \|\| ^19.0.0 \|\| ^19.0.0-0 |  |
+| SimpleWebAuthn (browser) | [MasterKale/SimpleWebAuthn](https://github.com/MasterKale/SimpleWebAuthn) | 2.3k | MIT | 2026-09-05 | [@simplewebauthn/browser](https://www.npmjs.com/package/@simplewebauthn/browser) | 14.0.0 | 4.1M | MIT | - |  |
+| Auth0 SPA JS | [auth0/auth0-spa-js](https://github.com/auth0/auth0-spa-js) | 1.0k | MIT | 2026-09-05 | [@auth0/auth0-spa-js](https://www.npmjs.com/package/@auth0/auth0-spa-js) | 2.24.1 | 2.4M | MIT | - |  |
+| Logto React | [logto-io/js](https://github.com/logto-io/js) | 96 | MIT | 2026-09-02 | [@logto/react](https://www.npmjs.com/package/@logto/react) | 4.0.14 | 34.0k | MIT | >=16.8.0 |  |
+| Hanko Elements | [teamhanko/hanko](https://github.com/teamhanko/hanko) | 9.0k | NOASSERTION | 2026-09-03 | [@teamhanko/hanko-elements](https://www.npmjs.com/package/@teamhanko/hanko-elements) | 3.0.0 | 7.2k | MIT | - |  |
+| Zitadel React | [zitadel/zitadel-react](https://github.com/zitadel/zitadel-react) | 22 | NOASSERTION | 2026-08-19 | [@zitadel/react](https://www.npmjs.com/package/@zitadel/react) | 1.1.1 | 12.4k | MIT | - |  |
+
+**一句话推荐**：自托管认证选 **Better Auth**（MIT，React 18/19 peer，周下载 7.5M，push 当日）；Next.js 存量项目用 Auth.js；纯协议层用 **jose**（JWT，128M/周）+ oidc-client-ts / react-oidc-context；Passkey 用 SimpleWebAuthn。**不选**：Supabase Auth UI（archived，2024-01 停更）、oslo/Arctic（npm 已 deprecated）、Firebase UI（latest 2023-08）。Clerk/Auth0/Logto/Hanko/Zitadel/Ory SDK 均开源，但绑定各自托管服务（商业边界为推断）。Lucia 已转为「教程」形式，无 npm 包。
+
+## 25. 支付 UI / 支付 SDK
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| Stripe React | [stripe/react-stripe-js](https://github.com/stripe/react-stripe-js) | 2.0k | MIT | 2026-09-03 | [@stripe/react-stripe-js](https://www.npmjs.com/package/@stripe/react-stripe-js) | 6.9.0 | 8.9M | MIT | >=16.8.0 <20.0.0 |  |
+| stripe-js | [stripe/stripe-js](https://github.com/stripe/stripe-js) | 752 | MIT | 2026-09-05 | [@stripe/stripe-js](https://www.npmjs.com/package/@stripe/stripe-js) | 9.15.0 | 12.3M | MIT | - |  |
+| PayPal React | [paypal/paypal-js](https://github.com/paypal/paypal-js) | 338 | Apache-2.0 | 2026-09-03 | [@paypal/react-paypal-js](https://www.npmjs.com/package/@paypal/react-paypal-js) | 10.4.0 | 434.8k | Apache-2.0 | ^16.8.0 \|\| ^17 \|\| ^18 \|\| ^19 |  |
+| Paddle JS | [PaddleHQ/paddle-js-wrapper](https://github.com/PaddleHQ/paddle-js-wrapper) | 74 | Apache-2.0 | 2026-08-25 | [@paddle/paddle-js](https://www.npmjs.com/package/@paddle/paddle-js) | 1.6.5 | 171.6k | Apache-2.0 | - |  |
+| LemonSqueezy JS | [lmsqueezy/lemonsqueezy.js](https://github.com/lmsqueezy/lemonsqueezy.js) | 535 | MIT | 2024-11-05 | [@lemonsqueezy/lemonsqueezy.js](https://www.npmjs.com/package/@lemonsqueezy/lemonsqueezy.js) | 4.0.0 | 110.5k | MIT | - |  |
+| Polar | [polarsource/polar](https://github.com/polarsource/polar) | 10.2k | Apache-2.0 | 2026-09-05 | [@polar-sh/sdk](https://www.npmjs.com/package/@polar-sh/sdk) | 0.49.0 | 266.9k | MIT | - |  |
+| Braintree Web Drop-in | [braintree/braintree-web-drop-in](https://github.com/braintree/braintree-web-drop-in) | 203 | MIT | 2026-06-17 | [braintree-web-drop-in](https://www.npmjs.com/package/braintree-web-drop-in) | 1.47.0 | 202.4k | MIT | - |  |
+| Adyen Web | [Adyen/adyen-web](https://github.com/Adyen/adyen-web) | 254 | MIT | 2026-09-05 | [@adyen/adyen-web](https://www.npmjs.com/package/@adyen/adyen-web) | 6.44.0 | 562.8k | MIT | - |  |
+| react-credit-cards-2 | [amarofashion/react-credit-cards](https://github.com/amarofashion/react-credit-cards) | 2.6k | MIT | 2024-01-19 | [react-credit-cards-2](https://www.npmjs.com/package/react-credit-cards-2) | 1.2.0 | 25.5k | MIT | ^16.8.0 \|\| ^17.0.0 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| card-validator | [braintree/card-validator](https://github.com/braintree/card-validator) | 938 | MIT | 2026-06-20 | [card-validator](https://www.npmjs.com/package/card-validator) | 10.0.4 | 1.4M | MIT | - |  |
+| Autumn (billing) | [useautumn/autumn](https://github.com/useautumn/autumn) | 2.7k | Apache-2.0 | 2026-09-05 | [autumn-js](https://www.npmjs.com/package/autumn-js) | 1.3.0 | 145.1k | MIT | ^18.0.0 \|\| ^19.0.0 |  |
+| Creem | [armitage-labs/creem-sdk](https://github.com/armitage-labs/creem-sdk) | 27 | NONE | 2026-03-26 | [creem](https://www.npmjs.com/package/creem) | 1.6.2 | 35.7k | MIT | - | **archived** |
+
+**一句话推荐**：Stripe 官方 **@stripe/react-stripe-js**（MIT，peer 覆盖到 React 19，8.9M/周）是唯一成熟的 React 支付 UI；PayPal 用官方 `@paypal/react-paypal-js`（Apache-2.0，仓库已并入 paypal/paypal-js）；MoR 类（Paddle/LemonSqueezy/Polar/Creem/Autumn）SDK 开源但均绑定付费服务。**注意**：LemonSqueezy JS 自 2024-11 无更新；Creem 仓库已 archived；react-credit-cards-2 仓库 2024-01 后无 push。所有支付库均为服务端配套 SDK，无「纯前端」免费替代。
+
+## 26. AI 前端（对话 UI / 推理 / SDK / 流式）
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| Vercel AI SDK | [vercel/ai](https://github.com/vercel/ai) | 26.6k | NOASSERTION | 2026-09-05 | [ai](https://www.npmjs.com/package/ai) | 7.0.93 | 23.6M | Apache-2.0 | - |  |
+| @ai-sdk/react | [vercel/ai](https://github.com/vercel/ai) | 26.6k | NOASSERTION | 2026-09-05 | [@ai-sdk/react](https://www.npmjs.com/package/@ai-sdk/react) | 4.0.96 | 8.2M | Apache-2.0 | ^18 \|\| ~19.0.1 \|\| ~19.1.2 \|\| ^19.2.1 |  |
+| assistant-ui | [assistant-ui/assistant-ui](https://github.com/assistant-ui/assistant-ui) | 12.0k | MIT | 2026-09-05 | [@assistant-ui/react](https://www.npmjs.com/package/@assistant-ui/react) | 0.15.18 | 1.7M | MIT | ^18 \|\| ^19 |  |
+| CopilotKit | [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | 37.2k | MIT | 2026-09-05 | [@copilotkit/react-core](https://www.npmjs.com/package/@copilotkit/react-core) | 1.70.1 | 452.7k | MIT | ^18 \|\| ^19 \|\| ^19.0.0-rc |  |
+| LangChain.js | [langchain-ai/langchainjs](https://github.com/langchain-ai/langchainjs) | 18.2k | MIT | 2026-09-04 | [langchain](https://www.npmjs.com/package/langchain) | 1.5.10 | 3.0M | MIT | - |  |
+| LlamaIndex.TS | [run-llama/LlamaIndexTS](https://github.com/run-llama/LlamaIndexTS) | 3.1k | MIT | 2026-03-11 | [llamaindex](https://www.npmjs.com/package/llamaindex) | 0.12.1 | 125.3k | MIT | - | **archived** |
+| Transformers.js | [huggingface/transformers.js](https://github.com/huggingface/transformers.js) | 16.3k | Apache-2.0 | 2026-09-04 | [@huggingface/transformers](https://www.npmjs.com/package/@huggingface/transformers) | 4.2.0 | 2.8M | Apache-2.0 | - |  |
+| WebLLM | [mlc-ai/web-llm](https://github.com/mlc-ai/web-llm) | 19.0k | Apache-2.0 | 2026-09-03 | [@mlc-ai/web-llm](https://www.npmjs.com/package/@mlc-ai/web-llm) | 0.2.84 | 78.9k | Apache-2.0 | - |  |
+| ONNX Runtime Web | [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | 21.8k | MIT | 2026-09-05 | [onnxruntime-web](https://www.npmjs.com/package/onnxruntime-web) | 1.29.0 | 4.3M | MIT | - |  |
+| TensorFlow.js | [tensorflow/tfjs](https://github.com/tensorflow/tfjs) | 19.1k | Apache-2.0 | 2026-06-23 | [@tensorflow/tfjs](https://www.npmjs.com/package/@tensorflow/tfjs) | 4.22.0 | 527.2k | Apache-2.0 | - |  |
+| MediaPipe Tasks Vision | [google-ai-edge/mediapipe](https://github.com/google-ai-edge/mediapipe) | 36.9k | Apache-2.0 | 2026-09-05 | [@mediapipe/tasks-vision](https://www.npmjs.com/package/@mediapipe/tasks-vision) | 1.0.1 | 4.6M | Apache-2.0 | - |  |
+| Deep Chat | [OvidijusParsiunas/deep-chat](https://github.com/OvidijusParsiunas/deep-chat) | 3.7k | MIT | 2026-09-02 | [deep-chat-react](https://www.npmjs.com/package/deep-chat-react) | 2.5.1 | 9.1k | MIT | >=16.8.0 |  |
+| NLUX | [nlkitai/nlux](https://github.com/nlkitai/nlux) | 1.4k | NOASSERTION | 2025-11-25 | [@nlux/react](https://www.npmjs.com/package/@nlux/react) | 2.17.1 | 6.3k | MPL-2.0 | ^18 | 最新发布 2024-08-15 |
+| LobeHub UI | [lobehub/lobe-ui](https://github.com/lobehub/lobe-ui) | 2.2k | MIT | 2026-09-05 | [@lobehub/ui](https://www.npmjs.com/package/@lobehub/ui) | 5.40.0 | 426.5k | MIT | ^19.0.0 |  |
+| Ant Design X | [ant-design/x](https://github.com/ant-design/x) | 4.8k | NONE | 2026-09-01 | [@ant-design/x](https://www.npmjs.com/package/@ant-design/x) | 2.9.0 | 102.5k | MIT | >=18.0.0 |  |
+| Chatbot UI (Mckay) | [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui) | 33.3k | MIT | 2024-08-03 | - | - | - | - | - |  |
+| Vercel AI Elements | [vercel/ai-elements](https://github.com/vercel/ai-elements) | 2.4k | NOASSERTION | 2026-09-01 | [ai-elements](https://www.npmjs.com/package/ai-elements) | 1.9.0 | 89.5k | Apache-2.0 | - |  |
+| ai-sdk-ui (shadcn ai) | [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | 123.1k | MIT | 2026-09-04 | [shadcn](https://www.npmjs.com/package/shadcn) | 4.21.0 | 8.7M | MIT | - |  |
+| OpenAI Node | [openai/openai-node](https://github.com/openai/openai-node) | 11.2k | Apache-2.0 | 2026-09-05 | [openai](https://www.npmjs.com/package/openai) | 7.10.0 | 39.0M | Apache-2.0 | - |  |
+| Anthropic SDK TS | [anthropics/anthropic-sdk-typescript](https://github.com/anthropics/anthropic-sdk-typescript) | 2.1k | MIT | 2026-09-04 | [@anthropic-ai/sdk](https://www.npmjs.com/package/@anthropic-ai/sdk) | 0.124.0 | 38.0M | MIT | - |  |
+| eventsource-parser | [rexxars/eventsource-parser](https://github.com/rexxars/eventsource-parser) | 498 | MIT | 2026-08-20 | [eventsource-parser](https://www.npmjs.com/package/eventsource-parser) | 4.1.0 | 67.2M | MIT | - |  |
+| @microsoft/fetch-event-source | [Azure/fetch-event-source](https://github.com/Azure/fetch-event-source) | 2.9k | MIT | 2026-02-28 | [@microsoft/fetch-event-source](https://www.npmjs.com/package/@microsoft/fetch-event-source) | 2.0.1 | 3.4M | MIT | - | 最新发布 2021-04-25 |
+| Mastra | [mastra-ai/mastra](https://github.com/mastra-ai/mastra) | 27.7k | NOASSERTION | 2026-09-05 | [@mastra/core](https://www.npmjs.com/package/@mastra/core) | 1.64.0 | 1.6M | Apache-2.0 | - |  |
+| Streamdown (见 §8) | - | - | - | - | - | - | - | - | - |  |
+
+**一句话推荐**：应用层用 **Vercel AI SDK `ai` + `@ai-sdk/react`**（npm Apache-2.0，GitHub SPDX 显示 NOASSERTION，23.6M/周）配 **assistant-ui**（MIT，React 18/19）或 shadcn 官方 `ai-elements`；需 Copilot 侧栏/Agent 交互选 CopilotKit（MIT）；浏览器端推理用 Transformers.js（Apache-2.0）或 WebLLM；流式解析用 eventsource-parser（67M/周）。**注意**：LlamaIndex.TS 仓库已 archived；NLUX 为 MPL-2.0 且 2024-08 后无发版；`@microsoft/fetch-event-source` 最新发布 2021-04；Chatbot UI 是应用模板非库，2024-08 后无 push。LobeHub UI peer 仅 `^19.0.0`。
+
+## 27. 微前端
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| Module Federation (core) | [module-federation/core](https://github.com/module-federation/core) | 2.6k | MIT | 2026-09-05 | [@module-federation/enhanced](https://www.npmjs.com/package/@module-federation/enhanced) | 2.9.0 | 4.4M | MIT | - |  |
+| @originjs/vite-plugin-federation | [originjs/vite-plugin-federation](https://github.com/originjs/vite-plugin-federation) | 3.0k | NOASSERTION | 2025-05-17 | [@originjs/vite-plugin-federation](https://www.npmjs.com/package/@originjs/vite-plugin-federation) | 1.4.1 | 264.4k | MulanPSL-2.0 | - |  |
+| single-spa | [single-spa/single-spa](https://github.com/single-spa/single-spa) | 13.9k | NOASSERTION | 2026-02-28 | [single-spa](https://www.npmjs.com/package/single-spa) | 6.0.3 | 441.2k | MIT | - |  |
+| qiankun (蚂蚁) | [umijs/qiankun](https://github.com/umijs/qiankun) | 16.7k | MIT | 2026-08-30 | [qiankun](https://www.npmjs.com/package/qiankun) | 2.10.16 | 67.4k | MIT | - | 最新发布 2023-11-15 |
+| Garfish (字节) | [web-infra-dev/garfish](https://github.com/web-infra-dev/garfish) | 2.9k | NOASSERTION | 2026-09-04 | [garfish](https://www.npmjs.com/package/garfish) | 1.19.12 | 1.3k | MIT | - |  |
+| wujie 无界 (腾讯) | [Tencent/wujie](https://github.com/Tencent/wujie) | 5.0k | NOASSERTION | 2026-06-16 | [wujie](https://www.npmjs.com/package/wujie) | 2.1.0 | 5.6k | MIT | - |  |
+| micro-app (京东) | [jd-opensource/micro-app](https://github.com/jd-opensource/micro-app) | 6.3k | MIT | 2026-06-25 | [@micro-zoe/micro-app](https://www.npmjs.com/package/@micro-zoe/micro-app) | 1.0.0-rc.32 | 3.9k | MIT | - |  |
+| Piral | [smapiot/piral](https://github.com/smapiot/piral) | 1.9k | MIT | 2026-09-03 | [piral](https://www.npmjs.com/package/piral) | 1.12.3 | 4.8k | MIT | - |  |
+| Bit | [teambit/bit](https://github.com/teambit/bit) | 18.5k | NOASSERTION | 2026-09-05 | [@teambit/bit](https://www.npmjs.com/package/@teambit/bit) | 2.2.37 | 9.4k | Apache-2.0 | - |  |
+| import-maps polyfill (es-module-shims) | [guybedford/es-module-shims](https://github.com/guybedford/es-module-shims) | 1.7k | MIT | 2026-08-17 | [es-module-shims](https://www.npmjs.com/package/es-module-shims) | 2.8.4 | 229.6k | MIT | - |  |
+| Native Federation (Angular Architects) | [angular-architects/module-federation-plugin](https://github.com/angular-architects/module-federation-plugin) | 852 | MIT | 2026-08-07 | [@angular-architects/native-federation](https://www.npmjs.com/package/@angular-architects/native-federation) | 22.1.2 | 91.2k | MIT | - |  |
+| zoid (PayPal) | [krakenjs/zoid](https://github.com/krakenjs/zoid) | 2.1k | Apache-2.0 | 2026-08-03 | [zoid](https://www.npmjs.com/package/zoid) | 9.0.86 | 85.7k | - | - | 最新发布 2022-01-12 |
+
+**一句话推荐**：新项目优先 **Module Federation 2.0（`@module-federation/enhanced`）**，MIT，Rspack/webpack/Vite 均有官方插件（4.4M/周）；框架无关路由编排用 single-spa；国内方案中 **wujie（腾讯，2026-06 仍发版）** 与 micro-app（京东，1.0.0-rc）活跃，**qiankun latest 停在 2023-11**（仓库仍有 push）。**注意**：`@originjs/vite-plugin-federation` 为 **MulanPSL-2.0**（木兰宽松许可证，OSI 认可）且 2025-04 后无发版；zoid 最新发布 2022-01；Bit 是平台产品，SDK Apache-2.0。
+
+## 28. 性能监控 / 错误追踪 / 分析 / 会话回放
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| web-vitals | [GoogleChrome/web-vitals](https://github.com/GoogleChrome/web-vitals) | 8.6k | Apache-2.0 | 2026-08-26 | [web-vitals](https://www.npmjs.com/package/web-vitals) | 6.2.1 | 38.9M | Apache-2.0 | - |  |
+| Sentry Browser | [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) | 8.7k | MIT | 2026-09-04 | [@sentry/browser](https://www.npmjs.com/package/@sentry/browser) | 10.73.0 | 32.4M | MIT | - |  |
+| @sentry/react | [getsentry/sentry-javascript](https://github.com/getsentry/sentry-javascript) | 8.7k | MIT | 2026-09-04 | [@sentry/react](https://www.npmjs.com/package/@sentry/react) | 10.73.0 | 24.4M | MIT | ^16.14.0 \|\| 17.x \|\| 18.x \|\| 19.x |  |
+| OpenTelemetry Web | [open-telemetry/opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js) | 3.5k | Apache-2.0 | 2026-09-04 | [@opentelemetry/sdk-trace-web](https://www.npmjs.com/package/@opentelemetry/sdk-trace-web) | 2.11.0 | 7.6M | Apache-2.0 | - |  |
+| Grafana Faro | [grafana/faro-web-sdk](https://github.com/grafana/faro-web-sdk) | 1.1k | Apache-2.0 | 2026-09-05 | [@grafana/faro-web-sdk](https://www.npmjs.com/package/@grafana/faro-web-sdk) | 2.11.0 | 977.5k | Apache-2.0 | - |  |
+| PostHog JS | [PostHog/posthog-js](https://github.com/PostHog/posthog-js) | 601 | NOASSERTION | 2026-09-05 | [posthog-js](https://www.npmjs.com/package/posthog-js) | 1.427.2 | 12.7M | (Apache-2.0 AND MIT) | >=16.8.0 |  |
+| Plausible tracker | [plausible/plausible-tracker](https://github.com/plausible/plausible-tracker) | 287 | MIT | 2025-08-12 | [plausible-tracker](https://www.npmjs.com/package/plausible-tracker) | 0.3.9 | 66.7k | MIT | - | **archived**；**npm deprecated**；最新发布 2024-05-27 |
+| Umami | [umami-software/umami](https://github.com/umami-software/umami) | 38.6k | MIT | 2026-09-05 | - | - | - | - | - |  |
+| rrweb (会话回放) | [rrweb-io/rrweb](https://github.com/rrweb-io/rrweb) | 20.1k | MIT | 2026-09-04 | [rrweb](https://www.npmjs.com/package/rrweb) | 2.1.1 | 2.7M | MIT | - |  |
+| OpenReplay tracker | [openreplay/openreplay](https://github.com/openreplay/openreplay) | 12.7k | NOASSERTION | 2026-09-04 | [@openreplay/tracker](https://www.npmjs.com/package/@openreplay/tracker) | 18.1.5 | 249.3k | MIT | - |  |
+| Highlight.run | [highlight/highlight](https://github.com/highlight/highlight) | 9.4k | NOASSERTION | 2026-08-20 | [highlight.run](https://www.npmjs.com/package/highlight.run) | 10.7.2 | 184.5k | Apache-2.0 | - |  |
+| Lighthouse | [GoogleChrome/lighthouse](https://github.com/GoogleChrome/lighthouse) | 30.7k | Apache-2.0 | 2026-09-04 | [lighthouse](https://www.npmjs.com/package/lighthouse) | 13.4.1 | 4.4M | Apache-2.0 | - |  |
+| unlighthouse | [harlan-zw/unlighthouse](https://github.com/harlan-zw/unlighthouse) | 4.8k | MIT | 2026-08-14 | [unlighthouse](https://www.npmjs.com/package/unlighthouse) | 0.18.0 | 41.7k | MIT | - |  |
+| perfume.js | [Zizzamia/perfume.js](https://github.com/Zizzamia/perfume.js) | 3.2k | MIT | 2025-10-25 | [perfume.js](https://www.npmjs.com/package/perfume.js) | 9.4.0 | 33.7k | MIT | - | 最新发布 2024-03-22 |
+| Partytown | [QwikDev/partytown](https://github.com/QwikDev/partytown) | 13.8k | MIT | 2026-08-25 | [@qwik.dev/partytown](https://www.npmjs.com/package/@qwik.dev/partytown) | 0.14.3 | 170.7k | MIT | - |  |
+| why-did-you-render | [welldone-software/why-did-you-render](https://github.com/welldone-software/why-did-you-render) | 12.5k | MIT | 2026-04-15 | [@welldone-software/why-did-you-render](https://www.npmjs.com/package/@welldone-software/why-did-you-render) | 10.0.1 | 835.5k | MIT | ^19 |  |
+| React Scan | [aidenybai/react-scan](https://github.com/aidenybai/react-scan) | 21.8k | MIT | 2026-08-16 | [react-scan](https://www.npmjs.com/package/react-scan) | 0.5.7 | 1.0M | MIT | ^16.8.0 \|\| ^17.0.0 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| Million.js | [aidenybai/million](https://github.com/aidenybai/million) | 17.7k | MIT | 2026-05-20 | [million](https://www.npmjs.com/package/million) | 3.1.11 | 32.5k | MIT | - | 最新发布 2024-06-04 |
+| Vercel Analytics | [vercel/analytics](https://github.com/vercel/analytics) | 515 | MIT | 2026-08-26 | [@vercel/analytics](https://www.npmjs.com/package/@vercel/analytics) | 2.0.1 | 6.0M | MIT | ^18 \|\| ^19 \|\| ^19.0.0-rc |  |
+| Vercel Speed Insights | [vercel/speed-insights](https://github.com/vercel/speed-insights) | 114 | MIT | 2026-07-08 | [@vercel/speed-insights](https://www.npmjs.com/package/@vercel/speed-insights) | 2.0.0 | 4.0M | Apache-2.0 | ^18 \|\| ^19 \|\| ^19.0.0-rc |  |
+| Bugsnag JS | [bugsnag/bugsnag-js](https://github.com/bugsnag/bugsnag-js) | 894 | MIT | 2026-09-02 | [@bugsnag/js](https://www.npmjs.com/package/@bugsnag/js) | 8.10.0 | 1.2M | MIT | - |  |
+| GlitchTip / Sentry compat | - | - | - | - | - | - | - | - | - |  |
+
+**一句话推荐**：Core Web Vitals 采集用 **web-vitals**（Apache-2.0，38.9M/周）；错误追踪 **@sentry/react**（MIT SDK；Sentry 服务端为 FSL-1.1 许可，[LICENSE](https://github.com/getsentry/sentry/blob/master/LICENSE.md)，自托管需注意）；厂商中立走 OpenTelemetry Web / Grafana Faro（Apache-2.0）；产品分析 PostHog JS（npm `Apache-2.0 AND MIT`）或自托管 Umami（MIT，无前端 npm 包）；会话回放底层 **rrweb**（MIT）。开发期性能用 React Scan（MIT，1.0M/周）。**注意**：Plausible tracker archived + deprecated（官方改用 script 引入）；perfume.js、Million.js 2024 年后无发版；Highlight.run / OpenReplay / Bugsnag SDK 开源但依赖各自后端；Vercel Analytics/Speed Insights 仅 Vercel 平台。
+
+## 29. 可视化搭建 / 页面编辑器 / 低代码 / 节点图 / 布局
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| Puck | [puckeditor/puck](https://github.com/puckeditor/puck) | 13.3k | MIT | 2026-09-04 | [@puckeditor/core](https://www.npmjs.com/package/@puckeditor/core) | 0.23.0 | 177.2k | MIT | ^18.0.0 \|\| ^19.0.0 |  |
+| craft.js | [prevwong/craft.js](https://github.com/prevwong/craft.js) | 8.7k | MIT | 2025-02-14 | [@craftjs/core](https://www.npmjs.com/package/@craftjs/core) | 0.2.12 | 68.9k | MIT | ^16.8.0 \|\| ^17 \|\| ^18 \|\| ^19 |  |
+| GrapesJS | [GrapesJS/grapesjs](https://github.com/GrapesJS/grapesjs) | 26.2k | NOASSERTION | 2026-08-26 | [grapesjs](https://www.npmjs.com/package/grapesjs) | 0.23.6 | 347.5k | BSD-3-Clause | - |  |
+| Builder.io SDK React | [BuilderIO/builder](https://github.com/BuilderIO/builder) | 8.8k | MIT | 2026-09-04 | [@builder.io/react](https://www.npmjs.com/package/@builder.io/react) | 9.4.4 | 85.1k | MIT | >=16.8.0 \|\| ^19.0.0-rc |  |
+| Plasmic | [plasmicapp/plasmic](https://github.com/plasmicapp/plasmic) | 7.0k | MIT | 2026-09-04 | [@plasmicapp/loader-react](https://www.npmjs.com/package/@plasmicapp/loader-react) | 2.0.22 | 10.8k | MIT | >=18.0.0 |  |
+| Webstudio | [webstudio-is/webstudio](https://github.com/webstudio-is/webstudio) | 8.9k | AGPL-3.0 | 2026-09-05 | - | - | - | - | - |  |
+| react-email | [resend/react-email](https://github.com/resend/react-email) | 19.7k | MIT | 2026-09-03 | [@react-email/components](https://www.npmjs.com/package/@react-email/components) | 1.0.12 | 5.7M | MIT | ^18.0 \|\| ^19.0 \|\| ^19.0.0-rc | **npm deprecated** |
+| MJML | [mjmlio/mjml](https://github.com/mjmlio/mjml) | 18.2k | MIT | 2026-09-03 | [mjml](https://www.npmjs.com/package/mjml) | 5.4.0 | 2.0M | MIT | - |  |
+| Unlayer (react-email-editor) | [unlayer/react-email-editor](https://github.com/unlayer/react-email-editor) | 5.2k | MIT | 2026-09-03 | [react-email-editor](https://www.npmjs.com/package/react-email-editor) | 2.1.2 | 256.5k | MIT | >=16.8 |  |
+| Easy Email | [zalify/easy-email](https://github.com/zalify/easy-email) | 3.0k | MIT | 2026-08-13 | [easy-email-editor](https://www.npmjs.com/package/easy-email-editor) | 4.17.1 | 18.5k | MIT | ^18.2.0 |  |
+| Form.io React | [formio/react](https://github.com/formio/react) | 370 | MIT | 2026-07-09 | [@formio/react](https://www.npmjs.com/package/@formio/react) | 6.2.1 | 26.7k | MIT | >=17 |  |
+| SurveyJS (form library) | [surveyjs/survey-library](https://github.com/surveyjs/survey-library) | 4.9k | MIT | 2026-09-05 | [survey-react-ui](https://www.npmjs.com/package/survey-react-ui) | 3.0.3 | 242.6k | MIT | ^16.5.0 \|\| ^17.0.1 \|\| ^18.1.0 \|\| ^19.0.0 |  |
+| react-jsonschema-form | [rjsf-team/react-jsonschema-form](https://github.com/rjsf-team/react-jsonschema-form) | 15.9k | Apache-2.0 | 2026-09-04 | [@rjsf/core](https://www.npmjs.com/package/@rjsf/core) | 6.8.0 | 1.2M | Apache-2.0 | >=18 |  |
+| Formily (阿里) | [alibaba/formily](https://github.com/alibaba/formily) | 12.6k | MIT | 2025-06-21 | [@formily/react](https://www.npmjs.com/package/@formily/react) | 2.3.7 | 38.6k | MIT | >=16.8.0 |  |
+| amis (百度) | [baidu/amis](https://github.com/baidu/amis) | 18.9k | Apache-2.0 | 2026-03-18 | [amis](https://www.npmjs.com/package/amis) | 6.13.0 | 4.9k | Apache-2.0 | >=16.8.6 |  |
+| LowCodeEngine (阿里) | [alibaba/lowcode-engine](https://github.com/alibaba/lowcode-engine) | 15.9k | MIT | 2025-03-10 | [@alilc/lowcode-engine](https://www.npmjs.com/package/@alilc/lowcode-engine) | 1.3.4 | 478 | MIT | - |  |
+| Tmagic Editor (腾讯) | [Tencent/tmagic-editor](https://github.com/Tencent/tmagic-editor) | 4.9k | NOASSERTION | 2026-09-04 | [@tmagic/editor](https://www.npmjs.com/package/@tmagic/editor) | 1.7.13 | 659 | Apache-2.0 | - |  |
+| React Flow (xyflow) | [xyflow/xyflow](https://github.com/xyflow/xyflow) | 38.3k | MIT | 2026-09-05 | [@xyflow/react](https://www.npmjs.com/package/@xyflow/react) | 12.11.6 | 11.2M | MIT | >=17 |  |
+| Rete.js | [retejs/rete](https://github.com/retejs/rete) | 12.2k | MIT | 2026-07-24 | [rete](https://www.npmjs.com/package/rete) | 2.0.6 | 94.7k | MIT | - |  |
+| LogicFlow (滴滴) | [didi/LogicFlow](https://github.com/didi/LogicFlow) | 11.7k | Apache-2.0 | 2026-07-30 | [@logicflow/core](https://www.npmjs.com/package/@logicflow/core) | 2.2.5 | 17.2k | Apache-2.0 | - |  |
+| AntV X6 | [antvis/X6](https://github.com/antvis/X6) | 6.7k | MIT | 2026-08-11 | [@antv/x6](https://www.npmjs.com/package/@antv/x6) | 3.1.8 | 100.1k | MIT | - |  |
+| JointJS | [clientIO/joint](https://github.com/clientIO/joint) | 5.4k | MPL-2.0 | 2026-09-04 | [@joint/core](https://www.npmjs.com/package/@joint/core) | 4.3.3 | 47.4k | MPL-2.0 | - |  |
+| react-grid-layout | [react-grid-layout/react-grid-layout](https://github.com/react-grid-layout/react-grid-layout) | 22.4k | MIT | 2026-08-31 | [react-grid-layout](https://www.npmjs.com/package/react-grid-layout) | 2.2.4 | 3.9M | MIT | >= 16.3.0 |  |
+| Gridstack | [gridstack/gridstack.js](https://github.com/gridstack/gridstack.js) | 9.1k | MIT | 2026-09-04 | [gridstack](https://www.npmjs.com/package/gridstack) | 13.2.0 | 625.6k | MIT | - |  |
+| react-mosaic | [nomcopter/react-mosaic](https://github.com/nomcopter/react-mosaic) | 4.8k | NOASSERTION | 2026-08-06 | [react-mosaic-component](https://www.npmjs.com/package/react-mosaic-component) | 7.0.0 | 78.2k | Apache-2.0 | 16 - 19 |  |
+| dockview | [mathuo/dockview](https://github.com/mathuo/dockview) | 3.4k | NOASSERTION | 2026-09-04 | [dockview](https://www.npmjs.com/package/dockview) | 8.2.0 | 238.0k | MIT | - |  |
+
+**一句话推荐**：React 可视化页面编辑器选 **Puck**（MIT，13.3k★，包名已迁至 `@puckeditor/core`，旧包 `@measured/puck` 已 deprecated）；craft.js 停在 0.2.x 且 2025-02 后无 push；HTML 拖拽建站用 GrapesJS（BSD-3）。邮件模板 **react-email**（MIT；注意 `@react-email/components` 最新版 1.0.12 被标 deprecated，需确认官方包名迁移）或 MJML。JSON Schema 表单用 **react-jsonschema-form**（Apache-2.0，1.2M/周）；国内低代码（amis / LowCodeEngine / Formily / Tmagic）活跃度普遍下降（LowCodeEngine 周下载 478、Formily 2025-05 后无发版）。节点图 **React Flow**（MIT，11.2M/周）；仪表盘布局 **react-grid-layout**（MIT）或 Gridstack；IDE 式面板 dockview。**注意**：Webstudio 为 **AGPL-3.0**（无 npm 库）；JointJS 为 **MPL-2.0**（JointJS+ 为商业版）；Builder.io / Plasmic SDK 开源但绑定托管服务。
+
+## 30. 服务端 / Node 端渲图（OG 图、截图、PDF、Canvas）
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| Satori (Vercel) | [vercel/satori](https://github.com/vercel/satori) | 13.9k | MPL-2.0 | 2026-08-24 | [satori](https://www.npmjs.com/package/satori) | 0.33.4 | 3.4M | MPL-2.0 | - |  |
+| @vercel/og | [vercel/next.js](https://github.com/vercel/next.js) | 142.1k | MIT | 2026-09-05 | [@vercel/og](https://www.npmjs.com/package/@vercel/og) | 1.0.2 | 1.9M | MPL-2.0 | - |  |
+| resvg-js | [thx/resvg-js](https://github.com/thx/resvg-js) | 2.0k | MPL-2.0 | 2026-06-30 | [@resvg/resvg-js](https://www.npmjs.com/package/@resvg/resvg-js) | 2.6.2 | 2.6M | MPL-2.0 | - | 最新发布 2024-03-26 |
+| sharp | [lovell/sharp](https://github.com/lovell/sharp) | 32.6k | Apache-2.0 | 2026-09-05 | [sharp](https://www.npmjs.com/package/sharp) | 0.35.4 | 93.9M | Apache-2.0 | - |  |
+| jimp | [jimp-dev/jimp](https://github.com/jimp-dev/jimp) | 14.7k | MIT | 2026-04-07 | [jimp](https://www.npmjs.com/package/jimp) | 1.6.1 | 3.5M | MIT | - |  |
+| @napi-rs/canvas | [Brooooooklyn/canvas](https://github.com/Brooooooklyn/canvas) | 2.3k | MIT | 2026-09-04 | [@napi-rs/canvas](https://www.npmjs.com/package/@napi-rs/canvas) | 1.0.8 | 22.1M | MIT | - |  |
+| node-canvas | [Automattic/node-canvas](https://github.com/Automattic/node-canvas) | 10.7k | NONE | 2026-08-24 | [canvas](https://www.npmjs.com/package/canvas) | 3.2.3 | 8.1M | MIT | - |  |
+| skia-canvas | [samizdatco/skia-canvas](https://github.com/samizdatco/skia-canvas) | 2.6k | MIT | 2026-08-28 | [skia-canvas](https://www.npmjs.com/package/skia-canvas) | 3.0.8 | 177.9k | MIT | - |  |
+| Puppeteer | [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | 95.5k | Apache-2.0 | 2026-09-05 | [puppeteer](https://www.npmjs.com/package/puppeteer) | 25.10.0 | 11.9M | Apache-2.0 | - |  |
+| Playwright (截图, 见 §14) | - | - | - | - | - | - | - | - | - |  |
+| html-to-image | [bubkoo/html-to-image](https://github.com/bubkoo/html-to-image) | 7.2k | MIT | 2026-05-28 | [html-to-image](https://www.npmjs.com/package/html-to-image) | 1.11.13 | 6.5M | MIT | - |  |
+| modern-screenshot | [qq15725/modern-screenshot](https://github.com/qq15725/modern-screenshot) | 2.1k | MIT | 2026-04-16 | [modern-screenshot](https://www.npmjs.com/package/modern-screenshot) | 4.7.0 | 2.5M | MIT | - |  |
+| dom-to-image-more | [1904labs/dom-to-image-more](https://github.com/1904labs/dom-to-image-more) | 680 | NOASSERTION | 2026-08-10 | [dom-to-image-more](https://www.npmjs.com/package/dom-to-image-more) | 3.10.2 | 291.3k | MIT | - |  |
+| takumi (Rust satori) | [kane50613/takumi](https://github.com/kane50613/takumi) | 2.9k | Apache-2.0 | 2026-09-05 | [@takumi-rs/core](https://www.npmjs.com/package/@takumi-rs/core) | 2.13.6 | 352.9k | (MIT OR Apache-2.0) | - |  |
+| og-image (workers-og) | [kvnang/workers-og](https://github.com/kvnang/workers-og) | 356 | MIT | 2025-06-12 | [workers-og](https://www.npmjs.com/package/workers-og) | 0.0.27 | 77.9k | - | - |  |
+| pdfmake | [bpampuch/pdfmake](https://github.com/bpampuch/pdfmake) | 12.3k | NOASSERTION | 2026-06-12 | [pdfmake](https://www.npmjs.com/package/pdfmake) | 0.3.11 | 2.6M | MIT | - |  |
+| jsPDF | [parallax/jsPDF](https://github.com/parallax/jsPDF) | 31.3k | MIT | 2026-09-03 | [jspdf](https://www.npmjs.com/package/jspdf) | 4.2.1 | 15.2M | MIT | - |  |
+| Gotenberg | [gotenberg/gotenberg](https://github.com/gotenberg/gotenberg) | 13.0k | MIT | 2026-09-05 | - | - | - | - | - |  |
+
+**一句话推荐**：OG 图生成 **Satori**（Vercel，**MPL-2.0**，3.4M/周）+ **resvg-js**（MPL-2.0，但 latest 停在 2024-03）；Next.js 直接用 `@vercel/og`（npm MPL-2.0，含 Satori）；Rust 实现的 **takumi**（MIT/Apache 双许可，2026-09 活跃）是 Satori 的宽松许可替代。位图处理 **sharp**（Apache-2.0，93.9M/周）；Node Canvas 首选 **@napi-rs/canvas**（MIT，22.1M/周，预编译无 node-gyp）。浏览器端 DOM 截图用 **modern-screenshot** 或 html-to-image（均 MIT）；前端 PDF 生成 **jsPDF**（MIT，15.2M/周）或 pdfmake；服务端 HTML→PDF 用 Puppeteer/Playwright 或 Gotenberg（MIT，Docker 服务）。MPL-2.0 为文件级 copyleft，作为依赖使用不影响业务代码闭源，但修改其源码文件需开源。
+
+## 31. HTTP 客户端 / 工具函数 / 数据处理
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| ky (见 §0) | [sindresorhus/ky](https://github.com/sindresorhus/ky) | 17.1k | MIT | 2026-09-02 | [ky](https://www.npmjs.com/package/ky) | 2.1.0 | 7.4M | MIT | - |  |
+| ofetch | [unjs/ofetch](https://github.com/unjs/ofetch) | 5.4k | MIT | 2026-09-03 | [ofetch](https://www.npmjs.com/package/ofetch) | 1.5.1 | 27.2M | MIT | - |  |
+| wretch | [elbywan/wretch](https://github.com/elbywan/wretch) | 5.2k | MIT | 2026-06-19 | [wretch](https://www.npmjs.com/package/wretch) | 3.0.9 | 282.2k | MIT | - |  |
+| up-fetch | [L-Blondy/up-fetch](https://github.com/L-Blondy/up-fetch) | 1.4k | MIT | 2026-09-01 | [up-fetch](https://www.npmjs.com/package/up-fetch) | 2.6.1 | 28.3k | MIT | - |  |
+| better-fetch | [Bekacru/better-fetch](https://github.com/Bekacru/better-fetch) | 1.0k | MIT | 2026-09-05 | [@better-fetch/fetch](https://www.npmjs.com/package/@better-fetch/fetch) | 1.3.1 | 7.5M | MIT | - |  |
+| es-toolkit | [toss/es-toolkit](https://github.com/toss/es-toolkit) | 11.3k | MIT | 2026-09-03 | [es-toolkit](https://www.npmjs.com/package/es-toolkit) | 1.52.0 | 46.1M | MIT | - |  |
+| lodash | [lodash/lodash](https://github.com/lodash/lodash) | 61.3k | NOASSERTION | 2026-07-03 | [lodash](https://www.npmjs.com/package/lodash) | 4.18.1 | 173.7M | MIT | - |  |
+| lodash-es | - | - | - | - | [lodash-es](https://www.npmjs.com/package/lodash-es) | 4.18.1 | 46.5M | MIT | - |  |
+| Radash | [sodiray/radash](https://github.com/sodiray/radash) | 4.8k | MIT | 2025-06-18 | [radash](https://www.npmjs.com/package/radash) | 12.1.1 | 2.1M | MIT | - |  |
+| remeda | [remeda/remeda](https://github.com/remeda/remeda) | 5.4k | MIT | 2026-09-03 | [remeda](https://www.npmjs.com/package/remeda) | 2.45.0 | 10.3M | MIT | - |  |
+| Ramda | [ramda/ramda](https://github.com/ramda/ramda) | 24.1k | MIT | 2026-07-26 | [ramda](https://www.npmjs.com/package/ramda) | 0.32.0 | 14.3M | MIT | - |  |
+| Effect | [Effect-TS/effect](https://github.com/Effect-TS/effect) | 15.9k | MIT | 2026-09-05 | [effect](https://www.npmjs.com/package/effect) | 3.22.1 | 33.6M | MIT | - |  |
+| neverthrow | [supermacro/neverthrow](https://github.com/supermacro/neverthrow) | 7.7k | MIT | 2026-02-14 | [neverthrow](https://www.npmjs.com/package/neverthrow) | 8.2.0 | 2.7M | MIT | - |  |
+| ts-pattern | [gvergnaud/ts-pattern](https://github.com/gvergnaud/ts-pattern) | 15.1k | MIT | 2026-09-03 | [ts-pattern](https://www.npmjs.com/package/ts-pattern) | 5.9.0 | 6.7M | MIT | - |  |
+| type-fest | [sindresorhus/type-fest](https://github.com/sindresorhus/type-fest) | 17.4k | CC0-1.0 | 2026-09-02 | [type-fest](https://www.npmjs.com/package/type-fest) | 5.9.0 | 385.6M | (MIT OR CC0-1.0) | - |  |
+| immer | [immerjs/immer](https://github.com/immerjs/immer) | 29.0k | MIT | 2026-09-05 | [immer](https://www.npmjs.com/package/immer) | 11.1.18 | 59.9M | MIT | - |  |
+| mutative | [unadlib/mutative](https://github.com/unadlib/mutative) | 2.0k | MIT | 2026-08-13 | [mutative](https://www.npmjs.com/package/mutative) | 1.3.0 | 1.1M | MIT | - |  |
+| nanoid | [ai/nanoid](https://github.com/ai/nanoid) | 27.0k | MIT | 2026-09-01 | [nanoid](https://www.npmjs.com/package/nanoid) | 6.0.1 | 241.9M | MIT | - |  |
+| uuid | [uuidjs/uuid](https://github.com/uuidjs/uuid) | 15.3k | MIT | 2026-08-18 | [uuid](https://www.npmjs.com/package/uuid) | 14.0.2 | 294.9M | MIT | - |  |
+| ulid | [ulid/javascript](https://github.com/ulid/javascript) | 3.4k | MIT | 2026-02-27 | [ulid](https://www.npmjs.com/package/ulid) | 3.0.2 | 10.8M | MIT | - |  |
+| p-limit | [sindresorhus/p-limit](https://github.com/sindresorhus/p-limit) | 2.9k | MIT | 2026-08-31 | [p-limit](https://www.npmjs.com/package/p-limit) | 7.3.2 | 333.1M | MIT | - |  |
+| p-queue | [sindresorhus/p-queue](https://github.com/sindresorhus/p-queue) | 4.3k | MIT | 2026-07-22 | [p-queue](https://www.npmjs.com/package/p-queue) | 9.3.3 | 35.5M | MIT | - |  |
+| p-retry | [sindresorhus/p-retry](https://github.com/sindresorhus/p-retry) | 1.0k | MIT | 2026-09-01 | [p-retry](https://www.npmjs.com/package/p-retry) | 8.0.1 | 51.6M | MIT | - |  |
+| superjson | [flightcontrolhq/superjson](https://github.com/flightcontrolhq/superjson) | 5.3k | MIT | 2026-06-18 | [superjson](https://www.npmjs.com/package/superjson) | 2.2.6 | 10.2M | MIT | - |  |
+| devalue | [Rich-Harris/devalue](https://github.com/Rich-Harris/devalue) | 2.8k | MIT | 2026-09-04 | [devalue](https://www.npmjs.com/package/devalue) | 5.9.2 | 12.7M | MIT | - |  |
+| fast-deep-equal | [epoberezkin/fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal) | 2.0k | MIT | 2023-10-05 | [fast-deep-equal](https://www.npmjs.com/package/fast-deep-equal) | 3.1.3 | 205.1M | MIT | - | 最新发布 2020-06-08 |
+| dequal | [lukeed/dequal](https://github.com/lukeed/dequal) | 1.5k | MIT | 2026-04-10 | [dequal](https://www.npmjs.com/package/dequal) | 2.0.3 | 91.0M | MIT | - | 最新发布 2022-07-11 |
+| big.js | [MikeMcl/big.js](https://github.com/MikeMcl/big.js) | 5.2k | MIT | 2025-04-22 | [big.js](https://www.npmjs.com/package/big.js) | 7.0.1 | 35.5M | MIT | - |  |
+| decimal.js | [MikeMcl/decimal.js](https://github.com/MikeMcl/decimal.js) | 7.3k | MIT | 2026-08-30 | [decimal.js](https://www.npmjs.com/package/decimal.js) | 10.6.0 | 85.0M | MIT | - |  |
+| dinero.js | [dinerojs/dinero.js](https://github.com/dinerojs/dinero.js) | 6.8k | MIT | 2026-09-05 | [dinero.js](https://www.npmjs.com/package/dinero.js) | 2.0.2 | 560.5k | MIT | - |  |
+| currency.js | [scurker/currency.js](https://github.com/scurker/currency.js) | 3.4k | MIT | 2026-09-04 | [currency.js](https://www.npmjs.com/package/currency.js) | 2.0.4 | 808.9k | MIT | - | 最新发布 2021-05-19 |
+| fuse.js | [krisk/Fuse](https://github.com/krisk/Fuse) | 20.5k | Apache-2.0 | 2026-08-09 | [fuse.js](https://www.npmjs.com/package/fuse.js) | 7.5.0 | 13.9M | Apache-2.0 | - |  |
+| minisearch | [lucaong/minisearch](https://github.com/lucaong/minisearch) | 6.1k | MIT | 2025-09-16 | [minisearch](https://www.npmjs.com/package/minisearch) | 7.2.0 | 2.6M | MIT | - |  |
+| Orama | [oramasearch/orama](https://github.com/oramasearch/orama) | 10.5k | NOASSERTION | 2026-08-04 | [@orama/orama](https://www.npmjs.com/package/@orama/orama) | 3.1.18 | 1.3M | Apache-2.0 | - |  |
+| FlexSearch | [nextapps-de/flexsearch](https://github.com/nextapps-de/flexsearch) | 13.8k | Apache-2.0 | 2026-06-28 | [flexsearch](https://www.npmjs.com/package/flexsearch) | 0.8.212 | 1.4M | Apache-2.0 | - |  |
+| match-sorter | [kentcdodds/match-sorter](https://github.com/kentcdodds/match-sorter) | 4.1k | MIT | 2026-05-13 | [match-sorter](https://www.npmjs.com/package/match-sorter) | 8.3.0 | 3.6M | MIT | - |  |
+| comlink | [GoogleChromeLabs/comlink](https://github.com/GoogleChromeLabs/comlink) | 12.8k | Apache-2.0 | 2026-09-05 | [comlink](https://www.npmjs.com/package/comlink) | 4.4.2 | 2.7M | Apache-2.0 | - |  |
+| mitt | [developit/mitt](https://github.com/developit/mitt) | 11.9k | MIT | 2024-08-14 | [mitt](https://www.npmjs.com/package/mitt) | 3.0.1 | 31.5M | MIT | - | 最新发布 2023-07-04 |
+| nanoevents | [ai/nanoevents](https://github.com/ai/nanoevents) | 1.6k | MIT | 2026-07-22 | [nanoevents](https://www.npmjs.com/package/nanoevents) | 10.0.0 | 1.2M | MIT | - |  |
+| eventemitter3 | [primus/eventemitter3](https://github.com/primus/eventemitter3) | 3.5k | MIT | 2026-01-19 | [eventemitter3](https://www.npmjs.com/package/eventemitter3) | 5.0.4 | 158.7M | MIT | - |  |
+| query-string | [sindresorhus/query-string](https://github.com/sindresorhus/query-string) | 6.9k | MIT | 2026-09-01 | [query-string](https://www.npmjs.com/package/query-string) | 9.5.1 | 25.3M | MIT | - |  |
+| qs | [ljharb/qs](https://github.com/ljharb/qs) | 8.9k | BSD-3-Clause | 2026-08-31 | [qs](https://www.npmjs.com/package/qs) | 6.16.0 | 183.3M | BSD-3-Clause | - |  |
+| js-cookie | [js-cookie/js-cookie](https://github.com/js-cookie/js-cookie) | 22.6k | MIT | 2026-08-10 | [js-cookie](https://www.npmjs.com/package/js-cookie) | 3.0.8 | 30.5M | MIT | - |  |
+| copy-to-clipboard | [sudodoki/copy-to-clipboard](https://github.com/sudodoki/copy-to-clipboard) | 1.4k | MIT | 2026-08-05 | [copy-to-clipboard](https://www.npmjs.com/package/copy-to-clipboard) | 4.0.2 | 11.9M | MIT | - |  |
+| validator.js | [validatorjs/validator.js](https://github.com/validatorjs/validator.js) | 23.7k | MIT | 2026-08-15 | [validator](https://www.npmjs.com/package/validator) | 13.15.35 | 26.5M | MIT | - |  |
+| libphonenumber-js | [catamphetamine/libphonenumber-js](https://github.com/catamphetamine/libphonenumber-js) | 3.0k | MIT | 2026-06-18 | [libphonenumber-js](https://www.npmjs.com/package/libphonenumber-js) | 1.13.12 | 26.9M | MIT | - |  |
+| DOMPurify | [cure53/DOMPurify](https://github.com/cure53/DOMPurify) | 17.4k | Apache-2.0 | 2026-09-05 | [dompurify](https://www.npmjs.com/package/dompurify) | 3.4.14 | 64.3M | (MPL-2.0 OR Apache-2.0) | - |  |
+| sanitize-html | [apostrophecms/sanitize-html](https://github.com/apostrophecms/sanitize-html) | 4.1k | MIT | 2026-02-26 | [sanitize-html](https://www.npmjs.com/package/sanitize-html) | 2.17.7 | 10.3M | MIT | - | **archived** |
+| he (HTML entities) | [mathiasbynens/he](https://github.com/mathiasbynens/he) | 3.6k | MIT | 2021-12-29 | [he](https://www.npmjs.com/package/he) | 1.2.0 | 44.7M | MIT | - | 最新发布 2018-09-23 |
+| marked | [markedjs/marked](https://github.com/markedjs/marked) | 37.1k | NOASSERTION | 2026-09-05 | [marked](https://www.npmjs.com/package/marked) | 18.0.11 | 73.3M | MIT | - |  |
+| markdown-it | [markdown-it/markdown-it](https://github.com/markdown-it/markdown-it) | 21.9k | MIT | 2026-08-27 | [markdown-it](https://www.npmjs.com/package/markdown-it) | 15.0.1 | 30.9M | MIT | - |  |
+| Papa Parse (CSV) | [mholt/PapaParse](https://github.com/mholt/PapaParse) | 13.6k | MIT | 2026-09-01 | [papaparse](https://www.npmjs.com/package/papaparse) | 5.7.0 | 15.5M | MIT | - |  |
+| SheetJS (xlsx CE) | [SheetJS/sheetjs](https://github.com/SheetJS/sheetjs) | 36.3k | Apache-2.0 | 2024-04-18 | [xlsx](https://www.npmjs.com/package/xlsx) | 0.18.5 | 12.6M | Apache-2.0 | - | 最新发布 2022-03-24 |
+| ExcelJS | [exceljs/exceljs](https://github.com/exceljs/exceljs) | 15.5k | MIT | 2025-01-21 | [exceljs](https://www.npmjs.com/package/exceljs) | 4.4.0 | 14.2M | MIT | - | 最新发布 2023-10-19 |
+| yaml | [eemeli/yaml](https://github.com/eemeli/yaml) | 1.7k | ISC | 2026-08-01 | [yaml](https://www.npmjs.com/package/yaml) | 2.9.0 | 202.4M | ISC | - |  |
+| chroma.js | [gka/chroma.js](https://github.com/gka/chroma.js) | 10.6k | NOASSERTION | 2026-06-01 | [chroma-js](https://www.npmjs.com/package/chroma-js) | 3.2.0 | 3.5M | (BSD-3-Clause AND Apache-2.0) | - |  |
+| colord | [omgovich/colord](https://github.com/omgovich/colord) | 1.9k | MIT | 2026-09-01 | [colord](https://www.npmjs.com/package/colord) | 2.10.0 | 20.7M | MIT | - |  |
+| culori | [Evercoder/culori](https://github.com/Evercoder/culori) | 1.2k | MIT | 2026-07-02 | [culori](https://www.npmjs.com/package/culori) | 4.0.2 | 1.9M | MIT | - |  |
+| pretty-bytes | [sindresorhus/pretty-bytes](https://github.com/sindresorhus/pretty-bytes) | 1.3k | MIT | 2026-09-03 | [pretty-bytes](https://www.npmjs.com/package/pretty-bytes) | 7.1.3 | 32.2M | MIT | - |  |
+| filesize | [avoidwork/filesize.js](https://github.com/avoidwork/filesize.js) | 1.7k | BSD-3-Clause | 2026-09-03 | [filesize](https://www.npmjs.com/package/filesize) | 11.0.23 | 16.2M | BSD-3-Clause | - |  |
+| hotkeys-js | [jaywcjlove/hotkeys-js](https://github.com/jaywcjlove/hotkeys-js) | 7.1k | MIT | 2026-08-28 | [hotkeys-js](https://www.npmjs.com/package/hotkeys-js) | 4.0.7 | 1.4M | MIT | - |  |
+| tinykeys | [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) | 4.1k | MIT | 2026-05-26 | [tinykeys](https://www.npmjs.com/package/tinykeys) | 4.0.0 | 310.7k | MIT | - |  |
+| react-hotkeys-hook | [JohannesKlauss/react-hotkeys-hook](https://github.com/JohannesKlauss/react-hotkeys-hook) | 3.5k | MIT | 2026-09-03 | [react-hotkeys-hook](https://www.npmjs.com/package/react-hotkeys-hook) | 5.3.3 | 4.4M | MIT | >=16.8.0 |  |
+| idb (见 §23) | - | - | - | - | - | - | - | - | - |  |
+
+**一句话推荐**：HTTP 用 **ky**（MIT，fetch 封装，7.4M/周）或 ofetch（unjs，27.2M/周）；工具函数 **es-toolkit**（MIT，46.1M/周，lodash 兼容层）替代 lodash（lodash 4.18 于 2026-04 恢复发版，GitHub SPDX NOASSERTION、npm MIT）；不可变更新 immer（59.9M/周）；类型工具 type-fest（npm `MIT OR CC0-1.0`）；ID 用 nanoid / uuid；并发控制 p-limit / p-queue；模式匹配 ts-pattern；大数 decimal.js / big.js；货币 dinero.js（currency.js 2021 后无发版）；客户端搜索 **fuse.js**（Apache-2.0）或 minisearch/Orama；HTML 消毒 **DOMPurify**（npm `MPL-2.0 OR Apache-2.0`，可选 Apache）；sanitize-html 仓库已 archived；Markdown 解析 marked / markdown-it；CSV Papa Parse；xlsx 用 **ExcelJS**（MIT，但 2023-10 后无发版）——SheetJS 社区版 `xlsx` npm 停在 0.18.5（2022-03），新版仅从 cdn.sheetjs.com 分发；YAML 用 `yaml`（ISC）；颜色 colord / culori / chroma.js（npm `BSD-3 AND Apache-2.0`）；快捷键 react-hotkeys-hook / tinykeys / hotkeys-js。**长期无发版但仍被大量依赖**（功能已稳定）：fast-deep-equal（2020）、dequal（2022）、he（2018）、mitt（2023）。
+
+## 32. 图片 / 媒体 / 视频 / 音频 / 扫码
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| react-image-crop | [DominicTobias/react-image-crop](https://github.com/DominicTobias/react-image-crop) | 4.1k | ISC | 2026-06-21 | [react-image-crop](https://www.npmjs.com/package/react-image-crop) | 11.1.2 | 2.5M | ISC | >=16.13.1 |  |
+| react-easy-crop | [ValentinH/react-easy-crop](https://github.com/ValentinH/react-easy-crop) | 2.8k | MIT | 2026-09-05 | [react-easy-crop](https://www.npmjs.com/package/react-easy-crop) | 6.2.3 | 3.4M | MIT | >=16.4.0 |  |
+| Cropper.js | [fengyuanchen/cropperjs](https://github.com/fengyuanchen/cropperjs) | 13.9k | MIT | 2026-09-05 | [cropperjs](https://www.npmjs.com/package/cropperjs) | 2.2.0 | 1.7M | MIT | - |  |
+| react-advanced-cropper | [advanced-cropper/react-advanced-cropper](https://github.com/advanced-cropper/react-advanced-cropper) | 885 | NOASSERTION | 2026-07-25 | [react-advanced-cropper](https://www.npmjs.com/package/react-advanced-cropper) | 0.20.1 | 174.1k | MIT | >=16.8.0 |  |
+| browser-image-compression | [Donaldcwl/browser-image-compression](https://github.com/Donaldcwl/browser-image-compression) | 1.7k | MIT | 2024-03-08 | [browser-image-compression](https://www.npmjs.com/package/browser-image-compression) | 2.0.2 | 1.5M | MIT | - | 最新发布 2023-03-06 |
+| compressorjs | [fengyuanchen/compressorjs](https://github.com/fengyuanchen/compressorjs) | 5.8k | MIT | 2026-08-29 | [compressorjs](https://www.npmjs.com/package/compressorjs) | 1.3.0 | 452.6k | MIT | - |  |
+| Squoosh (libs) | [GoogleChromeLabs/squoosh](https://github.com/GoogleChromeLabs/squoosh) | 25.8k | Apache-2.0 | 2026-09-04 | - | - | - | - | - |  |
+| @jsquash/webp | [jamsinclair/jSquash](https://github.com/jamsinclair/jSquash) | 722 | Apache-2.0 | 2026-01-05 | [@jsquash/webp](https://www.npmjs.com/package/@jsquash/webp) | 1.5.0 | 209.6k | Apache-2.0 | - |  |
+| exifr | [MikeKovarik/exifr](https://github.com/MikeKovarik/exifr) | 1.2k | MIT | 2024-03-29 | [exifr](https://www.npmjs.com/package/exifr) | 7.1.3 | 2.0M | MIT | - | 最新发布 2021-08-05 |
+| heic2any | [alexcorvi/heic2any](https://github.com/alexcorvi/heic2any) | 883 | MIT | 2024-04-11 | [heic2any](https://www.npmjs.com/package/heic2any) | 0.0.4 | 1.2M | MIT | - | 最新发布 2023-03-29 |
+| yet-another-react-lightbox | [igordanchenko/yet-another-react-lightbox](https://github.com/igordanchenko/yet-another-react-lightbox) | 1.3k | MIT | 2026-09-01 | [yet-another-react-lightbox](https://www.npmjs.com/package/yet-another-react-lightbox) | 3.32.2 | 554.4k | MIT | ^16.8.0 \|\| ^17 \|\| ^18 \|\| ^19 |  |
+| PhotoSwipe | [dimsemenov/PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe) | 25.2k | MIT | 2025-12-04 | [photoswipe](https://www.npmjs.com/package/photoswipe) | 5.4.4 | 545.3k | MIT | - | 最新发布 2024-05-24 |
+| react-photo-album | [igordanchenko/react-photo-album](https://github.com/igordanchenko/react-photo-album) | 783 | MIT | 2026-08-31 | [react-photo-album](https://www.npmjs.com/package/react-photo-album) | 3.6.1 | 112.7k | MIT | ^18 \|\| ^19 |  |
+| react-zoom-pan-pinch | [BetterTyped/react-zoom-pan-pinch](https://github.com/BetterTyped/react-zoom-pan-pinch) | 1.9k | MIT | 2026-09-04 | [react-zoom-pan-pinch](https://www.npmjs.com/package/react-zoom-pan-pinch) | 4.2.0 | 2.5M | MIT | * |  |
+| Swiper | [nolimits4web/swiper](https://github.com/nolimits4web/swiper) | 41.9k | MIT | 2026-09-02 | [swiper](https://www.npmjs.com/package/swiper) | 14.2.0 | 4.3M | MIT | - |  |
+| Embla (见 §0) | - | - | - | - | - | - | - | - | - |  |
+| Keen Slider | [rcbyr/keen-slider](https://github.com/rcbyr/keen-slider) | 5.0k | MIT | 2026-01-22 | [keen-slider](https://www.npmjs.com/package/keen-slider) | 6.8.6 | 232.3k | MIT | - | 最新发布 2023-07-05 |
+| unpic (响应式图片) | [ascorbic/unpic-img](https://github.com/ascorbic/unpic-img) | 2.1k | NONE | 2026-09-03 | [@unpic/react](https://www.npmjs.com/package/@unpic/react) | 1.0.2 | 1.3M | MIT | ^17.0.0 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| vite-imagetools | [JonasKruckenberg/imagetools](https://github.com/JonasKruckenberg/imagetools) | 1.1k | MIT | 2026-09-05 | [vite-imagetools](https://www.npmjs.com/package/vite-imagetools) | 12.0.1 | 280.1k | MIT | - |  |
+| Video.js | [videojs/video.js](https://github.com/videojs/video.js) | 39.9k | NOASSERTION | 2026-08-03 | [video.js](https://www.npmjs.com/package/video.js) | 8.24.0 | 1.1M | Apache-2.0 | - |  |
+| Plyr | [sampotts/plyr](https://github.com/sampotts/plyr) | 30.0k | MIT | 2026-08-23 | [plyr](https://www.npmjs.com/package/plyr) | 3.8.4 | 407.1k | MIT | - |  |
+| Vidstack | [vidstack/player](https://github.com/vidstack/player) | 3.7k | MIT | 2026-08-21 | [@vidstack/react](https://www.npmjs.com/package/@vidstack/react) | 0.6.15 | 301.9k | MIT | ^18.0.0 | 最新发布 2024-04-19 |
+| react-player | [cookpete/react-player](https://github.com/cookpete/react-player) | 10.3k | MIT | 2025-11-13 | [react-player](https://www.npmjs.com/package/react-player) | 3.4.0 | 2.4M | MIT | ^17.0.2 \|\| ^18 \|\| ^19 |  |
+| hls.js | [video-dev/hls.js](https://github.com/video-dev/hls.js) | 16.9k | NOASSERTION | 2026-09-04 | [hls.js](https://www.npmjs.com/package/hls.js) | 1.7.2 | 8.6M | Apache-2.0 | - |  |
+| dash.js | [Dash-Industry-Forum/dash.js](https://github.com/Dash-Industry-Forum/dash.js) | 5.5k | NOASSERTION | 2026-09-01 | [dashjs](https://www.npmjs.com/package/dashjs) | 5.2.1 | 992.0k | BSD-3-Clause | - |  |
+| Shaka Player | [shaka-project/shaka-player](https://github.com/shaka-project/shaka-player) | 8.2k | Apache-2.0 | 2026-09-04 | [shaka-player](https://www.npmjs.com/package/shaka-player) | 5.2.9 | 327.3k | Apache-2.0 | - |  |
+| Howler.js | [goldfire/howler.js](https://github.com/goldfire/howler.js) | 25.3k | MIT | 2025-11-23 | [howler](https://www.npmjs.com/package/howler) | 2.2.4 | 967.0k | MIT | - | 最新发布 2023-09-19 |
+| Tone.js | [Tonejs/Tone.js](https://github.com/Tonejs/Tone.js) | 14.7k | MIT | 2026-09-03 | [tone](https://www.npmjs.com/package/tone) | 15.1.22 | 227.4k | MIT | - |  |
+| wavesurfer.js | [katspaugh/wavesurfer.js](https://github.com/katspaugh/wavesurfer.js) | 10.4k | BSD-3-Clause | 2026-09-03 | [wavesurfer.js](https://www.npmjs.com/package/wavesurfer.js) | 7.12.11 | 1.3M | BSD-3-Clause | - |  |
+| Peaks.js (BBC) | [bbc/peaks.js](https://github.com/bbc/peaks.js) | 3.4k | LGPL-3.0 | 2025-11-08 | [peaks.js](https://www.npmjs.com/package/peaks.js) | 4.0.0 | 10.1k | LGPL-3.0 | - |  |
+| ffmpeg.wasm | [ffmpegwasm/ffmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm) | 17.8k | MIT | 2026-02-01 | [@ffmpeg/ffmpeg](https://www.npmjs.com/package/@ffmpeg/ffmpeg) | 0.12.15 | 709.5k | MIT | - |  |
+| mediabunny | [Vanilagy/mediabunny](https://github.com/Vanilagy/mediabunny) | 7.1k | MPL-2.0 | 2026-09-04 | [mediabunny](https://www.npmjs.com/package/mediabunny) | 1.55.7 | 2.7M | MPL-2.0 | - |  |
+| Remotion | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | 58.4k | NOASSERTION | 2026-09-05 | [remotion](https://www.npmjs.com/package/remotion) | 4.0.521 | 1.7M | SEE LICENSE IN LICENSE.md | >=16.8.0 |  |
+| react-webcam | [mozmorris/react-webcam](https://github.com/mozmorris/react-webcam) | 1.8k | MIT | 2026-03-10 | [react-webcam](https://www.npmjs.com/package/react-webcam) | 7.2.0 | 480.0k | MIT | >=16.2.0 | 最新发布 2023-10-25 |
+| html5-qrcode | [mebjas/html5-qrcode](https://github.com/mebjas/html5-qrcode) | 6.2k | Apache-2.0 | 2025-12-01 | [html5-qrcode](https://www.npmjs.com/package/html5-qrcode) | 2.3.8 | 1.5M | Apache-2.0 | - | 最新发布 2023-04-15 |
+| zxing-wasm | [Sec-ant/zxing-wasm](https://github.com/Sec-ant/zxing-wasm) | 265 | MIT | 2026-09-01 | [zxing-wasm](https://www.npmjs.com/package/zxing-wasm) | 3.1.3 | 1.9M | MIT | - |  |
+| qr-scanner | [nimiq/qr-scanner](https://github.com/nimiq/qr-scanner) | 2.9k | MIT | 2024-03-30 | [qr-scanner](https://www.npmjs.com/package/qr-scanner) | 1.4.2 | 271.2k | MIT | - | 最新发布 2022-11-23 |
+| react-pdf-highlighter (见 §10) | - | - | - | - | - | - | - | - | - |  |
+| Motion Canvas | [motion-canvas/motion-canvas](https://github.com/motion-canvas/motion-canvas) | 19.1k | MIT | 2026-07-02 | [@motion-canvas/core](https://www.npmjs.com/package/@motion-canvas/core) | 3.17.2 | 2.4k | MIT | - |  |
+| Lottie (见 §4) | - | - | - | - | - | - | - | - | - |  |
+
+**一句话推荐**：图片裁剪 **react-easy-crop**（MIT，3.4M/周，2026-07 发版）或 Cropper.js 2；客户端压缩 compressorjs（2026-04 发版；browser-image-compression 2023 后无发版）；WebP/AVIF 编解码 `@jsquash/*`（Squoosh 内核，Apache-2.0）；灯箱 **yet-another-react-lightbox**（MIT，peer 到 React 19）；轮播 Swiper（MIT，4.3M/周）或 §0 的 Embla；响应式图片 unpic。视频播放：HLS 用 **hls.js**（npm Apache-2.0，8.6M/周）、DASH 用 dash.js（BSD-3）或 Shaka Player（Apache-2.0）；播放器 UI **Video.js**（Apache-2.0）、Plyr（MIT）、react-player（MIT，v3 支持 React 19）；Vidstack 停在 0.6.x（2024-04）。音频 wavesurfer.js（BSD-3）、Tone.js（MIT）、Howler（MIT，2023 后无发版）。浏览器端转码 ffmpeg.wasm（MIT）或 **mediabunny**（**MPL-2.0**，2.7M/周，活跃）。扫码 **zxing-wasm**（MIT，2026-08 发版）；html5-qrcode / qr-scanner 均 2023 年前停更。**注意**：**Remotion 为自定义许可**（个人/小团队免费，公司需 Company License，[LICENSE.md](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md)）；Peaks.js 为 **LGPL-3.0**。
+
+## 33. 通知 / Toast / 反馈 / 产品导览 / 浮层
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| sonner (见 §0) | [emilkowalski/sonner](https://github.com/emilkowalski/sonner) | 12.9k | MIT | 2026-08-10 | [sonner](https://www.npmjs.com/package/sonner) | 2.0.8 | 50.5M | MIT | ^18.0.0 \|\| ^19.0.0 \|\| ^19.0.0-rc |  |
+| react-hot-toast (见 §0) | [timolins/react-hot-toast](https://github.com/timolins/react-hot-toast) | 11.0k | MIT | 2025-08-16 | [react-hot-toast](https://www.npmjs.com/package/react-hot-toast) | 2.6.0 | 3.9M | MIT | >=16 |  |
+| react-toastify | [fkhadra/react-toastify](https://github.com/fkhadra/react-toastify) | 13.4k | MIT | 2026-04-19 | [react-toastify](https://www.npmjs.com/package/react-toastify) | 11.1.0 | 4.1M | MIT | ^18 \|\| ^19 |  |
+| notistack | [iamhosseindhv/notistack](https://github.com/iamhosseindhv/notistack) | 4.1k | NOASSERTION | 2026-03-31 | [notistack](https://www.npmjs.com/package/notistack) | 3.0.2 | 1.8M | MIT | ^17.0.0 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| Notyf | [caroso1222/notyf](https://github.com/caroso1222/notyf) | 2.9k | MIT | 2023-01-07 | [notyf](https://www.npmjs.com/package/notyf) | 3.10.0 | 48.5k | MIT | - | 最新发布 2021-06-08 |
+| Toastify JS | [apvarun/toastify-js](https://github.com/apvarun/toastify-js) | 2.5k | MIT | 2024-08-19 | [toastify-js](https://www.npmjs.com/package/toastify-js) | 1.12.0 | 141.6k | MIT | - | 最新发布 2022-07-21 |
+| Notiflix | [notiflix/Notiflix](https://github.com/notiflix/Notiflix) | 690 | MIT | 2025-10-14 | [notiflix](https://www.npmjs.com/package/notiflix) | 3.2.8 | 9.4k | MIT | - |  |
+| SweetAlert2 | [sweetalert2/sweetalert2](https://github.com/sweetalert2/sweetalert2) | 18.1k | MIT | 2026-07-20 | [sweetalert2](https://www.npmjs.com/package/sweetalert2) | 11.26.25 | 1.1M | MIT | - |  |
+| Push.js (Web Push) | [Nickersoft/push.js](https://github.com/Nickersoft/push.js) | 8.7k | MIT | 2023-12-15 | [push.js](https://www.npmjs.com/package/push.js) | 1.0.12 | 34.1k | MIT | - | **archived**；最新发布 2019-07-22 |
+| NProgress | [rstacruz/nprogress](https://github.com/rstacruz/nprogress) | 26.4k | MIT | 2022-06-04 | [nprogress](https://www.npmjs.com/package/nprogress) | 0.2.0 | 4.0M | MIT | - | 最新发布 2015-05-13 |
+| react-top-loading-bar | [klendi/react-top-loading-bar](https://github.com/klendi/react-top-loading-bar) | 749 | MIT | 2026-07-20 | [react-top-loading-bar](https://www.npmjs.com/package/react-top-loading-bar) | 3.0.2 | 292.6k | MIT | ^16 \|\| ^17 \|\| ^18 \|\| ^19 |  |
+| Novu (in-app inbox) | [novuhq/novu](https://github.com/novuhq/novu) | 39.8k | NOASSERTION | 2026-09-04 | [@novu/react](https://www.npmjs.com/package/@novu/react) | 3.19.1 | 176.6k | ISC | ^18.0.0 \|\| ^19.0.0 \|\| ^19.0.0-0 |  |
+| Knock React | [knocklabs/javascript](https://github.com/knocklabs/javascript) | 31 | MIT | 2026-09-04 | [@knocklabs/react](https://www.npmjs.com/package/@knocklabs/react) | 0.13.2 | 425.4k | MIT | ^17.0.0 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| react-loading-skeleton | [dvtng/react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton) | 4.2k | MIT | 2026-03-05 | [react-loading-skeleton](https://www.npmjs.com/package/react-loading-skeleton) | 3.5.0 | 1.5M | MIT | >=16.8.0 |  |
+| react-spinners | [davidhu2000/react-spinners](https://github.com/davidhu2000/react-spinners) | 3.4k | MIT | 2026-09-02 | [react-spinners](https://www.npmjs.com/package/react-spinners) | 0.17.0 | 786.3k | MIT | ^16.0.0 \|\| ^17.0.0 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| canvas-confetti | [catdad/canvas-confetti](https://github.com/catdad/canvas-confetti) | 12.7k | ISC | 2025-10-25 | [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) | 1.9.4 | 8.4M | ISC | - |  |
+| react-confetti | [alampros/react-confetti](https://github.com/alampros/react-confetti) | 1.7k | MIT | 2026-01-21 | [react-confetti](https://www.npmjs.com/package/react-confetti) | 6.4.0 | 2.5M | MIT | ^16.3.0 \|\| ^17.0.1 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| Shepherd (产品导览) | [shepherd-pro/shepherd](https://github.com/shepherd-pro/shepherd) | 13.8k | NOASSERTION | 2026-09-03 | [shepherd.js](https://www.npmjs.com/package/shepherd.js) | 15.3.0 | 309.5k | AGPL-3.0 | - |  |
+| driver.js | [kamranahmedse/driver.js](https://github.com/kamranahmedse/driver.js) | 26.7k | MIT | 2026-07-18 | [driver.js](https://www.npmjs.com/package/driver.js) | 1.8.0 | 2.0M | MIT | - |  |
+| intro.js | [usablica/intro.js](https://github.com/usablica/intro.js) | 23.5k | NOASSERTION | 2026-08-07 | [intro.js](https://www.npmjs.com/package/intro.js) | 8.5.0 | 209.3k | AGPL-3.0 | - |  |
+| react-joyride | [gilbarbara/react-joyride](https://github.com/gilbarbara/react-joyride) | 7.9k | MIT | 2026-07-09 | [react-joyride](https://www.npmjs.com/package/react-joyride) | 3.2.0 | 1.4M | MIT | 16.8 - 19 |  |
+| Onborda (Next/Tailwind) | [uixmat/onborda](https://github.com/uixmat/onborda) | 1.4k | NONE | 2026-06-08 | [onborda](https://www.npmjs.com/package/onborda) | 1.2.5 | 46.1k | MIT | >=18 |  |
+| NextStepjs | [enszrlu/NextStep](https://github.com/enszrlu/NextStep) | 1.0k | MIT | 2026-07-20 | [nextstepjs](https://www.npmjs.com/package/nextstepjs) | 2.3.0 | 60.7k | MIT | >=18 |  |
+| react-tooltip | [ReactTooltip/react-tooltip](https://github.com/ReactTooltip/react-tooltip) | 3.8k | MIT | 2026-06-15 | [react-tooltip](https://www.npmjs.com/package/react-tooltip) | 6.0.8 | 2.2M | MIT | >=16.14.0 |  |
+| Tippy.js | [atomiks/tippyjs](https://github.com/atomiks/tippyjs) | 12.2k | MIT | 2024-05-27 | [tippy.js](https://www.npmjs.com/package/tippy.js) | 6.3.7 | 6.8M | MIT | - | **archived**；最新发布 2021-11-10 |
+| Floating UI | [floating-ui/floating-ui](https://github.com/floating-ui/floating-ui) | 32.7k | MIT | 2026-08-26 | [@floating-ui/react](https://www.npmjs.com/package/@floating-ui/react) | 0.27.20 | 23.3M | MIT | >=17.0.0 |  |
+
+**一句话推荐**：Toast 用 **sonner**（MIT，50.5M/周，shadcn 默认）；MUI 栈用 notistack；非 React 用 SweetAlert2（MIT，1.1M/周）。浮层定位 **Floating UI**（MIT，23.3M/周，Radix/shadcn 底层）；Tippy.js 仓库已 archived（同一作者主导 Floating UI）。产品导览选 **driver.js**（MIT，2.0M/周）或 react-joyride（MIT，peer `16.8 - 19`）；**Shepherd 与 intro.js 均为 AGPL-3.0 + 商业双许可**（[Shepherd README](https://github.com/shepherd-pro/shepherd)、[intro.js license](https://github.com/usablica/intro.js/blob/master/license.md)），商业项目慎用。骨架屏 react-loading-skeleton；彩带 canvas-confetti（ISC，8.4M/周）。应用内通知中心 Novu（`@novu/react` ISC）/ Knock 均为托管服务 SDK。**停更**：NProgress latest 2015、Notyf 2021、Toastify JS 2022、Push.js archived。
+
+## 34. 命令面板 / 搜索 UI / 选择器 / 快捷键
+
+| 候选 | GitHub | ★ | GitHub SPDX | 最近推送 | npm 包 | 最新版 | 周下载 | npm license | React peer | 备注 |
+|---|---|---:|---|---|---|---|---:|---|---|---|
+| cmdk (见 §0) | [pacocoursey/cmdk](https://github.com/pacocoursey/cmdk) | 12.9k | MIT | 2025-10-29 | [cmdk](https://www.npmjs.com/package/cmdk) | 1.1.1 | 44.0M | MIT | ^18 \|\| ^19 \|\| ^19.0.0-rc |  |
+| kbar | [timc1/kbar](https://github.com/timc1/kbar) | 5.2k | MIT | 2026-08-10 | [kbar](https://www.npmjs.com/package/kbar) | 1.0.0 | 314.7k | MIT | ^17.0.0 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| react-cmdk | [albingroen/react-cmdk](https://github.com/albingroen/react-cmdk) | 1.2k | MIT | 2024-06-19 | [react-cmdk](https://www.npmjs.com/package/react-cmdk) | 1.3.9 | 93.0k | MIT | ^16.x \|\| ^17.x \|\| ^18.x | 最新发布 2023-04-18 |
+| ninja-keys | [ssleptsov/ninja-keys](https://github.com/ssleptsov/ninja-keys) | 1.7k | MIT | 2024-07-14 | [ninja-keys](https://www.npmjs.com/package/ninja-keys) | 1.2.2 | 29.7k | MIT | - | 最新发布 2022-07-01 |
+| command-score | [superhuman/command-score](https://github.com/superhuman/command-score) | 138 | MIT | 2023-01-25 | [command-score](https://www.npmjs.com/package/command-score) | 0.1.2 | 246.2k | MIT | - | **archived**；最新发布 2016-06-10 |
+| Pagefind | [Pagefind/pagefind](https://github.com/Pagefind/pagefind) | 5.4k | MIT | 2026-09-05 | [pagefind](https://www.npmjs.com/package/pagefind) | 1.5.2 | 1.6M | MIT | - |  |
+| DocSearch (Algolia) | [algolia/docsearch](https://github.com/algolia/docsearch) | 4.4k | MIT | 2026-09-05 | [@docsearch/react](https://www.npmjs.com/package/@docsearch/react) | 5.0.5 | 2.5M | MIT | >= 16.8.0 < 20.0.0 |  |
+| Algolia autocomplete | [algolia/autocomplete](https://github.com/algolia/autocomplete) | 5.3k | MIT | 2026-09-04 | [@algolia/autocomplete-js](https://www.npmjs.com/package/@algolia/autocomplete-js) | 1.19.9 | 220.2k | MIT | - |  |
+| InstantSearch React | [algolia/instantsearch](https://github.com/algolia/instantsearch) | 4.1k | MIT | 2026-09-04 | [react-instantsearch](https://www.npmjs.com/package/react-instantsearch) | 7.49.0 | 520.8k | MIT | >= 16.8.0 < 20 |  |
+| Typesense InstantSearch adapter | [typesense/typesense-instantsearch-adapter](https://github.com/typesense/typesense-instantsearch-adapter) | 525 | MIT | 2026-07-08 | [typesense-instantsearch-adapter](https://www.npmjs.com/package/typesense-instantsearch-adapter) | 3.0.2 | 156.1k | Apache-2.0 | - |  |
+| Meilisearch JS | [meilisearch/meilisearch-js](https://github.com/meilisearch/meilisearch-js) | 869 | MIT | 2026-09-01 | [meilisearch](https://www.npmjs.com/package/meilisearch) | 0.60.0 | 563.9k | MIT | - |  |
+| react-select | [JedWatson/react-select](https://github.com/JedWatson/react-select) | 28.0k | MIT | 2026-07-16 | [react-select](https://www.npmjs.com/package/react-select) | 5.10.2 | 9.7M | MIT | ^16.8.0 \|\| ^17.0.0 \|\| ^18.0.0 \|\| ^19.0.0 |  |
+| downshift | [downshift-js/downshift](https://github.com/downshift-js/downshift) | 12.3k | MIT | 2026-06-30 | [downshift](https://www.npmjs.com/package/downshift) | 9.4.0 | 4.7M | MIT | >=16.12.0 |  |
+| react-mentions (仓库已删除) | - | - | - | - | [react-mentions](https://www.npmjs.com/package/react-mentions) | 4.4.10 | 790.2k | BSD-3-Clause | >=16.8.3 | **npm deprecated**；最新发布 2023-06-30 |
+| Tribute.js (@mention) | [zurb/tribute](https://github.com/zurb/tribute) | 2.1k | MIT | 2025-01-30 | [tributejs](https://www.npmjs.com/package/tributejs) | 5.1.3 | 169.5k | MIT | - | 最新发布 2020-03-25 |
+| Mousetrap | [ccampbell/mousetrap](https://github.com/ccampbell/mousetrap) | 11.8k | Apache-2.0 | 2023-03-15 | [mousetrap](https://www.npmjs.com/package/mousetrap) | 1.6.5 | 1.0M | Apache-2.0 WITH LLVM-exception | - | 最新发布 2020-01-23 |
+| Fuse.js (见 §31) | - | - | - | - | - | - | - | - | - |  |
+
+**一句话推荐**：命令面板 **cmdk**（MIT，44.0M/周，shadcn `<Command>` 底层）；kbar（MIT，1.0.0 于 2026-08 发布）为带 UI 的替代；react-cmdk / ninja-keys 均 2022–2023 后停更；command-score archived。静态站搜索 **Pagefind**（MIT）；文档站 DocSearch（Algolia 免费计划限公开技术文档，[申请条件](https://docsearch.algolia.com/docs/who-can-apply)）；自托管搜索客户端 Meilisearch JS（MIT）/ Typesense adapter（Apache-2.0）。选择器 **react-select**（MIT，9.7M/周，peer 到 React 19）或无头 downshift（MIT）。**注意**：react-mentions 的 GitHub 仓库（signavio）已删除且 npm 标记 deprecated（790k/周仍在用），@提及需求建议用 Tiptap/Lexical 的 mention 扩展或 Tribute.js（MIT，2020 后无发版）；Mousetrap npm license 为 `Apache-2.0 WITH LLVM-exception`，2020 后无发版，快捷键改用 §31 的 tinykeys / react-hotkeys-hook。
+
+---
+
+## 第三批风险清单（非宽松许可 / 自定义许可 / archived / deprecated）
+
+| 候选 | GitHub SPDX | npm license | 判断 |
+|---|---|---|---|
+| Remotion | NOASSERTION | SEE LICENSE IN LICENSE.md | **自定义许可**：个人与小公司免费，其他公司需 Company License |
+| Shepherd | NOASSERTION | AGPL-3.0 | AGPL + 商业双许可 |
+| intro.js | NOASSERTION | AGPL-3.0 | AGPL + 商业许可（v2.0 起） |
+| Webstudio | AGPL-3.0 | — | 应用产品，无库包 |
+| Satori / @vercel/og / resvg-js / mediabunny / JointJS | MPL-2.0（@vercel/og 仓为 next.js MIT） | MPL-2.0 | 文件级 copyleft，作依赖使用无影响 |
+| NLUX | NOASSERTION | MPL-2.0 | 同上，且 2024-08 后停更 |
+| Peaks.js | LGPL-3.0 | LGPL-3.0 | 弱 copyleft |
+| DOMPurify | Apache-2.0 | (MPL-2.0 OR Apache-2.0) | 可选 Apache，无风险 |
+| @originjs/vite-plugin-federation | NOASSERTION | MulanPSL-2.0 | 木兰宽松许可证（OSI 认可） |
+| type-fest | CC0-1.0 | (MIT OR CC0-1.0) | 宽松 |
+| chroma.js | NOASSERTION | (BSD-3-Clause AND Apache-2.0) | 宽松 |
+| PostHog JS | NOASSERTION | (Apache-2.0 AND MIT) | 宽松 |
+| Mousetrap | Apache-2.0 | Apache-2.0 WITH LLVM-exception | 宽松 |
+| zoid / workers-og / Supabase Auth UI | Apache-2.0 / MIT / MIT | （npm 未声明） | 以仓库 LICENSE 为准 |
+| Vercel AI SDK、ai-elements、Mastra、Hanko、Zitadel、single-spa、Garfish、wujie、Bit、OpenReplay、Highlight、GrapesJS、Tmagic、react-mosaic、dockview、dom-to-image-more、pdfmake、lodash、Orama、marked、react-advanced-cropper、Video.js、hls.js、dash.js、notistack、Novu | NOASSERTION | MIT / Apache-2.0 / BSD-3 / ISC | GitHub 未识别许可证文件，npm 为宽松许可 |
+| Creem、Ant Design X、node-canvas、unpic、Onborda | NONE | MIT | 同上 |
+
+**archived**：Supabase Auth UI、Creem、LlamaIndex.TS、Plausible tracker、sanitize-html、Push.js、Tippy.js、command-score。**npm deprecated**：oslo → @oslojs/*（后者亦被标 deprecated）、arctic、plausible-tracker、`@measured/puck` → `@puckeditor/core`、`@react-email/components` 1.0.12、react-mentions；`@clerk/clerk-react` → `@clerk/react`。**仓库删除**：signavio/react-mentions。**服务绑定 SDK（开源但需付费后端）**：Clerk、Auth0、Logto、Hanko、Zitadel、Ory、Stripe、PayPal、Paddle、LemonSqueezy、Polar、Creem、Autumn、Adyen、Braintree、Liveblocks（§22）、Builder.io、Plasmic、Unlayer、Novu、Knock、Highlight、OpenReplay、Bugsnag、Vercel Analytics/Speed Insights、DocSearch、Algolia InstantSearch。
+
 ## 附录 A. 本轮新增的重大上游变化（老板需知）
 
 1. **React Router v8**（2026-06-17）删除 `react-router-dom` 包，我们 102 处 import 需迁到 `react-router`。证据：[changelog v8.0.0](https://reactrouter.com/changelog)、npm `react-router-dom` dist-tags latest=7.18.3。
@@ -625,7 +1014,7 @@
 - GitHub：`gh api repos/<owner>/<repo> --jq '{stars:.stargazers_count,license:.license.spdx_id,pushed:.pushed_at,archived:.archived}'`
 - npm 元数据：`https://registry.npmjs.org/<pkg>`（`dist-tags.latest`、`versions[latest].license/peerDependencies/dist.unpackedSize`、`time`）
 - npm 周下载：`https://api.npmjs.org/downloads/point/last-week/<pkg>`（窗口 2026-08-23 ~ 2026-08-29）
-- 复现：`python3 scripts/collect.py scripts/items_round1.py data/candidates-2026-09-05.json`（第一批）/ `python3 scripts/collect.py scripts/items_round2.py data/candidates-round2-2026-09-05.json`（第二批），然后 `scripts/downloads.py <json>` 补周下载、`scripts/summarize.py <json> <txt>` 出逐行摘要。
+- 复现：`python3 scripts/collect.py scripts/items_round1.py data/candidates-2026-09-05.json`（第一批）/ `python3 scripts/collect.py scripts/items_round2.py data/candidates-round2-2026-09-05.json`（第二批）/ `python3 scripts/collect.py scripts/items_round3.py data/candidates-round3-2026-09-05.json`（第三批，279 条），然后 `scripts/downloads.py <json>` 补周下载、`scripts/summarize.py <json> <txt>` 出逐行摘要。
 - 未在本文表格中单独列出但已采集的对照项（均 MIT/ISC，供追问）：sonner 2.0.8、cva 0.7.1、tailwind-merge 3.6.0、clsx 2.1.1、vaul 1.1.2、cmdk 1.1.1、react-resizable-panels 4.12.3、embla-carousel-react 8.6.0、input-otp 1.5.0、next-themes 0.4.6、qrcode.react 4.2.0、mermaid 11.17.2、@number-flow/react 0.6.2、react-error-boundary 6.1.5、usehooks-ts 3.1.1、ky 2.1.0、axios 1.20.0、react-use 17.6.1（Unlicense）、pdf-lib 1.17.1（npm 最后发布 2021-11-06）、html2canvas 1.4.1（2022-01-22）。
 
 ## 附录 C. 全部链接索引
